@@ -8,7 +8,7 @@ UOPG: Emergent Spacetime and Particles from the Positive Grassmannian  A geometr
 - **Paper**: [paper.pdf](paper.pdf)
 - **Zenodo DOI**: (will appear after upload)
 - **Lean 4 formalisation**: [UOPG.lean](UOPG.lean)
-- **Numerical notebook**: [UOPG_Notebook.ipynb](UOPG_Notebook.ipynb)
+- **Numerical notebook**: [UOPG_Notebook.ipynb](UOPG.ipynb)
 
 ## Abstract
 We present a geometric model in which the positive Grassmannian Gr+(k,n) serves as the single underlying structure. Positivity-preserving mutations generate curvature that projects to 3+1D Lorentzian spacetime. Wave interference on the emergent metric produces particles, entanglement, annihilation, and chiral asymmetry. The model is calibrated so the W-boson mass is exactly 80.4 GeV.
