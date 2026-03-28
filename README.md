@@ -16,7 +16,7 @@ We present a geometric model in which the positive Grassmannian Gr+(k,n) serves 
 ## Files
 - `paper.pdf` – Full preprint
 - `UOPG.lean` – Complete Lean 4 formalization of every mathematical claim
-- `UOPG_Notebook.ipynb` – Executable SymPy notebook (harmonic emergence, emergent metric, mutations, wave interference, Monte-Carlo calibration to 80.4 GeV)
+- `UOPG.ipynb` – Executable SymPy notebook (harmonic emergence, emergent metric, mutations, wave interference, Monte-Carlo calibration to 80.4 GeV)
 
 ## How to run
 ```bash
