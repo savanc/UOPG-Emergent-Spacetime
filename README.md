@@ -7,7 +7,7 @@ UOPG: Emergent Spacetime and Particles from the Positive Grassmannian  A geometr
 
 - **Paper**: [article.pdf](https://doi.org/10.5281/zenodo.19291218))
 - **Zenodo DOI**: [10.5281/zenodo.19291218](https://doi.org/10.5281/zenodo.19291218)
-- **Lean 4 formalisation**: [UOPG.lean](UOPG.lean)
+- **Lean 4 formalisation (draft concept)**: [UOPG.lean](UOPG.lean)
 - **Numerical notebook**: [UOPG_Notebook.ipynb](UOPG.ipynb)
 
 ## Abstract
@@ -15,7 +15,7 @@ We present a geometric model in which the positive Grassmannian Gr+(k,n) serves 
 
 ## Files
 - `Article.pdf` – Full preprint
-- `UOPG.lean` – Complete Lean 4 formalization of every mathematical claim
+- `UOPG.lean` – Complete Lean 4 formalization of every mathematical claim (draft concept)
 - `UOPG.ipynb` – Executable SymPy notebook (harmonic emergence, emergent metric, mutations, wave interference, Monte-Carlo calibration to 80.4 GeV)
 
 ## How to run
