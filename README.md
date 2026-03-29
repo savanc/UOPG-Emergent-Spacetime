@@ -5,7 +5,7 @@ UOPG: Emergent Spacetime and Particles from the Positive Grassmannian  A geometr
 
 **A Geometric Model Calibrated to LHC W-Boson Mass**
 
-- **Paper**: [article.pdf](https://doi.org/10.5281/zenodo.19291218))
+- **Paper**: [article.pdf](https://doi.org/10.5281/zenodo.19291218)
 - **Zenodo DOI**: [10.5281/zenodo.19291218](https://doi.org/10.5281/zenodo.19291218)
 - **Lean 4 formalisation (draft concept)**: [UOPG.lean](UOPG.lean)
 - **Numerical notebook**: [UOPG_Notebook.ipynb](UOPG.ipynb)
