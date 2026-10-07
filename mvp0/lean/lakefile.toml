@@ -1,6 +1,6 @@
 name = "UOPG0"
 version = "0.1.0"
-defaultTargets = ["UOPG0", "uopg0", "uopg1", "uopg2"]
+defaultTargets = ["UOPG0", "uopg0", "uopg1", "uopg2", "rankone"]
 
 [leanOptions]
 pp.unicode.fun = true
@@ -26,3 +26,7 @@ root = "Main1"
 [[lean_exe]]
 name = "uopg2"
 root = "Main2"
+
+[[lean_exe]]
+name = "rankone"
+root = "MainRank"

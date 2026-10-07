@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - "mvp0/**"
+      - "lemma/**"
       - ".github/workflows/mvp0.yml"
 
 jobs:
@@ -40,3 +41,7 @@ jobs:
         run: |
           chmod +x mvp2/check.sh
           ./mvp2/check.sh
+      - name: build, run, and audit the rank-one lemma
+        run: |
+          chmod +x lemma/check.sh
+          ./lemma/check.sh

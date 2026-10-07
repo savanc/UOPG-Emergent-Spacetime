@@ -17,7 +17,7 @@ The old notebooks simulated a Hessian, a column update, and a calibration to a W
 
 ## MVP-0 — proved
 
-The 2-plane is the massless boson. Theorems and the line they do not cross are in [mvp0/DICTIONARY.md](../mvp0/DICTIONARY.md). The only experiment is [mvp0/EMPIRICAL.md](../mvp0/EMPIRICAL.md): the mass defined by `det` is 0, compared with the PDG photon bound, not fitted to it.
+The proved content is the Klein dictionary. An event is a 2-plane, and a null edge is `det = 0`. Calling that edge a massless boson is an interpretation, and [mvp0/DICTIONARY.md](../mvp0/DICTIONARY.md) records it as one. The only experiment is [mvp0/EMPIRICAL.md](../mvp0/EMPIRICAL.md): the mass defined by `det` is 0, compared with the PDG photon bound, not fitted to it.
 
 ![One witness, three pictures: the plane, its Plücker coordinates, the affine event.](figures/mvp0-klein.png)
 
@@ -49,6 +49,10 @@ If none of the four is zero, `x / (x y z w) = 1 / (y z w)`, and the same for `y`
 
 The column update from the 2026 drafts is a different map. At the witness and `λ = 1` it sends `P23` from 1 to 0, and the matrix stays on the quadric because every 2-plane does. That one point is a theorem. A general cluster algebra is not. The dictionary is [mvp2/DICTIONARY.md](../mvp2/DICTIONARY.md).
 
+![y, z, w fixed. x times the coefficient stays 8/3. P13 stays positive. At x = 0 the coefficient is undefined and P13 is 3/4.](figures/face-sweep.png)
+
+The sweep holds `y`, `z`, and `w` at the witness and varies `x` through seven positive rationals: `1/8`, `1/4`, `1/2`, `1`, `3/2`, `2`, `3`. On each of them `x / (x y z w)` is `8/3` and `P13 = y z + x w` is positive. At `x = 0` the product is `0` and `P13` is `3/4`. That is the theorem drawn, not a fit, and not a Monte Carlo.
+
 ## MVP-3 — contract
 
 ![A GeV may enter only as one named external mass. The ratio R is blank.](figures/mvp3-scale.png)
@@ -57,9 +61,11 @@ The column update from the 2026 drafts is a different map. At the witness and `�
 
 ## MVP-4 — contract
 
-![A null edge factors as a pair of spinors. Helicity would be the little-group weight. The weight is unknown.](figures/mvp4-helicity.png)
+![The outer product and the rescaling are proved. The helicity weight is not, so the card stays a contract.](figures/mvp4-helicity.png)
 
-`det p = 0` is proved, and so is the existence of a kernel vector. Rank at most one means the matrix is an outer product `u vᵀ`; the script exhibits that factor for the four edges and checks that `u → t u`, `v → v/t` leaves `p` fixed. That rescaling is ordinary linear algebra on a proved null matrix. It is not yet a Lean theorem, and it is not a helicity. A massless boson would be a weight the geometry forces. MVP-4 has to derive the weight. It does not become a gluon, a W, a Z, or a fermion by being the last rung on this ladder.
+`det p = 0` is proved, and so is a nonzero kernel vector. Rank at most one is the lemma `det2_eq_zero_iff_exists_outer`: the matrix is an outer product `u vᵀ`. `outer_rescale` says `u → t u` and `v → v / t` leave that product fixed for every `t ≠ 0`. On the rational polygon the four edges are those products, and the picture's `t = 2` is `polygon_edge_rescale`. The dictionary is [lemma/DICTIONARY.md](../lemma/DICTIONARY.md).
+
+That is still not a helicity. A massless boson would be a weight the geometry forces on a wavefunction, and there is no wavefunction in the lemma. The two Lorentz `SL(2)` actions are not theorems. MVP-4 stays a contract. It does not become a gluon, a W, a Z, or a fermion by being the last rung on this ladder.
 
 ## What is not in the atlas
 

@@ -1,4 +1,4 @@
-# MVP-0 — the 2-plane is the massless boson
+# MVP-0 — det = 0 is the theorem, not a boson
 
 First checked piece of UOPG. The object is `Gr⁺(2,4)`. Spacetime enters as the Klein correspondence, not as a Hessian and not as a fitted scale.
 

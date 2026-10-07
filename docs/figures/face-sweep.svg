@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720">
+<rect width="100%" height="100%" fill="#fbf8f3"/>
+<rect x="0" y="0" width="960" height="8" rx="0" fill="#1b5e45"/>
+<text x="28" y="46" fill="#1a1814" font-size="26" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">Face sweep  ·  the residue, drawn</text>
+<text x="28" y="72" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">y, z, w fixed at the witness. Seven positive rationals for x. Exact arithmetic, then the picture.</text>
+<rect x="840" y="30" width="92" height="22" rx="11" fill="#1b5e45"/>
+<text x="886.0" y="46" fill="#ffffff" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">PROVED</text>
+<rect x="28" y="108" width="440" height="360" rx="12" fill="#ffffff" stroke="#d9d3c7" stroke-width="1.2"/>
+<text x="48" y="136" fill="#1a1814" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">x times the coefficient</text>
+<text x="48" y="158" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">stays 8/3 off the wall</text>
+<rect x="492" y="108" width="440" height="360" rx="12" fill="#ffffff" stroke="#d9d3c7" stroke-width="1.2"/>
+<text x="512" y="136" fill="#1a1814" font-size="15" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">P13 = y z + x w</text>
+<text x="512" y="158" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">stays positive, including the wall</text>
+<line x1="76.0" y1="420" x2="416.0" y2="420" stroke="#d9d3c7" stroke-width="1"/>
+<line x1="76.0" y1="196" x2="76.0" y2="420" stroke="#d9d3c7" stroke-width="1"/>
+<line x1="76.0" y1="308.0" x2="416.0" y2="308.0" stroke="#1b5e45" stroke-width="1.5" stroke-dasharray="6 5"/>
+<circle cx="76.0" cy="420" r="5" fill="#8f2d3a"/>
+<text x="84.0" y="412" fill="#8f2d3a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">x=0 pole</text>
+<circle cx="90.16666666666667" cy="308.0" r="4.5" fill="#1b5e45"/>
+<circle cx="104.33333333333333" cy="308.0" r="4.5" fill="#1b5e45"/>
+<circle cx="132.66666666666666" cy="308.0" r="4.5" fill="#1b5e45"/>
+<circle cx="189.33333333333331" cy="308.0" r="4.5" fill="#1b5e45"/>
+<circle cx="246.0" cy="308.0" r="4.5" fill="#1b5e45"/>
+<circle cx="302.66666666666663" cy="308.0" r="4.5" fill="#1b5e45"/>
+<circle cx="416.0" cy="308.0" r="4.5" fill="#1b5e45"/>
+<text x="412.0" y="292.0" fill="#1b5e45" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="end" font-weight="700">8/3</text>
+<text x="76" y="448" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">x</text>
+<text x="40" y="436" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">0</text>
+<text x="122.66666666666666" y="436" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">1/2</text>
+<text x="408.0" y="436" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">3</text>
+<line x1="540.0" y1="420" x2="880.0" y2="420" stroke="#d9d3c7" stroke-width="1"/>
+<line x1="540.0" y1="196" x2="540.0" y2="420" stroke="#d9d3c7" stroke-width="1"/>
+<line x1="540.0" y1="420.0" x2="554.1666666666666" y2="410.6666666666667" stroke="#1b5e45" stroke-width="1.6"/>
+<line x1="554.1666666666666" y1="410.6666666666667" x2="568.3333333333334" y2="401.3333333333333" stroke="#1b5e45" stroke-width="1.6"/>
+<line x1="568.3333333333334" y1="401.3333333333333" x2="596.6666666666666" y2="382.6666666666667" stroke="#1b5e45" stroke-width="1.6"/>
+<line x1="596.6666666666666" y1="382.6666666666667" x2="653.3333333333334" y2="345.33333333333337" stroke="#1b5e45" stroke-width="1.6"/>
+<line x1="653.3333333333334" y1="345.33333333333337" x2="710.0" y2="308.0" stroke="#1b5e45" stroke-width="1.6"/>
+<line x1="710.0" y1="308.0" x2="766.6666666666666" y2="270.6666666666667" stroke="#1b5e45" stroke-width="1.6"/>
+<line x1="766.6666666666666" y1="270.6666666666667" x2="880.0" y2="196.0" stroke="#1b5e45" stroke-width="1.6"/>
+<circle cx="540.0" cy="420.0" r="5" fill="#8a5a12"/>
+<text x="548.0" y="436.0" fill="#8a5a12" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">3/4 at the wall</text>
+<circle cx="554.1666666666666" cy="410.6666666666667" r="4.5" fill="#1b5e45"/>
+<circle cx="568.3333333333334" cy="401.3333333333333" r="4.5" fill="#1b5e45"/>
+<circle cx="596.6666666666666" cy="382.6666666666667" r="4.5" fill="#1b5e45"/>
+<circle cx="653.3333333333334" cy="345.33333333333337" r="4.5" fill="#1b5e45"/>
+<circle cx="710.0" cy="308.0" r="4.5" fill="#1b5e45"/>
+<circle cx="766.6666666666666" cy="270.6666666666667" r="4.5" fill="#1b5e45"/>
+<circle cx="880.0" cy="196.0" r="4.5" fill="#1b5e45"/>
+<text x="876.0" y="182.0" fill="#1b5e45" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="end">9/4</text>
+<text x="540" y="448" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">x</text>
+<rect x="28" y="488" width="904" height="168" rx="12" fill="#e5f2eb" stroke="#1b5e45" stroke-width="1.2"/>
+<text x="46" y="516" fill="#1b5e45" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Three of the seven samples. y=1/2  z=3/2  w=1/2. The shadow lists the rest.</text>
+<text x="46" y="544" fill="#5a544a" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">x</text>
+<text x="150" y="544" fill="#5a544a" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">product</text>
+<text x="280" y="544" fill="#5a544a" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">1/(xyzw)</text>
+<text x="460" y="544" fill="#5a544a" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">x/(xyzw)</text>
+<text x="680" y="544" fill="#5a544a" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">P13</text>
+<text x="46" y="572" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">1/8</text>
+<text x="150" y="572" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">3/64</text>
+<text x="280" y="572" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">64/3</text>
+<text x="460" y="572" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">8/3</text>
+<text x="680" y="572" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">13/16</text>
+<text x="46" y="594" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">1/2</text>
+<text x="150" y="594" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">3/16</text>
+<text x="280" y="594" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">16/3</text>
+<text x="460" y="594" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">8/3</text>
+<text x="680" y="594" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">1</text>
+<text x="46" y="616" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">3</text>
+<text x="150" y="616" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">9/8</text>
+<text x="280" y="616" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">8/9</text>
+<text x="460" y="616" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">8/3</text>
+<text x="680" y="616" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">9/4</text>
+<text x="28" y="692" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">UOPG atlas  ·  picture of a proved identity, not a fit  ·  python3 mvp0/viz/geometry.py</text>
+</svg>
