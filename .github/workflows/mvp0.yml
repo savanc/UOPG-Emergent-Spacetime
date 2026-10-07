@@ -36,3 +36,7 @@ jobs:
         run: |
           chmod +x mvp1/check.sh
           ./mvp1/check.sh
+      - name: build, run, and audit MVP-2
+        run: |
+          chmod +x mvp2/check.sh
+          ./mvp2/check.sh

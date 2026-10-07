@@ -15,12 +15,15 @@ The first checked piece is [MVP-0](mvp0/README.md). It proves the Klein dictiona
 
 The second checked piece is [MVP-1](mvp1/README.md). In the gauge that fixes columns 0 and 2, the positive chamber is the orthant, and the coefficient `1/(x y z w)` equals both `1` over the adjacent product and minus the cyclic Parke–Taylor coefficient. On the witness those numbers are `16/3` and `−16/3`. That is not a differential form, not a helicity, and not a cross section. See [mvp1/DICTIONARY.md](mvp1/DICTIONARY.md).
 
+The third checked piece is [MVP-2](mvp2/README.md). The denominator vanishes exactly when one adjacent minor does. Cancelling one positive coordinate leaves `1` over the other three: `8/3` or `8` on the witness. `P13` stays positive on each face. One column shift at this witness sends `P23` from 1 to 0. That is not a mutation and not a cross section. See [mvp2/DICTIONARY.md](mvp2/DICTIONARY.md).
+
 `UOPG.lean` and `UOPGv2.lean` are drafts from March and April 2026. They are not kernel-checked proofs. `m_W = 80.4 GeV` is not a theorem of this repository.
 
 - **Paper**: [article.pdf](https://doi.org/10.5281/zenodo.19291218)
 - **Zenodo DOI**: [10.5281/zenodo.19291218](https://doi.org/10.5281/zenodo.19291218)
 - **MVP-0 (proved)**: [mvp0/README.md](mvp0/README.md)
 - **MVP-1 (proved coefficient, not an amplitude)**: [mvp1/README.md](mvp1/README.md)
+- **MVP-2 (proved face residue, not a cross section)**: [mvp2/README.md](mvp2/README.md)
 - **Lean 4 formalisation (draft concept)**: [UOPGv2.lean](UOPGv2.lean)
 - **Numerical notebook**: [uopgv2.ipynb](uopgv2.ipynb)
 - **Slide Deck**: [UOPG v2 Slide deck](https://github.com/savanc/UOPG-Emergent-Spacetime/blob/main/Unified_Positive_Geometry.pdf)
@@ -31,6 +34,7 @@ We present a geometric model in which the positive Grassmannian Gr+(k,n) serves 
 ## Files
 - `mvp0/` – Kernel-checked Klein dictionary. Start here.
 - `mvp1/` – Kernel-checked orthant coefficient. Not an amplitude.
+- `mvp2/` – Kernel-checked algebraic face. Not a cross section.
 - `Article.pdf` – Full preprint
 - `UOPG.lean` – Draft Lean 4 sketch. Not a proof.
 - `UOPG.ipynb` – Executable SymPy notebook (harmonic emergence, emergent metric, mutations, wave interference, Monte-Carlo calibration to 80.4 GeV)
@@ -43,6 +47,7 @@ lake exe cache get
 lake build
 lake exe uopg0
 lake exe uopg1
+lake exe uopg2
 
 # Historical draft sketches (not proofs)
 # UOPG.lean and UOPGv2.lean do not form a Lake project.
