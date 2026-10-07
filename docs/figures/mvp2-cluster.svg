@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="760" viewBox="0 0 960 760">
 <rect width="100%" height="100%" fill="#fbf8f3"/>
-<rect x="0" y="0" width="960" height="8" rx="0" fill="#8a5a12"/>
-<text x="28" y="46" fill="#1a1814" font-size="26" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">MVP-2  ·  exchange, not a column shift</text>
-<text x="28" y="72" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Left identity is the proved Plucker relation. Right-hand map is the one this repo refuses.</text>
-<rect x="820" y="30" width="112" height="22" rx="11" fill="#8a5a12"/>
-<text x="876.0" y="46" fill="#ffffff" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">CONTRACT</text>
-<rect x="28" y="112" width="440" height="360" rx="12" fill="#e5f2eb" stroke="#1b5e45" stroke-width="1.5"/>
-<rect x="492" y="112" width="440" height="360" rx="12" fill="#f8e8e8" stroke="#8f2d3a" stroke-width="1.5"/>
-<text x="46" y="146" fill="#1b5e45" font-size="16" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Cluster exchange</text>
-<text x="510" y="146" fill="#8f2d3a" font-size="16" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Not a mutation</text>
-<text x="46" y="180" fill="#1a1814" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start"><13><24> = <12><34> + <14><23></text>
-<text x="46" y="210" fill="#1b5e45" font-size="16" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">witness:  4  =  4</text>
-<text x="46" y="248" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Mutation replaces <13> with <24></text>
-<text x="46" y="270" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">using that identity. Both sides</text>
-<text x="46" y="292" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">are positive at this point, so</text>
-<text x="46" y="314" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">the exchange stays in the chamber.</text>
-<text x="46" y="352" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Gr(2,4) cluster type is A1.</text>
-<text x="46" y="376" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Frozen variables: the four</text>
-<text x="46" y="398" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">adjacent brackets on the walls.</text>
-<text x="46" y="430" fill="#8a5a12" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Locality of those poles is not yet a theorem.</text>
-<text x="510" y="180" fill="#1a1814" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">C column3  <-  column3</text>
-<text x="510" y="200" fill="#1a1814" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">            + column1 + column2</text>
-<text x="510" y="236" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">At the witness, lambda = 1:</text>
-<text x="510" y="264" fill="#8f2d3a" font-size="16" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">P23 goes from 1 to 0</text>
-<text x="510" y="300" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The point hits a wall.</text>
-<text x="510" y="322" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">It stays on the quadric,</text>
-<text x="510" y="344" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">because every 2-plane does.</text>
-<text x="510" y="366" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">That is not the exchange.</text>
-<text x="510" y="404" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">One rational illustration.</text>
-<text x="510" y="426" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Not a theorem that every</text>
-<text x="510" y="448" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">such shift leaves the chamber.</text>
-<text x="28" y="510" fill="#1a1814" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Boundary of the positive chamber: an adjacent minor vanishes.</text>
-<text x="28" y="536" fill="#1a1814" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">MVP-2 has to prove those boundaries are the factorisation channels.</text>
-<text x="28" y="572" fill="#8f2d3a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Nothing here is a scattering amplitude, and nothing is a mass.</text>
-<text x="28" y="620" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">UOPG atlas  ·  contract, not a theorem  ·  python3 mvp0/viz/geometry.py</text>
+<rect x="0" y="0" width="960" height="8" rx="0" fill="#1b5e45"/>
+<text x="28" y="46" fill="#1a1814" font-size="26" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">MVP-2  ·  the orthant factors onto a face</text>
+<text x="28" y="72" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The denominator vanishes on an adjacent wall. The cancellation is algebra, not a cross section.</text>
+<rect x="840" y="30" width="92" height="22" rx="11" fill="#1b5e45"/>
+<text x="886.0" y="46" fill="#ffffff" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">PROVED</text>
+<rect x="28" y="108" width="448" height="430" rx="12" fill="#e5f2eb" stroke="#1b5e45" stroke-width="1.5"/>
+<rect x="492" y="108" width="440" height="430" rx="12" fill="#ffffff" stroke="#1b5e45" stroke-width="1.5"/>
+<text x="46" y="142" fill="#1b5e45" font-size="16" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Where the denominator is zero</text>
+<text x="46" y="174" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">x y z w = 0  iff  one of them is 0</text>
+<text x="46" y="198" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Those four are P01, P12, P03, P23.</text>
+<text x="46" y="222" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">P13 = y z + x w is not a factor.</text>
+<text x="46" y="258" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">On each face, the other three > 0,</text>
+<text x="46" y="280" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">and P13 stays positive.</text>
+<text x="46" y="316" fill="#1b5e45" font-size="16" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">witness face x=0:  P13 = 3/4</text>
+<text x="46" y="348" fill="#5a544a" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">chart was x=1/2 y=1/2 z=3/2 w=1/2</text>
+<text x="46" y="384" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Off the chamber, P13 can vanish</text>
+<text x="46" y="406" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">while the product does not:</text>
+<text x="46" y="434" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">(1, 1, -1, 1)  product -1</text>
+<text x="46" y="470" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">That point is not positive.</text>
+<text x="46" y="500" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">No differential form is constructed.</text>
+<text x="510" y="142" fill="#1b5e45" font-size="16" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Cancelling one coordinate</text>
+<text x="510" y="174" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">x / (x y z w) = 1 / (y z w)</text>
+<text x="510" y="198" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">when none of the four is zero.</text>
+<text x="510" y="222" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The right-hand side ignores x.</text>
+<text x="510" y="258" fill="#1a1814" font-size="16" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">drop x  =  8/3</text>
+<text x="510" y="286" fill="#1a1814" font-size="16" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">drop y  =  8/3</text>
+<text x="510" y="314" fill="#1a1814" font-size="16" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">drop z  =  8</text>
+<text x="510" y="342" fill="#1a1814" font-size="16" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">drop w  =  8/3</text>
+<text x="510" y="380" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Same shape as the 3-orthant</text>
+<text x="510" y="402" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">coefficient. Not a residue in</text>
+<text x="510" y="424" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">de Rham cohomology, and not</text>
+<text x="510" y="446" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">a factorisation of an amplitude.</text>
+<text x="510" y="490" fill="#8f2d3a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">8/3 and 8 are not masses.</text>
+<rect x="28" y="556" width="904" height="140" rx="12" fill="#f8e8e8" stroke="#8f2d3a" stroke-width="1.4"/>
+<text x="46" y="586" fill="#8f2d3a" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Column shift, one point, not a mutation</text>
+<text x="46" y="616" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">column 3  <-  column 3 + 1 * (column 1 + column 2)</text>
+<text x="46" y="644" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">At the witness, P23 goes from 1 to 0. Still on the quadric.</text>
+<text x="46" y="670" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Proved for this matrix only. A general cluster algebra is not the milestone.</text>
+<text x="28" y="732" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">UOPG atlas  ·  proved identities only  ·  python3 mvp0/viz/geometry.py</text>
 </svg>

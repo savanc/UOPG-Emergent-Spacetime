@@ -39,13 +39,15 @@ On the MVP-0 witness the chart is `(1/2, 1/2, 3/2, 1/2)`, the orthant coefficien
 
 What is still not a theorem: a de Rham 4-form, a helicity numerator, a momentum delta, a cross section, and uniqueness of the canonical form for a general positive geometry. N=4 super Yang–Mills is the method that was copied for the rational function, not the target. The literature for the form that this coefficient is the rational part of is Arkani-Hamed–Bourjaily–Cachazo–Goncharov–Postnikov–Trnka (arXiv:1212.5605) and Arkani-Hamed–Bai–Lam (arXiv:1703.04541).
 
-## MVP-2 — contract
+## MVP-2 — proved
 
-![The Plücker exchange, which stays positive, against the column shift, which walks onto a wall.](figures/mvp2-cluster.png)
+![The denominator vanishes on an adjacent wall. Cancelling one coordinate leaves the opposite 3-orthant coefficient. The column shift is one proved point, not a mutation.](figures/mvp2-cluster.png)
 
-The identity `<13><24> = <12><34> + <14><23>` is `plucker_relation`, rearranged. On `Gr(2,4)` that exchange is the A₁ mutation; the four adjacent brackets are frozen. The column update in the 2026 drafts is a different map. At the Lean witness and `λ = 1` it sends `P23` from 1 to 0: still on the quadric, no longer in the chamber. That is one rational illustration, not a theorem about every shift.
+The denominator `x y z w` is zero exactly when one ordered adjacent minor of the chart is zero. Those minors are `P01`, `P12`, `P03`, and `P23`. The non-adjacent minor `P13 = y z + x w` is not a factor. On each codimension-1 face, where one coordinate is zero and the other three stay positive, `P13` stays positive. Off the chamber, `P13` can vanish while the product does not: at `(1, 1, -1, 1)` the product is `-1`.
 
-Locality — that the poles of the canonical form are exactly those walls, the factorisation channels — is the milestone. It is not claimed.
+If none of the four is zero, `x / (x y z w) = 1 / (y z w)`, and the same for `y`, `z`, and `w`. The right-hand side does not depend on the cancelled coordinate. On the witness, dropping `x`, `y`, or `w` gives `8/3`, and dropping `z` gives `8`. That is the orthant factoring onto a face. It is not a de Rham residue and not a cross section.
+
+The column update from the 2026 drafts is a different map. At the witness and `λ = 1` it sends `P23` from 1 to 0, and the matrix stays on the quadric because every 2-plane does. That one point is a theorem. A general cluster algebra is not. The dictionary is [mvp2/DICTIONARY.md](../mvp2/DICTIONARY.md).
 
 ## MVP-3 — contract
 
@@ -57,12 +59,15 @@ Locality — that the poles of the canonical form are exactly those walls, the f
 
 ![A null edge factors as a pair of spinors. Helicity would be the little-group weight. The weight is unknown.](figures/mvp4-helicity.png)
 
-`det p = 0` is proved, and so is the existence of a kernel vector. Rank at most one means the matrix is an outer product `u vᵀ`; the script exhibits that factor for the four edges and checks that `u → t u`, `v → v/t` leaves `p` fixed. That rescaling is ordinary linear algebra on a proved null matrix. It is not yet a Lean theorem, and it is not a helicity. A massless boson would be a weight the geometry forces. MVP-4 has to derive the weight.
+`det p = 0` is proved, and so is the existence of a kernel vector. Rank at most one means the matrix is an outer product `u vᵀ`; the script exhibits that factor for the four edges and checks that `u → t u`, `v → v/t` leaves `p` fixed. That rescaling is ordinary linear algebra on a proved null matrix. It is not yet a Lean theorem, and it is not a helicity. A massless boson would be a weight the geometry forces. MVP-4 has to derive the weight. It does not become a gluon, a W, a Z, or a fermion by being the last rung on this ladder.
 
 ## What is not in the atlas
 
 - a Hessian of `Σ log|det|`, or that scalar as a metric
 - the λ column update, promoted to a mutation
 - a W, Z, or Higgs mass, or `sin²θ_W`
+- a gluon, a W, a Z, or a fermion, read off from `Gr⁺(2,4)`
 - a GeV produced by the geometry
 - a cross section, a wave equation, or a Monte Carlo calibration
+
+`Gr⁺(2,4)` is one massless 4-point positive geometry. Distinguishing Standard Model bosons, or adding a fermion, would be a new rung. None of that is implied by MVP-4, and none of it is scheduled.

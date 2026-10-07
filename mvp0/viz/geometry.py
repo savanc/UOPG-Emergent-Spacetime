@@ -2,10 +2,10 @@
 """Exact numerical shadow of the proved identities, and the schematic atlas.
 
 The Lean proofs are the authority. This file recomputes the same identities
-in exact rational arithmetic, then draws pictures of them. MVP-0 and the
-orthant coefficient of MVP-1 are checked here. Later rungs are contracts:
-they say what a later milestone has to prove. They are not results, and
-they contain no fitted mass.
+in exact rational arithmetic, then draws pictures of them. MVP-0, the orthant
+coefficient, and the algebraic face residue are checked here. Later rungs are
+contracts: they say what a later milestone has to prove. They are not results,
+and they contain no fitted mass.
 
 Run from anywhere:
 
@@ -203,6 +203,35 @@ def build_shadow() -> dict:
     if det2(g_chart) ** 4 * adj_C != adj:
         raise RuntimeError("GL(2) weight of the adjacent product failed")
 
+    # Algebraic face. Dropping one coordinate cancels it. P13 is not a wall.
+    drop_x, drop_y, drop_z, drop_w = x * orthant, y * orthant, z * orthant, w * orthant
+    if drop_x != 1 / (y * z * w) or drop_x != F(8, 3):
+        raise RuntimeError(f"drop-x residue drifted: {drop_x}")
+    if drop_y != 1 / (x * z * w) or drop_y != F(8, 3):
+        raise RuntimeError(f"drop-y residue drifted: {drop_y}")
+    if drop_z != 1 / (x * y * w) or drop_z != F(8):
+        raise RuntimeError(f"drop-z residue drifted: {drop_z}")
+    if drop_w != 1 / (x * y * z) or drop_w != F(8, 3):
+        raise RuntimeError(f"drop-w residue drifted: {drop_w}")
+
+    def p13(a, b, c, d):
+        return b * c + a * d
+
+    face_p13 = p13(F(0), y, z, w)
+    if face_p13 != F(3, 4):
+        raise RuntimeError(f"P13 on the x=0 face drifted: {face_p13}")
+    if not (
+        p13(F(0), y, z, w) > 0
+        and p13(x, F(0), z, w) > 0
+        and p13(x, y, F(0), w) > 0
+        and p13(x, y, z, F(0)) > 0
+    ):
+        raise RuntimeError("P13 vanished on a codimension-1 face")
+    off_p13 = p13(F(1), F(1), F(-1), F(1))
+    off_prod = F(1) * F(1) * F(-1) * F(1)
+    if off_p13 != 0 or off_prod == 0 or off_prod != F(-1):
+        raise RuntimeError("off-chamber P13 counterexample drifted")
+
     # Finite exact ensemble. No floats, no seed, no fit.
     sl_n = gl_n = 0
     for entries in itertools.product((F(-1), F(0), F(1), F(2)), repeat=4):
@@ -300,6 +329,12 @@ def build_shadow() -> dict:
         "orthant": orthant,
         "parke": parke,
         "adjacent_chart": adj,
+        "drop_x": drop_x,
+        "drop_y": drop_y,
+        "drop_z": drop_z,
+        "drop_w": drop_w,
+        "face_p13": face_p13,
+        "off_product": off_prod,
         "sl_n": sl_n,
         "gl_n": gl_n,
         "show_sl": show_sl,
@@ -321,7 +356,7 @@ def shadow_text(s: dict) -> str:
     lines = [
         "UOPG exact shadow",
         "arithmetic: rational",
-        "authority: Lean theorems in mvp0/DICTIONARY.md and mvp1/DICTIONARY.md",
+        "authority: Lean theorems in mvp0/DICTIONARY.md, mvp1/DICTIONARY.md, and mvp2/DICTIONARY.md",
         "no fitted scale",
         "",
         "witness rows (1 1 1 1) and (0 1 2 3)",
@@ -343,6 +378,12 @@ def shadow_text(s: dict) -> str:
     )
     lines.append("cyclic product = -(x*y*z*w); angle <41> = -P03")
     lines.append("residue x*y*z*w*(orthant coefficient) = 1")
+    lines.append("face residue drop x = " + q(s["drop_x"]))
+    lines.append("face residue drop y = " + q(s["drop_y"]))
+    lines.append("face residue drop z = " + q(s["drop_z"]))
+    lines.append("face residue drop w = " + q(s["drop_w"]))
+    lines.append("P13 on the face x=0 is " + q(s["face_p13"]))
+    lines.append("off chamber, P13 = 0 while x*y*z*w = " + q(s["off_product"]))
     lines.append(f"SL(2) samples with det 1, minors unchanged: {s['sl_n']}")
     lines.append(f"GL(2) samples with det != 0,1, minors scaled by det: {s['gl_n']}")
     lines.append("polygon events in the reading u=t+x, v=t-x, det=t^2-x^2")
@@ -351,7 +392,7 @@ def shadow_text(s: dict) -> str:
     for i, p in enumerate(s["momenta"]):
         lines.append(f"  p{i} = x{i}-x{(i + 1) % 4} = {mat_str(p)} det={q(det2(p))}")
     lines.append("sum of p_i = 0")
-    lines.append("column shift at lambda=1 sends P23 to " + q(s["shifted_minors"][(2, 3)]))
+    lines.append("column shift at lambda=1 sends P23 from 1 to " + q(s["shifted_minors"][(2, 3)]))
     lines.append("exchange <13><24> = <12><34> + <14><23> = " + q(s["exchange"][0]))
     lines.append("")
     return "\n".join(lines) + "\n"
@@ -616,14 +657,14 @@ def draw_ladder(_s: dict):
             "Proved in Lean. A 4-form and a cross section are not.",
         ),
         (
-            False,
+            True,
             "MVP-2",
-            "Locality from cluster boundaries",
+            "Algebraic face residue",
             [
-                "Poles should be adjacent minors at zero.",
-                "Mutation is the Plucker exchange.",
+                "Denominator zero iff an adjacent minor is.",
+                "Dropping one coordinate leaves 1 over the other three.",
             ],
-            "The exchange is proved. The locality reading is not.",
+            "Proved in Lean. Not a cross section, and not a mutation.",
         ),
         (
             False,
@@ -970,44 +1011,50 @@ def draw_mvp1(s: dict):
 
 
 def draw_mvp2(s: dict):
-    fig = Fig(960, 640)
+    fig = Fig(960, 760)
     frame(
         fig,
-        False,
-        "MVP-2  ·  exchange, not a column shift",
-        "Left identity is the proved Plucker relation. Right-hand map is the one this repo refuses.",
+        True,
+        "MVP-2  ·  the orthant factors onto a face",
+        "The denominator vanishes on an adjacent wall. The cancellation is algebra, not a cross section.",
     )
-    fig.rect(28, 112, 440, 360, GREEN_BG, stroke=GREEN, sw=1.5, rx=12)
-    fig.rect(492, 112, 440, 360, RED_BG, stroke=RED, sw=1.5, rx=12)
-    fig.text(46, 146, "Cluster exchange", size=16, fill=GREEN, kind="bold")
-    fig.text(510, 146, "Not a mutation", size=16, fill=RED, kind="bold")
-    fig.text(46, 180, "<13><24> = <12><34> + <14><23>", size=13, fill=INK, kind="mono")
-    left, right = s["exchange"]
-    fig.text(46, 210, f"witness:  {q(left)}  =  {q(right)}", size=16, fill=GREEN, kind="bold")
-    fig.text(46, 248, "Mutation replaces <13> with <24>", size=14, fill=INK)
-    fig.text(46, 270, "using that identity. Both sides", size=14, fill=INK)
-    fig.text(46, 292, "are positive at this point, so", size=14, fill=INK)
-    fig.text(46, 314, "the exchange stays in the chamber.", size=14, fill=INK)
-    fig.text(46, 352, "Gr(2,4) cluster type is A1.", size=14, fill=MUTED)
-    fig.text(46, 376, "Frozen variables: the four", size=14, fill=MUTED)
-    fig.text(46, 398, "adjacent brackets on the walls.", size=14, fill=MUTED)
-    fig.text(46, 430, "Locality of those poles is not yet a theorem.", size=14, fill=AMBER, kind="bold")
+    x, y, z, w = s["chart"]
+    fig.rect(28, 108, 448, 430, GREEN_BG, stroke=GREEN, sw=1.5, rx=12)
+    fig.rect(492, 108, 440, 430, WHITE, stroke=GREEN, sw=1.5, rx=12)
+    fig.text(46, 142, "Where the denominator is zero", size=16, fill=GREEN, kind="bold")
+    fig.text(46, 174, "x y z w = 0  iff  one of them is 0", size=14, fill=INK, kind="mono")
+    fig.text(46, 198, "Those four are P01, P12, P03, P23.", size=14, fill=INK)
+    fig.text(46, 222, "P13 = y z + x w is not a factor.", size=14, fill=INK)
+    fig.text(46, 258, "On each face, the other three > 0,", size=14, fill=INK)
+    fig.text(46, 280, "and P13 stays positive.", size=14, fill=INK)
+    fig.text(46, 316, f"witness face x=0:  P13 = {q(s['face_p13'])}", size=16, fill=GREEN, kind="bold")
+    fig.text(46, 348, f"chart was x={q(x)} y={q(y)} z={q(z)} w={q(w)}", size=13, fill=MUTED, kind="mono")
+    fig.text(46, 384, "Off the chamber, P13 can vanish", size=14, fill=INK)
+    fig.text(46, 406, "while the product does not:", size=14, fill=INK)
+    fig.text(46, 434, f"(1, 1, -1, 1)  product {q(s['off_product'])}", size=14, fill=INK, kind="mono")
+    fig.text(46, 470, "That point is not positive.", size=13, fill=MUTED)
+    fig.text(46, 500, "No differential form is constructed.", size=13, fill=MUTED)
 
-    fig.text(510, 180, "C column3  <-  column3", size=13, fill=INK, kind="mono")
-    fig.text(510, 200, "            + column1 + column2", size=13, fill=INK, kind="mono")
-    fig.text(510, 236, "At the witness, lambda = 1:", size=14, fill=INK)
-    fig.text(510, 264, "P23 goes from 1 to " + q(s["shifted_minors"][(2, 3)]), size=16, fill=RED, kind="bold")
-    fig.text(510, 300, "The point hits a wall.", size=14, fill=INK)
-    fig.text(510, 322, "It stays on the quadric,", size=14, fill=INK)
-    fig.text(510, 344, "because every 2-plane does.", size=14, fill=INK)
-    fig.text(510, 366, "That is not the exchange.", size=14, fill=INK)
-    fig.text(510, 404, "One rational illustration.", size=13, fill=MUTED)
-    fig.text(510, 426, "Not a theorem that every", size=13, fill=MUTED)
-    fig.text(510, 448, "such shift leaves the chamber.", size=13, fill=MUTED)
-    fig.text(28, 510, "Boundary of the positive chamber: an adjacent minor vanishes.", size=15, fill=INK)
-    fig.text(28, 536, "MVP-2 has to prove those boundaries are the factorisation channels.", size=15, fill=INK)
-    fig.text(28, 572, "Nothing here is a scattering amplitude, and nothing is a mass.", size=14, fill=RED)
-    footer(fig, 620, False)
+    fig.text(510, 142, "Cancelling one coordinate", size=16, fill=GREEN, kind="bold")
+    fig.text(510, 174, "x / (x y z w) = 1 / (y z w)", size=14, fill=INK, kind="mono")
+    fig.text(510, 198, "when none of the four is zero.", size=14, fill=INK)
+    fig.text(510, 222, "The right-hand side ignores x.", size=14, fill=INK)
+    fig.text(510, 258, f"drop x  =  {q(s['drop_x'])}", size=16, fill=INK, kind="mono")
+    fig.text(510, 286, f"drop y  =  {q(s['drop_y'])}", size=16, fill=INK, kind="mono")
+    fig.text(510, 314, f"drop z  =  {q(s['drop_z'])}", size=16, fill=INK, kind="mono")
+    fig.text(510, 342, f"drop w  =  {q(s['drop_w'])}", size=16, fill=INK, kind="mono")
+    fig.text(510, 380, "Same shape as the 3-orthant", size=14, fill=INK)
+    fig.text(510, 402, "coefficient. Not a residue in", size=14, fill=INK)
+    fig.text(510, 424, "de Rham cohomology, and not", size=14, fill=INK)
+    fig.text(510, 446, "a factorisation of an amplitude.", size=14, fill=INK)
+    fig.text(510, 490, "8/3 and 8 are not masses.", size=14, fill=RED, kind="bold")
+
+    fig.rect(28, 556, 904, 140, RED_BG, stroke=RED, sw=1.4, rx=12)
+    fig.text(46, 586, "Column shift, one point, not a mutation", size=15, fill=RED, kind="bold")
+    fig.text(46, 616, "column 3  <-  column 3 + 1 * (column 1 + column 2)", size=14, fill=INK, kind="mono")
+    fig.text(46, 644, "At the witness, P23 goes from 1 to " + q(s["shifted_minors"][(2, 3)]) + ". Still on the quadric.", size=14, fill=INK)
+    fig.text(46, 670, "Proved for this matrix only. A general cluster algebra is not the milestone.", size=14, fill=INK)
+    footer(fig, 732, True)
     fig.save("mvp2-cluster")
 
 

@@ -24,14 +24,14 @@
 <text x="92" y="336" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The positive gauge lands in the orthant.</text>
 <text x="92" y="358" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">1/(xyzw) equals 1 over the adjacent product.</text>
 <text x="92" y="390" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Proved in Lean. A 4-form and a cross section are not.</text>
-<rect x="72" y="436" width="620" height="152" rx="12" fill="#f8f1e3" stroke="#8a5a12" stroke-width="1.5"/>
-<circle cx="44" cy="512" r="8" fill="#8a5a12"/>
+<rect x="72" y="436" width="620" height="152" rx="12" fill="#e5f2eb" stroke="#1b5e45" stroke-width="1.5"/>
+<circle cx="44" cy="512" r="8" fill="#1b5e45"/>
 <line x1="44" y1="524" x2="44" y2="604" stroke="#d9d3c7" stroke-width="2"/>
-<text x="92" y="468" fill="#8a5a12" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">MVP-2</text>
-<text x="168" y="468" fill="#1a1814" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">Locality from cluster boundaries</text>
-<text x="92" y="504" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Poles should be adjacent minors at zero.</text>
-<text x="92" y="526" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Mutation is the Plucker exchange.</text>
-<text x="92" y="558" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The exchange is proved. The locality reading is not.</text>
+<text x="92" y="468" fill="#1b5e45" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">MVP-2</text>
+<text x="168" y="468" fill="#1a1814" font-size="18" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">Algebraic face residue</text>
+<text x="92" y="504" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Denominator zero iff an adjacent minor is.</text>
+<text x="92" y="526" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Dropping one coordinate leaves 1 over the other three.</text>
+<text x="92" y="558" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Proved in Lean. Not a cross section, and not a mutation.</text>
 <rect x="72" y="604" width="620" height="152" rx="12" fill="#f8f1e3" stroke="#8a5a12" stroke-width="1.5"/>
 <circle cx="44" cy="680" r="8" fill="#8a5a12"/>
 <line x1="44" y1="692" x2="44" y2="772" stroke="#d9d3c7" stroke-width="2"/>
