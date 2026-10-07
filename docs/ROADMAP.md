@@ -11,7 +11,7 @@ python3 mvp0/viz/geometry.py --write   # rewrite docs/figures
 python3 mvp0/viz/geometry.py --check   # identities only; fails if shadow.txt is stale
 ```
 
-The arithmetic is exact (`fractions.Fraction`). There is no Monte Carlo and no fitted scale. `docs/figures/shadow.txt` is the numerical record. If an identity fails, the script does not draw.
+The arithmetic is exact (`fractions.Fraction`). There is no Monte Carlo and no fitted scale. `docs/figures/shadow.txt` is the numerical record of the proved identities, including the orthant coefficient `16/3`. If an identity fails, the script does not draw.
 
 The old notebooks simulated a Hessian, a column update, and a calibration to a W mass. Those are not redrawn here. They are not simulations of the proved object.
 
@@ -29,11 +29,15 @@ The 2-plane is the massless boson. Theorems and the line they do not cross are i
 
 The polygon is not a sketch that was then checked. `regionMatrix` in [mvp0/viz/geometry.py](../mvp0/viz/geometry.py) is the same formula as `UOPG0.regionMatrix`. The four events, the six minors, and the GL(2) ensemble are computed, then the picture is drawn. The light-cone labels `u = t+x`, `v = t−x` are a reading of those diagonal matrices, so that `det = t² − x²`. They are not an extra assumption.
 
-## MVP-1 — contract
+## MVP-1 — proved
 
-![The positive chamber as an orthant, and the Parke–Taylor factor it has not yet been identified with.](figures/mvp1-canonical.png)
+![The gauge-fixed orthant and the signed cyclic coefficient. 16/3 and −16/3 are computed, then proved.](figures/mvp1-canonical.png)
 
-In the gauge used on the witness, the positive chamber is the orthant `x, y, z, w > 0`. The canonical form of an orthant is the dlog form. That is the easy half. The milestone is the change of coordinates that identifies it with the 4-point Parke–Taylor factor, as in Arkani-Hamed–Bourjaily–Cachazo–Goncharov–Postnikov–Trnka (arXiv:1212.5605) and Arkani-Hamed–Bai–Lam (arXiv:1703.04541). N=4 super Yang–Mills is the method to copy, not the target. No residue has been computed in Lean.
+When `P02 ≠ 0`, one left `GL(2)` element sends columns 0 and 2 to the identity. On the positive chamber the remaining entries are four positive coordinates `(x, y, z, w)`. Their product is the product of the four ordered adjacent minors. The orthant coefficient is `1/(x y z w)`. The cyclic product uses `⟨4 1⟩ = −P03`, so it is the negative of that product, and the Parke–Taylor coefficient is `1` over the cyclic product.
+
+On the MVP-0 witness the chart is `(1/2, 1/2, 3/2, 1/2)`, the orthant coefficient is `16/3`, and the Parke–Taylor coefficient is `−16/3`. No scale was fitted. The dictionary is [mvp1/DICTIONARY.md](../mvp1/DICTIONARY.md).
+
+What is still not a theorem: a de Rham 4-form, a helicity numerator, a momentum delta, a cross section, and uniqueness of the canonical form for a general positive geometry. N=4 super Yang–Mills is the method that was copied for the rational function, not the target. The literature for the form that this coefficient is the rational part of is Arkani-Hamed–Bourjaily–Cachazo–Goncharov–Postnikov–Trnka (arXiv:1212.5605) and Arkani-Hamed–Bai–Lam (arXiv:1703.04541).
 
 ## MVP-2 — contract
 

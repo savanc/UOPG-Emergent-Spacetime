@@ -13,11 +13,14 @@ The mission is unchanged: spacetime and particles come from one positive Grassma
 
 The first checked piece is [MVP-0](mvp0/README.md). It proves the Klein dictionary for `Gr⁺(2,4)`: the Plücker relation, the real `GL(2)` weight, one positive rational point, null separation, and four massless conserved edge momenta. The only experimental comparison is the PDG photon-mass bound, with no fitted scale. See [mvp0/DICTIONARY.md](mvp0/DICTIONARY.md).
 
+The second checked piece is [MVP-1](mvp1/README.md). In the gauge that fixes columns 0 and 2, the positive chamber is the orthant, and the coefficient `1/(x y z w)` equals both `1` over the adjacent product and minus the cyclic Parke–Taylor coefficient. On the witness those numbers are `16/3` and `−16/3`. That is not a differential form, not a helicity, and not a cross section. See [mvp1/DICTIONARY.md](mvp1/DICTIONARY.md).
+
 `UOPG.lean` and `UOPGv2.lean` are drafts from March and April 2026. They are not kernel-checked proofs. `m_W = 80.4 GeV` is not a theorem of this repository.
 
 - **Paper**: [article.pdf](https://doi.org/10.5281/zenodo.19291218)
 - **Zenodo DOI**: [10.5281/zenodo.19291218](https://doi.org/10.5281/zenodo.19291218)
 - **MVP-0 (proved)**: [mvp0/README.md](mvp0/README.md)
+- **MVP-1 (proved coefficient, not an amplitude)**: [mvp1/README.md](mvp1/README.md)
 - **Lean 4 formalisation (draft concept)**: [UOPGv2.lean](UOPGv2.lean)
 - **Numerical notebook**: [uopgv2.ipynb](uopgv2.ipynb)
 - **Slide Deck**: [UOPG v2 Slide deck](https://github.com/savanc/UOPG-Emergent-Spacetime/blob/main/Unified_Positive_Geometry.pdf)
@@ -27,6 +30,7 @@ We present a geometric model in which the positive Grassmannian Gr+(k,n) serves 
 
 ## Files
 - `mvp0/` – Kernel-checked Klein dictionary. Start here.
+- `mvp1/` – Kernel-checked orthant coefficient. Not an amplitude.
 - `Article.pdf` – Full preprint
 - `UOPG.lean` – Draft Lean 4 sketch. Not a proof.
 - `UOPG.ipynb` – Executable SymPy notebook (harmonic emergence, emergent metric, mutations, wave interference, Monte-Carlo calibration to 80.4 GeV)
@@ -38,6 +42,7 @@ cd mvp0/lean
 lake exe cache get
 lake build
 lake exe uopg0
+lake exe uopg1
 
 # Historical draft sketches (not proofs)
 # UOPG.lean and UOPGv2.lean do not form a Lake project.

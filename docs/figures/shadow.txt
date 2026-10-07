@@ -1,6 +1,6 @@
-UOPG MVP-0 exact shadow
+UOPG exact shadow
 arithmetic: rational
-authority: Lean theorems listed in mvp0/DICTIONARY.md
+authority: Lean theorems in mvp0/DICTIONARY.md and mvp1/DICTIONARY.md
 no fitted scale
 
 witness rows (1 1 1 1) and (0 1 2 3)
@@ -12,6 +12,10 @@ witness rows (1 1 1 1) and (0 1 2 3)
   P23 = <34> = 1
 plucker residual P01*P23 - P02*P13 + P03*P12 = 0
 positive chart after left GL(2): x=1/2 y=1/2 z=3/2 w=1/2
+orthant coefficient 1/(x*y*z*w) = 16/3
+Parke-Taylor coefficient 1/cyclic = -16/3
+cyclic product = -(x*y*z*w); angle <41> = -P03
+residue x*y*z*w*(orthant coefficient) = 1
 SL(2) samples with det 1, minors unchanged: 36
 GL(2) samples with det != 0,1, minors scaled by det: 154
 polygon events in the reading u=t+x, v=t-x, det=t^2-x^2

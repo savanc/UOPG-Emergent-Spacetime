@@ -3,3 +3,4 @@ import UOPG0.Plucker
 import UOPG0.Positive
 import UOPG0.Klein
 import UOPG0.Momenta
+import UOPG0.Canonical
