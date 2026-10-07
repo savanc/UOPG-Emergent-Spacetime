@@ -8,8 +8,8 @@ and they contain no fitted mass.
 
 Run from anywhere:
 
-    python3 mvp0/viz/geometry.py --check
-    python3 mvp0/viz/geometry.py --write
+    python3 mvp0/viz/geometry.py --check   # stdlib only
+    python3 mvp0/viz/geometry.py --write   # also needs Pillow, to redraw
 """
 
 from __future__ import annotations
@@ -20,8 +20,6 @@ import math
 import sys
 from fractions import Fraction as F
 from pathlib import Path
-
-from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[2]
 FIG = ROOT / "docs" / "figures"
@@ -338,6 +336,8 @@ _FONTS: dict = {}
 
 
 def font(kind: str, size: int):
+    from PIL import ImageFont
+
     key = (kind, size)
     if key not in _FONTS:
         path = {"sans": SANS, "bold": SANSB, "serif": SERIFB, "mono": MONO}[kind]
@@ -391,6 +391,8 @@ class Fig:
         self._svg(FIG / f"{stem}.svg")
 
     def _png(self, path: Path, scale: int = 2):
+        from PIL import Image, ImageDraw
+
         im = Image.new("RGB", (self.w * scale, self.h * scale), PAPER)
         dr = ImageDraw.Draw(im)
         S = scale
