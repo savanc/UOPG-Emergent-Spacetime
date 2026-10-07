@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Exact numerical shadow of MVP-0, and the schematic atlas of later rungs.
+"""Exact numerical shadow of the proved identities, and the schematic atlas.
 
 The Lean proofs are the authority. This file recomputes the same identities
-in exact rational arithmetic, then draws pictures of them. Amber figures are
-contracts: they say what a later milestone has to prove. They are not results,
-and they contain no fitted mass.
+in exact rational arithmetic, then draws pictures of them. MVP-0 and the
+orthant coefficient of MVP-1 are checked here. Later rungs are contracts:
+they say what a later milestone has to prove. They are not results, and
+they contain no fitted mass.
 
 Run from anywhere:
 
@@ -186,6 +187,21 @@ def build_shadow() -> dict:
         raise RuntimeError("chart coordinates are not all positive")
     if minors(gC) != {ij: det2(g_chart) * P[ij] for ij in PAIRS}:
         raise RuntimeError("GL(2) weight failed on the gauge element")
+    adj = x * y * z * w
+    if adj != F(3, 16):
+        raise RuntimeError(f"chart adjacent product drifted: {adj}")
+    orthant = F(1) / adj
+    if orthant != F(16, 3):
+        raise RuntimeError(f"orthant coefficient drifted: {orthant}")
+    cyclic = -adj
+    parke = F(1) / cyclic
+    if parke != -orthant or parke != F(-16, 3):
+        raise RuntimeError(f"Parke-Taylor coefficient drifted: {parke}")
+    if x * y * z * w * orthant != 1:
+        raise RuntimeError("algebraic residue is not 1")
+    adj_C = P[(0, 1)] * P[(1, 2)] * P[(2, 3)] * P[(0, 3)]
+    if det2(g_chart) ** 4 * adj_C != adj:
+        raise RuntimeError("GL(2) weight of the adjacent product failed")
 
     # Finite exact ensemble. No floats, no seed, no fit.
     sl_n = gl_n = 0
@@ -281,6 +297,9 @@ def build_shadow() -> dict:
         "residual": residual,
         "g_chart": g_chart,
         "chart": chart,
+        "orthant": orthant,
+        "parke": parke,
+        "adjacent_chart": adj,
         "sl_n": sl_n,
         "gl_n": gl_n,
         "show_sl": show_sl,
@@ -300,9 +319,9 @@ def build_shadow() -> dict:
 
 def shadow_text(s: dict) -> str:
     lines = [
-        "UOPG MVP-0 exact shadow",
+        "UOPG exact shadow",
         "arithmetic: rational",
-        "authority: Lean theorems listed in mvp0/DICTIONARY.md",
+        "authority: Lean theorems in mvp0/DICTIONARY.md and mvp1/DICTIONARY.md",
         "no fitted scale",
         "",
         "witness rows (1 1 1 1) and (0 1 2 3)",
@@ -316,6 +335,14 @@ def shadow_text(s: dict) -> str:
         "positive chart after left GL(2): "
         f"x={q(x)} y={q(y)} z={q(z)} w={q(w)}"
     )
+    lines.append(
+        "orthant coefficient 1/(x*y*z*w) = " + q(s["orthant"])
+    )
+    lines.append(
+        "Parke-Taylor coefficient 1/cyclic = " + q(s["parke"])
+    )
+    lines.append("cyclic product = -(x*y*z*w); angle <41> = -P03")
+    lines.append("residue x*y*z*w*(orthant coefficient) = 1")
     lines.append(f"SL(2) samples with det 1, minors unchanged: {s['sl_n']}")
     lines.append(f"GL(2) samples with det != 0,1, minors scaled by det: {s['gl_n']}")
     lines.append("polygon events in the reading u=t+x, v=t-x, det=t^2-x^2")
@@ -526,8 +553,9 @@ def _xml(s: str) -> str:
     return s.replace("&", "&").replace("<", "<").replace(">", ">")
 
 
-def footer(fig: Fig, y: int, proved: bool):
-    word = "proved identities only" if proved else "contract, not a theorem"
+def footer(fig: Fig, y: int, proved: bool, word: str | None = None):
+    if word is None:
+        word = "proved identities only" if proved else "contract, not a theorem"
     fig.text(
         28,
         y,
@@ -578,14 +606,14 @@ def draw_ladder(_s: dict):
             "Lean: plucker_relation, pairing_graph, the two edge theorems",
         ),
         (
-            False,
+            True,
             "MVP-1",
-            "Canonical form, then Parke-Taylor",
+            "Orthant coefficient",
             [
-                "In one chart the chamber is an orthant.",
-                "Its dlog form is not yet the 4-point factor.",
+                "The positive gauge lands in the orthant.",
+                "1/(xyzw) equals 1 over the adjacent product.",
             ],
-            "Not a theorem. No amplitude is derived here.",
+            "Proved in Lean. A 4-form and a cross section are not.",
         ),
         (
             False,
@@ -652,7 +680,7 @@ def draw_ladder(_s: dict):
     fig.text(724, 596, "Compared, not fitted,", size=13, fill=INK)
     fig.text(724, 620, "to the PDG photon", size=13, fill=INK)
     fig.text(724, 644, "bound. See EMPIRICAL.", size=13, fill=INK)
-    footer(fig, 1010, False)
+    footer(fig, 1010, False, "green is proved, amber is not")
     fig.save("mvp-ladder")
 
 
@@ -896,40 +924,48 @@ def draw_gl2(s: dict):
 
 
 def draw_mvp1(s: dict):
-    fig = Fig(960, 680)
+    fig = Fig(960, 720)
     frame(
         fig,
-        False,
-        "MVP-1  ·  canonical form, not yet an amplitude",
-        "The orthant has a dlog form by definition. Matching it to Parke-Taylor is the milestone.",
+        True,
+        "MVP-1  ·  the orthant coefficient",
+        "Columns 0 and 2 are gauged to the identity. The rational number is proved. A 4-form is not.",
     )
-    fig.rect(120, 168, 340, 340, AMBER_BG, stroke=AMBER, sw=2, rx=4)
-    fig.text(290, 156, "<14> = 0", size=14, fill=AMBER, anchor="middle", kind="bold")
-    fig.text(290, 532, "<23> = 0", size=14, fill=AMBER, anchor="middle", kind="bold")
-    fig.text(136, 250, "<12> = 0", size=14, fill=AMBER, kind="bold")
-    fig.text(444, 250, "<34> = 0", size=14, fill=AMBER, anchor="end", kind="bold")
     x, y, z, w = s["chart"]
-    fig.circle(210, 360, 6, GREEN, stroke=WHITE, sw=1.5)
-    fig.text(226, 356, f"witness x={q(x)}, y={q(y)}", size=13, fill=GREEN, kind="bold")
-    fig.text(226, 376, f"z={q(z)}, w={q(w)}", size=13, fill=GREEN)
-    fig.text(290, 470, "schematic of a 4-orthant", size=13, fill=MUTED, anchor="middle")
-    fig.text(140, 204, "dlog x /\\ dlog y /\\ dlog z /\\ dlog w", size=13, fill=INK, kind="mono")
+    fig.rect(28, 108, 440, 430, GREEN_BG, stroke=GREEN, sw=1.5, rx=12)
+    fig.text(46, 140, "Chart, all four coordinates positive", size=15, fill=GREEN, kind="bold")
+    fig.text(46, 174, f"x={q(x)}   y={q(y)}   z={q(z)}   w={q(w)}", size=16, fill=INK, kind="mono")
+    fig.text(46, 210, "|  1   y   0  -w |", size=16, fill=INK, kind="mono")
+    fig.text(46, 234, "|  0   x   1   z |", size=16, fill=INK, kind="mono")
+    fig.text(46, 270, "Ordered adjacent product", size=13, fill=MUTED)
+    fig.text(46, 292, "x y z w  =  " + q(s["adjacent_chart"]), size=16, fill=INK, kind="bold")
+    fig.text(46, 328, "Orthant coefficient", size=13, fill=MUTED)
+    fig.text(46, 352, "1 / (x y z w)  =  " + q(s["orthant"]), size=18, fill=GREEN, kind="bold")
+    fig.text(46, 390, "On the witness this is 16/3.", size=14, fill=INK)
+    fig.text(46, 414, "The algebraic residue is 1.", size=14, fill=INK)
+    fig.text(46, 450, "Walls: an adjacent minor is zero.", size=13, fill=MUTED)
+    fig.text(46, 472, "Inside, the other two minors stay positive.", size=13, fill=MUTED)
+    fig.text(46, 506, "This panel is the chart, not a 4-form.", size=13, fill=MUTED)
 
-    fig.arrow(468, 340, 504, 340, AMBER, sw=1.8, head=9)
-    fig.rect(510, 180, 410, 300, WHITE, stroke=AMBER, sw=1.5, rx=12)
-    fig.text(530, 214, "Target, not a theorem", size=15, fill=AMBER, kind="bold")
-    fig.text(530, 252, "4-point Parke-Taylor", size=16, fill=INK, kind="serif")
-    fig.text(530, 286, "1 / (<12><23><34><41>)", size=15, fill=INK, kind="mono")
-    fig.text(530, 324, "Literature, to be formalised:", size=13, fill=MUTED)
-    fig.text(530, 348, "Arkani-Hamed et al.", size=14, fill=INK)
-    fig.text(530, 370, "arXiv:1212.5605", size=13, fill=MUTED, kind="mono")
-    fig.text(530, 390, "arXiv:1703.04541", size=13, fill=MUTED, kind="mono")
-    fig.text(530, 424, "N=4 super Yang-Mills is the", size=13, fill=INK)
-    fig.text(530, 446, "method to copy, not the goal.", size=13, fill=INK)
-    fig.text(28, 580, "Walls are the adjacent minors. Non-adjacent <13> and <24> stay positive inside", size=14, fill=INK)
-    fig.text(28, 604, "and are tied by the exchange relation. No residue has been computed in Lean.", size=14, fill=INK)
-    fig.text(28, 640, "Do not read this square as a plot of a cross section.", size=14, fill=RED)
-    footer(fig, 666, False)
+    fig.rect(488, 108, 444, 430, WHITE, stroke=GREEN, sw=1.5, rx=12)
+    fig.text(506, 140, "Cyclic product, sign included", size=15, fill=GREEN, kind="bold")
+    fig.text(506, 176, "<41>  =  - P03", size=16, fill=INK, kind="mono")
+    fig.text(506, 208, "cyclic  =  <12><23><34><41>", size=15, fill=INK, kind="mono")
+    fig.text(506, 236, "       =  - (x y z w)", size=15, fill=INK, kind="mono")
+    fig.text(506, 278, "Parke-Taylor coefficient", size=13, fill=MUTED)
+    fig.text(506, 304, "1 / cyclic  =  " + q(s["parke"]), size=18, fill=INK, kind="bold")
+    fig.text(506, 340, "Equal to minus the orthant coefficient.", size=14, fill=INK)
+    fig.text(506, 372, "GL(2) multiplies the adjacent", size=14, fill=INK)
+    fig.text(506, 394, "product by (det g)^4.", size=14, fill=INK)
+    fig.text(506, 428, "The gauge that fixes columns", size=14, fill=INK)
+    fig.text(506, 450, "0 and 2 is the unique one.", size=14, fill=INK)
+    fig.text(506, 490, "N=4 super Yang-Mills is the", size=13, fill=MUTED)
+    fig.text(506, 512, "method copied, not the target.", size=13, fill=MUTED)
+
+    fig.text(28, 568, "Not claimed: a de Rham 4-form, a helicity numerator, a momentum delta,", size=14, fill=RED)
+    fig.text(28, 592, "a cross section, or uniqueness of the canonical form in general.", size=14, fill=RED)
+    fig.text(28, 628, "Do not read the chart as a plot of a cross section, and do not read 16/3 as a mass.", size=14, fill=INK)
+    footer(fig, 668, True)
     fig.save("mvp1-canonical")
 
 

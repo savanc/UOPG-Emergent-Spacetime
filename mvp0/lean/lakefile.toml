@@ -1,6 +1,6 @@
 name = "UOPG0"
 version = "0.1.0"
-defaultTargets = ["UOPG0", "uopg0"]
+defaultTargets = ["UOPG0", "uopg0", "uopg1"]
 
 [leanOptions]
 pp.unicode.fun = true
@@ -18,3 +18,7 @@ name = "UOPG0"
 [[lean_exe]]
 name = "uopg0"
 root = "Main"
+
+[[lean_exe]]
+name = "uopg1"
+root = "Main1"
