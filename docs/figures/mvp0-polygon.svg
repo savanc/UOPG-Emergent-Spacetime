@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="760" viewBox="0 0 960 760">
+<rect width="100%" height="100%" fill="#fbf8f3"/>
+<rect x="0" y="0" width="960" height="8" rx="0" fill="#1b5e45"/>
+<text x="28" y="46" fill="#1a1814" font-size="26" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">MVP-0  ·  four events, four null edges</text>
+<text x="28" y="72" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Reconstructed from four twistors by the same formula as regionMatrix. Nothing is fitted.</text>
+<rect x="840" y="30" width="92" height="22" rx="11" fill="#1b5e45"/>
+<text x="886.0" y="46" fill="#ffffff" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">PROVED</text>
+<rect x="36" y="108" width="500" height="500" rx="12" fill="#ffffff" stroke="#d9d3c7" stroke-width="1.2"/>
+<line x1="83.02857142857141" y1="509.4" x2="497.8514285714285" y2="509.4" stroke="#5a544a" stroke-width="1.2"/>
+<polygon points="497.8514285714285,509.4 491.85320729784587,513.0085096027502 491.85320729784587,505.79149039724973" fill="#5a544a"/>
+<line x1="286.0" y1="558.24" x2="286.0" y2="143.84" stroke="#5a544a" stroke-width="1.2"/>
+<polygon points="286.0,143.84 289.60850960275025,149.83822127358263 282.39149039724975,149.83822127358263" fill="#5a544a"/>
+<text x="493.8514285714285" y="527.4" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="end">x</text>
+<text x="296.0" y="143.39999999999998" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">t</text>
+<line x1="241.6" y1="561.2" x2="482.62857142857143" y2="280.0" stroke="#baa88c" stroke-width="1.2" stroke-dasharray="6 5"/>
+<line x1="89.37142857142857" y1="280.0" x2="330.4" y2="561.2" stroke="#baa88c" stroke-width="1.2" stroke-dasharray="6 5"/>
+<line x1="286.0" y1="509.4" x2="412.85714285714283" y2="361.4" stroke="#1b5e45" stroke-width="2.6"/>
+<line x1="412.85714285714283" y1="361.4" x2="286.0" y2="213.39999999999998" stroke="#1b5e45" stroke-width="2.6"/>
+<line x1="286.0" y1="213.39999999999998" x2="159.14285714285714" y2="361.4" stroke="#1b5e45" stroke-width="2.6"/>
+<line x1="159.14285714285714" y1="361.4" x2="286.0" y2="509.4" stroke="#1b5e45" stroke-width="2.6"/>
+<circle cx="286.0" cy="509.4" r="5.5" fill="#1b5e45" stroke="#ffffff" stroke-width="1.5"/>
+<text x="234.0" y="525.4" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">x0</text>
+<circle cx="412.85714285714283" cy="361.4" r="5.5" fill="#1b5e45" stroke="#ffffff" stroke-width="1.5"/>
+<text x="424.85714285714283" y="367.4" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">x1</text>
+<circle cx="286.0" cy="213.39999999999998" r="5.5" fill="#1b5e45" stroke="#ffffff" stroke-width="1.5"/>
+<text x="278.0" y="201.39999999999998" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">x2</text>
+<circle cx="159.14285714285714" cy="361.4" r="5.5" fill="#1b5e45" stroke="#ffffff" stroke-width="1.5"/>
+<text x="131.14285714285714" y="365.4" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">x3</text>
+<text x="384.9485714285715" y="467.9599999999999" fill="#1b5e45" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">det p0=0</text>
+<text x="384.9485714285715" y="254.83999999999997" fill="#1b5e45" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">det p1=0</text>
+<text x="165.4857142857143" y="254.83999999999997" fill="#1b5e45" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">det p2=0</text>
+<text x="165.4857142857143" y="462.03999999999996" fill="#1b5e45" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">det p3=0</text>
+<text x="89.37142857142857" y="161.59999999999997" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">dashed: light lines of x0</text>
+<rect x="552" y="108" width="380" height="560" rx="12" fill="#ffffff" stroke="#d9d3c7" stroke-width="1.2"/>
+<text x="570" y="138" fill="#1e3a5f" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Reading of the matrices</text>
+<text x="570" y="162" fill="#1a1814" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">u = t+x,  v = t-x,  det = u v</text>
+<text x="570" y="182" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">so det = t^2 - x^2 on this slice.</text>
+<text x="570" y="214" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">x0  (t, x) = (0, 0)</text>
+<text x="570" y="234" fill="#5a544a" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">[[0, 0], [0, 0]]</text>
+<text x="570" y="266" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">x1  (t, x) = (1, 1)</text>
+<text x="570" y="286" fill="#5a544a" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">[[2, 0], [0, 0]]</text>
+<text x="570" y="318" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">x2  (t, x) = (2, 0)</text>
+<text x="570" y="338" fill="#5a544a" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">[[2, 0], [0, 2]]</text>
+<text x="570" y="370" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">x3  (t, x) = (1, -1)</text>
+<text x="570" y="390" fill="#5a544a" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">[[0, 0], [0, 2]]</text>
+<text x="570" y="430" fill="#1a1814" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Lean edge  p_i = x_i - x_{i+1}</text>
+<text x="570" y="452" fill="#1b5e45" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Each det is 0. The sum is 0.</text>
+<text x="570" y="482" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Twistors (lambda | mu), exact</text>
+<text x="570" y="506" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">Z0  (0,1)  |  (0,0)</text>
+<text x="570" y="524" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">Z1  (1,0)  |  (2,0)</text>
+<text x="570" y="542" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">Z2  (0,1)  |  (0,2)</text>
+<text x="570" y="560" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">Z3  (1,0)  |  (0,0)</text>
+<text x="570" y="590" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Angle brackets of consecutive</text>
+<text x="570" y="608" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">lambda: 1, -1, 1, -1</text>
+<text x="570" y="630" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Loop 0-1-2-3. Lean p_i points the other way.</text>
+<text x="28" y="734" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">UOPG atlas  ·  proved identities only  ·  python3 mvp0/viz/geometry.py</text>
+</svg>

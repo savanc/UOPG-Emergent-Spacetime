@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="680" viewBox="0 0 960 680">
+<rect width="100%" height="100%" fill="#fbf8f3"/>
+<rect x="0" y="0" width="960" height="8" rx="0" fill="#8a5a12"/>
+<text x="28" y="46" fill="#1a1814" font-size="26" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">MVP-1  ·  canonical form, not yet an amplitude</text>
+<text x="28" y="72" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The orthant has a dlog form by definition. Matching it to Parke-Taylor is the milestone.</text>
+<rect x="820" y="30" width="112" height="22" rx="11" fill="#8a5a12"/>
+<text x="876.0" y="46" fill="#ffffff" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">CONTRACT</text>
+<rect x="120" y="168" width="340" height="340" rx="4" fill="#f8f1e3" stroke="#8a5a12" stroke-width="2"/>
+<text x="290" y="156" fill="#8a5a12" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700"><14> = 0</text>
+<text x="290" y="532" fill="#8a5a12" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700"><23> = 0</text>
+<text x="136" y="250" fill="#8a5a12" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700"><12> = 0</text>
+<text x="444" y="250" fill="#8a5a12" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="end" font-weight="700"><34> = 0</text>
+<circle cx="210" cy="360" r="6" fill="#1b5e45" stroke="#ffffff" stroke-width="1.5"/>
+<text x="226" y="356" fill="#1b5e45" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">witness x=1/2, y=1/2</text>
+<text x="226" y="376" fill="#1b5e45" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">z=3/2, w=1/2</text>
+<text x="290" y="470" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle">schematic of a 4-orthant</text>
+<text x="140" y="204" fill="#1a1814" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">dlog x /\ dlog y /\ dlog z /\ dlog w</text>
+<line x1="468" y1="340" x2="504" y2="340" stroke="#8a5a12" stroke-width="1.8"/>
+<polygon points="504,340 496.2880012196795,344.6395123463932 496.2880012196795,335.3604876536068" fill="#8a5a12"/>
+<rect x="510" y="180" width="410" height="300" rx="12" fill="#ffffff" stroke="#8a5a12" stroke-width="1.5"/>
+<text x="530" y="214" fill="#8a5a12" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Target, not a theorem</text>
+<text x="530" y="252" fill="#1a1814" font-size="16" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">4-point Parke-Taylor</text>
+<text x="530" y="286" fill="#1a1814" font-size="15" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">1 / (<12><23><34><41>)</text>
+<text x="530" y="324" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Literature, to be formalised:</text>
+<text x="530" y="348" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Arkani-Hamed et al.</text>
+<text x="530" y="370" fill="#5a544a" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">arXiv:1212.5605</text>
+<text x="530" y="390" fill="#5a544a" font-size="13" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">arXiv:1703.04541</text>
+<text x="530" y="424" fill="#1a1814" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">N=4 super Yang-Mills is the</text>
+<text x="530" y="446" fill="#1a1814" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">method to copy, not the goal.</text>
+<text x="28" y="580" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Walls are the adjacent minors. Non-adjacent <13> and <24> stay positive inside</text>
+<text x="28" y="604" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">and are tied by the exchange relation. No residue has been computed in Lean.</text>
+<text x="28" y="640" fill="#8f2d3a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Do not read this square as a plot of a cross section.</text>
+<text x="28" y="666" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">UOPG atlas  ·  contract, not a theorem  ·  python3 mvp0/viz/geometry.py</text>
+</svg>

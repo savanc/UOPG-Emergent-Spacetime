@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">
+<rect width="100%" height="100%" fill="#fbf8f3"/>
+<rect x="0" y="0" width="960" height="8" rx="0" fill="#1b5e45"/>
+<text x="28" y="46" fill="#1a1814" font-size="26" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">MVP-0  ·  the positive chamber, one point</text>
+<text x="28" y="72" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Left: the six minors of the Lean witness. Right: the same plane in the orthant chart.</text>
+<rect x="840" y="30" width="92" height="22" rx="11" fill="#1b5e45"/>
+<text x="886.0" y="46" fill="#ffffff" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">PROVED</text>
+<rect x="28" y="104" width="470" height="470" rx="12" fill="#ffffff" stroke="#d9d3c7" stroke-width="1.2"/>
+<text x="46" y="136" fill="#1b5e45" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Ordered minors, all positive</text>
+<line x1="68" y1="500" x2="498" y2="500" stroke="#1a1814" stroke-width="1.4"/>
+<rect x="78" y="425.0" width="42" height="75.0" rx="0" fill="#1b5e45"/>
+<text x="99.0" y="417.0" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">1</text>
+<text x="99.0" y="522" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle">P01</text>
+<text x="99.0" y="540" fill="#5a544a" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle"><12></text>
+<rect x="148" y="350.0" width="42" height="150.0" rx="0" fill="#1b5e45"/>
+<text x="169.0" y="342.0" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">2</text>
+<text x="169.0" y="522" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle">P02</text>
+<text x="169.0" y="540" fill="#5a544a" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle"><13></text>
+<rect x="218" y="275.0" width="42" height="225.0" rx="0" fill="#1b5e45"/>
+<text x="239.0" y="267.0" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">3</text>
+<text x="239.0" y="522" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle">P03</text>
+<text x="239.0" y="540" fill="#5a544a" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle"><14></text>
+<rect x="288" y="425.0" width="42" height="75.0" rx="0" fill="#1b5e45"/>
+<text x="309.0" y="417.0" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">1</text>
+<text x="309.0" y="522" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle">P12</text>
+<text x="309.0" y="540" fill="#5a544a" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle"><23></text>
+<rect x="358" y="350.0" width="42" height="150.0" rx="0" fill="#1b5e45"/>
+<text x="379.0" y="342.0" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">2</text>
+<text x="379.0" y="522" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle">P13</text>
+<text x="379.0" y="540" fill="#5a544a" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle"><24></text>
+<rect x="428" y="425.0" width="42" height="75.0" rx="0" fill="#1b5e45"/>
+<text x="449.0" y="417.0" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">1</text>
+<text x="449.0" y="522" fill="#1a1814" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle">P23</text>
+<text x="449.0" y="540" fill="#5a544a" font-size="12" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="middle"><34></text>
+<text x="46" y="168" fill="#1b5e45" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Plucker residual = 0</text>
+<rect x="514" y="104" width="418" height="470" rx="12" fill="#ffffff" stroke="#d9d3c7" stroke-width="1.2"/>
+<text x="532" y="136" fill="#1b5e45" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Chart  x, y > 0</text>
+<text x="532" y="158" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">z and w of the witness held fixed</text>
+<rect x="590" y="200" width="280" height="280" rx="0" fill="#e5f2eb" stroke="#1b5e45" stroke-width="1.2"/>
+<circle cx="660.0" cy="410.0" r="6" fill="#8f2d3a" stroke="#ffffff" stroke-width="1.5"/>
+<text x="672.0" y="406.0" fill="#1a1814" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">witness (1/2, 1/2)</text>
+<text x="594" y="474" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">0</text>
+<text x="866" y="474" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="end">2</text>
+<text x="598" y="218" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">2</text>
+<text x="532" y="500" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">square is 0 to 2 on x and on y</text>
+<text x="532" y="524" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">x=1/2   y=1/2   z=3/2   w=1/2</text>
+<text x="532" y="548" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Left GL(2) with det 1/2</text>
+<text x="28" y="614" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">UOPG atlas  ·  proved identities only  ·  python3 mvp0/viz/geometry.py</text>
+</svg>

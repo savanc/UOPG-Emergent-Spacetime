@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">
+<rect width="100%" height="100%" fill="#fbf8f3"/>
+<rect x="0" y="0" width="960" height="8" rx="0" fill="#8a5a12"/>
+<text x="28" y="46" fill="#1a1814" font-size="26" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">MVP-4  ·  rank one is a pair of spinors</text>
+<text x="28" y="72" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">det p = 0 is proved. The factorisation below is linear algebra on that matrix. The weight is not.</text>
+<rect x="820" y="30" width="112" height="22" rx="11" fill="#8a5a12"/>
+<text x="876.0" y="46" fill="#ffffff" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">CONTRACT</text>
+<rect x="28" y="112" width="904" height="150" rx="12" fill="#ffffff" stroke="#d9d3c7" stroke-width="1.2"/>
+<text x="48" y="146" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Edge p0 of the polygon, the Lean orientation</text>
+<text x="48" y="180" fill="#1a1814" font-size="16" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">[[-2, 0], [0, 0]]</text>
+<text x="48" y="214" fill="#1a1814" font-size="15" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">=  u v^T    u=(-2, 0)    v=(1, 0)</text>
+<text x="48" y="242" fill="#1b5e45" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">det p0 = 0, and p0 kills the twistor spinor lambda_0. Both are proved.</text>
+<rect x="28" y="284" width="280" height="230" rx="12" fill="#e8eef5" stroke="#1e3a5f" stroke-width="1.4"/>
+<rect x="328" y="284" width="280" height="230" rx="12" fill="#e8eef5" stroke="#1e3a5f" stroke-width="1.4"/>
+<rect x="628" y="284" width="304" height="230" rx="12" fill="#f8f1e3" stroke="#8a5a12" stroke-width="1.4"/>
+<text x="48" y="318" fill="#1e3a5f" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">SL(2) on lambda</text>
+<text x="48" y="350" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Lorentz, undotted</text>
+<text x="48" y="376" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Acts on the column u.</text>
+<text x="48" y="412" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Not yet a Lean action</text>
+<text x="48" y="434" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">in this repository.</text>
+<text x="348" y="318" fill="#1e3a5f" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">SL(2) on lambda~</text>
+<text x="348" y="350" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Lorentz, dotted</text>
+<text x="348" y="376" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Acts on the row v.</text>
+<text x="348" y="412" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The two copies are the</text>
+<text x="348" y="434" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">dictionary, not a theorem.</text>
+<text x="648" y="318" fill="#8a5a12" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Little group</text>
+<text x="648" y="350" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">u -> t u,   v -> v / t</text>
+<text x="648" y="378" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">p is unchanged. Checked</text>
+<text x="648" y="400" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">at t = 2 on this edge.</text>
+<text x="648" y="434" fill="#8a5a12" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Helicity h: the wavefunction</text>
+<text x="648" y="456" fill="#8a5a12" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">weight t^(-2h). Unknown.</text>
+<text x="28" y="548" fill="#1a1814" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">A massless boson would be a weight that this geometry forces.</text>
+<text x="28" y="574" fill="#1a1814" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">MVP-4 has to derive the weight. The polygon does not know it yet.</text>
+<text x="28" y="618" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">UOPG atlas  ·  contract, not a theorem  ·  python3 mvp0/viz/geometry.py</text>
+</svg>

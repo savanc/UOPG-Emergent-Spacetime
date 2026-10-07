@@ -1,0 +1,29 @@
+UOPG MVP-0 exact shadow
+arithmetic: rational
+authority: Lean theorems listed in mvp0/DICTIONARY.md
+no fitted scale
+
+witness rows (1 1 1 1) and (0 1 2 3)
+  P01 = <12> = 1
+  P02 = <13> = 2
+  P03 = <14> = 3
+  P12 = <23> = 1
+  P13 = <24> = 2
+  P23 = <34> = 1
+plucker residual P01*P23 - P02*P13 + P03*P12 = 0
+positive chart after left GL(2): x=1/2 y=1/2 z=3/2 w=1/2
+SL(2) samples with det 1, minors unchanged: 36
+GL(2) samples with det != 0,1, minors scaled by det: 154
+polygon events in the reading u=t+x, v=t-x, det=t^2-x^2
+  x0 (t,x)=(0,0) matrix [[0, 0], [0, 0]]
+  x1 (t,x)=(1,1) matrix [[2, 0], [0, 0]]
+  x2 (t,x)=(2,0) matrix [[2, 0], [0, 2]]
+  x3 (t,x)=(1,-1) matrix [[0, 0], [0, 2]]
+  p0 = x0-x1 = [[-2, 0], [0, 0]] det=0
+  p1 = x1-x2 = [[0, 0], [0, -2]] det=0
+  p2 = x2-x3 = [[2, 0], [0, 0]] det=0
+  p3 = x3-x0 = [[0, 0], [0, 2]] det=0
+sum of p_i = 0
+column shift at lambda=1 sends P23 to 0
+exchange <13><24> = <12><34> + <14><23> = 4
+
