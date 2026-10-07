@@ -1,0 +1,27 @@
+name: mvp0
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - "mvp0/**"
+      - ".github/workflows/mvp0.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: install elan
+        run: |
+          curl -fsSL https://elan.lean-lang.org/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: build, run, and audit MVP-0
+        working-directory: mvp0
+        run: |
+          cd lean
+          lake exe cache get
+          cd ..
+          chmod +x check.sh
+          ./check.sh
