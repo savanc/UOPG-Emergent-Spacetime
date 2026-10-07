@@ -20,7 +20,9 @@ printf '%s\n' "$out" | grep -q 'edge 1 u=(0, -2) v=(0, 1)'
 printf '%s\n' "$out" | grep -q 'edge 2 u=(2, 0) v=(1, 0)'
 printf '%s\n' "$out" | grep -q 'edge 3 u=(0, 2) v=(0, 1)'
 printf '%s\n' "$out" | grep -q 'rescale=true'
-printf '%s\n' "$out" | grep -q 'The rescaling is not a helicity.'
+printf '%s\n' "$out" | grep -q 't=2 moves edge 0 u from (-2, 0) to (-4, 0)'
+printf '%s\n' "$out" | grep -q 'Every function of the momentum is unchanged.'
+printf '%s\n' "$out" | grep -q 'The factor moves. This does not rule out a helicity.'
 if printf '%s\n' "$out" | grep -q '80.4'; then
   echo "executable printed a fitted W mass; the lemma must not" >&2
   exit 1
@@ -36,6 +38,9 @@ open UOPG0
 #print axioms det2_eq_zero_iff_exists_outer
 #print axioms polygon_edge_outer
 #print axioms polygon_edge_rescale
+#print axioms rescale_moves_factor
+#print axioms matrix_invariant_along_rescale
+#print axioms edge0_momentum_misses_t
 EOF
 )"
 printf '%s\n' "$axioms"
@@ -44,8 +49,8 @@ import os, sys
 text = os.environ["AXIOMS"]
 allowed = {"propext", "Classical.choice", "Quot.sound"}
 rows = [line for line in text.splitlines() if "depends on axioms" in line]
-if len(rows) != 6:
-    sys.exit(f"expected 6 axiom lines, got {len(rows)}")
+if len(rows) != 9:
+    sys.exit(f"expected 9 axiom lines, got {len(rows)}")
 for line in rows:
     inner = line.split("[", 1)[1].split("]", 1)[0]
     names = {part.strip() for part in inner.split(",") if part.strip()}

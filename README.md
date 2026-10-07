@@ -1,9 +1,8 @@
-# UOPG-Emergent-Spacetime
-UOPG: Emergent Spacetime and Particles from the Positive Grassmannian  A geometric bootstrap model where positivity-preserving Plücker mutations on Gr+(k,n) generate an emergent curved metric projecting to 3+1D Lorentzian spacetime. Wave interference produces particles, entanglement, annihilation, and chiral asymmetry. Calibrated to the LHC W-boson
+# UOPG
 
-# UOPG: Emergent Spacetime and Particles from the Positive Grassmannian
+One object: the positive Grassmannian `Gr⁺(2,4)`. Spacetime is its Klein correspondence. A particle is not a theorem of this repository.
 
-**A Geometric Model Calibrated to LHC W-Boson Mass**
+What is proved, and what is only a contract, is the status below. The title and abstract of the 2026 paper are kept afterwards, word for word, as a historical record. They are not the status of the proofs. The Zenodo record is left as published.
 
 ## Status
 
@@ -19,6 +18,8 @@ The third checked piece is [MVP-2](mvp2/README.md). The denominator vanishes exa
 
 The rank-one lemma is [lemma/README.md](lemma/README.md). A singular `2 × 2` matrix is an outer product, and `u → t u`, `v → v / t` leaves it fixed. On the polygon the four edges match the factors in the shadow, including the rescaling at `t = 2`. That is not a helicity, and it does not turn the MVP-4 card green. MVP-3 stays blank. See [lemma/DICTIONARY.md](lemma/DICTIONARY.md).
 
+The ladder on `Gr⁺(2,4)` is frozen. There is no further rung. The factorisation of a null edge is not unique: `t = 2` moves the edge-0 factor from `(−2, 0)` to `(−4, 0)` and leaves the momentum fixed. The corollary that every function of that momentum is unchanged does not rule out a helicity. MVP-4 stays a contract.
+
 `UOPG.lean` and `UOPGv2.lean` are drafts from March and April 2026. They are not kernel-checked proofs. `m_W = 80.4 GeV` is not a theorem of this repository.
 
 - **Paper**: [article.pdf](https://doi.org/10.5281/zenodo.19291218)
@@ -31,6 +32,14 @@ The rank-one lemma is [lemma/README.md](lemma/README.md). A singular `2 × 2` ma
 - **Numerical notebook**: [uopgv2.ipynb](uopgv2.ipynb)
 - **Slide Deck**: [UOPG v2 Slide deck](https://github.com/savanc/UOPG-Emergent-Spacetime/blob/main/Unified_Positive_Geometry.pdf)
   
+## Historical paper
+
+The following title and abstract are the published paper. They are not the status of this repository.
+
+**UOPG: Emergent Spacetime and Particles from the Positive Grassmannian**
+
+**A Geometric Model Calibrated to LHC W-Boson Mass**
+
 ## Abstract
 We present a geometric model in which the positive Grassmannian Gr+(k,n) serves as the single underlying structure. Positivity-preserving mutations generate curvature that projects to 3+1D Lorentzian spacetime. Wave interference on the emergent metric produces particles, entanglement, annihilation, and chiral asymmetry. The model is calibrated so the W-boson mass is exactly 80.4 GeV.
 

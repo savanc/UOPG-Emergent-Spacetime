@@ -309,6 +309,12 @@ def build_shadow() -> dict:
     )
     if factors != list(expected_factors):
         raise RuntimeError(f"edge factors drifted from the Lean witness: {factors}")
+    moved_u = tuple(F(2) * c for c in factors[0][0])
+    moved_v = tuple(c / F(2) for c in factors[0][1])
+    if moved_u == factors[0][0] or moved_u != (F(-4), F(0)):
+        raise RuntimeError(f"t=2 did not move the edge-0 factor: {moved_u}")
+    if outer(moved_u, moved_v) != momenta[0]:
+        raise RuntimeError("t=2 moved the edge-0 momentum")
     tx = [lightcone_tx(e) for e in events]
 
     # Face sweep of the proved residue. y, z, w stay at the witness.
@@ -377,6 +383,7 @@ def build_shadow() -> dict:
         "brackets": brackets,
         "momenta": momenta,
         "factors": factors,
+        "moved_u": moved_u,
         "sweep": sweep,
         "shifted_minors": Ps,
         "exchange": (exchange_left, exchange_right),
@@ -429,6 +436,12 @@ def shadow_text(s: dict) -> str:
             "  edge %s u=(%s, %s) v=(%s, %s)"
             % (i, q(u[0]), q(u[1]), q(v[0]), q(v[1]))
         )
+    u0 = s["factors"][0][0]
+    lines.append(
+        "t=2 moves edge 0 u from (%s, %s) to (%s, %s); the momentum is unchanged"
+        % (q(u0[0]), q(u0[1]), q(s["moved_u"][0]), q(s["moved_u"][1]))
+    )
+    lines.append("every function of the momentum is unchanged, because the matrix is unchanged")
     lines.append(
         "face sweep, y and z and w fixed at the witness; x*coeff stays "
         + q(s["drop_x"])
@@ -676,7 +689,7 @@ def draw_ladder(_s: dict):
         fig,
         False,
         "What each rung is",
-        "One object, Gr+(2,4). Green is checked in Lean. Amber is the job, not a result.",
+        "This ladder is frozen. Green is proved. Amber stays a contract.",
     )
     # The ladder as a whole is mixed, so the corner pill says CONTRACT would be wrong
     # for rung 0. Replace the corner pill with a quieter label by overpainting.
@@ -729,10 +742,10 @@ def draw_ladder(_s: dict):
             "MVP-4",
             "Helicity from the two SL(2)s",
             [
-                "The outer product and the rescaling are proved.",
-                "The helicity weight is not.",
+                "The factorisation is not unique.",
+                "t = 2 moves u and leaves p fixed.",
             ],
-            "Lemma only. This card stays a contract.",
+            "Not a helicity theorem. This card stays a contract.",
         ),
     ]
     top = 100
@@ -1142,7 +1155,7 @@ def draw_mvp4(s: dict):
         fig,
         False,
         "MVP-4  ·  rank one is a pair of spinors",
-        "The outer product and the rescaling are Lean lemmas. The helicity weight is not. This card stays a contract.",
+        "The factorisation is not unique. That does not rule out a helicity. This card stays a contract.",
     )
     p0 = s["momenta"][0]
     u, v = s["factors"][0]
@@ -1165,14 +1178,14 @@ def draw_mvp4(s: dict):
     fig.text(348, 376, "Would act on the row v.", size=14, fill=INK)
     fig.text(348, 412, "The two copies are the", size=13, fill=MUTED)
     fig.text(348, 434, "dictionary, not a theorem.", size=13, fill=MUTED)
-    fig.text(648, 318, "Rescaling, not helicity", size=15, fill=AMBER, kind="bold")
+    fig.text(648, 318, "Factors, not a helicity", size=15, fill=AMBER, kind="bold")
     fig.text(648, 350, "u -> t u,   v -> v / t", size=14, fill=INK, kind="mono")
     fig.text(648, 378, "Proved for every t != 0.", size=14, fill=GREEN)
     fig.text(648, 400, "The polygon checks t = 2.", size=14, fill=INK)
-    fig.text(648, 434, "Helicity h: a wavefunction", size=13, fill=AMBER)
-    fig.text(648, 456, "weight t^(-2h). Not proved.", size=13, fill=AMBER)
-    fig.text(28, 548, "A massless boson would be a weight that this geometry forces.", size=15, fill=INK)
-    fig.text(28, 574, "The lemma does not derive it. MVP-4 stays amber.", size=15, fill=INK)
+    fig.text(648, 428, "u moves from (-2, 0)", size=13, fill=AMBER)
+    fig.text(648, 450, "to (-4, 0). p0 stays put.", size=13, fill=AMBER)
+    fig.text(28, 548, "Equal matrices have equal images. That corollary does not rule out a helicity.", size=15, fill=INK)
+    fig.text(28, 574, "The factor moves and p stays put. MVP-4 stays amber.", size=15, fill=INK)
     footer(fig, 618, False)
     fig.save("mvp4-helicity")
 

@@ -19,9 +19,13 @@ def showEdge (i : Fin 4) : String :=
     s!"outer=[[{p 0 0}, {p 0 1}], [{p 1 0}, {p 1 1}]] rescale={rescaleAgrees i}"
 
 def main : IO Unit := do
+  let u0 := edgeFactorU 0
+  let moved := fun a => (2 : ℚ) * u0 a
   IO.println "UOPG lemma — a null edge is an outer product"
   IO.println (showEdge 0)
   IO.println (showEdge 1)
   IO.println (showEdge 2)
   IO.println (showEdge 3)
-  IO.println "The rescaling is not a helicity."
+  IO.println s!"t=2 moves edge 0 u from ({u0 0}, {u0 1}) to ({moved 0}, {moved 1})"
+  IO.println "Every function of the momentum is unchanged."
+  IO.println "The factor moves. This does not rule out a helicity."

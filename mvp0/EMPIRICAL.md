@@ -8,7 +8,7 @@ For any four twistors whose consecutive angle brackets are nonzero, each edge mo
 
 ## What is being compared
 
-The massless case is the photon. The comparison is an inequality against published upper bounds, not agreement with a tuned central value.
+The mass defined by `det` is 0. That identity is not a photon. The comparison is only whether 0 lies under a published upper bound on the photon mass, not agreement with a tuned central value.
 
 Source: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024) and 2025 update, photon listing, `https://pdg.lbl.gov/2025/listings/rpp2025-list-photon.pdf`, page created 30 May 2025.
 

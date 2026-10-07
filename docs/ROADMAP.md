@@ -1,6 +1,8 @@
 # MVP atlas
 
-One object: the positive Grassmannian `Gr⁺(2,4)`. Spacetime is the Klein correspondence of that object. Particles, if they come out at all, come out of the same field. A rung below is green only when Lean has checked it. An amber rung is the job, not a result.
+One object: the positive Grassmannian `Gr⁺(2,4)`. Spacetime is the Klein correspondence of that object. Particles, if they come out at all, come out of the same field. A rung below is green only when Lean has checked it. An amber rung is not a result, and it is not a promise that the rung will turn green.
+
+This ladder is frozen. No further rung will be added on `Gr⁺(2,4)`. MVP-3 stays blank. MVP-4 stays a contract. The factorisation of a null edge is not unique, and that fact does not rule out a helicity.
 
 ![The five rungs. Green is proved. Amber is a contract.](figures/mvp-ladder.png)
 
@@ -61,11 +63,13 @@ The sweep holds `y`, `z`, and `w` at the witness and varies `x` through seven po
 
 ## MVP-4 — contract
 
-![The outer product and the rescaling are proved. The helicity weight is not, so the card stays a contract.](figures/mvp4-helicity.png)
+![The factorisation is not unique. The card stays a contract, and this is not a helicity theorem.](figures/mvp4-helicity.png)
 
 `det p = 0` is proved, and so is a nonzero kernel vector. Rank at most one is the lemma `det2_eq_zero_iff_exists_outer`: the matrix is an outer product `u vᵀ`. `outer_rescale` says `u → t u` and `v → v / t` leave that product fixed for every `t ≠ 0`. On the rational polygon the four edges are those products, and the picture's `t = 2` is `polygon_edge_rescale`. The dictionary is [lemma/DICTIONARY.md](../lemma/DICTIONARY.md).
 
-That is still not a helicity. A massless boson would be a weight the geometry forces on a wavefunction, and there is no wavefunction in the lemma. The two Lorentz `SL(2)` actions are not theorems. MVP-4 stays a contract. It does not become a gluon, a W, a Z, or a fermion by being the last rung on this ladder.
+The same `t = 2` moves the column factor. `rescale_moves_factor` says that if `u ≠ 0` and `t ≠ 1`, then `t u ≠ u`. On edge 0 the factor moves from `(−2, 0)` to `(−4, 0)` and `p` stays `[[−2, 0], [0, 0]]`. That is `edge0_momentum_misses_t`: the factors change and the matrix does not. `matrix_invariant_along_rescale` is the corollary that any function of the matrix is unchanged, because the two matrices are equal. It is not an obstruction to a helicity. A helicity would be a weight on the spinors, and this file does not define them.
+
+There is still no wavefunction, and the two Lorentz `SL(2)` actions are not theorems. MVP-4 stays a contract. It does not become a gluon, a W, a Z, or a fermion. The ladder stops here.
 
 ## What is not in the atlas
 
@@ -76,4 +80,4 @@ That is still not a helicity. A massless boson would be a weight the geometry fo
 - a GeV produced by the geometry
 - a cross section, a wave equation, or a Monte Carlo calibration
 
-`Gr⁺(2,4)` is one massless 4-point positive geometry. Distinguishing Standard Model bosons, or adding a fermion, would be a new rung. None of that is implied by MVP-4, and none of it is scheduled.
+`Gr⁺(2,4)` is one massless 4-point positive geometry. Distinguishing Standard Model bosons, or adding a fermion, would be a new object, not a new card on this ladder. The ladder is closed.
