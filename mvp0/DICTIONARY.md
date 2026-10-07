@@ -1,6 +1,6 @@
 # MVP-0 dictionary
 
-One object: the positive Grassmannian `Gr⁺(2,4)`. One chart: the Klein correspondence. Nothing in the proved column was fitted, and nothing in that column outputs a GeV.
+One object: the positive Grassmannian `Gr⁺(2,4)`. One chart: the Klein correspondence. Nothing in the proved column was fitted, and nothing in that column outputs a GeV. Pictures of this table, and of the later rungs that are not theorems, are in [docs/ROADMAP.md](../docs/ROADMAP.md).
 
 The draft files `UOPG.lean` and `UOPGv2.lean` at the repository root are not part of this project. They contain `sorry` and, in the earlier file, `opaque` stand-ins for the real operations. They were left where they are. They are not proofs.
 

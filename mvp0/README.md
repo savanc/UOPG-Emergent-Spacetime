@@ -2,7 +2,9 @@
 
 First checked piece of UOPG. The object is `Gr⁺(2,4)`. Spacetime enters as the Klein correspondence, not as a Hessian and not as a fitted scale.
 
-Read [DICTIONARY.md](DICTIONARY.md) before the Lean files. Read [EMPIRICAL.md](EMPIRICAL.md) for the only experimental comparison. The root files `UOPG.lean` and `UOPGv2.lean` are earlier drafts and are not imported here.
+Read [DICTIONARY.md](DICTIONARY.md) before the Lean files. Read [EMPIRICAL.md](EMPIRICAL.md) for the only experimental comparison. The pictures, and the rungs that are not yet theorems, are in [docs/ROADMAP.md](../docs/ROADMAP.md). The root files `UOPG.lean` and `UOPGv2.lean` are earlier drafts and are not imported here.
+
+![Four null edges, reconstructed from twistors. det = 0 and the sum is 0.](../docs/figures/mvp0-polygon.png)
 
 ## What is proved
 
@@ -32,6 +34,8 @@ cd ..
 ```
 
 `lake exe uopg0` prints the six positive minors. It does not print a W mass.
+
+The same witness is redrawn from exact rationals by `python3 mvp0/viz/geometry.py`. `--check` recomputes the identities and fails if [docs/figures/shadow.txt](../docs/figures/shadow.txt) has drifted. It is a shadow of the proofs, not a second proof.
 
 ## Layout
 

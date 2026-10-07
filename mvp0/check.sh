@@ -34,3 +34,7 @@ open UOPG0
 #print axioms edgeMomentum_sum_eq_zero
 #print axioms edge_nullSeparation
 EOF
+
+echo "---- geometry shadow ----"
+cd ..
+python3 viz/geometry.py --check

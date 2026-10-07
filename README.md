@@ -7,7 +7,11 @@ UOPG: Emergent Spacetime and Particles from the Positive Grassmannian  A geometr
 
 ## Status
 
-The mission is unchanged: spacetime and particles come from one positive Grassmannian, and the Standard Model is a geometric bootstrap from that field. The first checked piece is [MVP-0](mvp0/README.md). It proves the Klein dictionary for `Gr⁺(2,4)`: the Plücker relation, the real `GL(2)` weight, one positive rational point, null separation, and four massless conserved edge momenta. The only experimental comparison is the PDG photon-mass bound, with no fitted scale. See [mvp0/DICTIONARY.md](mvp0/DICTIONARY.md).
+The mission is unchanged: spacetime and particles come from one positive Grassmannian, and the Standard Model is a geometric bootstrap from that field. The map of what is proved and what is only a contract is [docs/ROADMAP.md](docs/ROADMAP.md).
+
+![MVP ladder. Green is proved in Lean. Amber is not a result.](docs/figures/mvp-ladder.png)
+
+The first checked piece is [MVP-0](mvp0/README.md). It proves the Klein dictionary for `Gr⁺(2,4)`: the Plücker relation, the real `GL(2)` weight, one positive rational point, null separation, and four massless conserved edge momenta. The only experimental comparison is the PDG photon-mass bound, with no fitted scale. See [mvp0/DICTIONARY.md](mvp0/DICTIONARY.md).
 
 `UOPG.lean` and `UOPGv2.lean` are drafts from March and April 2026. They are not kernel-checked proofs. `m_W = 80.4 GeV` is not a theorem of this repository.
 

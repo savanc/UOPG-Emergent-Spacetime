@@ -9,6 +9,13 @@ on:
       - ".github/workflows/mvp0.yml"
 
 jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: exact geometry shadow
+        run: python3 mvp0/viz/geometry.py --check
+
   build:
     runs-on: ubuntu-latest
     steps:
