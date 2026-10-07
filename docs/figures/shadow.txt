@@ -40,7 +40,7 @@ rank-one factors; rescaling by t=2 fixes each edge
   edge 2 u=(2, 0) v=(1, 0)
   edge 3 u=(0, 2) v=(0, 1)
 t=2 moves edge 0 u from (-2, 0) to (-4, 0); the momentum is unchanged
-a function of the momentum does not determine t
+every function of the momentum is unchanged, because the matrix is unchanged
 face sweep, y and z and w fixed at the witness; x*coeff stays 8/3 and P13 stays positive
   x=1/8 product=3/64 coeff=64/3 x*coeff=8/3 P13=13/16
   x=1/4 product=3/32 coeff=32/3 x*coeff=8/3 P13=7/8

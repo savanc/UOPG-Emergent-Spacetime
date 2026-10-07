@@ -18,7 +18,7 @@ The third checked piece is [MVP-2](mvp2/README.md). The denominator vanishes exa
 
 The rank-one lemma is [lemma/README.md](lemma/README.md). A singular `2 × 2` matrix is an outer product, and `u → t u`, `v → v / t` leaves it fixed. On the polygon the four edges match the factors in the shadow, including the rescaling at `t = 2`. That is not a helicity, and it does not turn the MVP-4 card green. MVP-3 stays blank. See [lemma/DICTIONARY.md](lemma/DICTIONARY.md).
 
-The ladder on `Gr⁺(2,4)` is frozen. There is no further rung. A function of the momentum is constant along the rescaling, while `t = 2` moves the edge-0 factor from `(−2, 0)` to `(−4, 0)`. The momentum does not determine `t`, and so it does not determine a helicity. MVP-4 stays a contract.
+The ladder on `Gr⁺(2,4)` is frozen. There is no further rung. The factorisation of a null edge is not unique: `t = 2` moves the edge-0 factor from `(−2, 0)` to `(−4, 0)` and leaves the momentum fixed. The corollary that every function of that momentum is unchanged does not rule out a helicity. MVP-4 stays a contract.
 
 `UOPG.lean` and `UOPGv2.lean` are drafts from March and April 2026. They are not kernel-checked proofs. `m_W = 80.4 GeV` is not a theorem of this repository.
 

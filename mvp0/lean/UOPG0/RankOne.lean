@@ -7,9 +7,8 @@ A null `2 × 2` matrix is an outer product, and the opposite rescaling fixes it.
 Replacing `u` by `t u` and `v` by `v / t`, for `t ≠ 0`, does not change `m`.
 
 That is the rescaling drawn on the MVP-4 card. It is ordinary linear algebra.
-It is not a helicity, and it does not turn that card into a theorem. The
-helicity would be a weight the geometry forces on a wavefunction. There is
-no wavefunction here.
+The factorisation is not unique: `t u` can move while `m` stays fixed.
+This file does not define a helicity, and it does not prove that none exists.
 -/
 
 namespace UOPG0
@@ -114,8 +113,8 @@ theorem rescale_moves_factor {t : α} (ht1 : t ≠ 1) {u : Fin 2 → α} (hu : u
   have ht1' : t - 1 ≠ 0 := sub_ne_zero.mpr ht1
   exact (mul_eq_zero.mp hmul).resolve_left ht1'
 
-/-- Every function of the matrix is constant along the rescaling.
-The momentum does not determine `t`, so it does not determine a weight in `t`. -/
+/-- Corollary of `outer_rescale`. Equal matrices have equal images under any function.
+This is substitution, not a statement about helicity. -/
 theorem matrix_invariant_along_rescale {β : Type*} (t : α) (ht : t ≠ 0)
     (u v : Fin 2 → α) (f : Matrix (Fin 2) (Fin 2) α → β) :
     f (outer (fun i => t * u i) (fun j => v j / t)) = f (outer u v) := by

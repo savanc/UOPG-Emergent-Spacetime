@@ -3,7 +3,7 @@
 <rect width="100%" height="100%" fill="#fbf8f3"/>
 <rect x="0" y="0" width="960" height="8" rx="0" fill="#8a5a12"/>
 <text x="28" y="46" fill="#1a1814" font-size="26" font-family="DejaVu Serif, Liberation Serif, serif" text-anchor="start" font-weight="700">MVP-4  ·  rank one is a pair of spinors</text>
-<text x="28" y="72" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The outer product is proved. The momentum does not determine t. This card stays a contract.</text>
+<text x="28" y="72" fill="#5a544a" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The factorisation is not unique. That does not rule out a helicity. This card stays a contract.</text>
 <rect x="820" y="30" width="112" height="22" rx="11" fill="#8a5a12"/>
 <text x="876.0" y="46" fill="#ffffff" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="middle" font-weight="700">CONTRACT</text>
 <rect x="28" y="112" width="904" height="150" rx="12" fill="#ffffff" stroke="#d9d3c7" stroke-width="1.2"/>
@@ -24,13 +24,13 @@
 <text x="348" y="376" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Would act on the row v.</text>
 <text x="348" y="412" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The two copies are the</text>
 <text x="348" y="434" fill="#5a544a" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">dictionary, not a theorem.</text>
-<text x="648" y="318" fill="#8a5a12" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Rescaling, not helicity</text>
+<text x="648" y="318" fill="#8a5a12" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start" font-weight="700">Factors, not a helicity</text>
 <text x="648" y="350" fill="#1a1814" font-size="14" font-family="DejaVu Sans Mono, Liberation Mono, monospace" text-anchor="start">u -> t u,   v -> v / t</text>
 <text x="648" y="378" fill="#1b5e45" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Proved for every t != 0.</text>
 <text x="648" y="400" fill="#1a1814" font-size="14" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The polygon checks t = 2.</text>
 <text x="648" y="428" fill="#8a5a12" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">u moves from (-2, 0)</text>
 <text x="648" y="450" fill="#8a5a12" font-size="13" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">to (-4, 0). p0 stays put.</text>
-<text x="28" y="548" fill="#1a1814" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Every function of the momentum is constant along the rescaling.</text>
-<text x="28" y="574" fill="#1a1814" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The factor moves, so p does not determine t. MVP-4 stays amber.</text>
+<text x="28" y="548" fill="#1a1814" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">Equal matrices have equal images. That corollary does not rule out a helicity.</text>
+<text x="28" y="574" fill="#1a1814" font-size="15" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">The factor moves and p stays put. MVP-4 stays amber.</text>
 <text x="28" y="618" fill="#5a544a" font-size="12" font-family="DejaVu Sans, Liberation Sans, sans-serif" text-anchor="start">UOPG atlas  ·  contract, not a theorem  ·  python3 mvp0/viz/geometry.py</text>
 </svg>

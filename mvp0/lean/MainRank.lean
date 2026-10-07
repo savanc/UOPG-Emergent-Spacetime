@@ -27,5 +27,5 @@ def main : IO Unit := do
   IO.println (showEdge 2)
   IO.println (showEdge 3)
   IO.println s!"t=2 moves edge 0 u from ({u0 0}, {u0 1}) to ({moved 0}, {moved 1})"
-  IO.println "A function of the momentum does not determine t."
-  IO.println "The rescaling is not a helicity."
+  IO.println "Every function of the momentum is unchanged."
+  IO.println "The factor moves. This does not rule out a helicity."

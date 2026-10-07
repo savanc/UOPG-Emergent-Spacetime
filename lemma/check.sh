@@ -21,8 +21,8 @@ printf '%s\n' "$out" | grep -q 'edge 2 u=(2, 0) v=(1, 0)'
 printf '%s\n' "$out" | grep -q 'edge 3 u=(0, 2) v=(0, 1)'
 printf '%s\n' "$out" | grep -q 'rescale=true'
 printf '%s\n' "$out" | grep -q 't=2 moves edge 0 u from (-2, 0) to (-4, 0)'
-printf '%s\n' "$out" | grep -q 'A function of the momentum does not determine t.'
-printf '%s\n' "$out" | grep -q 'The rescaling is not a helicity.'
+printf '%s\n' "$out" | grep -q 'Every function of the momentum is unchanged.'
+printf '%s\n' "$out" | grep -q 'The factor moves. This does not rule out a helicity.'
 if printf '%s\n' "$out" | grep -q '80.4'; then
   echo "executable printed a fitted W mass; the lemma must not" >&2
   exit 1
