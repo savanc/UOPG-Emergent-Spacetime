@@ -100,6 +100,27 @@ theorem det2_eq_zero_iff_exists_outer (m : Matrix (Fin 2) (Fin 2) α) :
   · rintro ⟨u, v, rfl⟩
     exact det2_outer u v
 
+/-- For `t ≠ 1`, rescaling moves a nonzero factor. The parameter is visible on `u`. -/
+theorem rescale_moves_factor {t : α} (ht1 : t ≠ 1) {u : Fin 2 → α} (hu : u ≠ 0) :
+    (fun i => t * u i) ≠ u := by
+  intro heq
+  apply hu
+  funext i
+  have hi : t * u i = u i := congrFun heq i
+  have hmul : (t - 1) * u i = 0 := by
+    calc
+      (t - 1) * u i = t * u i - u i := by ring
+      _ = 0 := sub_eq_zero.mpr hi
+  have ht1' : t - 1 ≠ 0 := sub_ne_zero.mpr ht1
+  exact (mul_eq_zero.mp hmul).resolve_left ht1'
+
+/-- Every function of the matrix is constant along the rescaling.
+The momentum does not determine `t`, so it does not determine a weight in `t`. -/
+theorem matrix_invariant_along_rescale {β : Type*} (t : α) (ht : t ≠ 0)
+    (u v : Fin 2 → α) (f : Matrix (Fin 2) (Fin 2) α → β) :
+    f (outer (fun i => t * u i) (fun j => v j / t)) = f (outer u v) := by
+  rw [outer_rescale t ht u v]
+
 end Field
 
 /-!
@@ -217,5 +238,18 @@ theorem polygon_edge_rescale (i : Fin 4) :
       edgeMomentum polygonZ i := by
   rw [outer_rescale (2 : ℚ) (by norm_num) (edgeFactorU i) (edgeFactorV i)]
   exact (polygon_edge_outer i).symm
+
+theorem edgeFactorU_zero_ne_zero : edgeFactorU 0 ≠ 0 := by
+  intro h
+  have h0 := congrFun h 0
+  simp only [edgeFactorU, vec2_zero] at h0
+  norm_num at h0
+
+/-- At `t = 2` the column factor of edge 0 moves and the momentum does not. -/
+theorem edge0_momentum_misses_t :
+    (fun a => (2 : ℚ) * edgeFactorU 0 a) ≠ edgeFactorU 0 ∧
+      outer (fun a => (2 : ℚ) * edgeFactorU 0 a) (fun b => edgeFactorV 0 b / 2) =
+        edgeMomentum polygonZ 0 :=
+  ⟨rescale_moves_factor (by norm_num) edgeFactorU_zero_ne_zero, polygon_edge_rescale 0⟩
 
 end UOPG0
