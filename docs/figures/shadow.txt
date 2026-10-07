@@ -1,6 +1,6 @@
 UOPG exact shadow
 arithmetic: rational
-authority: Lean theorems in mvp0/DICTIONARY.md, mvp1/DICTIONARY.md, and mvp2/DICTIONARY.md
+authority: Lean theorems in mvp0/DICTIONARY.md, mvp1/DICTIONARY.md, mvp2/DICTIONARY.md, and lemma/DICTIONARY.md
 no fitted scale
 
 witness rows (1 1 1 1) and (0 1 2 3)
@@ -34,6 +34,20 @@ polygon events in the reading u=t+x, v=t-x, det=t^2-x^2
   p2 = x2-x3 = [[2, 0], [0, 0]] det=0
   p3 = x3-x0 = [[0, 0], [0, 2]] det=0
 sum of p_i = 0
+rank-one factors; rescaling by t=2 fixes each edge
+  edge 0 u=(-2, 0) v=(1, 0)
+  edge 1 u=(0, -2) v=(0, 1)
+  edge 2 u=(2, 0) v=(1, 0)
+  edge 3 u=(0, 2) v=(0, 1)
+face sweep, y and z and w fixed at the witness; x*coeff stays 8/3 and P13 stays positive
+  x=1/8 product=3/64 coeff=64/3 x*coeff=8/3 P13=13/16
+  x=1/4 product=3/32 coeff=32/3 x*coeff=8/3 P13=7/8
+  x=1/2 product=3/16 coeff=16/3 x*coeff=8/3 P13=1
+  x=1 product=3/8 coeff=8/3 x*coeff=8/3 P13=5/4
+  x=3/2 product=9/16 coeff=16/9 x*coeff=8/3 P13=3/2
+  x=2 product=3/4 coeff=4/3 x*coeff=8/3 P13=7/4
+  x=3 product=9/8 coeff=8/9 x*coeff=8/3 P13=9/4
+at x=0 the product is 0 and P13 = 3/4
 column shift at lambda=1 sends P23 from 1 to 0
 exchange <13><24> = <12><34> + <14><23> = 4
 

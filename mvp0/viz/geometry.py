@@ -3,9 +3,10 @@
 
 The Lean proofs are the authority. This file recomputes the same identities
 in exact rational arithmetic, then draws pictures of them. MVP-0, the orthant
-coefficient, and the algebraic face residue are checked here. Later rungs are
-contracts: they say what a later milestone has to prove. They are not results,
-and they contain no fitted mass.
+coefficient, the algebraic face residue, and the rank-one rescaling are
+checked here. The face sweep is a picture of the residue, not a new claim.
+Later rungs are contracts: they say what a later milestone has to prove.
+They are not results, and they contain no fitted mass.
 
 Run from anywhere:
 
@@ -263,12 +264,12 @@ def build_shadow() -> dict:
     events = []
     brackets = []
     for i in range(4):
-        zp, z = Z[(i - 1) % 4], Z[i]
-        delta = angle(zp["lam"], z["lam"])
+        prev, tw = Z[(i - 1) % 4], Z[i]
+        delta = angle(prev["lam"], tw["lam"])
         brackets.append(delta)
         if delta == 0:
             raise RuntimeError("a consecutive angle bracket vanished")
-        events.append(region_matrix(zp, z))
+        events.append(region_matrix(prev, tw))
     momenta = [sub2(events[i], events[(i + 1) % 4]) for i in range(4)]
     total = (
         (
@@ -295,12 +296,41 @@ def build_shadow() -> dict:
         if image != (F(0), F(0)):
             raise RuntimeError(f"edge {i} does not kill its spinor")
         u, v = factor_rank1(p)
-        # Little-group rescaling leaves the outer product fixed. Illustration only.
+        # Opposite rescaling leaves the outer product fixed. Lemma, not a helicity.
         t = F(2)
         if outer(tuple(t * c for c in u), tuple(c / t for c in v)) != p:
             raise RuntimeError("little-group rescaling moved the momentum")
         factors.append((u, v))
+    expected_factors = (
+        ((F(-2), F(0)), (F(1), F(0))),
+        ((F(0), F(-2)), (F(0), F(1))),
+        ((F(2), F(0)), (F(1), F(0))),
+        ((F(0), F(2)), (F(0), F(1))),
+    )
+    if factors != list(expected_factors):
+        raise RuntimeError(f"edge factors drifted from the Lean witness: {factors}")
     tx = [lightcone_tx(e) for e in events]
+
+    # Face sweep of the proved residue. y, z, w stay at the witness.
+    # x * 1/(x y z w) = 1/(y z w) = 8/3 for every positive sample.
+    # P13 = y z + x w stays positive. x = 0 is the wall, not a sample of the coefficient.
+    sweep_x = (F(1, 8), F(1, 4), F(1, 2), F(1), F(3, 2), F(2), F(3))
+    sweep = []
+    for xs in sweep_x:
+        prod = xs * y * z * w
+        coeff = F(1) / prod
+        residue = xs * coeff
+        p13s = p13(xs, y, z, w)
+        if residue != F(1) / (y * z * w) or residue != drop_x:
+            raise RuntimeError(f"sweep residue drifted at x={xs}: {residue}")
+        if p13s <= 0:
+            raise RuntimeError(f"sweep P13 is not positive at x={xs}: {p13s}")
+        # The adjacent product scales exactly with x. No division: prod * x = xs * adj.
+        if prod * x != xs * adj:
+            raise RuntimeError(f"sweep product drifted at x={xs}: {prod}")
+        sweep.append((xs, prod, coeff, residue, p13s))
+    if F(0) * y * z * w != 0:
+        raise RuntimeError("the x=0 wall is not a zero of the product")
 
     # Column shift is not the cluster exchange. One rational point, labeled as such.
     shifted_col = tuple(C[a][3] + C[a][1] + C[a][2] for a in range(2))
@@ -347,6 +377,7 @@ def build_shadow() -> dict:
         "brackets": brackets,
         "momenta": momenta,
         "factors": factors,
+        "sweep": sweep,
         "shifted_minors": Ps,
         "exchange": (exchange_left, exchange_right),
     }
@@ -356,7 +387,7 @@ def shadow_text(s: dict) -> str:
     lines = [
         "UOPG exact shadow",
         "arithmetic: rational",
-        "authority: Lean theorems in mvp0/DICTIONARY.md, mvp1/DICTIONARY.md, and mvp2/DICTIONARY.md",
+        "authority: Lean theorems in mvp0/DICTIONARY.md, mvp1/DICTIONARY.md, mvp2/DICTIONARY.md, and lemma/DICTIONARY.md",
         "no fitted scale",
         "",
         "witness rows (1 1 1 1) and (0 1 2 3)",
@@ -392,6 +423,23 @@ def shadow_text(s: dict) -> str:
     for i, p in enumerate(s["momenta"]):
         lines.append(f"  p{i} = x{i}-x{(i + 1) % 4} = {mat_str(p)} det={q(det2(p))}")
     lines.append("sum of p_i = 0")
+    lines.append("rank-one factors; rescaling by t=2 fixes each edge")
+    for i, (u, v) in enumerate(s["factors"]):
+        lines.append(
+            "  edge %s u=(%s, %s) v=(%s, %s)"
+            % (i, q(u[0]), q(u[1]), q(v[0]), q(v[1]))
+        )
+    lines.append(
+        "face sweep, y and z and w fixed at the witness; x*coeff stays "
+        + q(s["drop_x"])
+        + " and P13 stays positive"
+    )
+    for xs, prod, coeff, residue, p13s in s["sweep"]:
+        lines.append(
+            "  x=%s product=%s coeff=%s x*coeff=%s P13=%s"
+            % (q(xs), q(prod), q(coeff), q(residue), q(p13s))
+        )
+    lines.append("at x=0 the product is 0 and P13 = " + q(s["face_p13"]))
     lines.append("column shift at lambda=1 sends P23 from 1 to " + q(s["shifted_minors"][(2, 3)]))
     lines.append("exchange <13><24> = <12><34> + <14><23> = " + q(s["exchange"][0]))
     lines.append("")
@@ -639,7 +687,7 @@ def draw_ladder(_s: dict):
         (
             True,
             "MVP-0",
-            "The 2-plane is the massless boson",
+            "det = 0 is the theorem, not a boson",
             [
                 "An event is a 2-plane. An edge has det = 0.",
                 "The four edges sum to 0.",
@@ -681,10 +729,10 @@ def draw_ladder(_s: dict):
             "MVP-4",
             "Helicity from the two SL(2)s",
             [
-                "det = 0 means the edge has rank one.",
-                "Helicity would be a little-group weight.",
+                "The outer product and the rescaling are proved.",
+                "The helicity weight is not.",
             ],
-            "The weight is not derived. No polarisation is claimed.",
+            "Lemma only. This card stays a contract.",
         ),
     ]
     top = 100
@@ -1094,39 +1142,130 @@ def draw_mvp4(s: dict):
         fig,
         False,
         "MVP-4  ·  rank one is a pair of spinors",
-        "det p = 0 is proved. The factorisation below is linear algebra on that matrix. The weight is not.",
+        "The outer product and the rescaling are Lean lemmas. The helicity weight is not. This card stays a contract.",
     )
     p0 = s["momenta"][0]
     u, v = s["factors"][0]
     fig.rect(28, 112, 904, 150, WHITE, stroke=RULE, sw=1.2, rx=12)
-    fig.text(48, 146, "Edge p0 of the polygon, the Lean orientation", size=14, fill=MUTED)
+    fig.text(48, 146, "Edge p0 of the polygon. det = 0, and p0 = u v^T.", size=14, fill=MUTED)
     fig.text(48, 180, mat_str(p0), size=16, fill=INK, kind="mono")
     fig.text(48, 214, f"=  u v^T    u=({q(u[0])}, {q(u[1])})    v=({q(v[0])}, {q(v[1])})", size=15, fill=INK, kind="mono")
-    fig.text(48, 242, "det p0 = 0, and p0 kills the twistor spinor lambda_0. Both are proved.", size=14, fill=GREEN)
+    fig.text(48, 242, "Proved: det2_eq_zero_iff_exists_outer, and polygon_edge_outer for all four edges.", size=14, fill=GREEN)
 
     fig.rect(28, 284, 280, 230, BLUE_BG, stroke=BLUE, sw=1.4, rx=12)
     fig.rect(328, 284, 280, 230, BLUE_BG, stroke=BLUE, sw=1.4, rx=12)
     fig.rect(628, 284, 304, 230, AMBER_BG, stroke=AMBER, sw=1.4, rx=12)
     fig.text(48, 318, "SL(2) on lambda", size=15, fill=BLUE, kind="bold")
     fig.text(48, 350, "Lorentz, undotted", size=14, fill=INK)
-    fig.text(48, 376, "Acts on the column u.", size=14, fill=INK)
-    fig.text(48, 412, "Not yet a Lean action", size=13, fill=MUTED)
+    fig.text(48, 376, "Would act on the column u.", size=14, fill=INK)
+    fig.text(48, 412, "Not a Lean action", size=13, fill=MUTED)
     fig.text(48, 434, "in this repository.", size=13, fill=MUTED)
     fig.text(348, 318, "SL(2) on lambda~", size=15, fill=BLUE, kind="bold")
     fig.text(348, 350, "Lorentz, dotted", size=14, fill=INK)
-    fig.text(348, 376, "Acts on the row v.", size=14, fill=INK)
+    fig.text(348, 376, "Would act on the row v.", size=14, fill=INK)
     fig.text(348, 412, "The two copies are the", size=13, fill=MUTED)
     fig.text(348, 434, "dictionary, not a theorem.", size=13, fill=MUTED)
-    fig.text(648, 318, "Little group", size=15, fill=AMBER, kind="bold")
+    fig.text(648, 318, "Rescaling, not helicity", size=15, fill=AMBER, kind="bold")
     fig.text(648, 350, "u -> t u,   v -> v / t", size=14, fill=INK, kind="mono")
-    fig.text(648, 378, "p is unchanged. Checked", size=14, fill=INK)
-    fig.text(648, 400, "at t = 2 on this edge.", size=14, fill=INK)
-    fig.text(648, 434, "Helicity h: the wavefunction", size=13, fill=AMBER)
-    fig.text(648, 456, "weight t^(-2h). Unknown.", size=13, fill=AMBER)
+    fig.text(648, 378, "Proved for every t != 0.", size=14, fill=GREEN)
+    fig.text(648, 400, "The polygon checks t = 2.", size=14, fill=INK)
+    fig.text(648, 434, "Helicity h: a wavefunction", size=13, fill=AMBER)
+    fig.text(648, 456, "weight t^(-2h). Not proved.", size=13, fill=AMBER)
     fig.text(28, 548, "A massless boson would be a weight that this geometry forces.", size=15, fill=INK)
-    fig.text(28, 574, "MVP-4 has to derive the weight. The polygon does not know it yet.", size=15, fill=INK)
+    fig.text(28, 574, "The lemma does not derive it. MVP-4 stays amber.", size=15, fill=INK)
     footer(fig, 618, False)
     fig.save("mvp4-helicity")
+
+
+def draw_sweep(s: dict):
+    """Picture of the face residue. y, z, w fixed. Not a new theorem."""
+    fig = Fig(960, 720)
+    frame(
+        fig,
+        True,
+        "Face sweep  ·  the residue, drawn",
+        "y, z, w fixed at the witness. Seven positive rationals for x. Exact arithmetic, then the picture.",
+    )
+    y, z, w = s["chart"][1], s["chart"][2], s["chart"][3]
+
+    def panel(x0, title, ylabel):
+        fig.rect(x0, 108, 440, 360, WHITE, stroke=RULE, sw=1.2, rx=12)
+        fig.text(x0 + 20, 136, title, size=15, fill=INK, kind="serif")
+        fig.text(x0 + 20, 158, ylabel, size=12, fill=MUTED)
+
+    panel(28, "x times the coefficient", "stays 8/3 off the wall")
+    panel(492, "P13 = y z + x w", "stays positive, including the wall")
+
+    samples = s["sweep"]
+    xs_vals = [row[0] for row in samples]
+    xmin, xmax = F(0), max(xs_vals)
+
+    def xpix(x0, xv):
+        return x0 + 48 + float((xv - xmin) / (xmax - xmin)) * 340
+
+    # Left axis: residue is constant, so the scale is just that line.
+    y_top, y_bot = 196, 420
+    residue = samples[0][3]
+    fig.line(xpix(28, xmin), y_bot, xpix(28, xmax), y_bot, RULE, 1)
+    fig.line(xpix(28, F(0)), y_top, xpix(28, F(0)), y_bot, RULE, 1)
+    yres = (y_top + y_bot) / 2
+    fig.dash(xpix(28, xmin), yres, xpix(28, xmax), yres, GREEN, 1.5)
+    fig.circle(xpix(28, F(0)), y_bot, 5, RED)
+    fig.text(xpix(28, F(0)) + 8, y_bot - 8, "x=0 pole", size=12, fill=RED)
+    for xs, _prod, _coeff, res, _p13s in samples:
+        fig.circle(xpix(28, xs), yres, 4.5, GREEN)
+        if res != residue:
+            raise RuntimeError("sweep plot saw a residue that is not constant")
+    fig.text(xpix(28, xmax) - 4, yres - 16, q(residue), size=14, fill=GREEN, anchor="end", kind="bold")
+    fig.text(76, 448, "x", size=12, fill=MUTED)
+    fig.text(40, y_bot + 16, "0", size=12, fill=MUTED)
+    fig.text(xpix(28, s["chart"][0]) - 10, y_bot + 16, "1/2", size=12, fill=MUTED)
+    fig.text(xpix(28, xmax) - 8, y_bot + 16, q(xmax), size=12, fill=MUTED)
+
+    # Right axis: P13 from the wall value up through the last sample.
+    p13_wall = s["face_p13"]
+    p13_vals = [p13_wall] + [row[4] for row in samples]
+    pmin, pmax = min(p13_vals), max(p13_vals)
+
+    def ypix(pv):
+        return y_bot - float((pv - pmin) / (pmax - pmin)) * (y_bot - y_top)
+
+    fig.line(xpix(492, xmin), y_bot, xpix(492, xmax), y_bot, RULE, 1)
+    fig.line(xpix(492, F(0)), y_top, xpix(492, F(0)), y_bot, RULE, 1)
+    pts = [(xpix(492, F(0)), ypix(p13_wall))] + [
+        (xpix(492, row[0]), ypix(row[4])) for row in samples
+    ]
+    for a, b in zip(pts, pts[1:]):
+        fig.line(a[0], a[1], b[0], b[1], GREEN, 1.6)
+    fig.circle(pts[0][0], pts[0][1], 5, AMBER)
+    fig.text(pts[0][0] + 8, pts[0][1] + 16, "3/4 at the wall", size=12, fill=AMBER)
+    for (px, py), row in zip(pts[1:], samples):
+        fig.circle(px, py, 4.5, GREEN)
+        if row[4] <= 0:
+            raise RuntimeError("sweep plot saw a non-positive P13")
+    fig.text(xpix(492, xmax) - 4, pts[-1][1] - 14, q(samples[-1][4]), size=13, fill=GREEN, anchor="end")
+    fig.text(540, 448, "x", size=12, fill=MUTED)
+
+    fig.rect(28, 488, 904, 168, GREEN_BG, stroke=GREEN, sw=1.2, rx=12)
+    fig.text(
+        46,
+        516,
+        "Three of the seven samples. y=%s  z=%s  w=%s. The shadow lists the rest."
+        % (q(y), q(z), q(w)),
+        size=14,
+        fill=GREEN,
+        kind="bold",
+    )
+    headers = (46, 150, 280, 460, 680)
+    for xh, label in zip(headers, ("x", "product", "1/(xyzw)", "x/(xyzw)", "P13")):
+        fig.text(xh, 544, label, size=13, fill=MUTED, kind="mono")
+    show = [samples[0], samples[2], samples[-1]]
+    for i, (xs, prod, coeff, residue, p13s) in enumerate(show):
+        vals = (q(xs), q(prod), q(coeff), q(residue), q(p13s))
+        for xh, val in zip(headers, vals):
+            fig.text(xh, 572 + i * 22, val, size=14, fill=INK, kind="mono")
+    footer(fig, 692, True, "picture of a proved identity, not a fit")
+    fig.save("face-sweep")
 
 
 def write_all(s: dict):
@@ -1144,6 +1283,7 @@ def write_all(s: dict):
     draw_mvp2(s)
     draw_mvp3(s)
     draw_mvp4(s)
+    draw_sweep(s)
     for svg in FIG.glob("*.svg"):
         raw = svg.read_text(encoding="utf-8")
         if "80.4" in raw:
