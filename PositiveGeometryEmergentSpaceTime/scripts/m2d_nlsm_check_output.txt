@@ -1,0 +1,25 @@
+(a) n=4: lim delta^2 A4(shifted) = -X13 - X24
+    c13 = X13 + X24 ; A4NLSM = X13+X24 equals c13: True
+    #planar cubic diagrams n=6: 14
+(b) n=6: eps^-m coefficients of delta^4 A6, m=1,2,3 (must be 0): [0, 0, 0]
+    lim delta^4 A6(shifted) / A6NLSM[eq.4.3] = 1 (prediction +1)
+    Feynman rules (eq. 4.2, lambda=1): A6_FR / A6[eq.4.3] = -1
+    same rules at n=4: V4 = -X13 - X24 ; [H] normalises A4 = X13+X24, so overall sign per multiplicity is convention
+(c) n=5: lim delta A5 = 0 ; lim delta^2 A5 = -X13/X14 - X24/X25 + 1 - X35/X25 - X24/X14
+    c shifts under delta: {(1, 3): 0, (1, 4): -delta, (2, 4): 0, (2, 5): 0, (3, 5): 0}
+    soft scan of L5 (p_i -> 0): {1: zoo*(X24 + X35), 2: 0, 3: 0, 4: zoo*(X13 + X25), 5: zoo*(X13 + X24) + 1}
+(d) m5 on the five skinny-rectangle loci: [0, 0, 0, 0, 0]
+    factorisation eq.3.3 (c14=0) residual: 0 ; eq.3.5 (c13=0) residual: 0
+    shifted A5 (finite delta) on loci: [(((1, 3), (1, 4)), False), (((2, 4), (2, 5)), True), (((3, 5), (1, 3)), True), (((1, 4), (2, 4)), False), (((2, 5), (3, 5)), True)]
+    A6NLSM on 6 skinny rectangles: [0, 0, 0, 0, 0, 0] ; shifted A6 (finite delta): [0, 0, 0, 0, 0, 0]
+(e) A6NLSM at p1 -> 0: 0 ; A4NLSM at p1->0: X13,X24 -> 0 gives 0
+    A6NLSM soft in every leg (generic map): [0, 0, 0, 0, 0, 0]
+    m5 (Tr phi^3) soft in leg 1 (expected NOT zero / singular): zoo/X35 + zoo/X24 + X24**(-2)
+D1: coefficients of d12d34, d13d24, d14d23: [8*kappa*s, -8*kappa*(s + t), 8*kappa*t]
+    => M = ( 8*kappa ) [s12 d12d34 + s13 d13d24 + s14 d14d23] = Weinberg chiral-limit form A(s,t,u) ∝ s
+D2: a0^0 = 7*M**2/(32*pi*F**2) , a0^2 = -M**2/(16*pi*F**2)
+    a00: LO = 0.1589; NA48/2 Ke4 = 0.222 +- 0.0142; rel dev = -28.4%; pull = -4.44 sigma; CGL = (0.22, 0.005); within 30%: True
+    a20: LO = -0.0454; NA48/2 Ke4 = -0.0432 +- 0.0097; rel dev = -5.1%; pull = -0.23 sigma; CGL = (-0.0444, 0.001); within 30%: True
+    ratio a0^2/a0^0: LO = -0.2857 (=-2/7); NA48/2 = -0.1946 (not graded)
+RESULTS: {'a': True, 'b': True, 'b_sign_prediction': True, 'b_feynman': True, 'c': True, 'c_cshift': True, 'd': True, 'e': True, 'D1': True, 'D2_a00': True, 'D2_a20': True}
+VERDICT: PASS (sign prediction sigma=+1: hit )

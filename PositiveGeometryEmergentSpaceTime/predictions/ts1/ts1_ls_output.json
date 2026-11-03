@@ -1,0 +1,50 @@
+{
+ "rho": {
+  "m2_over_mrho2": 1,
+  "J": 1,
+  "I": 1,
+  "g2_over_grho2": "1",
+  "value": 1.0,
+  "kappa_over_rho": "1"
+ },
+ "f2": {
+  "m2_over_mrho2": 3,
+  "J": 2,
+  "I": 0,
+  "g2_over_grho2": "1/2",
+  "value": 0.5,
+  "kappa_over_rho": "9/10"
+ },
+ "rho3": {
+  "m2_over_mrho2": 5,
+  "J": 3,
+  "I": 1,
+  "g2_over_grho2": "5/16",
+  "value": 0.3125,
+  "kappa_over_rho": "3/7"
+ },
+ "f4": {
+  "m2_over_mrho2": 7,
+  "J": 4,
+  "I": 0,
+  "g2_over_grho2": "49/240",
+  "value": 0.20416666666666666,
+  "kappa_over_rho": "1/2"
+ },
+ "rho5": {
+  "m2_over_mrho2": 9,
+  "J": 5,
+  "I": 1,
+  "g2_over_grho2": "243/1792",
+  "value": 0.13560267857142858,
+  "kappa_over_rho": "3/11"
+ },
+ "f6": {
+  "m2_over_mrho2": 11,
+  "J": 6,
+  "I": 0,
+  "g2_over_grho2": "13*Integral(-315*x**4*gamma(13/4 - 11*x/4)/gamma(-11*x/4 - 11/4), (x, -1, 1))/10560 + 13*Integral(-5*gamma(13/4 - 11*x/4)/gamma(-11*x/4 - 11/4), (x, -1, 1))/10560 + 13*Integral(105*x**2*gamma(13/4 - 11*x/4)/gamma(-11*x/4 - 11/4), (x, -1, 1))/10560 + 13*Integral(231*x**6*gamma(13/4 - 11*x/4)/gamma(-11*x/4 - 11/4), (x, -1, 1))/10560",
+  "value": 0.09078000992063492,
+  "kappa_over_rho": "9/26"
+ }
+}

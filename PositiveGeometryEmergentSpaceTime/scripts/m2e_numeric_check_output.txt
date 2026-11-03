@@ -1,0 +1,20 @@
+== canonical a*: a = {X13:-1, X15:-1, X24:1, X26:1, X35:-1, X46:1}
+   L == 0 identically: False
+   X#0: L = 635.936; delta^4 A6 at 1e6 = 635.915, at 1e8 = 635.936
+   X#1: L = 94.7576; delta^4 A6 at 1e6 = 94.7601, at 1e8 = 94.7576
+   Adler zero per leg 1..6: [True, True, True, True, True, True]
+== mirror (= a* rotated by one label): a = {X13:1, X15:1, X24:-1, X26:-1, X35:1, X46:-1}
+   L == 0 identically: False
+   X#0: L = 108.99; delta^4 A6 at 1e6 = 108.994, at 1e8 = 108.99
+   X#1: L = 22.3733; delta^4 A6 at 1e6 = 22.3735, at 1e8 = 22.3733
+   Adler zero per leg 1..6: [True, True, True, True, True, True]
+== C1-only family member (fails C3): a = {X13:1, X14:3/2, X15:1, X24:1/2, X26:-1, X35:-1/2, X46:1/2}
+   L == 0 identically: False
+   X#0: L = 1349.03; delta^4 A6 at 1e6 = 1349.06, at 1e8 = 1349.03
+   X#1: L = 253.171; delta^4 A6 at 1e6 = 253.174, at 1e8 = 253.171
+   Adler zero per leg 1..6: [True, False, True, True, False, True]
+== full-support C1(<4)+C2+C3 family member (L = 0): a = {X13:1, X14:3, X15:3, X24:2, X25:2, X26:-1, X35:-2, X36:-5, X46:-3}
+   L == 0 identically: True
+   X#0: L = 0; delta^4 A6 at 1e6 = 4.14096e-05, at 1e8 = 4.14114e-07
+   X#1: L = 0; delta^4 A6 at 1e6 = 2.75614e-05, at 1e8 = 2.7563e-07
+   Adler zero per leg 1..6: [True, True, True, True, True, True]

@@ -1,0 +1,12 @@
+GUARD OK: prereg 689d929f5 on origin/main; checker hash matches (re-verified on every scoring call)
+run LEANCERT1-2026-10-23-r1 seed 20261023 mode planted (2026-10-23)
+PL1 kernel of [[1,1,0],[0,1,1]] = [[1, -1, 1]] (expect [[1,-1,1]]): OK
+PL1 split cert P=[[0, 0], [1, 0], [-1, 1]] Q=[[1, 0, 0]] d=1 verify {'MK=0': True, 'PM+KQ=dI': True, 'QK=dI': True, 'd!=0': True}: OK
+PL2 flipped kernel entry [[1], [-1], [-1]] -> verify {'MK=0': False, 'PM+KQ=dI': False, 'QK=dI': True, 'd!=0': True}: REJECTED (OK)
+PL3 corrupted P -> verify {'MK=0': True, 'PM+KQ=dI': False, 'QK=dI': True, 'd!=0': True}: REJECTED (OK)
+PL4 fake extra kernel vector -> MK=0 False: REJECTED (OK)
+PL5 ABHY n=4 eq.(10): s12 [1, 0], s23 [0, 1], s13 [-1, -1] over (X13, X24): OK
+PL6 sketch rank of rank-2 3x3 = [2, 2, 2] (expect [2,2,2]): OK
+PL7 planted tuple (-4,2,-3,7) rejected, SM (-4,2,-3,6) accepted: OK
+PL8 linear-ACC-only count = 63 (> 2 expected): OK
+PLANTED: ALL OK

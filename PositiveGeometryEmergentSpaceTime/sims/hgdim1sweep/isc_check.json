@@ -1,0 +1,32 @@
+{
+ "5": {
+  "edges": 5,
+  "isc_violations": 0,
+  "cycle_count_mismatch": 0,
+  "idle0_mismatch": 0
+ },
+ "6": {
+  "edges": 21,
+  "isc_violations": 0,
+  "cycle_count_mismatch": 0,
+  "idle0_mismatch": 0
+ },
+ "7": {
+  "edges": 84,
+  "isc_violations": 0,
+  "cycle_count_mismatch": 0,
+  "idle0_mismatch": 0
+ },
+ "8": {
+  "edges": 330,
+  "isc_violations": 0,
+  "cycle_count_mismatch": 0,
+  "idle0_mismatch": 0
+ },
+ "9": {
+  "edges": 1287,
+  "isc_violations": 0,
+  "cycle_count_mismatch": 0,
+  "idle0_mismatch": null
+ }
+}

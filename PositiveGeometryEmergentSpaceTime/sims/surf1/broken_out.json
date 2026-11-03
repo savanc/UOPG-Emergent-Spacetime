@@ -1,0 +1,48 @@
+{
+ "BROKEN_ALL_REJECTED": true,
+ "broken": {
+  "B1_no_ghost_as_SU": {
+   "checks": {
+    "P1_single_loop": false,
+    "P2_theta": false,
+    "P3_K_triangle": false,
+    "P4_K_bubble": false
+   },
+   "got": {
+    "P1_single_loop": "(1)N^2",
+    "P2_theta": "(2)N^3 + (2)N^1"
+   },
+   "planted_gate": false,
+   "rejected": true
+  },
+  "B2_ghost_sign_flipped": {
+   "checks": {
+    "P1_single_loop": false,
+    "P2_theta": false,
+    "P3_K_triangle": false,
+    "P4_K_bubble": false
+   },
+   "got": {
+    "P1_single_loop": "(1)N^2 + (1)N^0",
+    "P2_theta": "(2)N^3 + (14)N^1 + (16)N^-1"
+   },
+   "planted_gate": false,
+   "rejected": true
+  },
+  "B3_single_orientation": {
+   "checks": {
+    "P1_single_loop": true,
+    "P2_theta": false,
+    "P3_K_triangle": false,
+    "P4_K_bubble": false
+   },
+   "got": {
+    "P1_single_loop": "(1)N^2 + (-1)N^0",
+    "P2_theta": "(-2)N^1 + (2)N^-1"
+   },
+   "planted_gate": false,
+   "rejected": true
+  }
+ },
+ "seconds": 0.1
+}

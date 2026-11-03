@@ -1,0 +1,12 @@
+# guard refusal before push (2026-10-23)
+## CLI: python3 sims/triwhy/triwhy_checker.py live
+GUARD REFUSED: prereg commit 7f9878669 is not an ancestor of origin/main (not pushed)
+rc=1
+## import test
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg commit 7f9878669 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 7f9878669 is not an ancestor of origin/main (not pushed)']
+pass-flag attributes present: []
+rc=2
+
+## timestamp erratum (supersede-by-note; the committed prereg is not edited)
+The prereg header says "Written 2026-10-23". That is wrong: the file mtime is and the
+local prereg commit 7f98786 is. Use those real times.

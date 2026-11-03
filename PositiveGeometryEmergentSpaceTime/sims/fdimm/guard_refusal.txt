@@ -1,0 +1,8 @@
+# Guard proof — 2026-10-20, local prereg commit 063378f, NOT yet pushed
+## (a) CLI
+GUARD REFUSED: prereg commit 063378f8b is not an ancestor of origin/main (not pushed)
+exit=1
+## (b) import-and-call (two calls; no pass flag)
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg commit 063378f8b is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 063378f8b is not an ancestor of origin/main (not pushed)']
+pass-flag attributes present: []
+exit=2

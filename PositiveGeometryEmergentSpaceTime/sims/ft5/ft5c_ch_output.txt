@@ -1,0 +1,2 @@
+N=3 a,b,c = [-2.   0.5  1. ] max rel residual 3.31e-15 rational: ['-2', '1/2', '1']
+N=4 a,b,c = [ 0.08985669 -0.04134843  0.36104786] max rel residual 2.50e-01 rational: ['8/89', '-4/97', '13/36']

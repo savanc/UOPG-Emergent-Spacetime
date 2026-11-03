@@ -1,0 +1,11 @@
+n=8: 2 tree tiles (distinct taus 2); codim-1 boundaries per tile [5, 5]
+   wall edges 1, flip edges 1, equal: True; internal walls 1, external 8, max multiplicity 2
+n=10: 5 tree tiles (distinct taus 5); codim-1 boundaries per tile [7, 7, 7, 7, 7]
+   wall edges 5, flip edges 5, equal: True; internal walls 5, external 25, max multiplicity 2
+   tree [(3, 't0'), ('t0', 't1'), (4, 't0'), (2, 't1'), ('t1', 't2'), (1, 't2'), (5, 't2')] tau (6, 9, 7, 10, 8, 1, 3, 5, 2, 4)
+   tree [(2, 't0'), ('t0', 't1'), (3, 't0'), ('t1', 't2'), (4, 't1'), (1, 't2'), (5, 't2')] tau (7, 9, 6, 8, 10, 3, 1, 4, 2, 5)
+   tree [(1, 't0'), ('t0', 't2'), (2, 't0'), (3, 't1'), ('t1', 't2'), (4, 't1'), (5, 't2')] tau (4, 7, 9, 1, 8, 10, 2, 5, 3, 6)
+   tree [(2, 't0'), ('t0', 't1'), (3, 't0'), (1, 't1'), ('t1', 't2'), (5, 't2'), (4, 't2')] tau (5, 8, 6, 9, 1, 3, 10, 2, 4, 7)
+   tree [(1, 't0'), ('t0', 't1'), (2, 't0'), ('t1', 't2'), (3, 't1'), (5, 't2'), (4, 't2')] tau (4, 6, 8, 1, 9, 2, 10, 3, 5, 7)
+n=12: 14 tree tiles (distinct taus 14); codim-1 boundaries per tile [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9]
+   wall edges 21, flip edges 21, equal: True; internal walls 21, external 84, max multiplicity 2

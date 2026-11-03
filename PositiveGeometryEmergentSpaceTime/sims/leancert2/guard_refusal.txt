@@ -1,0 +1,9 @@
+# LEAN-CERT-2 guard refusal record (2026-10-28), prereg commit 8d2e33c local only, not yet on origin
+## CLI: python3 sims/leancert2/leancert2_checker.py planted
+GUARD REFUSED: prereg commit 8d2e33cae is not an ancestor of origin/main (not pushed)
+rc=1
+## import test: python3 sims/leancert2/import_guard_test.py
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg commit 8d2e33cae is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 8d2e33cae is not an ancestor of origin/main (not pushed)']
+pass-flag attributes present: []
+rc=2
+Prereg commit 8d2e33c pushed ALONE 2026-10-28 (d390b13..8d2e33c).

@@ -1,0 +1,27 @@
+{
+ "open_nbhd": [
+  "PL1_complete",
+  "PL3_cube4",
+  "PL4_tree3",
+  "PL5_pentagon",
+  "PL8_gates"
+ ],
+ "dist_cap2": [
+  "PL2_cycle8",
+  "PL4_tree3",
+  "PL7_lp",
+  "PL8_gates"
+ ],
+ "no_shared": [
+  "PL1_complete",
+  "PL3_cube4",
+  "PL5_pentagon",
+  "PL7_lp",
+  "PL8_gates"
+ ],
+ "p_count_edges": [
+  "PL5_pentagon"
+ ],
+ "empty": "ILL-DEFINED",
+ "ALL_REJECTED": true
+}

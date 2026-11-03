@@ -1,0 +1,50 @@
+{
+ "G1-391": {
+  "delta_obs": 0.5088,
+  "sigma": 0.0449,
+  "delta_pred": 0.5245,
+  "band": 0.1,
+  "PASS": true,
+  "null_f": 0.2,
+  "mKstar_obs": 0.16516,
+  "mKstar_pred": 0.1656,
+  "rel_err_m": 0.0027,
+  "src": "1904.03188 T.II BW mR=936(1) MeV, scale a\u03a9=0.2951(22)"
+ },
+ "G1-239": {
+  "delta_obs": 0.3838,
+  "sigma": 0.0114,
+  "delta_pred": 0.4341,
+  "band": 0.1,
+  "PASS": true,
+  "null_f": 0.2,
+  "mKstar_obs": 0.1487,
+  "mKstar_pred": 0.15092,
+  "rel_err_m": 0.0149,
+  "src": "1904.03188 T.II BW mR=904(1) MeV, scale a\u03a9=0.2751(6)"
+ },
+ "G2-317": {
+  "delta_obs": 0.4627,
+  "sigma": 0.0349,
+  "delta_pred": 0.4965,
+  "band": 0.1,
+  "PASS": true,
+  "null_f": 0.2,
+  "mKstar_obs": 0.51725,
+  "mKstar_pred": 0.52137,
+  "rel_err_m": 0.008,
+  "src": "2006.14035 pole Re 0.8951(64) GeV, a=0.11403 fm (same a as rho paper)"
+ },
+ "G4-230": {
+  "delta_obs": 0.4084,
+  "sigma": 0.0345,
+  "delta_pred": 0.4343,
+  "band": 0.1,
+  "PASS": true,
+  "null_f": 0.2,
+  "mKstar_obs": 0.14996,
+  "mKstar_pred": 0.1511,
+  "rel_err_m": 0.0076,
+  "src": "1802.03100 eq.4.1 mK*/mpi=3.808(18)"
+ }
+}

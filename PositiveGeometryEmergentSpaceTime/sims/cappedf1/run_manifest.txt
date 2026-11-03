@@ -1,0 +1,16 @@
+run_id CAPPEDF1-20261031T120726Z
+start 2026-10-31
+head 15e8af03d1fbb48577e68c4e2d74bb7e88ffa56c
+python 3.13.5 numpy 2.5.4 scipy 1.18.1 networkx 3.7
+7c6da283a6329d9e0a77626db48f03f1b0bf675c5077110851632786c00238b1  cappedf1_checker.py
+4accb9516b2d33b7d036ac66eab6e20bd4814f3261a1d84bb02449fbe4ba119f  guard.py
+48b421472d5f8f5ee92b79c6eff8cf8b0109b53950cd0e1703928ff32f218d88  ../../prereg/CAPPED-FORMAN-1-capped-forman-equality-2026-10-31.md
+seeds: SEED=20261031 (unused globally); rdual seeds 0..119,1000..1059,2000..2039,3000..3015; GA random 4000..4023; truncations 5000..5059
+cmd: python3 cappedf1_checker.py {planted,broken,live}; timeout 2700 s each; workers 7
+planted exit 0 secs 2
+broken exit 0 secs 6
+NOTE runner-shell abort: the tool session hosting run_cappedf1.sh was aborted after 'broken' finished (~12:07:33Z); the 'live' child (timeout 2700 python3 cappedf1_checker.py live, pid 570101) was NOT affected and ran to completion unattended. The lines below were appended by hand from file mtimes and a replacement RSS sampler; no result was edited.
+live exit (not captured by runner; completed normally: summary + JSON written, no traceback in log) secs ~384 (12:07:33Z -> 12:13:57Z by mtime)
+peak_rss_kb planted/broken: not sampled after abort; live: 869684 (replacement sampler from t~273 s to exit; earlier sample at t=273 s: 97436 single-proc)
+limits: workers 7 (<=8 CPU), peak RSS ~0.85 GB (<15 GB, <8 GB PARTIAL-LIMIT threshold)
+end 2026-10-31

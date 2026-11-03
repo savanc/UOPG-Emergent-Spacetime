@@ -1,0 +1,72 @@
+4pt equal ['u', 'd', 's', 'u'] zero(p0.p2=0): True generic nonzero: True
+4pt equal ['u', 's', 'd', 's'] zero(p0.p2=0): True generic nonzero: True
+4pt equal ['u', 'd', 'u', 'd'] zero(p0.p2=0): True generic nonzero: True
+4pt equal ['u', 'u', 's', 's'] zero(p0.p2=0): True generic nonzero: True
+4pt unequal ['u', 'd', 's', 'u'] zero(p0.p2=0): True generic nonzero: True
+4pt unequal ['u', 's', 'd', 's'] zero(p0.p2=0): True generic nonzero: True
+4pt unequal ['u', 'd', 'u', 'd'] zero(p0.p2=0): True generic nonzero: True
+4pt unequal ['u', 'u', 's', 's'] zero(p0.p2=0): True generic nonzero: True
+4pt massless ['u', 'd', 's', 'u'] zero(p0.p2=0): True generic nonzero: True
+4pt massless ['u', 's', 'd', 's'] zero(p0.p2=0): True generic nonzero: True
+4pt massless ['u', 'd', 'u', 'd'] zero(p0.p2=0): True generic nonzero: True
+4pt massless ['u', 'u', 's', 's'] zero(p0.p2=0): True generic nonzero: True
+6pt equal udsuds skinny0 ZERO
+6pt equal udsuds rect_02_13 ZERO
+6pt equal udsuds rect nonzero
+6pt equal udsuds pair_only nonzero
+6pt equal uuddss skinny0 ZERO
+6pt equal uuddss rect_02_13 ZERO
+6pt equal uuddss rect nonzero
+6pt equal uuddss pair_only nonzero
+6pt equal ududud skinny0 ZERO
+6pt equal ududud rect_02_13 ZERO
+6pt equal ududud rect nonzero
+6pt equal ududud pair_only nonzero
+6pt equal ususus skinny0 ZERO
+6pt equal ususus rect_02_13 ZERO
+6pt equal ususus rect nonzero
+6pt equal ususus pair_only nonzero
+6pt equal uuuuus skinny0 ZERO
+6pt equal uuuuus rect_02_13 ZERO
+6pt equal uuuuus rect nonzero
+6pt equal uuuuus pair_only nonzero
+6pt unequal udsuds skinny0 ZERO
+6pt unequal udsuds rect_02_13 ZERO
+6pt unequal udsuds rect nonzero
+6pt unequal udsuds pair_only nonzero
+6pt unequal uuddss skinny0 ZERO
+6pt unequal uuddss rect_02_13 ZERO
+6pt unequal uuddss rect nonzero
+6pt unequal uuddss pair_only nonzero
+6pt unequal ududud skinny0 ZERO
+6pt unequal ududud rect_02_13 ZERO
+6pt unequal ududud rect nonzero
+6pt unequal ududud pair_only nonzero
+6pt unequal ususus skinny0 ZERO
+6pt unequal ususus rect_02_13 ZERO
+6pt unequal ususus rect nonzero
+6pt unequal ususus pair_only nonzero
+6pt unequal uuuuus skinny0 ZERO
+6pt unequal uuuuus rect_02_13 ZERO
+6pt unequal uuuuus rect nonzero
+6pt unequal uuuuus pair_only nonzero
+6pt massless udsuds skinny0 ZERO
+6pt massless udsuds rect_02_13 ZERO
+6pt massless udsuds rect nonzero
+6pt massless udsuds pair_only nonzero
+6pt massless uuddss skinny0 ZERO
+6pt massless uuddss rect_02_13 ZERO
+6pt massless uuddss rect nonzero
+6pt massless uuddss pair_only nonzero
+6pt massless ududud skinny0 ZERO
+6pt massless ududud rect_02_13 ZERO
+6pt massless ududud rect nonzero
+6pt massless ududud pair_only nonzero
+6pt massless ususus skinny0 ZERO
+6pt massless ususus rect_02_13 ZERO
+6pt massless ususus rect nonzero
+6pt massless ususus pair_only nonzero
+6pt massless uuuuus skinny0 ZERO
+6pt massless uuuuus rect_02_13 ZERO
+6pt massless uuuuus rect nonzero
+6pt massless uuuuus pair_only nonzero

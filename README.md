@@ -32,6 +32,22 @@ The ladder on `Gr⁺(2,4)` is frozen. There is no further rung. The factorisatio
 - **Numerical notebook**: [uopgv2.ipynb](uopgv2.ipynb)
 - **Slide Deck**: [UOPG v2 Slide deck](https://github.com/savanc/UOPG-Emergent-Spacetime/blob/main/Unified_Positive_Geometry.pdf)
   
+## PositiveGeometryEmergentSpaceTime: the follow-on programme
+
+The folder [`PositiveGeometryEmergentSpaceTime/`](PositiveGeometryEmergentSpaceTime/README.md) holds the follow-on programme: can a positive-geometry structure, checked in Lean, fix a dimensionless Standard-Model quantity with zero fitted parameters? It is ongoing research. Every test is preregistered before it runs, graded by a locked checker with planted and broken controls, and kept on the record whatever the outcome.
+
+- Lean library: 1378 theorems, 798 definitions, 0 non-standard axioms, 0 `sorry`-dependent declarations (kernel-checked axiom audit).
+- 112 preregistrations, the result reviews, the blocked-route registry and the exclusion ledger.
+- The accompanying papers are published on Zenodo (see Papers below).
+
+**Papers** (each first link is the concept DOI, which always resolves to the latest version):
+
+- Paper II (evidence): *Can positive geometry fix the Standard Model? Evidence from a Lean-verified agentic research programme*. [10.5281/zenodo.23932592](https://doi.org/10.5281/zenodo.23932592) (all versions; v8.3: [10.5281/zenodo.23932593](https://doi.org/10.5281/zenodo.23932593))
+- Paper I (method): *Governed human-agent research loops for mathematical physics: preregistration, locked checkers and formal proof as the operating system of AI-assisted discovery*. [10.5281/zenodo.23932674](https://doi.org/10.5281/zenodo.23932674) (all versions; v9.3: [10.5281/zenodo.23932675](https://doi.org/10.5281/zenodo.23932675))
+- Curvature: *Exact Ollivier-Ricci curvature of the associahedron flip graph, and when it equals Forman curvature*. [10.5281/zenodo.23932724](https://doi.org/10.5281/zenodo.23932724) (all versions; v4.2: [10.5281/zenodo.23932725](https://doi.org/10.5281/zenodo.23932725))
+
+It is a separate Lake project with its own toolchain pin. It does not import `UOPG.lean`, `UOPGv2.lean` or the `mvp0/lean` project, and nothing in `mvp0/`, `mvp1/`, `mvp2/`, `lemma/` or `docs/` changed when it was added.
+
 ## Historical paper
 
 The following title and abstract are the published paper. They are not the status of this repository.
@@ -48,6 +64,7 @@ We present a geometric model in which the positive Grassmannian Gr+(k,n) serves 
 - `mvp1/` – Kernel-checked orthant coefficient. Not an amplitude.
 - `mvp2/` – Kernel-checked algebraic face. Not a cross section.
 - `lemma/` – Kernel-checked outer product and rescaling. Not a helicity.
+- `PositiveGeometryEmergentSpaceTime/` – Follow-on programme: Lean library, preregistrations, locked checkers, reviews. Ongoing research.
 - `Article.pdf` – Full preprint
 - `UOPG.lean` – Draft Lean 4 sketch. Not a proof.
 - `UOPG.ipynb` – Executable SymPy notebook (harmonic emergence, emergent metric, mutations, wave interference, Monte-Carlo calibration to 80.4 GeV)
@@ -62,6 +79,9 @@ lake exe uopg0
 lake exe uopg1
 lake exe uopg2
 lake exe rankone
+
+# PositiveGeometryEmergentSpaceTime: Lean build and axiom audit
+cd PositiveGeometryEmergentSpaceTime && ./reproduce.sh && cd ..
 
 # Historical draft sketches (not proofs)
 # UOPG.lean and UOPGv2.lean do not form a Lake project.

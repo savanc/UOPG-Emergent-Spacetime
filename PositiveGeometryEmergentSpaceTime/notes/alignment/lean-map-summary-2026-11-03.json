@@ -1,0 +1,95 @@
+{
+ "summary": {
+  "main_mods": 142,
+  "new_mods": 45,
+  "align_mods": 75,
+  "align_by_layer": {
+   "BLIND": 17,
+   "BLINDCMP": 14,
+   "PILOT": 12,
+   "SANITY": 32
+  },
+  "align_thm_src": {
+   "SANITY": 969,
+   "BLIND": 118,
+   "BLINDCMP": 114,
+   "PILOT": 113
+  },
+  "main_groups": {
+   "PG": [
+    30,
+    429
+   ],
+   "AMP": [
+    72,
+    616
+   ],
+   "SM": [
+    8,
+    81
+   ],
+   "MIX": [
+    32,
+    252
+   ]
+  },
+  "raw_edges": 212,
+  "tr_edges": 204,
+  "align_to_main": 38,
+  "rungs": 77,
+  "with_blueprint": 22,
+  "with_sanity": 11,
+  "with_blind": 13,
+  "with_any_alignment": 22,
+  "outside": {
+   "MR-1b": [
+    3,
+    1,
+    1
+   ],
+   "MR-4": [
+    6,
+    1,
+    1
+   ],
+   "KL-LAT": [
+    4,
+    1,
+    1
+   ],
+   "MR-2": [
+    4,
+    1,
+    1
+   ],
+   "BR-4": [
+    4,
+    0,
+    1
+   ]
+  },
+  "no_lean_module": 19,
+  "no_blueprint": 55
+ },
+ "no_lean_module": [
+  "MR-1c",
+  "MR-1d",
+  "MR-2b",
+  "NL9",
+  "MR-2c",
+  "MR-1e",
+  "MR-5",
+  "MR-2e",
+  "MR-8",
+  "FZ-0",
+  "FZ-1",
+  "LAT-2",
+  "LAT-3",
+  "LAT-3'",
+  "LAT-2'",
+  "TH-1",
+  "SUB-1",
+  "GB-2",
+  "SC-3"
+ ]
+}

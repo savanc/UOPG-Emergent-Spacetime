@@ -1,0 +1,31 @@
+{
+ "GATE_SELFTESTS_OK": true,
+ "P6_got": "(2)N^3 + (-2)N^1",
+ "PLANTED_ALL_OK": true,
+ "gate_selftests": {
+  "classify_0_RANGE INCLUDES-3": true,
+  "classify_1_RANGE EXCLUDES-3": true,
+  "classify_2_EMPTY": true,
+  "classify_3_DISCRETE-NOT-3": true,
+  "classify_4_SELECTS-3": true,
+  "classify_discrete_set": true,
+  "planted_check_detects_wrong_expectation": true,
+  "planted_gate_empty_false": true,
+  "planted_gate_false": true,
+  "planted_gate_true": true,
+  "scale_convention_P1": true
+ },
+ "got": {
+  "P1_single_loop": "(1)N^2 + (-1)N^0",
+  "P2_theta": "(2)N^3 + (-10)N^1 + (8)N^-1"
+ },
+ "planted": {
+  "P1_single_loop": true,
+  "P2_theta": true,
+  "P3_K_triangle": true,
+  "P4_K_bubble": true,
+  "P5_unitary_all_coeffs_positive": true,
+  "P6_f_theta_abs": true
+ },
+ "seconds": 11.1
+}

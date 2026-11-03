@@ -1,0 +1,6 @@
+sims/sc1/planted/good/1304.4437: value=1.772 err=0.08874097137174014 tol=0.2662 |v-sqrt(pi)|=0.0005 within=True rivals={"sqrt(2pi) [alpha'=1/m^2]": 0.7346, 'sqrt(pi/2) [closed-string slope]': 0.5187} beats_rivals=True null_rate=0.026 (basis n=39)
+sims/sc1/planted/good/2011.13061: value=1.77 err=0.03162277660168379 tol=0.0949 |v-sqrt(pi)|=0.0025 within=True rivals={"sqrt(2pi) [alpha'=1/m^2]": 0.7366, 'sqrt(pi/2) [closed-string slope]': 0.5167} beats_rivals=True null_rate=0.026 (basis n=39)
+VERDICT: PASS
+REJECT: 1304.4437: row matched 2x
+VERDICT: UNCLASSIFIED (extraction)
+exit=2

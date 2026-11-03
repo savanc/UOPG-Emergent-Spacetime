@@ -1,0 +1,45 @@
+T1|T3 wall net [(1, 'v'), (2, 'v'), (3, 'v'), ('w', 'v'), (4, 'w'), (5, 'w')] tau (4, 8, 6, 1, 9, 3, 10, 2, 5, 7)
+   eps=1e-2: Omega_A=-3.8516956e-6  Omega_B=4.9898148e-6  sum=1.1381192e-6
+   eps=1e-3: Omega_A=-4.1387533e-5  Omega_B=4.2459107e-5  sum=1.0715736e-6
+   eps=1e-4: Omega_A=-0.00041704742  Omega_B=0.00041811381  sum=1.0663938e-6
+   eps=1e-5: Omega_A=-0.0041736793  Omega_B=0.0041747452  sum=1.0658895e-6
+   eps=1e-6: Omega_A=-0.041740002  Omega_B=0.041741068  sum=1.0658392e-6
+   eps=1e-7: Omega_A=-0.41740323  Omega_B=0.41740429  sum=1.0658341e-6
+   eps=1e-8: Omega_A=-4.1740355  Omega_B=4.1740366  sum=1.0658336e-6
+  -> {'status': 'ok', 'classes': [[0, 1, 2], [0, 1, 4]], 'growth': '8.365e+5', 'sum_change': '1.068', 'verdict': 'PASS'}
+T2|T4 wall net [(2, 'v'), (3, 'v'), (4, 'v'), ('w', 'v'), (5, 'w'), (1, 'w')] tau (7, 9, 6, 10, 8, 3, 1, 5, 2, 4)
+   eps=1e-2: Omega_A=0.00023444515  Omega_B=-0.00013746281  sum=9.6982348e-5
+   eps=1e-3: Omega_A=0.0019393836  Omega_B=-0.0018379276  sum=0.00010145598
+   eps=1e-4: Omega_A=0.019085377  Omega_B=-0.018982942  sum=0.000102435
+   eps=1e-5: Omega_A=0.19055336  Omega_B=-0.19045082  sum=0.00010253883
+   eps=1e-6: Omega_A=1.905234  Omega_B=-1.9051315  sum=0.00010254928
+   eps=1e-7: Omega_A=19.052041  Omega_B=-19.051938  sum=0.00010255032
+   eps=1e-8: Omega_A=190.52011  Omega_B=-190.52  sum=0.00010255042
+  -> {'status': 'ok', 'classes': [[2, 3, 4], [1, 2, 3]], 'growth': '8.126e+5', 'sum_change': '1.057', 'verdict': 'PASS'}
+T3|R1b=T5 wall net [(3, 'v'), (4, 'v'), (5, 'v'), ('w', 'v'), (1, 'w'), (2, 'w')] tau (4, 6, 9, 1, 8, 2, 10, 5, 3, 7)
+   eps=1e-2: Omega_A=-3.7020828e-5  Omega_B=3.8394341e-5  sum=1.3735131e-6
+   eps=1e-3: Omega_A=-0.00035718888  Omega_B=0.00035859637  sum=1.4074894e-6
+   eps=1e-4: Omega_A=-0.0035623969  Omega_B=0.003563809  sum=1.4120898e-6
+   eps=1e-5: Omega_A=-0.035614812  Omega_B=0.035616225  sum=1.4125619e-6
+   eps=1e-6: Omega_A=-0.356139  Omega_B=0.35614041  sum=1.4126093e-6
+   eps=1e-7: Omega_A=-3.5613808  Omega_B=3.5613823  sum=1.412614e-6
+   eps=1e-8: Omega_A=-35.613799  Omega_B=35.613801  sum=1.4126145e-6
+  -> {'status': 'ok', 'classes': [[0, 1, 4], [0, 3, 4]], 'growth': '9.276e+5', 'sum_change': '1.028', 'verdict': 'PASS'}
+T4|T1 wall net [(4, 'v'), (5, 'v'), (1, 'v'), ('w', 'v'), (2, 'w'), (3, 'w')] tau (5, 9, 6, 8, 1, 3, 10, 4, 2, 7)
+   eps=1e-2: Omega_A=0.0001714789  Omega_B=-0.0001699451  sum=1.5337991e-6
+   eps=1e-3: Omega_A=0.0014423468  Omega_B=-0.0014411669  sum=1.1799231e-6
+   eps=1e-4: Omega_A=0.014315434  Omega_B=-0.014314268  sum=1.1655915e-6
+   eps=1e-5: Omega_A=0.14305866  Omega_B=-0.1430575  sum=1.1642996e-6
+   eps=1e-6: Omega_A=1.4304922  Omega_B=-1.430491  sum=1.1641718e-6
+   eps=1e-7: Omega_A=14.304827  Omega_B=-14.304826  sum=1.164159e-6
+   eps=1e-8: Omega_A=143.04818  Omega_B=-143.04818  sum=1.1641577e-6
+  -> {'status': 'ok', 'classes': [[1, 2, 3], [0, 1, 2]], 'growth': '8.342e+5', 'sum_change': '1.318', 'verdict': 'PASS'}
+R1b=T5|T2 wall net [(5, 'v'), (1, 'v'), (2, 'v'), ('w', 'v'), (3, 'w'), (4, 'w')] tau (4, 9, 7, 1, 8, 10, 3, 5, 2, 6)
+   eps=1e-2: Omega_A=-2.497674e-5  Omega_B=2.8075149e-5  sum=3.098409e-6
+   eps=1e-3: Omega_A=-0.0002623336  Omega_B=0.00026536792  sum=3.034318e-6
+   eps=1e-4: Omega_A=-0.0026374352  Omega_B=0.0026404651  sum=3.0298982e-6
+   eps=1e-5: Omega_A=-0.026388617  Omega_B=0.026391646  sum=3.0294761e-6
+   eps=1e-6: Omega_A=-0.26390045  Omega_B=0.26390348  sum=3.0294341e-6
+   eps=1e-7: Omega_A=-2.6390188  Omega_B=2.6390218  sum=3.0294299e-6
+   eps=1e-8: Omega_A=-26.390202  Omega_B=26.390205  sum=3.0294295e-6
+  -> {'status': 'ok', 'classes': [[0, 3, 4], [2, 3, 4]], 'growth': '9.4e+5', 'sum_change': '1.023', 'verdict': 'PASS'}

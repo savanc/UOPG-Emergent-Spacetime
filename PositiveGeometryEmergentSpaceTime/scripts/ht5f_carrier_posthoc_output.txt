@@ -1,0 +1,7 @@
+n=8 mode none: overall spread 0.602, per tile {'((12)(34))': '0.587', '((23)(41))': '0.376'}, mean 11.43490573
+n=8 mode once: overall spread 0.224, per tile {'((12)(34))': '0.224', '((23)(41))': '0.0626'}, mean 8.277072769
+n=8 mode omit: overall spread 6.78e-22, per tile {'((12)(34))': '6.78e-22', '((23)(41))': '2.23e-22'}, mean 8.0
+n=8 mode twice: overall spread 0.246, per tile {'((12)(34))': '0.246', '((23)(41))': '0.0785'}, mean 8.355869299
+n=10 mode none: overall spread 0.699, mean 60.4121133309
+n=10 mode once: overall spread 0.518, mean 39.3059775684
+n=10 mode omit: overall spread 0.518, mean 36.6240994641

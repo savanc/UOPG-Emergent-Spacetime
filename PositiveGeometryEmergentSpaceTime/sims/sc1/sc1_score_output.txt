@@ -1,0 +1,3 @@
+/tmp/sc1src/1304.4437: value=1.5382 err=0.07718418296516456 tol=0.2316 |v-sqrt(pi)|=0.2343 within=False rivals={"sqrt(2pi) [alpha'=1/m^2]": 0.9684, 'sqrt(pi/2) [closed-string slope]': 0.2849} beats_rivals=True null_rate=0.282 (basis n=39)
+/tmp/sc1src/2011.13061: value=1.67 err=0.18248287590894657 tol=0.5474 |v-sqrt(pi)|=0.1025 within=True rivals={"sqrt(2pi) [alpha'=1/m^2]": 0.8366, 'sqrt(pi/2) [closed-string slope]': 0.4167} beats_rivals=True null_rate=0.154 (basis n=39)
+VERDICT: PARTIAL

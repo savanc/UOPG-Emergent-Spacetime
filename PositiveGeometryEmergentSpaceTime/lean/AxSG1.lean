@@ -1,0 +1,5 @@
+import PositiveGeometryEmergentSpaceTime.SG1
+#print axioms PositiveGeometryEmergentSpaceTime.SG1.two_cos_pi_div_five
+#print axioms PositiveGeometryEmergentSpaceTime.SG1.eigen_scale
+#print axioms PositiveGeometryEmergentSpaceTime.SG1.ratio_scale
+#print axioms PositiveGeometryEmergentSpaceTime.SG1.kk_ratio_free

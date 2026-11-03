@@ -1,0 +1,3 @@
+planted 5pt tree cone jacobians: [1, 1, 1, 1, 1] all_unimodular= True
+REJECT: non-unimodular cone, |det|=2 - not a Feynman-fan cone
+exit=1

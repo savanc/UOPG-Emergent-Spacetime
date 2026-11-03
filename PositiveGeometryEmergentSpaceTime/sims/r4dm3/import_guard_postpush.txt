@@ -1,0 +1,5 @@
+# R4-DM v3 import-and-call test AFTER the prereg push (2026-10-20); defect declared in reviews/R4-DM3-result-2026-10-20.md §3.1
+    lits = {x.lstrip('-') for x in cls['sm_literals_hyp'] + (cls['sm_literals_hyp_E1'] if FIXES['E1'] else [])}
+                                                             ~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'sm_literals_hyp_E1'
+exit 1

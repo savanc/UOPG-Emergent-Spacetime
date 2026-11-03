@@ -1,0 +1,89 @@
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.gauge_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.gauge_point_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.N_even_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.planted_a2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.planted_lam4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.forced_nonvacuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.D3_eq_D3m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.mnu_eq_D3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.mnu_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.D3_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.D3_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.planted_omega2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.nonvacuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.tie_factor_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.NA_neg_tie' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.NB_neg_tie' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.NA_pos_tie' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.NB_pos_tie' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.allTriMasks_length' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.tris_complete' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.edge_count' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.planted_nbhd' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.planted_edge' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.nonvacuous' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.Z_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.star_corr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.exp_spin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.C_eq_gpRule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.C_cast_eq_gpY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.C_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.planted_t' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.planted_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.gpRule_orth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.nonvacuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.E1_idem' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.unit_ok' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.E1_peirce' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.octonion_units' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.jordan_basis' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.jordan_mixed' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.planted_assoc' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.planted_identity_not_der' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.gen0_nonzero' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.gsm_nontrivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.gsm_sub_stab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.stab_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.rho_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.rho3_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.f4_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.rho3_hyp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.f4_hyp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.gsq_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.ratios' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.rho3_ratio_derived' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.planted_2J1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.planted_wrong_J' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.det4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.eps_cyc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.eps_rev' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.eps_par' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.k0_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.k0p_rows_zero' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.k0m_rows_pattern' depends on axioms: [propext]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.eps_units' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.planted_no_conservation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.corr2_spectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.gram_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.gram_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.hankel_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.toeplitz_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.planted_neg_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.planted_a_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.nonvacuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.boxU_halfEdges' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.boxU_vEdges' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.boxU_simple' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.boxU_eq_K33' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.boxU_triFree' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.prism_wellformed' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.prism_rejected' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.ttU_halfEdges' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.ttU_vEdges' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.ttU_mult' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.k4_rejected' does not depend on any axioms
+'PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.nonvacuous' does not depend on any axioms

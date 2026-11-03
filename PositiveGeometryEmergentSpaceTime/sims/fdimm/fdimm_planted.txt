@@ -1,0 +1,15 @@
+# F-DIM-MASS planted pair + import test — 2026-10-20
+## import-and-call (after push)
+IMPORT-AND-CALL: ['PASSED GUARD', 'PASSED GUARD']
+pass-flag attributes present: []
+exit=0
+## planted
+GUARD OK: prereg 063378f8b on origin/main; checker hash matches (re-verified on every scoring call)
+trunk massless (alpha0 = 1/2, m2 = 0): reproduces F-DIM' (D<=4, D=4 positive): BOUND-ONLY D<=4; D=4 positive to N<=40: True OK
+NS model (alpha0 = 1, m2 = -1/2): D<=10 (CITED Bianchi et al. 2021): BOUND-ONLY D<=10; D=4 positive to N<=12: True OK
+recovered: True
+exit=0
+## broken
+GUARD OK: prereg 063378f8b on origin/main; checker hash matches (re-verified on every scoring call)
+broken case trunk massless asked for D <= 26 (excluded by Lean PositiveGeometryEmergentSpaceTime.FDim.trunk_bound_not_forced): BOUND-ONLY D<=4 != BOUND-ONLY D<=26 -> REJECT (as required)
+exit=1

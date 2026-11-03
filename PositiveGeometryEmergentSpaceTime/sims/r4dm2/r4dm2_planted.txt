@@ -1,0 +1,36 @@
+GUARD OK: prereg af4430ef6 on origin/main; checker/classification/exporters/planted hashes match (re-verified on every scoring call)
+  PASS  planted_genuine              expected DERIVED/UNCONDITIONAL/PG       got DERIVED/UNCONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature', 'PositiveGeometryEmergentSpaceTime.R4DM2Planted.yQgeo']; hypotheses: []
+  PASS  planted_conditional          expected DERIVED/CONDITIONAL/PG         got DERIVED/CONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature']; hypotheses: ['y * 6 = PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature 0']
+  PASS  planted_smuggled_literal     expected SMUGGLED                       got SMUGGLED
+        (c) hypothesis h contains SM literal ['1/6']; (d) hypothesis h restates the conclusion
+  PASS  planted_smuggled_acc         expected SMUGGLED                       got SMUGGLED
+        (a) hypothesis h uses SM-INPUT ['PositiveGeometryEmergentSpaceTime.STRUCT1.ACC']; (d) hypothesis h restates the conclusion; (d) hypothesis hg restates the conclusion
+  PASS  planted_smuggled_nc          expected SMUGGLED                       got SMUGGLED
+        (b) hypothesis h constrains SM data with no geometry: N_c = 3
+  PASS  planted_fed                  expected SM-INPUT-FED                   got SM-INPUT-FED
+        proof uses SM-INPUT ['PositiveGeometryEmergentSpaceTime.STRUCT1.sm_is_anomaly_free']
+  PASS  planted_nonconstraining      expected NON-CONSTRAINING               got NON-CONSTRAINING
+        SM data universally quantified and unconstrained (identity/blindness)
+  PASS  planted_nogeo                expected NO-GEOMETRY                    got NO-GEOMETRY
+        transitive closure has no GEOMETRY-role definition
+  PASS  yQgeo_eq                     expected NOT-SM-STRUCTURE               got NOT-SM-STRUCTURE
+  PASS  planted_d1_identity          expected NON-CONSTRAINING               got NON-CONSTRAINING
+        SM data universally quantified and unconstrained (identity/blindness)
+  PASS  planted_d1_conditional       expected DERIVED/CONDITIONAL/PG         got DERIVED/CONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature', 'PositiveGeometryEmergentSpaceTime.R4DM2Planted.PInv']; hypotheses: ['x.a * 6 = PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature 0']
+  PASS  PInv.mk.inj                  expected AUTO-GENERATED                 got AUTO-GENERATED
+        Lean-generated lemma inj of PositiveGeometryEmergentSpaceTime.R4DM2Planted.PInv.mk
+  PASS  PInv.mk.injEq                expected AUTO-GENERATED                 got AUTO-GENERATED
+        Lean-generated lemma injEq of PositiveGeometryEmergentSpaceTime.R4DM2Planted.PInv.mk
+  PASS  PInv.mk.sizeOf_spec          expected AUTO-GENERATED                 got AUTO-GENERATED
+        Lean-generated lemma sizeOf_spec of PositiveGeometryEmergentSpaceTime.R4DM2Planted.PInv.mk
+  PASS  planted_d3                   expected DERIVED/UNCONDITIONAL/PG       got DERIVED/UNCONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature', 'PositiveGeometryEmergentSpaceTime.R4DM2Planted.Mixed.geoMap', 'PositiveGeometryEmergentSpaceTime.R4DM2Planted.yQgeo3']; hypotheses: []
+  PASS  Mixed.geoMap_one             expected NOT-SM-STRUCTURE               got NOT-SM-STRUCTURE
+  meter without planted 1/89; with planted 5/103; n_derived increase 4 (must be 4)
+  PASS  ablation D1 off: changed ['planted_d1_identity -> DERIVED/UNCONDITIONAL/PG'] (expected exactly ['planted_d1_identity'])
+  PASS  ablation D2 off: changed ['PInv.mk.inj -> DERIVED/CONDITIONAL/PG', 'PInv.mk.injEq -> NON-CONSTRAINING', 'PInv.mk.sizeOf_spec -> NON-CONSTRAINING'] (expected exactly ['PInv.mk.inj', 'PInv.mk.injEq', 'PInv.mk.sizeOf_spec'])
+  PASS  ablation D3 off: changed ['planted_d3 -> SM-INPUT-FED'] (expected exactly ['planted_d3'])
+PLANTED: PASS

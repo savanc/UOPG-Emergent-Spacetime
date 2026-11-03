@@ -1,0 +1,11 @@
+{"residue": [
+  {"name": "(a) P_a toy m_rho=1, m_pi=0.2, F=1 (Lean FRhoWidth.gLS2_Pa: (m_rho^2-m_pi^2)/(pi F^2))", "model": "P_a", "m_pi": "0.2", "m_rho": "1", "F": "1", "g2_expr": "(1 - mpf('0.04'))/pi"},
+  {"name": "(b) P_b toy m_rho=1, m_pi=0.2, F=0.5 (Lean: m_rho^2/(pi F^2))", "model": "P_b", "m_pi": "0.2", "m_rho": "1", "F": "0.5", "g2_expr": "1/(pi*mpf('0.25'))"}],
+ "ksrf": {"m_pi": "0", "m_rho": "1", "F": "1", "r_expr": "1/(96*pi)"},
+ "classifier": [
+  {"name": "equal pulls", "z_m": "1.0", "z_k": "1.0", "expect": "MATCHES-KSRF"},
+  {"name": "model on data, KSRF 4 sigma", "z_m": "0.2", "z_k": "4.0", "expect": "BEATS-KSRF"},
+  {"name": "model 4 sigma, KSRF 6 sigma", "z_m": "4.0", "z_k": "6.0", "expect": "IMPROVES-BUT-EXCLUDED"},
+  {"name": "model 10 sigma, KSRF 0.5", "z_m": "-10", "z_k": "0.5", "expect": "WORSE-THAN-KSRF"}],
+ "broken": {"name": "LS residue (P_a, N1) reproduces KSRF g2 = m_rho^2/(2F^2); Lean FRhoWidth.ls_ne_ksrf proves it false", "m_pi": "0.2", "m_rho": "1", "F": "1"}
+}

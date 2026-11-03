@@ -1,0 +1,8 @@
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1K33Fast
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.orbitMinAux_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.loops_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.vtx_T
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.next_T
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.vlink_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.sigma_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.blk_eq_blkT

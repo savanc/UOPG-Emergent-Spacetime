@@ -1,0 +1,10 @@
+kappa [-1.  -1.5  0.8  1.7] sum 0.0 masses [1.  1.5 0.8 1.7]
+null check K^2: [np.float64(2.220446049250313e-16), np.float64(0.0), np.float64(8.304468224196171e-16), np.float64(1.687538997430238e-16)]
+transversality eps.p: [np.float64(2.556305007822749e-16), np.float64(4.161247254528201e-16), np.float64(6.709683591790844e-16), np.float64(4.771841819836467e-16)]
+gauge test k= 1 8.533911106286719e-14  |A| generic 20.41552733850456
+gauge test k= -1 484.25732977206286  |A| generic 1087.833990100073
+s on locus 16.0
+locus cos theta (1.005335983604584+0j) s 16.0 K1.K3 0j  (p1+p3)^2-(k1+k3)^2 = (6.661338147750939e-16+0j)
+conds E1.K3,E3.K1,E1.E3: 1.5612511283791264e-17 2.7087596917127106e-16 9.868122050982123e-17
+HIDDEN ZERO |A| on locus = 3.552713678800501e-15  off-condition |A| = 0.6641909390529195  ratio 5.348934274632491e-15
+30 random Coulomb vevs: max |A_zero|/|A_ref| = 2.7863352180948028e-14  control (4d locus, no kappa) median ratio = 0.17386317494367237

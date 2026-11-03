@@ -1,0 +1,14 @@
+{
+ "rung": "INT-1",
+ "note": "Planted cases are hard-coded in int1_checker.py run_planted(); this file is the declared list (locked by sha256 in the prereg).",
+ "cases": {
+  "P1a_pentagon_c111": {"n": 5, "c": [1, 1, 1], "m2": {}, "expect_f": [5, 5]},
+  "P1b_pentagon_massive": {"n": 5, "c": [2, 3, 5], "m2": {"X13": "1/2", "X14": "1/3", "X35": "1/5"}, "expect_f": [5, 5], "expect_ceff_positive": true},
+  "P2a_merging_wall": {"n": 5, "c": [1, 1, 1], "m2": {"X35": 1}, "expect_ceff_c24": 0, "expect_f": [4, 4], "expect_triple_vertex": ["X24", "X25", "X35"]},
+  "P2b_beyond_wall": {"n": 5, "c": [1, 1, 1], "m2": {"X35": "3/2"}, "expect_f": [4, 4], "expect_redundant_facet": ["X25"]},
+  "P3_broken_detector": {"n": 5, "invariant": "floor(4*c13')", "expect": "flagged non-constant on the positive chamber; f-vector not flagged", "samples": 200, "seed": "SEED+3"},
+  "P4_n6_c1": {"n": 6, "c": "all 1", "expect_f": [14, 21, 9]},
+  "P5_forms_n5": {"expect_forms": ["c13", "c14", "c24", "c13+c14", "c14+c24", "c13+c14+c24"]},
+  "P7_lattice_c111": {"n": 5, "c": [1, 1, 1], "expect_lattice_points": 8}
+ }
+}

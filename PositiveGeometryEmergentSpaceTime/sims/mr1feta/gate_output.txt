@@ -1,0 +1,2 @@
+dual su zero t = 0.6004 GeV^2; LO ChPT zero t0 = 0.2045 GeV^2; gap = 0.3959
+LO amplitude on dual line / at t=0: -1.936

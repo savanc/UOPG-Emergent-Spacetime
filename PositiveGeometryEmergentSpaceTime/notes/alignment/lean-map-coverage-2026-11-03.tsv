@@ -1,0 +1,83 @@
+rung	tags	lean_modules	lean_mentioned	blueprint_rows	sanity	blind	source
+MR-1c	FRONTIER-THEORY		0	0	0	0	blocker-index
+MR-1d	FRONTIER-DATA		0	0	0	0	blocker-index
+MR-2b	DATA-UNUSABLE REDUNDANT CONTAMINATED		0	0	0	0	blocker-index
+NL9	DATA-UNUSABLE		0	0	0	0	blocker-index
+MR-3	NO-GO CONTAMINATED	MassiveLS	1	3	0	1	blocker-index
+MR-3b	REFUTED CONTAMINATED		1	0	0	0	blocker-index
+OP-2 scale	NO-GO	BR4 ScaleNoGo	1	0	0	0	blocker-index
+M3	REFUTED	LECRatio	0	1	0	1	blocker-index
+MR-2c	DATA-UNUSABLE CONTAMINATED		0	0	0	0	blocker-index
+MR-1e	FRONTIER-DATA		0	0	0	0	blocker-index
+MR-1f	CONTAMINATED	UnequalLS	1	3	1	1	blocker-index
+MR-6	NO-GO FRONTIER-THEORY	DecayZeroNoGo	1	0	0	0	blocker-index
+MR-5	FRONTIER-THEORY FRONTIER-DATA		0	0	0	0	blocker-index
+MR-2e	REDUNDANT CONTAMINATED		0	0	0	0	blocker-index
+MR-7	NO-GO FRONTIER-THEORY	PiNGate	1	0	0	0	blocker-index
+MR-8	FRONTIER-THEORY CONTAMINATED		0	0	0	0	blocker-index
+FZ-0	NO-GO		0	0	0	0	blocker-index
+FZ-1	REFUTED CONTAMINATED		0	0	0	0	blocker-index
+LAT-2	DATA-UNUSABLE FRONTIER-DATA		0	0	0	0	blocker-index
+LAT-3	DATA-UNUSABLE		0	0	0	0	blocker-index
+LAT-3'	DATA-UNUSABLE CONTAMINATED		0	0	0	0	blocker-index
+DZ-1	NO-GO DATA-UNUSABLE CONTAMINATED	EtaGate	1	0	0	0	blocker-index
+LAT-2'	DATA-UNUSABLE FRONTIER-DATA		0	0	0	0	blocker-index
+TH-1	REFUTED CONTAMINATED		0	0	0	0	blocker-index
+KS-1	CONTAMINATED	KLPhi UnequalLS	0	1	1	1	blocker-index
+SUB-1	REDUNDANT CONTAMINATED		0	0	0	0	blocker-index
+UL-1	NO-GO FRONTIER-THEORY CONTAMINATED	UnitarisedLS	1	0	0	0	blocker-index
+MR-1f-eta	FRONTIER-THEORY CONTAMINATED	KEtaGate	1	0	0	0	blocker-index
+FT-1	NO-GO FRONTIER-THEORY	KEtaGate SplitZeroGate	1	0	0	0	blocker-index
+MR-7'	NO-GO FRONTIER-THEORY CONTAMINATED	PiNSubGate	1	0	0	0	blocker-index
+H-T5 (d)	REFUTED	IsingOG IsingTiling	0	4	1	0	blocker-index
+FT-2	NO-GO FRONTIER-DATA FRONTIER-THEORY	FT2Mesh	1	0	0	0	blocker-index
+FT-3	NO-GO CONTAMINATED FRONTIER-THEORY	FT3Gate	1	0	0	0	blocker-index
+FT-4	DUPLICATE/CIRCULAR FRONTIER-THEORY CONTAMINATED	FT4Gate	1	0	0	0	blocker-index
+EW-Z1b	SM-MATCH CONTAMINATED FRONTIER-THEORY	EWZ1b	1	3	1	0	blocker-index
+PG-1	NO-GO FRONTIER-THEORY	BR4 PG1	1	0	0	0	blocker-index
+BR-5	RESOLVED	BR5p EWZ1b FT5aL MassiveSpinor MassiveZero	1	0	0	0	blocker-index
+GB-2	FRONTIER-DATA		0	0	0	0	blocker-index
+SC-2	FRONTIER-THEORY	SC2	1	0	0	0	blocker-index
+SC-3	NO-GO		0	0	0	0	blocker-index
+SC-2b	FRONTIER-THEORY	SC2b	1	0	0	0	blocker-index
+SC-1	CONTAMINATED FRONTIER-THEORY	SC1	0	0	0	0	blocker-index
+STRUCT-1	FRONTIER-THEORY	STRUCT1	1	0	0	0	blocker-index
+STRUCT-1b	FRONTIER-THEORY	STRUCT1b	1	0	0	0	blocker-index
+STRUCT-2	NO-GO FRONTIER-THEORY		1	0	0	0	blocker-index
+X6 / XD-6 / R2	NO-GO FRONTIER-THEORY	X6	1	0	0	0	blocker-index
+STRUCT-3 / R3	NO-GO FRONTIER-THEORY	STRUCT3	0	0	0	0	blocker-index
+R4 → R5	NO-GO FRONTIER-THEORY		1	0	0	0	blocker-index
+R4-indep	NO-GO FRONTIER-THEORY	R4Indep	1	0	0	0	blocker-index
+FR-WZW	NO-GO	FRWZW	1	0	0	0	blocker-index
+FR-MU	NUMEROLOGY CONTAMINATED	FRMU	1	0	0	0	blocker-index
+F-COULOMB	NO-GO	FCoulomb	1	0	0	0	blocker-index
+F-DIM	ILL-DEFINED	FDim	1	0	0	0	blocker-index
+F-DIM′ (F-DIM2)	NO-GO	FDim	1	0	0	0	blocker-index
+F-DIM-MASS	GATE-FAIL	FDimMass	1	0	0	0	blocker-index
+F-SCATLEN	NO-GO	FScatLen	1	0	0	0	blocker-index
+F-RHOWIDTH	NO-GO	FRhoWidth	1	0	0	0	blocker-index
+F-POSGEOM-DAUGHTER	ILL-DEFINED NO-GO	FDeltaNLSM	1	0	0	0	blocker-index
+BRIDGE-PL-ASSOC (charge)	NO-GO	BridgePLCharge	1	0	0	0	blocker-index
+STRUCT-NGEN	NO-GO	STRUCTNGen	1	0	0	0	blocker-index
+GRADED-POSITROID	NO-GO	GradedPositroid	1	4	0	1	blocker-index
+INT-1	NO-GO	IntChamber	1	4	0	0	blocker-index
+FL-1Z	ILL-DEFINED	FL1Z	1	2	1	0	blocker-index
+LEAN-CERT-1	RESOLVED	LeanCert	1	5	0	1	blocker-index
+CASCADE-1	REFUTED NO-GO	Cascade1	1	4	0	0	blocker-index
+CASCADE-1b	NOT-EVALUATED	Cascade1b Cascade1bR2	1	1	0	0	blocker-index
+TRIALITY-WHY	NO-GO	TrialityWhy	1	5	0	1	blocker-index
+LEAN-CERT-2	CERTS-OK	LeanCert2	1	9	1	0	blocker-index
+JORD-1	NO-GO	Jord1	1	4	1	0	blocker-index
+SURF-1′	NO-GO	Surf1	1	10	1	1	blocker-index
+RG-IR-1	NO-GO	RgIr1	1	5	1	1	blocker-index
+CHIRAL-LATTICE-1	SUPERSEDED	ChiralLat1	1	1	0	0	blocker-index
+CHIRAL-LATTICE-1 v2	RESOLVED	ChiralLat1	0	0	0	0	blocker-index
+RP-TN-1	NO-GO	RpTn1	1	3	1	1	blocker-index
+HG-DIM-1	NO-GO	HgDim1	1	28	1	1	blocker-index
+HG-DIM-2	REDUNDANT	HgDim2 HgDim2P4	1	7	0	1	blocker-index
+CAPPED-FORMAN-1	REDUNDANT	CappedForman CappedFormanCerts	1	16	0	1	blocker-index
+MR-1b	credited blind 1.0	LSResidue	1	3	1	1	outside-index
+MR-4	credited blind 1.0	PiKZero	1	6	1	1	outside-index
+KL-LAT	credited blind 0.5	UnequalLS KLPhi	1	4	1	1	outside-index
+MR-2	credited VR 0.5	MassiveZero	1	4	1	1	outside-index
+BR-4	PASS (bridge)	BR4	1	4	0	1	outside-index

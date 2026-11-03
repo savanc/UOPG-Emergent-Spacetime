@@ -1,0 +1,2 @@
+S1 PDG BW averages: R_Gamma(data)=1.0695; R_g variants V1=0.6631, V2=0.6906, V3=0.6812, V4=0.6221; sigma_data=0.0192 sigma_conv=0.0342; z=+0.99 -> PASS; well-posed {'narrow': True, 'positive': True}; m_f2^2/m_rho^2=2.706 (pred 3)
+S2 PDG T-matrix poles: R_Gamma(data)=1.1718; R_g variants V1=0.7127, V2=0.7454, V3=0.7340, V4=0.6792; sigma_data=0.0752 sigma_conv=0.0331; z=+1.18 -> PASS; well-posed {'narrow': True, 'positive': True}; m_f2^2/m_rho^2=2.777 (pred 3)

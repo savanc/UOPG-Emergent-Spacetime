@@ -1,0 +1,2 @@
+Weinberg m_a1=sqrt2 m_rho: pred 1452 MeV^2, obs 1261 MeV^2, ratio 1.151; charge input Q_u-Q_d=1 (any y_Q, any N_c)
+PDG m_a1=1230: pred 1604 MeV^2, obs 1261 MeV^2, ratio 1.272; charge input Q_u-Q_d=1 (any y_Q, any N_c)

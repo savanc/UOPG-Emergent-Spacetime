@@ -1,0 +1,14 @@
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1DerB0
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_0
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_1
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_2
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_3
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_4
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_5
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_6
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_7
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_8
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_9
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_10
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_11
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.der_12

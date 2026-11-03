@@ -1,0 +1,7 @@
+import PositiveGeometryEmergentSpaceTime.EWZ1b
+#print axioms PositiveGeometryEmergentSpaceTime.EWZ1b.N_decomp
+#print axioms PositiveGeometryEmergentSpaceTime.EWZ1b.zero_of_gauge
+#print axioms PositiveGeometryEmergentSpaceTime.EWZ1b.forced
+#print axioms PositiveGeometryEmergentSpaceTime.EWZ1b.forced_iff
+#print axioms PositiveGeometryEmergentSpaceTime.EWZ1b.proca_control
+#print axioms PositiveGeometryEmergentSpaceTime.EWZ1b.proca_nonzero

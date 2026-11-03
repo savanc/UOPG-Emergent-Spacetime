@@ -1,0 +1,3 @@
+B1 ABHY n=6 claimed dim 10 (PROVED false: PositiveGeometryEmergentSpaceTime.LeanCert.abhy6_finrank = 9): accepted=False
+B2 PL2 claimed dim 9 (true dim 10 by construction): accepted=False
+BROKEN ALL REJECTED: True

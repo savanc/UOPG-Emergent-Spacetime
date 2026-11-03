@@ -1,0 +1,3 @@
+S3 PR fixed-t (primary): S=7.606 g0=1.52 g1=0.319 r=0.271±0.067 r0=0.200±0.065 r1=0.168±0.058 PASS=True null f=0.110
+S3 PR HDR (variant): S=7.839 g0=1.52 g1=0.368 r=0.280±0.067 r0=0.194±0.065 r1=0.188±0.057 PASS=True null f=0.098
+S1 BDM truncated like S3 (diag): S=7.453 g0=2.01 g1=0.242 r=0.326±0.115 r0=0.270±0.114 r1=0.130±0.046 PASS=True null f=0.112

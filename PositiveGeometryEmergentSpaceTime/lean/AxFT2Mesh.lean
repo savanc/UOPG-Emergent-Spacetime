@@ -1,0 +1,4 @@
+import PositiveGeometryEmergentSpaceTime.FT2Mesh
+#print axioms PositiveGeometryEmergentSpaceTime.FT2Mesh.mesh_shift_cancels
+#print axioms PositiveGeometryEmergentSpaceTime.FT2Mesh.mesh_is_dot
+#print axioms PositiveGeometryEmergentSpaceTime.FT2Mesh.zero_unphysical

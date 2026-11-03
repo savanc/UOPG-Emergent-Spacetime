@@ -1,0 +1,13 @@
+{"case": "frwzw_k0p", "k": 0, "sigma": 1, "m": 120, "n": 1, "rank": 0, "dim": 1, "sim_dim": 1, "mirror": true, "rival_qrank": 0, "rival_sympy": 0, "sketch_disagree": 0, "corrupt_accepted": 20, "d_digits": 1, "maxdigits": 1, "cert_secs": 0.0}
+{"case": "frwzw_k0m", "k": 0, "sigma": -1, "m": 120, "n": 1, "rank": 1, "dim": 0, "sim_dim": 0, "mirror": true, "rival_qrank": 1, "rival_sympy": 1, "sketch_disagree": 0, "corrupt_accepted": 36, "d_digits": 1, "maxdigits": 1, "cert_secs": 0.16}
+{"case": "frwzw_k1p", "k": 1, "sigma": 1, "m": 120, "n": 6, "rank": 4, "dim": 2, "sim_dim": 2, "mirror": true, "rival_qrank": 4, "rival_sympy": 4, "sketch_disagree": 0, "corrupt_accepted": 5, "d_digits": 14, "maxdigits": 14, "cert_secs": 0.16}
+{"case": "frwzw_k1m", "k": 1, "sigma": -1, "m": 120, "n": 6, "rank": 6, "dim": 0, "sim_dim": 0, "mirror": true, "rival_qrank": 6, "rival_sympy": 6, "sketch_disagree": 0, "corrupt_accepted": 27, "d_digits": 23, "maxdigits": 22, "cert_secs": 0.15}
+{"case": "frwzw_k2p", "k": 2, "sigma": 1, "m": 120, "n": 21, "rank": 16, "dim": 5, "sim_dim": 5, "mirror": true, "rival_qrank": 16, "rival_sympy": 16, "sketch_disagree": 0, "corrupt_accepted": 5, "d_digits": 107, "maxdigits": 107, "cert_secs": 0.3}
+{"case": "frwzw_k2m", "k": 2, "sigma": -1, "m": 120, "n": 21, "rank": 21, "dim": 0, "sim_dim": 0, "mirror": true, "rival_qrank": 21, "rival_sympy": 21, "sketch_disagree": 0, "corrupt_accepted": 20, "d_digits": 153, "maxdigits": 152, "cert_secs": 0.83}
+{"case": "frwzw_k3p", "k": 3, "sigma": 1, "m": 120, "n": 56, "rank": 46, "dim": 10, "sim_dim": 10, "mirror": true, "rival_qrank": 46, "rival_sympy": null, "sketch_disagree": 0, "corrupt_accepted": 10, "d_digits": 439, "maxdigits": 439, "cert_secs": 38.21}
+{"case": "frwzw_k3m", "k": 3, "sigma": -1, "m": 120, "n": 56, "rank": 54, "dim": 2, "sim_dim": 2, "mirror": true, "rival_qrank": 54, "rival_sympy": null, "sketch_disagree": 0, "corrupt_accepted": 8, "d_digits": 518, "maxdigits": 518, "cert_secs": 79.93}
+matrix generation secs: 1.3
+N1 mod-p sketch disagreement: 0/160
+N2 corruption acceptance: 131/480
+rival baselines agree: True
+PYTHON VERDICT: ILL-DEFINED

@@ -1,0 +1,36 @@
+6pt equal udsuds skinny O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-31985180513/95419025003+0i), (1192169970265/2298594291741+0i)]
+6pt equal udsuds rect2x2 O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-1+0i), (-1+0i)]
+6pt equal udsuds null_pair O5:nonzero O8:nonzero Okin:nonzero Omass:nonzero O8/O5: [(-328411182484/10247947365+0i), (-249727564400943218719134278/1584690111044035287997275+0i)]
+6pt equal uuddss skinny O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(134178803/19699022+0i), (2641530801/404258878+0i)]
+6pt equal uuddss rect2x2 O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-1+0i), (-1+0i)]
+6pt equal uuddss null_pair O5:nonzero O8:nonzero Okin:nonzero Omass:nonzero O8/O5: [(-90189065330057426287797/1025669540352260518750+0i), (-281020751480436189793027084845/11347944942501692950545353327+0i)]
+6pt equal ududud skinny O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-2621646248200/1287699510493+0i), (-517344342249/162303938080+0i)]
+6pt equal ududud rect2x2 O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-1+0i), (-1+0i)]
+6pt equal ududud null_pair O5:nonzero O8:nonzero Okin:nonzero Omass:nonzero O8/O5: [(2362444795194742216/27753675191175854973+0i), (14895258677019764085227182216826152/491982515329137164822266291879449+0i)]
+6pt equal ususus skinny O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-7553678/6108903+0i), (-28354208849/12654974220+0i)]
+6pt equal ususus rect2x2 O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-1+0i), (-1+0i)]
+6pt equal ususus null_pair O5:nonzero O8:nonzero Okin:nonzero Omass:nonzero O8/O5: [(573517202217326064810720551/1176015729548806650894309480+0i), (1083465823683983424810230826739/8371672877546120900771453151600+0i)]
+6pt equal uuuuus skinny O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(14003679239/33856950400+0i), (667042626476/2872857897+0i)]
+6pt equal uuuuus rect2x2 O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-1+0i), (-1+0i)]
+6pt equal uuuuus null_pair O5:nonzero O8:nonzero Okin:nonzero Omass:nonzero O8/O5: [(31012738912755587497153802912/302581084142262343659459909075+0i), (686030305349802491483643903/131328966949940144991160750+0i)]
+6pt unequal udsuds skinny O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(61602228120025/134440226649616+0i), (-112591806489/8899886720+0i)]
+6pt unequal udsuds rect2x2 O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(5375/306+0i), (2400709479/1479686395+0i)]
+6pt unequal udsuds null_pair O5:nonzero O8:nonzero Okin:nonzero Omass:nonzero O8/O5: [(65011525458314375/242536002605856+0i), (-174046529269617328461825/751001923546796824821568+0i)]
+6pt unequal uuddss skinny O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-95861402355045/31209465456191+0i), (43770792028/57938518253+0i)]
+6pt unequal uuddss rect2x2 O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-287542105/359011961+0i), (-3034636353/483583360+0i)]
+6pt unequal uuddss null_pair O5:nonzero O8:nonzero Okin:nonzero Omass:nonzero O8/O5: [(-249910197814431079678053739375/296838440937441794116054929633+0i), (-534911247678904198019712/104973881099200182578931175+0i)]
+6pt unequal ududud skinny O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(1067544/2621237+0i), (77254865524385/25889117173578+0i)]
+6pt unequal ududud rect2x2 O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-1+0i), (-1+0i)]
+6pt unequal ududud null_pair O5:nonzero O8:nonzero Okin:nonzero Omass:nonzero O8/O5: [(-239050058031036990651447/1059282308784377459381600+0i), (1717303269996530967400/1199051592868460870231+0i)]
+6pt unequal ususus skinny O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-118142352412/194383585027+0i), (-4013907909/2315715670+0i)]
+6pt unequal ususus rect2x2 O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-1+0i), (-1+0i)]
+6pt unequal ususus null_pair O5:nonzero O8:nonzero Okin:nonzero Omass:nonzero O8/O5: [(6064614157227758404387593144791040/18852110798654356400186531586160667+0i), (-11488136509200857220/26311145762877496199+0i)]
+6pt unequal uuuuus skinny O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(18423630547/6928947975+0i), (695970/20122781+0i)]
+6pt unequal uuuuus rect2x2 O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO O8/O5: [(-17/87+0i), (-1529/1060+0i)]
+6pt unequal uuuuus null_pair O5:nonzero O8:nonzero Okin:nonzero Omass:nonzero O8/O5: [(89282963204597745053407929375/743715124018840434515065088+0i), (-6896893933532596/22626423414731339005+0i)]
+4pt equal udsu O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO
+4pt equal uuss O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO
+4pt equal udud O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO
+4pt unequal udsu O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO
+4pt unequal uuss O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO
+4pt unequal udud O5:nonzero O8:nonzero Okin:ZERO Omass:ZERO

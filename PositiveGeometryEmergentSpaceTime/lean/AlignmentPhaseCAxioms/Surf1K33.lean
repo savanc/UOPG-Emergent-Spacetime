@@ -1,0 +1,4 @@
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1K33
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.csum_succ'
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.coeffs_K33
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.claimEnumerated

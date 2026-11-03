@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>PositiveGeometryEmergentSpaceTime theorem graph 2026-10-13</title>
+<style>body{margin:0;font:12px sans-serif}#c{position:absolute;left:0;top:0}#p{position:absolute;right:0;top:0;width:360px;height:100%;overflow:auto;background:#fafafa;border-left:1px solid #ccc;padding:8px;box-sizing:border-box}input{width:100%}pre{white-space:pre-wrap}</style>
+<canvas id="c"></canvas><div id="p"><b>PositiveGeometryEmergentSpaceTime theorem graph</b> (self-contained; drag to pan, wheel to zoom, click a node)<br><input id="q" placeholder="filter by name / module / rung"><div id="leg"></div><div id="info"></div></div>
+<script>/*DATA*/
+const c=document.getElementById('c'),x=c.getContext('2d');let W,H,s=1,ox=0,oy=0,sel=null,q='';
+function rs(){W=c.width=innerWidth-360;H=c.height=innerHeight;s=Math.min(W,H)*0.45;ox=W/2;oy=H/2;dr()}
+const P=n=>[ox+n.x*s,oy+n.y*s];
+function dr(){x.clearRect(0,0,W,H);x.strokeStyle='rgba(0,0,0,.12)';x.beginPath();for(const[a,b]of EDGES){const p=P(NODES[a]),r=P(NODES[b]);x.moveTo(...p);x.lineTo(...r)}x.stroke();
+if(sel!==null){x.strokeStyle='red';x.beginPath();for(const[a,b]of EDGES)if(a==sel||b==sel){x.moveTo(...P(NODES[a]));x.lineTo(...P(NODES[b]))}x.stroke()}
+NODES.forEach((n,i)=>{const[p,r]=P(n);const m=!q||(n.id+n.m+(n.r||'')).toLowerCase().includes(q);x.globalAlpha=m?1:.08;x.fillStyle=COLS[n.s]||'#999';x.beginPath();
+if(n.k=='def')x.rect(p-3,r-3,6,6);else x.arc(p,r,n.t?2:3.5,0,7);x.fill();if(i==sel){x.strokeStyle='#000';x.stroke()}});x.globalAlpha=1}
+c.onclick=e=>{let b=1e9;NODES.forEach((n,i)=>{const[p,r]=P(n),d=(p-e.offsetX)**2+(r-e.offsetY)**2;if(d<b){b=d;sel=i}});const n=NODES[sel];
+document.getElementById('info').innerHTML='<h4>'+n.id+'</h4>'+n.k+(n.t?' (trivial)':'')+' | '+n.m+' | rung '+(n.r||'?')+'<pre>'+n.st.replace(/</g,'&lt;')+'</pre>';dr()};
+let dg=null;c.onmousedown=e=>dg=[e.x-ox,e.y-oy];onmouseup=()=>dg=null;c.onmousemove=e=>{if(dg){ox=e.x-dg[0];oy=e.y-dg[1];dr()}};
+c.onwheel=e=>{e.preventDefault();const f=e.deltaY<0?1.2:1/1.2;ox=e.offsetX-(e.offsetX-ox)*f;oy=e.offsetY-(e.offsetY-oy)*f;s*=f;dr()};
+document.getElementById('q').oninput=e=>{q=e.target.value.toLowerCase();dr()};
+document.getElementById('leg').innerHTML=Object.entries(COLS).map(([k,v])=>'<span style="color:'+v+'">■</span> '+k).join('<br>')+'<br>● theorem (small = trivial) ■ def';
+onresize=rs;rs();</script>

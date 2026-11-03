@@ -1,0 +1,25 @@
+# F-SCATLEN live — 2026-10-20
+GUARD OK: prereg 23a24b151 on origin/main; checker hash matches (re-verified on every scoring call)
+inputs.json sha256 41505f0abbf9a91c35663b8bac6a4101bf8ff61ccfa62ed4973b85120fd39c7a
+P_a: a00 = 0.165498 +- 0.00069, a02 = -0.0434213 +- 0.00018, a00-a02 = 0.20892 +- 0.00082
+   [S1,F1] a00=0.165498, a02=-0.0434213, a00-a02=0.20892
+   [S1,F2] a00=0.166435, a02=-0.043667, a00-a02=0.210102
+   [S2,F1] a00=0.16574, a02=-0.0433592, a00-a02=0.209099
+   [S2,F2] a00=0.166677, a02=-0.0436045, a00-a02=0.210282
+P_b: a00 = 0.300726 +- 0.0015, a02 = 0.0 +- 0.0, a00-a02 = 0.300726 +- 0.0015
+   [S1,F1] a00=0.300726, a02=0.0, a00-a02=0.300726
+   [S1,F2] a00=0.302428, a02=0.0, a00-a02=0.302428
+   [S2,F1] a00=0.301704, a02=0.0, a00-a02=0.301704
+   [S2,F2] a00=0.303411, a02=0.0, a00-a02=0.303411
+LO: a00 = 0.159126 +- 0.00057, a02 = -0.0454647 +- 0.00016, a00-a02 = 0.204591 +- 0.00073
+   [S1,F1] a00=0.159126, a02=-0.0454647, a00-a02=0.204591
+   [S1,F2] a00=0.160027, a02=-0.045722, a00-a02=0.205749
+   [S2,F1] a00=0.159127, a02=-0.0454649, a00-a02=0.204592
+   [S2,F2] a00=0.160028, a02=-0.0457222, a00-a02=0.20575
+[X1] chi2(P_a) = 79.89 pulls a00:-8.94,a02:-0.0999; chi2(P_b) = 225.3 pulls a00:12.6,a02:8.23; chi2(LO) = 99.91 pulls a00:-9.98,a02:-0.492; chi2(CGL) = 0.09564 pulls a00:-0.126,a02:-0.282
+[X1] class vs LO: {'P_a': 'IMPROVES-BUT-EXCLUDED', 'P_b': 'WORSE-THAN-LO'}
+[X2] chi2(P_a) = 29.8 pulls a00:-3.67,a00-a02:-4.04; chi2(P_b) = 55.96 pulls a00:6.13,a00-a02:4.29; chi2(LO) = 36.79 pulls a00:-4.13,a00-a02:-4.44; chi2(CGL) = 0.9192 pulls a00:0.273,a00-a02:0.919
+[X2] class vs LO: {'P_a': 'MATCHES-LO', 'P_b': 'WORSE-THAN-LO'}
+overall P_a: UNCLASSIFIED-SPLIT
+overall P_b: FAIL-WORSE-THAN-LO
+VERDICT (P_b, the F-DIM-MASS repair): FAIL-WORSE-THAN-LO

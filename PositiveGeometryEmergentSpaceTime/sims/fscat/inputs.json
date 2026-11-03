@@ -1,0 +1,56 @@
+{
+ "fetched": "2026-10-20 after prereg push 23a24b1 ()",
+ "units": "MeV; scattering lengths in m_pi+^-1",
+ "F_pi": {
+  "F1": {
+   "F": "92.3254132224",
+   "dF": "0.0994315",
+   "source": "PDG 2025 review 'Leptonic decays of charged pseudoscalar mesons' eq. 71.10 |V_ud| f_pi+ = 127.13 +- 0.01 +- 0.13 MeV (pi->mu nu) divided by PDG 2024 |V_ud| = 0.97367 +- 0.00032 (superallowed); f = 130.568, F = f/sqrt2"
+  },
+  "F2": {
+   "F": "92.0653029105",
+   "dF": "0.848528",
+   "source": "PDG 2025 review preferred f_pi+ = 130.2(1.2) MeV = FLAG 2024 (2+1)-flavour lattice average with charm-sea error added; F = f/sqrt2"
+  }
+ },
+ "CGL": {
+  "a00": "0.220",
+  "da00": "0.005",
+  "a02": "-0.0444",
+  "da02": "0.0010",
+  "sources": [
+   "Colangelo-Gasser-Leutwyler NPB 603 (2001) 125, values as quoted in CGL PRL 86 (2001) 5008 (hep-ph/0103063)",
+   "quoted again in NA48/2 EPJC 70 (2010) 635 eq. (8) and DIRAC PLB 751 (2015) 12 eq. (3)"
+  ]
+ },
+ "data": {
+  "X1": [
+   {
+    "obs": "a00",
+    "value": "0.2210",
+    "err": "0.00617171"
+   },
+   {
+    "obs": "a02",
+    "value": "-0.0429",
+    "err": "0.00521536"
+   }
+  ],
+  "X2": [
+   {
+    "obs": "a00",
+    "value": "0.216",
+    "err": "0.0137477"
+   },
+   {
+    "obs": "a00-a02",
+    "value": "0.2533",
+    "err": "0.01095"
+   }
+  ]
+ },
+ "data_sources": {
+  "X1": "NA48/2 Batley et al. EPJC 70 (2010) 635, combined Ke4+cusp (free fit): a00 = 0.2210 +- 0.0047stat +- 0.0040syst, a02 = -0.0429 +- 0.0044 +- 0.0028; quoted correlation 92% IGNORED per prereg (rho=0, disclosed)",
+  "X2": "E865 Pislak et al. PRD 67 (2003) 072004 eq. (28): a00 = 0.216 +- 0.013stat +- 0.004syst +- 0.002th (uses Roy-band relation); DIRAC Adeva et al. PLB 704 (2011) 24 as quoted in PLB 751 (2015) 12: |a0-a2| = 0.2533 +0.0112 -0.0107 (symmetrised 0.01095)"
+ }
+}

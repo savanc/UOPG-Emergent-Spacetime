@@ -1,0 +1,34 @@
+{
+ "T1_claim": {
+  "label": "c",
+  "want": "c",
+  "ok": true
+ },
+ "T2_mechanism": {
+  "label": "b",
+  "want": "b",
+  "ok": true
+ },
+ "T3_mention": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "T4_negated": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "T5_nohit": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "V_verdicts": {
+  "ok": true
+ },
+ "G_selftests": {
+  "ok": true
+ },
+ "ALL_OK": true
+}

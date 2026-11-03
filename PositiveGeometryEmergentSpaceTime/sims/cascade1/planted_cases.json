@@ -1,0 +1,11 @@
+{"run_id": "CASCADE1-2026-10-23-r1", "seed": 20261023,
+ "cases": {
+  "PL1": "massless A5 from the triangulation sum equals 2312.16282 eq. (3.1) typed independently",
+  "PL2": "massless near-zero splits eqs. (3.3), (3.5) and their 5 cyclic images hold (10/10); planted non-separable eq31 + 1/(X13 X24) REJECTED",
+  "PL3": "massless A5 vanishes on all 5 hidden-zero loci Z_i (sec. 3.1.1); planted A5 + 1/(X13 X14) does not vanish on Z_1",
+  "PL4": "detector power: planted extra stage mu13 - 2 mu24 = 0 in E0 n=4 lowers dimTheta 2 -> 1",
+  "PL5": "stage 1 excludes the crossing double pole 1/(y13 y24): f0 = 2, f1 = 1 at n=4, D=1",
+  "PL6": "cone_dim exact certificates: {(t,-t)>=0} dim 0, {(t,t)>=0} dim 1, {(t1,t2,t1-t2)>=0} dim 2",
+  "PL7": "2312.16282 sec. 7.1 delta-shift (Y13 = X13 - d, Y24 = X24 + d) keeps the n=4 zero c13 = 0",
+  "PL8": "variety() flags a nonlinear Theta set {pa pb = 0} with dim 1"
+ }}

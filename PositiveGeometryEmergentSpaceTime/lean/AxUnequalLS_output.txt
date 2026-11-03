@@ -1,0 +1,6 @@
+'PositiveGeometryEmergentSpaceTime.UnequalLS.zero_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.UnequalLS.zero_line_conv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.UnequalLS.mass_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.UnequalLS.kstar_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.UnequalLS.spacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.UnequalLS.poch3' depends on axioms: [propext, Classical.choice, Quot.sound]

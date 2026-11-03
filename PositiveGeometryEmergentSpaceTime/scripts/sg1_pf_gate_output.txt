@@ -1,0 +1,29 @@
+C: PF eigenvalue 1.989043790736547 vs 2cos(pi/30) 1.989043790736547 diff 0.0e+00
+C: all components >0: True
+C: PF ratios  1.000000000000 1.618033988750 1.989043790737 2.404867172372 2.956295201468 3.218340458524 3.891156823327 4.783386116753
+C: closed     1.000000000000 1.618033988750 1.989043790737 2.404867172372 2.956295201468 3.218340458524 3.891156823327 4.783386116753
+C: max |diff| 2.66e-15; m2/m1=1.618033988750 phi=1.618033988750
+G1 A1: PF>0 True, lambda=2cos(pi/h) h=2: True, ratios [1.0]
+G1 A2: PF>0 True, lambda=2cos(pi/h) h=3: True, ratios [1.0, 1.0]
+G1 A3: PF>0 True, lambda=2cos(pi/h) h=4: True, ratios [1.0, 1.0, 1.414214]
+G1 A4: PF>0 True, lambda=2cos(pi/h) h=5: True, ratios [1.0, 1.0, 1.618034, 1.618034]
+G1 A5: PF>0 True, lambda=2cos(pi/h) h=6: True, ratios [1.0, 1.0, 1.732051, 1.732051, 2.0]
+G1 A6: PF>0 True, lambda=2cos(pi/h) h=7: True, ratios [1.0, 1.0, 1.801938, 1.801938, 2.24698, 2.24698]
+G1 A7: PF>0 True, lambda=2cos(pi/h) h=8: True, ratios [1.0, 1.0, 1.847759, 1.847759, 2.414214, 2.414214, 2.613126]
+G1 A8: PF>0 True, lambda=2cos(pi/h) h=9: True, ratios [1.0, 1.0, 1.879385, 1.879385, 2.532089, 2.532089, 2.879385, 2.879385]
+G1 D4: PF>0 True, lambda=2cos(pi/h) h=6: True, ratios [1.0, 1.0, 1.0, 1.732051]
+G1 D5: PF>0 True, lambda=2cos(pi/h) h=8: True, ratios [1.0, 1.306563, 1.306563, 1.847759, 2.414214]
+G1 D6: PF>0 True, lambda=2cos(pi/h) h=10: True, ratios [1.0, 1.618034, 1.618034, 1.902113, 2.618034, 3.077684]
+G1 D7: PF>0 True, lambda=2cos(pi/h) h=12: True, ratios [1.0, 1.931852, 1.931852, 1.931852, 2.732051, 3.346065, 3.732051]
+G1 D8: PF>0 True, lambda=2cos(pi/h) h=14: True, ratios [1.0, 1.949856, 2.24698, 2.24698, 2.801938, 3.513519, 4.048917, 4.381286]
+G1 E6: PF>0 True, lambda=2cos(pi/h) h=12: True, ratios [1.0, 1.0, 1.414214, 1.931852, 1.931852, 2.732051]
+G1 E7: PF>0 True, lambda=2cos(pi/h) h=18: True, ratios [1.0, 1.285575, 1.879385, 1.969616, 2.532089, 2.879385, 3.701666]
+G1 E8: PF>0 True, lambda=2cos(pi/h) h=30: True, ratios [1.0, 1.618034, 1.989044, 2.404867, 2.956295, 3.21834, 3.891157, 4.783386]
+G2: c=0.1: ||A(cx)-lam(cx)||=5.0e-17
+G2: c=1: ||A(cx)-lam(cx)||=5.0e-16
+G2: c=91.19: ||A(cx)-lam(cx)||=4.2e-14
+G2: mu*R=0.1: lowest ratios [1.0, 1.618034, 1.989044, 2.404867, 2.956295]
+G2: mu*R=1.0: lowest ratios [1.0, 1.414214, 1.618034, 1.902113, 1.989044]
+G2: mu*R=10.0: lowest ratios [1.0, 1.004988, 1.019804, 1.618034, 1.621121]
+G2: PF(A(x)1+1(x)T) = PF(A)+PF(T): 4.4e-16; eigvec = product: 1.2e-15
+VERDICT C=PASS G1=PASS G2=FAIL (scale freedom survives: PF eigenvectors are projective; KK adds an independent unit 1/R; mu*R unconstrained)

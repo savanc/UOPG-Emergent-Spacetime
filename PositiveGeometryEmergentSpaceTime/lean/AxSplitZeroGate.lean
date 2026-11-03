@@ -1,0 +1,9 @@
+import PositiveGeometryEmergentSpaceTime.SplitZeroGate
+import PositiveGeometryEmergentSpaceTime.PiNSubGate
+#print axioms PositiveGeometryEmergentSpaceTime.SplitZeroGate.four_point_unique
+#print axioms PositiveGeometryEmergentSpaceTime.SplitZeroGate.shifted_zero_line
+#print axioms PositiveGeometryEmergentSpaceTime.SplitZeroGate.chiral_match_iff
+#print axioms PositiveGeometryEmergentSpaceTime.SplitZeroGate.kstar_shift_line
+#print axioms PositiveGeometryEmergentSpaceTime.SplitZeroGate.pieta_no_zero
+#print axioms PositiveGeometryEmergentSpaceTime.PiNSubGate.odd_zero
+#print axioms PositiveGeometryEmergentSpaceTime.PiNSubGate.cd_nonzero

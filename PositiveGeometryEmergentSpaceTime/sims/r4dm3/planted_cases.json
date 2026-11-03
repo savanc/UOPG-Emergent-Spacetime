@@ -1,0 +1,61 @@
+{
+ "note": "Expected v3 verdicts for sims/r4dm3/planted/R4DM3Planted.lean, locked before any run. The 16 v2 cases keep their v2 expectations (namespace renamed). New: E1 smuggled_int (integer x6 charge ratio -4 in a hypothesis) and smuggled_half (Y/2 value 4/3) -> SMUGGLED; E2 smuggled_ncsym (2*N_c*yQ tied to geometry) -> SMUGGLED; controls genuine_int / conditional_int -> DERIVED; E3 d1_kin, d1_zero -> NOT-SM-STRUCTURE, control d1_field -> NON-CONSTRAINING; PInv3 generated lemmas -> AUTO-GENERATED. fix_cases: the planted labels that must change (and the only ones that may) when that single fix/change is switched off. Off-expectations (informative): E1 off -> smuggled_int, smuggled_half DERIVED/CONDITIONAL/PG; E2 off -> smuggled_ncsym DERIVED/CONDITIONAL/PG; E3 off -> d1_kin NON-CONSTRAINING, d1_zero SMUGGLED; D1 off -> d1_identity, d1_field DERIVED/UNCONDITIONAL/PG; D2 off -> PInv(3).mk.inj DERIVED/CONDITIONAL/PG, injEq/sizeOf_spec NON-CONSTRAINING; D3 off -> planted_d3 SM-INPUT-FED.",
+ "expected": {
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_genuine": "DERIVED/UNCONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_conditional": "DERIVED/CONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_smuggled_literal": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_smuggled_acc": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_smuggled_nc": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_fed": "SM-INPUT-FED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_nonconstraining": "NON-CONSTRAINING",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_nogeo": "NO-GEOMETRY",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.yQgeo_eq": "NOT-SM-STRUCTURE",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d1_identity": "NON-CONSTRAINING",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d1_conditional": "DERIVED/CONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv.mk.inj": "AUTO-GENERATED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv.mk.injEq": "AUTO-GENERATED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv.mk.sizeOf_spec": "AUTO-GENERATED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d3": "DERIVED/UNCONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.Mixed.geoMap_one": "NOT-SM-STRUCTURE",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_smuggled_int": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_smuggled_half": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_smuggled_ncsym": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_genuine_int": "DERIVED/UNCONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_conditional_int": "DERIVED/CONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d1_kin": "NOT-SM-STRUCTURE",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d1_zero": "NOT-SM-STRUCTURE",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d1_field": "NON-CONSTRAINING",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv3.mk.inj": "AUTO-GENERATED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv3.mk.injEq": "AUTO-GENERATED",
+  "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv3.mk.sizeOf_spec": "AUTO-GENERATED"
+ },
+ "n_derived_increase": 6,
+ "fix_cases": {
+  "D1": [
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d1_identity",
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d1_field"
+  ],
+  "D2": [
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv.mk.inj",
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv.mk.injEq",
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv.mk.sizeOf_spec",
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv3.mk.inj",
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv3.mk.injEq",
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv3.mk.sizeOf_spec"
+  ],
+  "D3": [
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d3"
+  ],
+  "E1": [
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_smuggled_int",
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_smuggled_half"
+  ],
+  "E2": [
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_smuggled_ncsym"
+  ],
+  "E3": [
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d1_kin",
+   "PositiveGeometryEmergentSpaceTime.R4DM3Planted.planted_d1_zero"
+  ]
+ }
+}

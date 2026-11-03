@@ -1,0 +1,11 @@
+warning: Physlib: repository '<local path>' has local changes
+warning: mathlib: repository '<local path>' has local changes
+warning: plausible: repository '<local path>' has local changes
+warning: LeanSearchClient: repository '<local path>' has local changes
+warning: importGraph: repository '<local path>' has local changes
+warning: proofwidgets: repository '<local path>' has local changes
+warning: aesop: repository '<local path>' has local changes
+warning: Qq: repository '<local path>' has local changes
+warning: batteries: repository '<local path>' has local changes
+'PositiveGeometryEmergentSpaceTime.FT4Gate.only_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.FT4Gate.Z_running' depends on axioms: [propext, Classical.choice, Quot.sound]

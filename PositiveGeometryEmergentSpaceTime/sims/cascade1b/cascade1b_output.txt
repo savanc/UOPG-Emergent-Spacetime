@@ -1,0 +1,7 @@
+GUARD OK: prereg 27a47fd6b on origin/main; checker hash matches (re-verified on every scoring call)
+run CASCADE1b-2026-10-23-r1 seed 202610231 mode live (2026-10-23)
+stages 0-2 reproduce v1: True (0s)
+V_D n=4: zero_only [True, True] (0s)
+V_D n=5: zero_only [True, True, True, True, True] (1s)
+VERDICT (python): NOT-EVALUATED (V_D time kill 3600s at n=6)
+LIVE_EXIT 0

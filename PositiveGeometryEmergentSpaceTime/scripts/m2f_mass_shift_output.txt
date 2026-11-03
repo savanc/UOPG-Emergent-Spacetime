@@ -1,0 +1,35 @@
+(a) lim delta^2 A4(X + mu + delta a*) = -X13 - X24 - mu13 - mu24 ; prediction -X13 - X24 - mu13 - mu24 : True
+    eps^-1 coefficient (must be 0): 0
+    uniform mass mu = -M^2: 2*M2 - X13 - X24  (= -(Xt13+Xt24) = -c13 with X_{i,i+1}=M^2: True )
+(a) SU(2) dressing of kappa(s12+s23-2c): coefficients of d12d34, d13d24, d14d23 = [8*kappa*(-c + s), -8*kappa*(-4*M2 + c + s + t), 8*kappa*(-c + t)]
+    => A(s,t,u) = 8 kappa (s - c): Weinberg (s - M^2)/F^2 iff c = M^2; uniform offsets give c = -(mu13+mu24)/2 = M^2: True
+(b1) massive planar soft map (on Xt) of A4N(Xt), legs 1..4: [0, 0, 0, 0] ; of A6N(Xt), legs 1..6: [0, 0, 0, 0, 0, 0]
+(b2) n=4 at s = t = 0 (X13 = X24 = 0): ordered value = 2*M2 (prediction +2*M2); Weinberg A(0,t,u) = -M^2/F^2
+(b2) n=6 naive massless soft map (leg 1) in physical X of A6N(X - M^2): -M2*(6*M2**3 - 5*M2**2*X24 - 5*M2**2*X25 - 3*M2**2*X35 - 2*M2**2*X36 - 3*M2**2*X46 + M2*X24**2 + 2*M2*X24*X25 + 3*M2*X24*X35 + M2*X24*X36 + 2*M2*X24*X46 + M2*X25**2 + 2*M2*X25*X35 + M2*X25*X36 + 3*M2*X25*X46 + M2*X35*X36 + M2*X36*X46 - X24**2*X36 - 2*X24*X25*X35 + 2*X24*X25*X36 - 2*X24*X25*X46 - X24*X35*X36 - X25**2*X36 - X25*X36*X46)/((M2 - X24)*(M2 - X25)*(M2 - X36)) ; -> 0 as M -> 0: True
+(c1) uniform mass: lowest eps power num/den = 2 2 ; limit == A6N(X - M^2): True
+(c1) general constant offsets mu (20 random exact-rational points): max |delta^4 A6 - A6N(X+mu)|/|A6N| at delta=1e8: 6.51e-07
+(c2) Cayley + mass term: A4_FR = Xt13 + Xt24 ; rho4 = A4_FR/(Xt13+Xt24) = 1
+    A6_FR / A6N(Xt) = -1 ; prediction rho6 = -rho4^2 = -1
+    (info) 6-pt contact vertex M2-coefficient (nonzero => mass enters vertices, cancels in total): 0
+    (info) Cayley, naive mass term only: A4 = -2*M2 + Xt13 + Xt24 (not proportional to c13 = Xt13+Xt24 unless M=0)
+(d0) A6N(Z + lambda a*) - A6N(Z) = 0 ; A4N likewise: 0
+(d1) with (P) [v_oe = 0]: #equations 16 ; solutions: [{v13: -v46, v15: -v46, v24: v46, v26: v46, v35: -v46}]
+    => v = lambda * a* (uniform mass up to delta-reparametrisation): True
+(d1') without (P), all nine offsets free: solutions: [{v13: -v46, v14: 0, v15: -v46, v24: v46, v25: 0, v26: v46, v35: -v46, v36: 0}]
+(d2) hidden zeros on all six loci, with (P): solutions: [{v13: -v46, v15: -v46, v24: v46, v26: v46, v35: -v46}]
+    => same set as (d1): True
+(d2') hidden zeros on all six loci, all nine offsets free (no (P)): solutions: [{v13: -v46, v14: 0, v15: -v46, v24: v46, v25: 0, v26: v46, v35: -v46, v36: 0}]
+    Groebner bases (lex) — d2' (hidden zeros, no P): [v13 + v46, v14, v15 + v46, v24 - v46, v25, v26 - v46, v35 + v46, v36] ; d1' (target, no P): [v13 + v46, v14, v15 + v46, v24 - v46, v25, v26 - v46, v35 + v46, v36]
+    all Groebner generators linear (so the solution sets above are complete, no extra branches): True
+(d2) n=4 hidden zero c13 = 0 forces: [{mu13: -2*M2 - mu24}]  i.e. c = -(mu13+mu24)/2 = M^2
+(d3) n=6 family (P), oo/ee offsets -c: residue at X14 = M^2: (-X13 - X24 + 2*c)*(-X15 - X46 + 2*c) ; = product of two n=4 family amplitudes (X13+X24-2c)(X15+X46-2c): True
+    family on skinny rectangle 1 (in Xt): 2*(-M2 + c)*(-2*M2*Xt24*Xt25 - 2*M2*Xt24*Xt36 + 2*M2*Xt25*Xt26 - 2*M2*Xt25*Xt36 + 2*M2*Xt26*Xt36 - Xt24**2*Xt36 - Xt24*Xt25*Xt35 + Xt24*Xt25*Xt36 - Xt24*Xt25*Xt46 + 2*Xt24*Xt25*c + Xt24*Xt26*Xt36 - Xt24*Xt35*Xt36 + 2*Xt24*Xt36*c - Xt25**2*Xt36 + Xt25*Xt26*Xt35 + Xt25*Xt26*Xt46 - 2*Xt25*Xt26*c - Xt25*Xt36*Xt46 + 2*Xt25*Xt36*c + Xt26*Xt35*Xt36 - 2*Xt26*Xt36*c)/(Xt25*Xt36*(Xt24 - Xt26)) -> zero iff c = M^2
+(e) general c: a0^0 = (12*M**2 - 5*c)/(32*pi*F**2) , a0^2 = -c/(16*pi*F**2) ; at c = M^2: 7*M**2/(32*pi*F**2) , -M**2/(16*pi*F**2)
+    [PDG2024: M=139.57039, F=92.065] a00: LO = 0.1600; NA48/2 = 0.222 +- 0.0142; rel dev = -27.9%; pull = -4.35 sigma; within 30%: True
+    [PDG2024: M=139.57039, F=92.065] a20: LO = -0.0457; NA48/2 = -0.0432 +- 0.0097; rel dev = -5.8%; pull = -0.26 sigma; within 30%: True
+    [CGL: M=139.57039, F=92.400] a00: LO = 0.1589; NA48/2 = 0.222 +- 0.0142; rel dev = -28.4%; pull = -4.44 sigma; within 30%: True
+    [CGL: M=139.57039, F=92.400] a20: LO = -0.0454; NA48/2 = -0.0432 +- 0.0097; rel dev = -5.1%; pull = -0.23 sigma; within 30%: True
+    ratio a0^0/a0^2 (general c) = -6*M**2/c + 5/2 ; at c = M^2: -7/2 ; NA48/2: -5.139 (reported, not graded)
+    (info) the c that would reproduce the measured ratio at LO: c/M^2 = [0.7854545454545454] (NOT used; LO is not accurate enough)
+RESULTS: {'a_limit': True, 'a_dressing': True, 'b1': True, 'b2_4': True, 'b2_6_reported': True, 'c1_uniform': True, 'c1_general_numeric': True, 'c2': True, 'd0': True, 'd1': True, 'd1_noP_reported': True, 'd2': True, 'd_groebner_linear': True, 'd2_4': True, 'e_formulae': True, 'e_PDG': True}
+GRADED (script side): {'a_limit': True, 'a_dressing': True, 'c1_uniform': True, 'c2': True, 'd1': True, 'e_PDG': True} -> all hold

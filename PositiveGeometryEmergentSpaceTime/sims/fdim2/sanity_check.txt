@@ -1,0 +1,6 @@
+# F-DIM' post-live sanity (guarded import; 2026-10-20)
+GUARD OK: prereg e23bbddee on origin/main; checker hash matches
+2 deg 3 nonzero 4 signs {-1} min|c| 0.078125
+3 deg 4 nonzero 5 signs {-1} min|c| 0.019444444444444445
+40 deg 41 nonzero 42 signs {-1} min|c| 2.3218926653290237e-06
+level2 D4 x128 (sigma=-1): ['10', '10', '50', '50']

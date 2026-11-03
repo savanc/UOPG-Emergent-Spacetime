@@ -1,0 +1,21 @@
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.jm_comm
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.JB_apply
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.jm_sv
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.sv_append
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.sv_neg
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.sv_eB
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.idx_eB
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.tD_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.tD_swap
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.sv_zero_of
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.cD_sorted
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.cD_swap12
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.cD_cyc
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.cD_perms
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.cD_zero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.vec_eq_sum
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.expand
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.sym_zero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.jordanJB
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Jordan.jordan

@@ -1,0 +1,2 @@
+FORCE WW->WW, t-channel = physical neutral h: nonzero-coeff eqs: 8  solutions: [{a: -lam3, lam4: lam3**2}, {a: lam3, lam4: lam3**2}]
+SSB value: 0

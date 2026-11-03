@@ -1,0 +1,20 @@
+{
+ "rung": "LEAN-CERT-1",
+ "note": "Planted cases are hard-coded in leancert1_checker.py run_planted() (Python) and as named theorems in lean/PositiveGeometryEmergentSpaceTime/LeanCert.lean (Lean); this file is the declared list (locked by sha256 in the prereg).",
+ "python": {
+  "PL1_known_kernel": {"M": [[1, 1, 0], [0, 1, 1]], "expect_kernel": [[1, -1, 1]], "expect_cert_verifies": true},
+  "PL2_flipped_kernel_entry": {"K": "PL1 kernel with entry [2][0] negated", "expect": "MK=0 false and PM+KQ=dI false (REJECTED)"},
+  "PL3_corrupted_split": {"P": "PL1 P with P[0][0] += 1", "expect": "PM+KQ=dI false (REJECTED)"},
+  "PL4_fake_extra_kernel_vector": {"K": [[1, 1], [-1, 0], [1, 0]], "expect": "MK=0 false (REJECTED)"},
+  "PL5_abhy_n4_eq10": {"expect": {"s12": [1, 0], "s23": [0, 1], "s13": [-1, -1]}, "basis": ["X13", "X24"]},
+  "PL6_sketch_rank_deficient": {"M": [[1, 2, 3], [0, 1, 4], [1, 3, 7]], "expect_sketch": [2, 2, 2], "seed": "SEED+6"},
+  "PL7_wrong_nacc_tuple": {"reject": [-4, 2, -3, 7], "accept": [-4, 2, -3, 6]},
+  "PL8_detector_power_drop_cubic": {"expect": "linear-ACC-only count over R^4 > 2"}
+ },
+ "lean": {
+  "planted_flip_rejected": "checkZero gpos_M gpos_Kflip = false  (by decide)",
+  "planted_split_rejected": "checkSplit gpos_Pbad gpos_M gpos_K gpos_Q gpos_d = false  (by decide)",
+  "planted_tuple_rejected": "(-4, 2, -3, 7) notin accSet",
+  "planted_abhy_flip_rejected": "checkZero abhy6_M abhy6_Kflip = false  (by decide)"
+ }
+}

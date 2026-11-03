@@ -1,0 +1,16 @@
+# after push
+IMPORT-AND-CALL: ['PASSED GUARD', 'PASSED GUARD']
+pass-flag attributes present: []
+exit=0
+GUARD OK: prereg 23a24b151 on origin/main; checker hash matches (re-verified on every scoring call)
+planted (a) linear Weinberg A=(s-m^2)/F^2: 32pi(a00,a02) = (7.0, -2.0) expect (7, -2) -> OK
+planted (b) full LS, Adler zero at s=t=m^2, alpha'->0 (reduces to Weinberg; Lean FScatLen.ls_soft_normalisation): 32pi(a00,a02) = (7.00000000001, -1.99999999999) expect (7, -2) -> OK
+planted (c) full LS, Adler zero at s=t=0, alpha'->0 (Lean FScatLen.lin_adlerZero_T0/T2: 12, 0): 32pi(a00,a02) = (12.0000000001, 0.0) expect (12, 0) -> OK
+classifier model == LO: MATCHES-LO expect MATCHES-LO -> OK
+classifier model == data, LO 12 sigma off: BEATS-LO expect BEATS-LO -> OK
+classifier model better than LO but 6 sigma off: IMPROVES-BUT-EXCLUDED expect IMPROVES-BUT-EXCLUDED -> OK
+classifier model far worse: WORSE-THAN-LO expect WORSE-THAN-LO -> OK
+PLANTED: RECOVERED
+GUARD OK: prereg 23a24b151 on origin/main; checker hash matches (re-verified on every scoring call)
+broken P_b (Adler zero at s=t=0) reproduces Weinberg a_0^2 (32pi a02 = -2); Lean FScatLen.lin_adlerZero_T2 proves 0: 32pi a02 = 0.0 vs claimed -2 -> REJECT
+exit=0

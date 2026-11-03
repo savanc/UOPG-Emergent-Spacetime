@@ -1,0 +1,15 @@
+k=0 sigma=+1 monomials=1 dim_N_k=1
+k=0 sigma=-1 monomials=1 dim_N_k=0
+k=1 sigma=+1 monomials=6 dim_N_k=2
+k=1 sigma=-1 monomials=6 dim_N_k=0
+k=2 sigma=+1 monomials=21 dim_N_k=5
+k=2 sigma=-1 monomials=21 dim_N_k=0
+k=3 sigma=+1 monomials=56 dim_N_k=10
+k=3 sigma=-1 monomials=56 dim_N_k=2
+planted P+ (WZW vertex = 5*eps): True
+planted P+ cyclic/reflection(+1)/parity-odd: True
+decoy parity-even rejected: True
+decoy non-cyclic rejected: True
+Adler soft zeros (p1->0, p5->0): True
+odd 3-pt factor vanishes (dependent args): True
+normalisation: constraint system homogeneous linear => solution space closed under c*N for every c in Q (no fixed scale)

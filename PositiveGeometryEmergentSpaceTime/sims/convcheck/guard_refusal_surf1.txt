@@ -1,0 +1,6 @@
+== before prereg commit
+planted rc 1 ['GUARD REFUSED: prereg/CONV-SURF-1-coupling-norm-2026-10-30.md has no commit']
+live rc 1 ['GUARD REFUSED: prereg/CONV-SURF-1-coupling-norm-2026-10-30.md has no commit']
+== after commit, before push
+planted rc 1 ['GUARD REFUSED: prereg commit 422faf1b9 not an ancestor of origin/main (not pushed)']
+live rc 1 ['GUARD REFUSED: prereg commit 422faf1b9 not an ancestor of origin/main (not pushed)']

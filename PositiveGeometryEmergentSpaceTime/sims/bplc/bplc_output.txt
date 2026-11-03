@@ -1,0 +1,12 @@
+GUARD OK: prereg 65cf592a1 on origin/main; checker hash matches (re-verified on every scoring call)
+M1 SM_Y: max |u(t.P) - u(P)| n=5: 3.8894e-62; n=15: 5.0562e-61
+M1 B-L: max |u(t.P) - u(P)| n=5: 5.8341e-62; n=15: 3.1115e-61
+M1 rival_nonACC: max |u(t.P) - u(P)| n=5: 1.1668e-61; n=15: 3.5004e-61
+M1: CHARGE-BLIND
+M2 kappa: Delta(2,15) = 129017/33392760 (3.863622e-03); rival Delta(1,15) = 1/2040 (4.901961e-04); rival cube = 0
+M2 report-only: kappa Delta(2,16) (with nu^c) = 3.238838e-03; kappa Delta(2,5) = 1.558442e-02
+M2 report-only, multiplet level n=5 (unit multiplicity): Tr Y = 1/3, Tr Y^3 = 67/108 (SM violates)
+M2 solutions at yQ=1 in basis: N_M2 = 35; N_ACC = 2
+M2 sample non-SM solutions: [('-7', '0', '8', '-1'), ('-4', '0', '5', '-4'), ('-4', '9', '-10', '-1'), ('-5/2', '0', '-1', '7/2'), ('-2', '-4/3', '7/3', '-2/3'), ('-2', '-2/3', '-1/3', '8/3')]
+M2 earned: False (needs kappa_hyp != 0, both rivals 0, N_M2 == N_ACC)
+VERDICT: NO-LINK

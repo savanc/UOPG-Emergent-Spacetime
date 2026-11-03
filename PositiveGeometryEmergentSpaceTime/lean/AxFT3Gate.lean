@@ -1,0 +1,3 @@
+import PositiveGeometryEmergentSpaceTime.FT3Gate
+#print axioms PositiveGeometryEmergentSpaceTime.FT3Gate.threshold_relative_distance
+#print axioms PositiveGeometryEmergentSpaceTime.FT3Gate.threshold_dot_same

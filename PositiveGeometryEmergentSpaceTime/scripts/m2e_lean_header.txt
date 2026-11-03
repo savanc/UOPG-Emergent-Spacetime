@@ -1,0 +1,18 @@
+/-
+M2e — the algebraic core of "the δ-shift is forced at n = 6".
+
+Shift X_ij ↦ X_ij + δ·a_ij on the 9 hexagon chords. The conditions are C1(4) (δ⁴·A6 has a finite, nonzero
+limit), C2 (no poles at the (e,e)/(o,o) chords) and C3 (Adler zero on all six legs).
+
+**Split between script and Lean.**
+* Script-verified (`scripts/m2e_shift_scan.py`, exact sympy + Singular; `scripts/m2e_certificates.py`):
+  the reduction "C1–C3 ⇒ these coefficient equations", and the elimination of 503 of the 511 non-empty
+  supports by a nonzero constant/monomial coefficient. Every survivor shifts all six (e,e)/(o,o) chords.
+* Lean-proved here: for each of the 8 surviving supports, the listed equations (with all a ≠ 0) force either
+  a = λ·(a_oo = 1, a_ee = −1, a_oe = 0) (support = the six chords; λ = a13) or a contradiction (any (o,e)
+  chord shifted). Each hypothesis is tagged with its origin, C1 or C3.
+-/
+import Mathlib
+
+namespace PositiveGeometryEmergentSpaceTime.ShiftForced
+

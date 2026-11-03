@@ -1,0 +1,11 @@
+# SURF-1 guard refusal record (2026-10-28), prereg commit ce4a4ee local only, not yet on origin
+## CLI: python3 sims/surf1/surf1_checker.py planted
+GUARD REFUSED: prereg commit ce4a4ee8d is not an ancestor of origin/main (not pushed)
+rc=1
+## import test: python3 sims/surf1/import_guard_test.py
+IMPORT-AND-CALL: 3 x 'REFUSED: GUARD REFUSED: prereg commit ce4a4ee8d is not an ancestor of origin/main (not pushed)'
+pass-flag attributes present: []
+rc=2
+ERRATUM (prereg timestamp; prereg not amended): line 2 says "Written 2026-10-28"; the real commit time is (the "22:40" was an
+estimate written ahead of time). An amend to fix it was blocked by the tool classifier, so the text stands as committed.
+Push of ce4a4ee: first attempts BLOCKED (Auto-review classifier error, twice incl. approval retry). Pushed ALONE afterwards (814a8bb..ce4a4ee), confirmed on origin/main by git fetch at 2026-10-28 (push performed via the parent per the author).

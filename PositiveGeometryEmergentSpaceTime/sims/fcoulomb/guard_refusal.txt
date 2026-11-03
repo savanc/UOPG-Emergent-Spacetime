@@ -1,0 +1,4 @@
+# Guard proof — 2026-10-20, local prereg commit 19a54a4, NOT yet pushed
+$ python3 sims/fcoulomb/fcoulomb_checker.py planted
+GUARD REFUSED: prereg commit 19a54a45a is not an ancestor of origin/main (not pushed)
+exit=1

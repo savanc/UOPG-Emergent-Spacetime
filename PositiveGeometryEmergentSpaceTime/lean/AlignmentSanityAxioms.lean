@@ -1,0 +1,102 @@
+/-
+Copyright (c) 2026 Savan Chhaniyara. All rights reserved.
+Released under MIT license as described in the file LICENSE.
+Authors: Savan Chhaniyara
+-/
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties
+
+/-! # Alignment Phase B sanity modules: batched axiom audit (not imported by `PositiveGeometryEmergentSpaceTime`). -/
+
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.gauge_point
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.gauge_point_neg
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.N_even_a
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.planted_a2
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.planted_lam4
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.EWZ1bSanity.forced_nonvacuous
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.D3_eq_D3m
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.mnu_eq_D3
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.mnu_det_zero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.D3_symm
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.D3_trace
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.planted_omega2
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.nonvacuous
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.FL1ZSanity.tie_factor_nonzero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.NA_neg_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.NB_neg_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.NA_pos_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.NB_pos_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.allTriMasks_length
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.tris_complete
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.edge_count
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.planted_nbhd
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.planted_edge
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.HgDim1Nbhd.nonvacuous
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.Z_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.star_corr
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.exp_spin
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.C_eq_gpRule
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.C_cast_eq_gpY
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.C_positive
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.planted_t
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.planted_sign
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.gpRule_orth
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingStar.nonvacuous
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.E1_idem
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.unit_ok
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.E1_peirce
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.octonion_units
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.jordan_basis
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.jordan_mixed
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.planted_assoc
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.planted_identity_not_der
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.gen0_nonzero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.gsm_nontrivial
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.gsm_sub_stab
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Sanity.stab_empty
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.rho_coeff
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.rho3_coeff
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.f4_coeff
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.rho3_hyp
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.f4_hyp
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.gsq_values
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.ratios
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.rho3_ratio_derived
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.planted_2J1
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LSConvention.planted_wrong_J
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.det4
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.eps_cyc
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.eps_rev
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.eps_par
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.k0_rows
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.k0p_rows_zero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.k0m_rows_pattern
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.eps_units
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2Sanity.planted_no_conservation
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.corr2_spectral
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.gram_form
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.gram_nonneg
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.hankel_value
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.toeplitz_value
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.planted_neg_weight
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.planted_a_zero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.RpTn1Sanity.nonvacuous
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.boxU_halfEdges
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.boxU_vEdges
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.boxU_simple
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.boxU_eq_K33
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.boxU_triFree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.prism_wellformed
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.prism_rejected
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.ttU_halfEdges
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.ttU_vEdges
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.ttU_mult
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.k4_rejected
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1Ties.nonvacuous

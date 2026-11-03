@@ -1,0 +1,16 @@
+GUARD OK: prereg 65cf592a1 on origin/main; checker hash matches (re-verified on every scoring call)
+planted kappa(Delta(1,5)) slice-integral 1/105 == Dirichlet 1/105: OK
+planted kappa(Delta(1,8)) slice-integral 1/360 == Dirichlet 1/360: OK
+planted kappa(Delta(1,15)) slice-integral 1/2040 == Dirichlet 1/2040: OK
+planted kappa(Delta(2,4)) (octahedron, centrally symmetric) = 0: OK
+planted centroid E[mu1] on Delta(2,15) = 2/15 (expect 2/15): OK
+planted full-ACC count at yQ=1: 2 [(Fraction(-4, 1), Fraction(2, 1), Fraction(-3, 1), Fraction(6, 1)), (Fraction(2, 1), Fraction(-4, 1), Fraction(-3, 1), Fraction(6, 1))]: OK
+planted M1 torus invariance (n=6 toy): maxdiff 1.1668e-61: OK
+planted classify earned-toy: LINK (expect LINK): OK
+planted classify rival-reproduces: NO-LINK (expect NO-LINK): OK
+planted classify non-discriminating: NO-LINK (expect NO-LINK): OK
+planted classify m1-sensitive: LINK (expect LINK): OK
+PLANTED ALL OK
+GUARD OK: prereg 65cf592a1 on origin/main; checker hash matches (re-verified on every scoring call)
+broken claim 'SM hypercharge and B-L give different u-variables (n=5)': maxdiff = 7.7788e-62
+BROKEN REJECTED (as required; Lean BridgePLCharge.uCR_rival_indistinguishable)

@@ -1,0 +1,8 @@
+1.286 nearest 1.28558 dev 0.033%
+1.286 nearest 1.28558 dev 0.033%
+1.97 nearest 1.96962 dev 0.019%
+1.97 nearest 1.96962 dev 0.019%
+2.532 nearest 2.53209 dev 0.004%
+2.543 nearest 2.53209 dev 0.431%
+0.684 outside (1,4): not scored
+0.694 outside (1,4): not scored

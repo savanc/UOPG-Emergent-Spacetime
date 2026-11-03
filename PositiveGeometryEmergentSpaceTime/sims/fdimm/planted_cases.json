@@ -1,0 +1,6 @@
+{"planted": [
+  {"name": "trunk massless (alpha0 = 1/2, m2 = 0): reproduces F-DIM' (D<=4, D=4 positive)", "alpha0": "1/2", "m2": "0", "nmax": 12, "nmax_d4": 40, "expect": "BOUND-ONLY D<=4", "expect_d4": true},
+  {"name": "NS model (alpha0 = 1, m2 = -1/2): D<=10 (CITED Bianchi et al. 2021)", "alpha0": "1", "m2": "-1/2", "nmax": 12, "nmax_d4": 12, "expect": "BOUND-ONLY D<=10", "expect_d4": true}
+ ],
+ "broken": {"name": "trunk massless asked for D <= 26 (excluded by Lean PositiveGeometryEmergentSpaceTime.FDim.trunk_bound_not_forced)", "alpha0": "1/2", "m2": "0", "nmax": 12, "must_not": "BOUND-ONLY D<=26"}
+}

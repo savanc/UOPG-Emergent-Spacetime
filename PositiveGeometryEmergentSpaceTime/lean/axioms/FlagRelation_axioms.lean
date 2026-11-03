@@ -1,0 +1,5 @@
+import PositiveGeometryEmergentSpaceTime.FlagRelation
+open PositiveGeometryEmergentSpaceTime.FlagRelation
+#print axioms R_identity
+#print axioms zero_implies_R
+#print axioms GammaR

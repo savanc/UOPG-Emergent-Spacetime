@@ -1,0 +1,207 @@
+GUARD OK: prereg 87280fb98 on origin/main; checker/classification/exporter/planted hashes match (re-verified on every scoring call)
+live export: 1256 declarations, 97 modules, 851 theorems
+module classes: {'GEOMETRY-AMP': 58, 'MIXED/TEST': 15, 'GEOMETRY-PG': 19, 'SM-INPUT': 5}
+  DERIVED           tier C  PositiveGeometryEmergentSpaceTime.BR5p.Inv.mk.inj [CONDITIONAL, AMP]
+      geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.BR5p.Inv', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.casesOn', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.mk', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.mk.noConfusion']; hypotheses: ['{ a := a✝, e1p2 := e1p2✝, e2p1 := e2p1✝, e2p3 := e2p3✝, e3p2']
+  DERIVED           tier C  PositiveGeometryEmergentSpaceTime.BR5p.built_eq_N [UNCONDITIONAL, AMP]
+      geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.BR5p.E', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.e1p2', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.e2p1']; hypotheses: []
+  DERIVED           tier C  PositiveGeometryEmergentSpaceTime.BR5p.ct_eq [UNCONDITIONAL, AMP]
+      geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.BR5p.E', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.e1p2', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.e2p1']; hypotheses: []
+  DERIVED           tier C  PositiveGeometryEmergentSpaceTime.BR5p.ns_eq [UNCONDITIONAL, AMP]
+      geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.BR5p.E', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.e1p2', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.e2p1']; hypotheses: []
+  DERIVED           tier C  PositiveGeometryEmergentSpaceTime.BR5p.nt_eq [UNCONDITIONAL, AMP]
+      geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.BR5p.E', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.e1p2', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.e2p1']; hypotheses: []
+  DERIVED           tier C  PositiveGeometryEmergentSpaceTime.EWZ1b.forced [CONDITIONAL, AMP]
+      geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.EWZ1b.N', 'PositiveGeometryEmergentSpaceTime.EWZ1b.Q1', 'PositiveGeometryEmergentSpaceTime.EWZ1b.Q2']; hypotheses: ['PositiveGeometryEmergentSpaceTime.EWZ1b.N a (-3) 4 (-4) (-1) (-4) 2 2 2 5 1 (-2) (-4) ', 'PositiveGeometryEmergentSpaceTime.EWZ1b.N a 1 4 (-5) 2 (-1) (-2) 4 (-4) 0 (-5) (-5) (-']
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.BridgePLCharge.trace_conditions_not_acc
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier C  PositiveGeometryEmergentSpaceTime.EWZ1b.forced_iff
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.FRMU.acc_fixed_agree_iff
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.FRMU.planted_sm
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.FRMU.ratio_acc
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.FRMU.ratio_fixed_charges
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.FRMU.ratio_plus_one
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.FRMU.ratio_three
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.FRWZW.nc_not_selected
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.OrderParam.both_broken
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.OrderParam.diagMat_mem
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.OrderParam.emEmbed_injective
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.OrderParam.emEmbed_mem_unbroken
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.OrderParam.gauge_broken
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.OrderParam.gauge_smul_def
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.OrderParam.gauge_unbroken_eq_em
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.OrderParam.gauge_unbroken_iff_em
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.R4Indep.dgmlyCharge_blind
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.R4Indep.etaPiPiGamma_eq
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.R4Indep.mesonCharge_shift
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.R4Indep.meson_quotient_blind
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.R4Indep.pi0KKGamma_acc
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.R4Indep.piPlus_charge_yQ_blind
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.R4Indep.quotient_order_acc
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1.bminusl_anomaly_free
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1.cubic_factor
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1.hypercharge_unique
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1.sm_is_anomaly_free
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1.sm_nu_anomaly_free
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1.yQ_zero_family
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1b.dirac_family
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1b.dirac_not_unique
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1b.majorana_unique
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1b.witness_majorana
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT1b.yukawa_majorana
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT2.accN_solution
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT2.accN_three_eq_struct1
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT2.accN_unique
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT2.cubicN_factor
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT2.three_not_selected
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT2.witten_excludes_two
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT2.witten_iff_odd
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT3.acc_ngen_blind
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT3.af_SU2_iff
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT3.af_SU3_iff
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT3.b0SU2_three
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT3.catalan_ne_three
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT3.cells_gr1_eq_three_iff
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT3.km_pos_iff
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT3.ngen_window
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT3.three_not_selected_ngen
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCT3.witten_ngen_blind
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.bz_two_loop_iff
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.rival331_anomaly_iff
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.rival331_window
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.sm_core_not_forced
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.sm_core_window
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.structngen_summary
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.triality_iff
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.triality_su3_only_not_forced
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.triality_window
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.z16_no_nuc_iff
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.STRUCTNGen.z16_no_nuc_window_empty
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.Separation.pi0Anomaly_nc_blind
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.Separation.sm_charges_three
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.X6.branch_chiral
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.X6.branch_one_vectorlike
+      transitive closure has no GEOMETRY-role definition
+  NO-GEOMETRY       tier Q  PositiveGeometryEmergentSpaceTime.X6.chiral_witten_not_selected
+      transitive closure has no GEOMETRY-role definition
+  NON-CONSTRAINING  tier C  PositiveGeometryEmergentSpaceTime.AuditWitnesses.ewz1b_forced_discriminates
+      no SM symbol in the statement
+  NON-CONSTRAINING  tier C  PositiveGeometryEmergentSpaceTime.AuditWitnesses.ewz1b_forced_hyps_sat
+      no SM symbol in the statement
+  NON-CONSTRAINING  tier C  PositiveGeometryEmergentSpaceTime.BR5p.Inv.mk.injEq
+      SM data universally quantified and unconstrained (identity/blindness)
+  NON-CONSTRAINING  tier C  PositiveGeometryEmergentSpaceTime.BR5p.Inv.mk.sizeOf_spec
+      SM data universally quantified and unconstrained (identity/blindness)
+  NON-CONSTRAINING  tier Q  PositiveGeometryEmergentSpaceTime.BridgePLCharge.bridge_charge_nolink
+      SM data universally quantified and unconstrained (identity/blindness)
+  NON-CONSTRAINING  tier Q  PositiveGeometryEmergentSpaceTime.BridgePLCharge.uCR_charge_blind
+      SM data universally quantified and unconstrained (identity/blindness)
+  NON-CONSTRAINING  tier Q  PositiveGeometryEmergentSpaceTime.BridgePLCharge.uCR_rival_indistinguishable
+      SM data universally quantified and unconstrained (identity/blindness)
+  NON-CONSTRAINING  tier C  PositiveGeometryEmergentSpaceTime.EWZ1b.N_decomp
+      SM data universally quantified and unconstrained (identity/blindness)
+  NON-CONSTRAINING  tier Q  PositiveGeometryEmergentSpaceTime.FRWZW.normalisation_free
+      no SM symbol in the statement
+  SM-INPUT-FED      tier Q  PositiveGeometryEmergentSpaceTime.Separation.geometry_struct_separation
+      proof uses SM-INPUT ['PositiveGeometryEmergentSpaceTime.STRUCT1.not_unique_with_nu', 'PositiveGeometryEmergentSpaceTime.STRUCT1b.dirac_family', 'PositiveGeometryEmergentSpaceTime.STRUCT1b.dirac_not_unique', 'PositiveGeometryEmergentSpaceTime.STRUCT2.accN_solution', 'PositiveGeometryEmergentSpaceTime.STRUCT2.three_not_selected', 'PositiveGeometryEmergentSpaceTime.STRUCT3.af_
+  SM-INPUT-FED      tier Q  PositiveGeometryEmergentSpaceTime.X6.positivity_orientation_blind
+      proof uses SM-INPUT ['PositiveGeometryEmergentSpaceTime.X6.parityDual_pos', 'PositiveGeometryEmergentSpaceTime.X6.parityDual_rel', 'PositiveGeometryEmergentSpaceTime.X6.reflect_pos_rel']
+  SMUGGLED          tier C  PositiveGeometryEmergentSpaceTime.EWZ1b.zero_of_gauge
+      (b) hypothesis ha constrains SM data with no geometry: a ^ 2 = lam3 ^ 2; (b) hypothesis h4 constrains SM data with no geometry: lam4 = lam3 ^ 2
+  WITNESS           tier C  PositiveGeometryEmergentSpaceTime.BR5p.br5p_gauge_witness_nontrivial
+      satisfiability witness: the SM-like coupling values (a = lam3 = lam4 = 1) are typed into the statement by hand; it exhibits a point, it derives nothing
+SUMMARY: {
+ "n_sm_structure": 87,
+ "n_derived": 6,
+ "meter": "6/87",
+ "verdicts": {
+  "NON-CONSTRAINING": 9,
+  "DERIVED": 6,
+  "WITNESS": 1,
+  "NO-GEOMETRY": 68,
+  "SMUGGLED": 1,
+  "SM-INPUT-FED": 2
+ },
+ "meter_Q": "0/73",
+ "meter_C": "6/14",
+ "derived_PG": [],
+ "derived_AMP": [
+  "PositiveGeometryEmergentSpaceTime.BR5p.Inv.mk.inj",
+  "PositiveGeometryEmergentSpaceTime.BR5p.built_eq_N",
+  "PositiveGeometryEmergentSpaceTime.BR5p.ct_eq",
+  "PositiveGeometryEmergentSpaceTime.BR5p.ns_eq",
+  "PositiveGeometryEmergentSpaceTime.BR5p.nt_eq",
+  "PositiveGeometryEmergentSpaceTime.EWZ1b.forced"
+ ],
+ "derived_unconditional": [
+  "PositiveGeometryEmergentSpaceTime.BR5p.built_eq_N",
+  "PositiveGeometryEmergentSpaceTime.BR5p.ct_eq",
+  "PositiveGeometryEmergentSpaceTime.BR5p.ns_eq",
+  "PositiveGeometryEmergentSpaceTime.BR5p.nt_eq"
+ ]
+}

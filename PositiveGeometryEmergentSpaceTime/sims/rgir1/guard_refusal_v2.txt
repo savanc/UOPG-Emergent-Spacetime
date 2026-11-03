@@ -1,0 +1,9 @@
+# v2 guard refusal after local commit, before push ()
+$ python3 rgir1_checker_v2.py planted
+GUARD REFUSED: prereg commit bf3c12bde not an ancestor of origin/main (not pushed)
+rc=1
+$ python3 import_guard_test_v2.py
+REFUSED: GUARD REFUSED: prereg commit bf3c12bde not an ancestor of origin/main (not pushed)
+REFUSED: GUARD REFUSED: prereg commit bf3c12bde not an ancestor of origin/main (not pushed)
+pass-flag attributes present: []
+rc=2

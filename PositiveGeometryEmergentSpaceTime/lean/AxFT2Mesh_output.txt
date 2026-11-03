@@ -1,0 +1,3 @@
+'PositiveGeometryEmergentSpaceTime.FT2Mesh.mesh_shift_cancels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.FT2Mesh.mesh_is_dot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.FT2Mesh.zero_unphysical' depends on axioms: [propext, Classical.choice, Quot.sound]

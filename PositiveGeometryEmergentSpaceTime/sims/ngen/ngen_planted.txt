@@ -1,0 +1,11 @@
+GUARD OK: prereg b3f020293 on origin/main; checker hash matches (re-verified on every scoring call)
+planted STRUCT-3 window AF & KM = [3, 4, 5] (expect [3, 4, 5]): OK
+planted b0(SU2) at N=3 = 19/6 (expect 19/6): OK
+planted AF(SU3) max N = 8 (expect 8): OK
+planted triality residue per generation = -3 (expect -3, 1808.00009 '3 per generation'): OK
+planted 331 anomaly: N=3 True, N=2 False, N=6 True: OK
+planted QCD b1 at n_f=6 = 26 (expect 26): OK
+PLANTED ALL OK
+GUARD OK: prereg b3f020293 on origin/main; checker hash matches (re-verified on every scoring call)
+broken claim 'the SM unconditional consistency set forces N_gen = 3': window = [1, 2, 3, 4, 5]
+BROKEN REJECTED (as required; Lean STRUCTNGen.sm_core_not_forced)

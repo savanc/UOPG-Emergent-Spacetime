@@ -1,0 +1,11 @@
+n=2: {'subgraphs': 8, 'with_point': 6, 'fails': 0, 'distinct_cells': 2, 'c_values': [0, 1], 'fusions_eq_proj_when_proj_defined': True, 'proj_defined': 4, 'fusions_eq_lam_f': 4}
+   top example: edges=[(1, 2), (1, 'c')] f=[2, 3, 4, 5] c=1 dimPositroid=3 Fusions(trace)=[2, 3] proj=[2, 3]
+n=3: {'subgraphs': 64, 'with_point': 56, 'fails': 0, 'distinct_cells': 8, 'c_values': [0, 1, 2, 3], 'fusions_eq_proj_when_proj_defined': True, 'proj_defined': 38, 'fusions_eq_lam_f': 17}
+   top example: edges=[(1, 'c'), (2, 'c'), (3, 'c')] f=[3, 4, 5, 6, 7, 8] c=3 dimPositroid=8 Fusions(trace)=[3, 4, 5] proj=[3, 4, 5]
+n=4: {'subgraphs': 256, 'with_point': 240, 'fails': 0, 'distinct_cells': 52, 'c_values': [0, 1, 2, 3, 4, 5, 6], 'fusions_eq_proj_when_proj_defined': True, 'proj_defined': 134, 'fusions_eq_lam_f': 9}
+   top example: edges=[(1, 2), (2, 3), (1, 'c'), (2, 'c'), (3, 'c'), (4, 'c')] f=[4, 5, 6, 7, 8, 9, 10, 11] c=6 dimPositroid=15 Fusions(trace)=[4, 5, 6, 7] proj=[4, 5, 6, 7]
+facet network 1-2, 1-3 (b=2, c=3): Deltas {(1, 2): '3', (1, 3): '6', (1, 4): '5', (1, 5): '6', (1, 6): '2', (2, 3): '0', (2, 4): '1', (2, 5): '3', (2, 6): '1', (3, 4): '2', (3, 5): '6', (3, 6): '2', (4, 5): '3', (4, 6): '1', (5, 6): '0'} 
+  necklace [(1, 2), (2, 4), (3, 4), (4, 5), (1, 5), (1, 6)] f [4, 3, 5, 7, 6, 8]
+(d) n=2: Lam cells 2 -> Fusions labels 2; max labels per cell 1 (1 = Fusions is a function of the cell); connected: 1 cells -> 1 label
+(d) n=3: Lam cells 8 -> Fusions labels 5; max labels per cell 1 (1 = Fusions is a function of the cell); connected: 4 cells -> 1 label
+(d) n=4: Lam cells 52 -> Fusions labels 14; max labels per cell 1 (1 = Fusions is a function of the cell); connected: 27 cells -> 1 label

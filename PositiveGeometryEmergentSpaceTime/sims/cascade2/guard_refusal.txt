@@ -1,0 +1,6 @@
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg commit 012ead2a6 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 012ead2a6 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 012ead2a6 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 012ead2a6 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 012ead2a6 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 012ead2a6 is not an ancestor of origin/main (not pushed)']
+pass-flag attributes present: []
+rc=2
+CLI: python3 sims/cascade2/cascade2_checker.py planted -> rc=1
+GUARD REFUSED: prereg commit 012ead2a6 is not an ancestor of origin/main (not pushed)
+taken 2026-10-28 after local prereg commit 012ead2, before its push

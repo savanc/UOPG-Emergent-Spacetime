@@ -1,0 +1,6 @@
+T1 numerator P = Y*(-X_L*jL*jR - X_R*jL*jR + Y*a - Y*jL*jR)
+T1 denominator D = Y**2*(X_L + X_R)*(X_L + Y)*(X_R + Y)
+T1 P / [Y (Y*M - E*jL*jR)] = 1  -> S2 form with alpha=Y, beta=E, G=jL*jR=(w1-w2)(w3-w4)
+T2 factored form Y*M - E*jL*jR at 200 zeros: max |.|/E^3 = 1.1e-16
+T2 sign agreement sign(psi)==sign(Y M - E jL jR) on 1e6 points: 1.000000
+T3 on c13=c24=0 locus (2000 pts): frac |psi*E|<1e-10: 0.000; median |psi*E| 1.000e+00 -> S1 fails

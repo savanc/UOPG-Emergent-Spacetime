@@ -1,0 +1,5 @@
+failing: ['E1', 'E2', 'E3']
+E1 scaled-by-2 passes: True
+E2 scaled-by-2 passes: True
+E3 scaled-by-2 passes: True
+total idempotents: 51 passing as given: 48

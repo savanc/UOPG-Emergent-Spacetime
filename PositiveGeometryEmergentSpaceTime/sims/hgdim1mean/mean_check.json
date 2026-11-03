@@ -1,0 +1,240 @@
+{
+ "run_id": "HGDIM1-MEAN-20261031T093754",
+ "all_ok": true,
+ "rows": [
+  {
+   "n": 4,
+   "catalan": 2,
+   "pairs": 2,
+   "sum_p_quad": 0,
+   "sum_p_closed": 0,
+   "mean_kappa": "1",
+   "conj": "1",
+   "Ep": "0",
+   "Ep_conj": "0",
+   "brute": {
+    "N": 2,
+    "pairs": 2,
+    "sum_p": 0,
+    "sum_ears": 4,
+    "per_T_identity": true
+   },
+   "ok": true
+  },
+  {
+   "n": 5,
+   "catalan": 5,
+   "pairs": 10,
+   "sum_p_quad": 10,
+   "sum_p_closed": 10,
+   "mean_kappa": "1/3",
+   "conj": "1/3",
+   "Ep": "1",
+   "Ep_conj": "1",
+   "brute": {
+    "N": 5,
+    "pairs": 10,
+    "sum_p": 10,
+    "sum_ears": 10,
+    "per_T_identity": true
+   },
+   "live_mean": "1/3",
+   "ok": true
+  },
+  {
+   "n": 6,
+   "catalan": 14,
+   "pairs": 42,
+   "sum_p_quad": 60,
+   "sum_p_closed": 60,
+   "mean_kappa": "1/7",
+   "conj": "1/7",
+   "Ep": "10/7",
+   "Ep_conj": "10/7",
+   "brute": {
+    "N": 14,
+    "pairs": 42,
+    "sum_p": 60,
+    "sum_ears": 30,
+    "per_T_identity": true
+   },
+   "live_mean": "1/7",
+   "live_sum_p_pairs": 60,
+   "ok": true
+  },
+  {
+   "n": 7,
+   "catalan": 42,
+   "pairs": 168,
+   "sum_p_quad": 280,
+   "sum_p_closed": 280,
+   "mean_kappa": "1/15",
+   "conj": "1/15",
+   "Ep": "5/3",
+   "Ep_conj": "5/3",
+   "brute": {
+    "N": 42,
+    "pairs": 168,
+    "sum_p": 280,
+    "sum_ears": 98,
+    "per_T_identity": true
+   },
+   "live_mean": "1/15",
+   "live_sum_p_pairs": 280,
+   "ok": true
+  },
+  {
+   "n": 8,
+   "catalan": 132,
+   "pairs": 660,
+   "sum_p_quad": 1200,
+   "sum_p_closed": 1200,
+   "mean_kappa": "1/33",
+   "conj": "1/33",
+   "Ep": "20/11",
+   "Ep_conj": "20/11",
+   "brute": {
+    "N": 132,
+    "pairs": 660,
+    "sum_p": 1200,
+    "sum_ears": 336,
+    "per_T_identity": true
+   },
+   "live_mean": "1/33",
+   "live_sum_p_pairs": 1200,
+   "ok": true
+  },
+  {
+   "n": 9,
+   "catalan": 429,
+   "pairs": 2574,
+   "sum_p_quad": 4950,
+   "sum_p_closed": 4950,
+   "mean_kappa": "1/91",
+   "conj": "1/91",
+   "Ep": "25/13",
+   "Ep_conj": "25/13",
+   "brute": {
+    "N": 429,
+    "pairs": 2574,
+    "sum_p": 4950,
+    "sum_ears": 1188,
+    "per_T_identity": true
+   },
+   "live_mean": "1/91",
+   "live_sum_p_pairs": 4950,
+   "ok": true
+  },
+  {
+   "n": 10,
+   "catalan": 1430,
+   "pairs": 10010,
+   "sum_p_quad": 20020,
+   "sum_p_closed": 20020,
+   "mean_kappa": "0",
+   "conj": "0",
+   "Ep": "2",
+   "Ep_conj": "2",
+   "brute": {
+    "N": 1430,
+    "pairs": 10010,
+    "sum_p": 20020,
+    "sum_ears": 4290,
+    "per_T_identity": true
+   },
+   "live_mean": "0",
+   "live_sum_p_pairs": 20020,
+   "ok": true
+  },
+  {
+   "n": 11,
+   "catalan": 4862,
+   "pairs": 38896,
+   "sum_p_quad": 80080,
+   "sum_p_closed": 80080,
+   "mean_kappa": "-1/153",
+   "conj": "-1/153",
+   "Ep": "35/17",
+   "Ep_conj": "35/17",
+   "brute": {
+    "N": 4862,
+    "pairs": 38896,
+    "sum_p": 80080,
+    "sum_ears": 15730,
+    "per_T_identity": true
+   },
+   "live_mean": "-1/153",
+   "live_sum_p_pairs": 80080,
+   "ok": true
+  },
+  {
+   "n": 12,
+   "catalan": 16796,
+   "pairs": 151164,
+   "sum_p_quad": 318240,
+   "sum_p_closed": 318240,
+   "mean_kappa": "-1/95",
+   "conj": "-1/95",
+   "Ep": "40/19",
+   "Ep_conj": "40/19",
+   "brute": {
+    "N": 16796,
+    "pairs": 151164,
+    "sum_p": 318240,
+    "sum_ears": 58344,
+    "per_T_identity": true
+   },
+   "ok": true
+  },
+  {
+   "n": 13,
+   "catalan": 58786,
+   "pairs": 587860,
+   "sum_p_quad": 1259700,
+   "sum_p_closed": 1259700,
+   "mean_kappa": "-1/77",
+   "conj": "-1/77",
+   "Ep": "15/7",
+   "Ep_conj": "15/7",
+   "ok": true
+  },
+  {
+   "n": 14,
+   "catalan": 208012,
+   "pairs": 2288132,
+   "sum_p_quad": 4974200,
+   "sum_p_closed": 4974200,
+   "mean_kappa": "-1/69",
+   "conj": "-1/69",
+   "Ep": "50/23",
+   "Ep_conj": "50/23",
+   "ok": true
+  },
+  {
+   "n": 15,
+   "catalan": 742900,
+   "pairs": 8914800,
+   "sum_p_quad": 19612560,
+   "sum_p_closed": 19612560,
+   "mean_kappa": "-1/65",
+   "conj": "-1/65",
+   "Ep": "11/5",
+   "Ep_conj": "11/5",
+   "ok": true
+  },
+  {
+   "n": 16,
+   "catalan": 2674440,
+   "pairs": 34767720,
+   "sum_p_quad": 77261600,
+   "sum_p_closed": 77261600,
+   "mean_kappa": "-1/63",
+   "conj": "-1/63",
+   "Ep": "20/9",
+   "Ep_conj": "20/9",
+   "ok": true
+  }
+ ],
+ "python": "3.13.5",
+ "elapsed_s": 2.38
+}

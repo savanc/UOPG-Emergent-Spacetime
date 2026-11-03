@@ -1,0 +1,2 @@
+STRUCT decls: 71  total decls: 1094  cross edges geometry<->STRUCT: 0 []
+pi0 anomaly coefficient N_c(Qu^2-Qd^2) = 1 (N_c-independent)

@@ -1,0 +1,5 @@
+T0 kappa from Lorentz residue: [-1]  (hand derivation -1) -> OK
+T0 identity J_L0*X_L = J_L.Y holds: max dev 1.1e-14
+T1 1000000 physical points: frac psi>0 0.4989, psi<0 0.5011
+T2 200 zeros by bisection: max |psi*E| at zero 6.9e-16; min normalised propagator scale 3.667e-02 (>0 => finite, physical)
+T3 flat-amplitude numerator (J_L.J_R)_Mink/E^2 on psi-zeros: median |.| 0.015, frac with |.|<1e-3: 0.020; overall corr sign(psi) vs sign(amp numerator): 0.937

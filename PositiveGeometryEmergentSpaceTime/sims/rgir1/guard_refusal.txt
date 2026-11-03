@@ -1,0 +1,19 @@
+# Guard refusal before prereg push (2026-10-30)
+$ python3 rgir1_checker.py planted
+GUARD REFUSED: prereg/RG-IR-1-top-yukawa-uv-memory-2026-10-30.md has no commit
+rc=1
+$ python3 import_guard_test.py
+REFUSED: GUARD REFUSED: prereg/RG-IR-1-top-yukawa-uv-memory-2026-10-30.md has no commit
+REFUSED: GUARD REFUSED: prereg/RG-IR-1-top-yukawa-uv-memory-2026-10-30.md has no commit
+pass-flag attributes present: []
+rc=2
+
+# After local prereg commit, before push ()
+$ python3 rgir1_checker.py live
+GUARD REFUSED: prereg commit e9a8b948b not an ancestor of origin/main (not pushed)
+rc=1
+$ python3 import_guard_test.py
+REFUSED: GUARD REFUSED: prereg commit e9a8b948b not an ancestor of origin/main (not pushed)
+REFUSED: GUARD REFUSED: prereg commit e9a8b948b not an ancestor of origin/main (not pushed)
+pass-flag attributes present: []
+rc=2

@@ -1,0 +1,14 @@
+# F-COULOMB planted pair — 2026-10-20
+## planted
+GUARD OK: prereg 19a54a45a on origin/main; checker hash matches
+undeformed point in region: True
+u(1/4) = 1.5625
+planted quantising rule -> QUANTISED [1, 1]
+planted continuous rule -> CONTINUOUS [31, 127]
+recovered: True
+exit=0
+## broken
+GUARD OK: prereg 19a54a45a on origin/main; checker hash matches
+broken (rho*rhot in (1,2)) -> EMPTY [0, 0]
+REJECT: deformed region empty for rho*rhot > 1 (as required)
+exit=1

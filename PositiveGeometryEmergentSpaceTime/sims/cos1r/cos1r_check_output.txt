@@ -1,0 +1,10 @@
+rule nonadjacent=False: chain4 tubings=5 (paper 5), 222 tubings=6 (paper 6)
+rule nonadjacent=True: chain4 tubings=4 (paper 5), 222 tubings=6 (paper 6)
+222 blob c12=c14=0 (5.11): tubings=6; psi on locus = 0; random points with ALL mapped channels > 0: 0/20000
+   channels on locus: s13=-t23 - t24 - t34, s23=t23, s34=t34, s123=-t24 - t34, s134=-t23 - t24, s234=t23 + t24 + t34
+222 non-blob (6.15): tubings=6; psi on locus = 0; random points with ALL mapped channels > 0: 0/20000
+   channels on locus: s13=t24/2 + t34, s23=-t24/2 - t34, s34=t34, s123=3*t34, s134=-t24/2 - 2*t34, s234=t24/2
+2222 non-blob (6.16): tubings=24; psi on locus = 0; random points with ALL mapped channels > 0: 0/20000
+   channels on locus: s13=-t34, s23=-t35, s34=t34, s35=t35, s123=t45, s134=-2*t24 - t25 - 2*t34 - 2*t45, s135=t24, s234=t24 + t34 - t35, s235=t25, s345=t34 + t35 + t45, s1234=-t24 - t25 - t34 - t45, s1235=t24 + t25 + t34 + t45, s1345=-t24 - t25 - t34 - t45, s2345=t24 + t25 + t34 + t45
+223 non-blob (6.17): tubings=18; psi on locus = 0; random points with ALL mapped channels > 0: 0/20000
+   channels on locus: s13=-t14 + t24 + t34 + t35, s23=-t24 - 2*t34 - t35 - t45, s34=t34, s45=t45, s123=-t14 - t24 - t34 - t45, s134=t24 + 2*t34 + t35, s234=-t34 - t35 - t45, s345=t34 + t35 + t45, s1234=-t45, s1345=t24 + 2*t34 + t35 + t45, s2345=-t34

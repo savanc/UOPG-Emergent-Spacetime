@@ -1,0 +1,12 @@
+CONTROL-0 massless YM on HZ: 0
+CONTROL-1 Proca uniform-m on HZ: m**2*(ee12*ee34 - ee14*ee23)/(-m**2 + s)
+   minus CGW eq53 (up to overall sign): 0 | 2*m**2*(-ee12*ee34 + ee14*ee23)/(m**2 - s)
+CONTROL-2 SSB same spectrum (k=m,m,-m,-m) on HZ: 0
+CONTROL-2b SSB generic vevs on HZ: 0
+FORCE WW->WW (generic vevs): nonzero-coeff eqs: 12  solutions: [{a: -lam3, lam4: lam3**2}, {a: lam3, lam4: lam3**2}]
+WWhh SM/SSB [W W h h] on HZ: -4*E5_3*E5_4*ee12*k1**2/s
+FORCE [W W h h]: nonzero-coeff eqs: 4  solutions: [{a: 0, b: 0, gs: 0}, {a: 0, b: lam3**2, gs: lam3}]
+WhWh SSB on HZ: 0
+FORCE [W h W h]: nonzero-coeff eqs: 1  solutions: []
+WW->gamma gamma [W W g g] SSB on HZ: 0
+FORCE [W W g g]: nonzero-coeff eqs: 3  solutions: [{a: -lam3, lam4: lam3**2}, {a: lam3, lam4: lam3**2}]

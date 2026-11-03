@@ -1,0 +1,11 @@
+# SURF-1' run record (run SURF1-2026-10-28-r1)
+Prereg ce4a4ee pushed alone to origin/main (814a8bb..ce4a4ee); guard refusal record 1357e13 pushed after it ().
+surf1_checker.py sha256 6ca1af1c9efc8e85b878af851523687b6d33a58840d92ad61583eb0deb65184e = prereg lock (re-verified by guard on every scoring call).
+All three modes run once each, after the prereg push, one at a time, guard banner
+"GUARD OK: prereg ce4a4ee8d on origin/main; checker hash matches", under the anon-RSS watchdog
+(WD_FIELD=RssAnon; kill: RSS > 2000 MB, MemAvailable < 1500 MB, wall > 3600 s; prereg §0), 2026-10-28 GMT:
+    planted 23:12:00  rc=0  peak anon RSS 8 MB   wall 16.0 s  PLANTED_ALL_OK true, GATE_SELFTESTS_OK true
+    broken  23:12:16  rc=0  peak anon RSS 0 MB*  wall 1.0 s   BROKEN_ALL_REJECTED true (B1, B2, B3 each fail >=1 planted check)
+    live    23:12:27  rc=0  peak anon RSS 10 MB  wall 39.0 s  VERDICT EMPTY (all five gates true)
+  (*below the watchdog's 1 s sampling resolution.)
+No re-runs, no edits to the checker, no tuning. PositiveGeometryEmergentSpaceTime's CASCADE-1b r2 (pid 32017) not touched.

@@ -1,0 +1,38 @@
+PACS-0.13727-0.13640               Tsukuba Kstar obs 0.588 pred 0.618 band 0.146 PASS | N2 y N3 n f 0.29 | mass res +0.40%
+PACS-0.13727-0.13640               Tsukuba phi   obs 0.576 pred 0.595 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +0.48%
+PACS-0.13754-0.13640               Tsukuba Kstar obs 0.541 pred 0.548 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +0.14%
+PACS-0.13754-0.13640               Tsukuba phi   obs 0.509 pred 0.518 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +0.35%
+PACS-0.13754-0.13660               Tsukuba Kstar obs 0.513 pred 0.528 band 0.143 PASS | N2 y N3 n f 0.29 | mass res +0.31%
+PACS-0.13754-0.13660               Tsukuba phi   obs 0.489 pred 0.502 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +0.50%
+PACS-0.13770-0.13640               Tsukuba Kstar obs 0.460 pred 0.484 band 0.147 PASS | N2 y N3 y f 0.29 | mass res +0.71%
+PACS-0.13770-0.13640               Tsukuba phi   obs 0.442 pred 0.453 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +0.58%
+CPPACS-b1.80-ks0.1445-s0.1409      Tsukuba Kstar obs 0.605 pred 0.721 band 0.100 FAIL | N2 y N3 n f 0.20 | mass res +1.20%
+CPPACS-b1.80-ks0.1445-s0.1409      Tsukuba phi   obs 0.599 pred 0.696 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +1.89%
+CPPACS-b1.80-ks0.1464-s0.1409      Tsukuba Kstar obs 0.564 pred 0.627 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +1.43%
+CPPACS-b1.80-ks0.1464-s0.1409      Tsukuba phi   obs 0.530 pred 0.588 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +2.39%
+CPPACS-b1.80-ks0.1464-s0.1430      Tsukuba Kstar obs 0.559 pred 0.602 band 0.102 PASS | N2 y N3 n f 0.20 | mass res +0.68%
+CPPACS-b1.80-ks0.1464-s0.1430      Tsukuba phi   obs 0.512 pred 0.576 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +1.88%
+CPPACS-b1.80-ks0.1464-s0.1445      Tsukuba Kstar obs 0.581 pred 0.581 band 0.186 PASS | N2 y N3 n f 0.37 | mass res -0.01%
+CPPACS-b1.80-ks0.1464-s0.1445      Tsukuba phi   obs 0.512 pred 0.565 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +0.99%
+CPPACS-b1.95-ks0.1400-s0.1375      Tsukuba Kstar obs 0.630 pred 0.721 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +1.08%
+CPPACS-b1.95-ks0.1400-s0.1375      Tsukuba phi   obs 0.628 pred 0.693 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +1.43%
+CPPACS-b1.95-ks0.1410-s0.1375      Tsukuba Kstar obs 0.572 pred 0.654 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +1.78%
+CPPACS-b1.95-ks0.1410-s0.1375      Tsukuba phi   obs 0.564 pred 0.613 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +1.92%
+CPPACS-b1.95-ks0.1410-s0.1390      Tsukuba Kstar obs 0.535 pred 0.628 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +1.31%
+CPPACS-b1.95-ks0.1410-s0.1390      Tsukuba phi   obs 0.530 pred 0.603 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +1.90%
+CPPACS-b2.20-ks0.1363-s0.1351      Tsukuba Kstar obs 0.678 pred 0.735 band 0.147 PASS | N2 y N3 n f 0.29 | mass res +0.67%
+CPPACS-b2.20-ks0.1363-s0.1351      Tsukuba phi   obs 0.673 pred 0.705 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +0.72%
+CPPACS-b2.20-ks0.1368-s0.1351      Tsukuba Kstar obs 0.654 pred 0.692 band 0.109 PASS | N2 y N3 n f 0.22 | mass res +0.78%
+CPPACS-b2.20-ks0.1368-s0.1351      Tsukuba phi   obs 0.638 pred 0.650 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +0.43%
+CPPACS-b2.20-ks0.1368-s0.1358      Tsukuba Kstar obs 0.628 pred 0.671 band 0.186 PASS | N2 y N3 n f 0.37 | mass res +0.58%
+CPPACS-b2.20-ks0.1368-s0.1358      Tsukuba phi   obs 0.610 pred 0.644 band 0.100 PASS | N2 y N3 n f 0.20 | mass res +0.83%
+UKQCD-b5.2000-ks0.1355-s0.1340     UKQCD   Kstar obs 0.459 pred 0.636 band 0.421 PASS | N2 y N3 y f 0.78 | mass res +3.14%
+UKQCD-b5.2000-ks0.1355-s0.1340     UKQCD   phi   obs 0.449 pred 0.605 band 0.194 PASS | N2 y N3 y f 0.39 | mass res +5.12%
+UKQCD-b5.2000-ks0.1355-s0.1345     UKQCD   Kstar obs 0.426 pred 0.620 band 0.621 PASS | N2 y N3 y f 1.00 | mass res +2.45%
+UKQCD-b5.2000-ks0.1355-s0.1345     UKQCD   phi   obs 0.382 pred 0.598 band 0.286 PASS | N2 y N3 y f 0.57 | mass res +5.23%
+UKQCD-b5.2000-ks0.1350-s0.1335     UKQCD   Kstar obs 0.711 pred 0.733 band 0.248 PASS | N2 y N3 n f 0.50 | mass res +0.28%
+UKQCD-b5.2000-ks0.1350-s0.1335     UKQCD   phi   obs 0.699 pred 0.701 band 0.119 PASS | N2 y N3 n f 0.24 | mass res +0.05%
+Kstar Tsukuba {'n': 14, 'pass_': 0.929, 'n2': 1.0, 'n3': 0.071, 'res': 0.05, 'n2res': 0.036, 'n3res': 0.243, 'f': 0.252, 'high': 0.929, 'mres': 0.008}
+Kstar UKQCD {'n': 3, 'pass_': 1.0, 'n2': 1.0, 'n3': 0.667, 'res': 0.131, 'n2res': 0.092, 'n3res': 0.196, 'f': 0.76, 'high': 1.0, 'mres': 0.02}
+phi Tsukuba {'n': 14, 'pass_': 1.0, 'n2': 1.0, 'n3': 0.0, 'res': 0.042, 'n2res': 0.023, 'n3res': 0.217, 'f': 0.2, 'high': 1.0, 'mres': 0.012}
+phi UKQCD {'n': 3, 'pass_': 1.0, 'n2': 1.0, 'n3': 0.667, 'res': 0.124, 'n2res': 0.106, 'n3res': 0.169, 'f': 0.399, 'high': 1.0, 'mres': 0.035}

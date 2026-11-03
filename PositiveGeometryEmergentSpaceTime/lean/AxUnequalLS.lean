@@ -1,0 +1,7 @@
+import PositiveGeometryEmergentSpaceTime.UnequalLS
+#print axioms PositiveGeometryEmergentSpaceTime.UnequalLS.zero_line
+#print axioms PositiveGeometryEmergentSpaceTime.UnequalLS.zero_line_conv
+#print axioms PositiveGeometryEmergentSpaceTime.UnequalLS.mass_formula
+#print axioms PositiveGeometryEmergentSpaceTime.UnequalLS.kstar_relation
+#print axioms PositiveGeometryEmergentSpaceTime.UnequalLS.spacing
+#print axioms PositiveGeometryEmergentSpaceTime.UnequalLS.poch3

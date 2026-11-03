@@ -1,0 +1,17 @@
+# F-DIM' live — 2026-10-20
+GUARD OK: prereg e23bbddee on origin/main; checker hash matches
+trunk LS (alpha0 = 1/2, m_pi = 0), levels N <= 40: pass set 3..4 (2 of 38) -> BOUND-ONLY D<=4
+first level violating at D = 5: N = 1
+exact zero partial-wave coefficients at D = 4 (saturations, first 6): [(1, 0)]
+candidate integers allowed by trunk positivity: [4]
+candidate integers FORCED (equality): []
+  diag alpha0 = 3/10: NONE-ALLOWED (levels <= 12)
+  diag alpha0 = 2/5: FORCED-EQUALITY D=3 (levels <= 12)
+  diag alpha0 = 1/2: BOUND-ONLY D<=4 (levels <= 12)
+  diag alpha0 = 3/5: BOUND-ONLY D<=4 (levels <= 12)
+  diag alpha0 = 7/10: BOUND-ONLY D<=5 (levels <= 12)
+verdict: BOUND-ONLY (D <= 4)
+
+real	0m1.466s
+user	0m0.682s
+sys	0m0.051s

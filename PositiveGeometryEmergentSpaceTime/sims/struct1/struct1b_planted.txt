@@ -1,0 +1,4 @@
+planted (no nu^c): [{yL: -3, yQ: 1, yd: -4, ye: 6, yu: 2}, {yL: -3, yQ: 1, yd: 2, ye: 6, yu: -4}]
+recovered: True
+REJECT: not unique with nu^c and no extra condition (2 branches with a free parameter)
+exit=1

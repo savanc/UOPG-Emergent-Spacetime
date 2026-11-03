@@ -1,0 +1,8 @@
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1DerData
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.Dv_mk
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.Dv_add
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.Dv_smul
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.sum_neg_map
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.rv_rowS
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.rv_single
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.peel_sound

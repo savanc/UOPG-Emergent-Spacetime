@@ -1,0 +1,11 @@
+N=4: lattice 4++=7.36(0.09)*, 4++/2++=1.5521±0.0196
+   model A: 4++ 6.941 -> PARTIAL (dev 5.7%, 4.7 sigma); ratio 1.4460 -> PARTIAL (dev 6.8%, 5.4 sigma)
+   model B: 4++ 6.140 -> FAIL (dev 16.6%, 13.6 sigma); ratio 1.7321 -> FAIL (dev 11.6%, 9.2 sigma)
+N=6: no 4++ entry in table -> not scorable
+N=8: lattice 4++=7.2(0.07)*, 4++/2++=1.5451±0.0164
+   model A: 4++ 6.941 -> PASS (dev 3.6%, 3.7 sigma); ratio 1.4460 -> PARTIAL (dev 6.4%, 6.0 sigma)
+   model B: 4++ 6.140 -> FAIL (dev 14.7%, 15.1 sigma); ratio 1.7321 -> FAIL (dev 12.1%, 11.4 sigma)
+N=10: lattice 4++=7.32(0.15), 4++/2++=1.5934±0.0338
+   model A: 4++ 6.941 -> PARTIAL (dev 5.2%, 2.5 sigma); ratio 1.4460 -> PARTIAL (dev 9.2%, 4.4 sigma)
+   model B: 4++ 6.140 -> FAIL (dev 16.1%, 7.9 sigma); ratio 1.7321 -> PARTIAL (dev 8.7%, 4.1 sigma)
+N=12: no 4++ entry in table -> not scorable

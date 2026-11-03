@@ -1,0 +1,10 @@
+r=3.0000: g_rho^2=0.50000000, g_f2^2=0.25000000, ratio=0.50000000
+r=2.7064: g_rho^2=0.50000000, g_f2^2=0.26433601, ratio=0.52867201
+AHRV C.7 ratio 0.27790/0.52748 = 0.5268446197012209 ; C.5 ratio 0.22392/0.42502 = 0.5268457954919769
+rho: m^2=1, residue poly 2*gamma(3/4 - x/4)/gamma(-x/4 - 1/4); Legendre coeffs {0: -1/2, 1: -1/2}; g^2=1/2; g^2/g_rho^2=1
+f2: m^2=3, residue poly -2*gamma(5/4 - 3*x/4)/gamma(-3*x/4 - 3/4); Legendre coeffs {0: 0, 1: -3/4, 2: -3/4}; g^2=1/4; g^2/g_rho^2=1/2
+rho3: m^2=5, residue poly gamma(7/4 - 5*x/4)/gamma(-5*x/4 - 5/4); Legendre coeffs {0: -5/32, 1: -5/32, 2: -25/32, 3: -25/32}; g^2=5/32; g^2/g_rho^2=5/16
+f4: m^2=7, residue poly -gamma(9/4 - 7*x/4)/(3*gamma(-7*x/4 - 7/4)); Legendre coeffs {0: -7/180, 1: -91/240, 2: -49/144, 3: -343/480, 4: -343/480}; g^2=49/480; g^2/g_rho^2=49/240
+kappa_f2/kappa_rho = 9/10
+kappa_rho3/kappa_rho = 3/7
+kappa_f4/kappa_rho = 1/2

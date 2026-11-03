@@ -1,0 +1,23 @@
+<local path> RuntimeWarning: overflow encountered in matmul
+  ev = np.sort(np.linalg.eigvalsh((lambda M: M @ M.conj().T)(Ml(y0, 1.0, p[0], p[1]))))
+<local path> RuntimeWarning: invalid value encountered in matmul
+  ev = np.sort(np.linalg.eigvalsh((lambda M: M @ M.conj().T)(Ml(y0, 1.0, p[0], p[1]))))
+Traceback (most recent call last):
+  File "<local path>", line 251, in <module>
+    out = run_planted() if mode == 'planted' else run_live()
+                                                  ~~~~~~~~^^
+  File "<local path>", line 216, in run_live
+    r, n = point(TAU_W + d * cmath.exp(1j * (PI * j / 8)), 0j, f'D1 d={d}'); rows += r; nbr.append(n)
+           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local path>", line 210, in point
+    br = lepton_branches(y0, rng)
+  File "<local path>", line 134, in lepton_branches
+    r = _res(y0, p)
+  File "<local path>", line 123, in _res
+    ev = np.sort(np.linalg.eigvalsh((lambda M: M @ M.conj().T)(Ml(y0, 1.0, p[0], p[1]))))
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<local path>", line 1359, in eigvalsh
+    w = gufunc(a, signature=signature)
+  File "<local path>", line 150, in _raise_linalgerror_eigenvalues_nonconvergence
+    raise LinAlgError("Eigenvalues did not converge")
+numpy.linalg.LinAlgError: Eigenvalues did not converge

@@ -1,0 +1,66 @@
+{
+ "G1-391": {
+  "group": "HadSpec",
+  "inputs": {
+   "mpi": 0.06906,
+   "mK": 0.09698,
+   "mrho": 0.15095,
+   "dmrho": 0.00015
+  },
+  "sel": 0.185,
+  "mKstar_pred": 0.1656,
+  "mKstar_over_mrho": 1.097,
+  "mK2star_pred": 0.2519,
+  "delta_pred": 0.5245,
+  "src": "1904.03188 T.I; rho 1507.02599 T.III (BW mR)",
+  "note": "PARTIAL memory"
+ },
+ "G1-239": {
+  "group": "HadSpec",
+  "inputs": {
+   "mpi": 0.03928,
+   "mK": 0.08344,
+   "mrho": 0.13175,
+   "dmrho": 0.00035
+  },
+  "sel": 0.335,
+  "mKstar_pred": 0.15092,
+  "mKstar_over_mrho": 1.1455,
+  "mK2star_pred": 0.23325,
+  "delta_pred": 0.4341,
+  "src": "1904.03188 T.I; rho 1507.02599 (BW mR, mpi 236/239 same ensemble)",
+  "note": ""
+ },
+ "G2-317": {
+  "group": "Alexandrou/Rendon et al.",
+  "inputs": {
+   "mpi": 0.18295,
+   "mK": 0.30475,
+   "mrho": 0.4609,
+   "dmrho": 0.0021
+  },
+  "sel": 0.264,
+  "mKstar_pred": 0.52137,
+  "mKstar_over_mrho": 1.1312,
+  "mK2star_pred": 0.79357,
+  "delta_pred": 0.4965,
+  "src": "K input 2006.14035; rho 1704.05439 (amrho stat+sys)",
+  "note": ""
+ },
+ "G4-230": {
+  "group": "Bulava/Morningstar et al.",
+  "inputs": {
+   "mpi": 0.03938,
+   "mK": 0.08354,
+   "mrho": 0.13192299999999998,
+   "dmrho": 0.001139466570110769
+  },
+  "sel": 0.335,
+  "mKstar_pred": 0.1511,
+  "mKstar_over_mrho": 1.1454,
+  "mK2star_pred": 0.23353,
+  "delta_pred": 0.4343,
+  "src": "1802.03100 T.1; rho 1604.05593 (mrho/mpi=3.350(24))",
+  "note": ""
+ }
+}

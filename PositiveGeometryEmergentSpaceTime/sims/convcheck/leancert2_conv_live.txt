@@ -1,0 +1,95 @@
+{
+ "per_cert": {
+  "frwzw_k0p": {
+   "accepted": 20,
+   "class_changed": 0,
+   "raw_key_changed": 20,
+   "zero_row_key_changed": 0
+  },
+  "frwzw_k0m": {
+   "accepted": 36,
+   "class_changed": 0,
+   "raw_key_changed": 36,
+   "zero_row_key_changed": 0
+  },
+  "frwzw_k1p": {
+   "accepted": 5,
+   "class_changed": 0,
+   "raw_key_changed": 5,
+   "zero_row_key_changed": 0
+  },
+  "frwzw_k1m": {
+   "accepted": 27,
+   "class_changed": 0,
+   "raw_key_changed": 27,
+   "zero_row_key_changed": 0
+  },
+  "frwzw_k2p": {
+   "accepted": 5,
+   "class_changed": 0,
+   "raw_key_changed": 5,
+   "zero_row_key_changed": 0
+  },
+  "frwzw_k2m": {
+   "accepted": 20,
+   "class_changed": 0,
+   "raw_key_changed": 20,
+   "zero_row_key_changed": 0
+  },
+  "frwzw_k3p": {
+   "accepted": 10,
+   "class_changed": 0,
+   "raw_key_changed": 10,
+   "zero_row_key_changed": 0
+  },
+  "frwzw_k3m": {
+   "accepted": 8,
+   "class_changed": 0,
+   "raw_key_changed": 8,
+   "zero_row_key_changed": 0
+  }
+ },
+ "planted": {
+  "frwzw_k0p": {
+   "PL1_zero_row_P_edit_valid_same_key": true,
+   "PL2_K_edit_changes_key": true
+  },
+  "frwzw_k0m": {
+   "PL1_zero_row_P_edit_valid_same_key": true
+  },
+  "frwzw_k1p": {
+   "PL1_zero_row_P_edit_valid_same_key": true,
+   "PL2_K_edit_changes_key": true
+  },
+  "frwzw_k1m": {
+   "PL1_zero_row_P_edit_valid_same_key": true
+  },
+  "frwzw_k2p": {
+   "PL1_zero_row_P_edit_valid_same_key": true,
+   "PL2_K_edit_changes_key": true
+  },
+  "frwzw_k2m": {
+   "PL1_zero_row_P_edit_valid_same_key": true
+  },
+  "frwzw_k3p": {
+   "PL1_zero_row_P_edit_valid_same_key": true,
+   "PL2_K_edit_changes_key": true
+  },
+  "frwzw_k3m": {
+   "PL1_zero_row_P_edit_valid_same_key": true,
+   "PL2_K_edit_changes_key": true
+  }
+ },
+ "totals": {
+  "accepted": 131,
+  "key": 0,
+  "raw": 131,
+  "zr": 0
+ },
+ "PLANTED_OK": true,
+ "BROKEN_raw_key_reproduces_131": true,
+ "RIVAL_zero_row_key": "0/480",
+ "N2prime": "0/480",
+ "OUTCOME": "FLIPPED (python CERTS-OK)",
+ "seconds": 5.9
+}

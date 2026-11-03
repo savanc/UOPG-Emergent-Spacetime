@@ -1,0 +1,10 @@
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Bridge
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Bridge.bc_comm
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Bridge.coefS_append
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Bridge.coefS_scale
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Bridge.coefS_flatMap
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Bridge.sum_coefS
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Bridge.T1s_idx
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Bridge.idxOK_iff
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Bridge.idxOK_prodS
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Bridge.coefS_prodS

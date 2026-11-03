@@ -1,0 +1,6 @@
+HPQCD 13A: R=+0.34 sigma=0.394 band=1.03 pass=True
+MILC 10: R=-0.09 sigma=0.924 band=1.95 pass=True
+PACS-CS 08: R=-0.01 sigma=0.050 band=0.63 pass=True
+RBC/UKQCD 08: R=+0.24 sigma=0.089 band=0.65 pass=True
+dmu=0.304; 4/4 pass -> PASS
+NDA null f=0.039 (median band 0.84); diagnostic large-Nc-informed null (combos ~N(0,0.3e-3)) f=0.79

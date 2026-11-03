@@ -1,0 +1,83 @@
+{
+ "run_id": "CASCADE1-2026-10-23-r1-sens",
+ "seed": 20261024,
+ "n4": {
+  "n": 4,
+  "D": 2,
+  "n_monomials": 6,
+  "f0": 5,
+  "f1": 4,
+  "S1_equations": 1,
+  "f2": 1,
+  "kappa_nonzero_in_S2": true,
+  "E0_f3_on_main_final_family": [
+   {
+    "theta": {
+     "mu13": "0",
+     "mu24": "0"
+    },
+    "f3_at_point": 0
+   },
+   {
+    "theta": {
+     "mu13": "0",
+     "mu24": "0"
+    },
+    "f3_at_point": 0
+   },
+   {
+    "theta": {
+     "mu13": "0",
+     "mu24": "0"
+    },
+    "f3_at_point": 0
+   }
+  ],
+  "EM_f3_on_main_final_family": [
+   {
+    "theta": {
+     "mu13": "29",
+     "mu24": "19",
+     "m1": "134/3",
+     "m2": "47",
+     "m3": "10/3",
+     "m4": "1"
+    },
+    "f3_at_point": 0
+   },
+   {
+    "theta": {
+     "mu13": "568/7",
+     "mu24": "34/7",
+     "m1": "78",
+     "m2": "50",
+     "m3": "8",
+     "m4": "36"
+    },
+    "f3_at_point": 0
+   },
+   {
+    "theta": {
+     "mu13": "46/5",
+     "mu24": "22/5",
+     "m1": "4/15",
+     "m2": "42/5",
+     "m3": "40/3",
+     "m4": "26/5"
+    },
+    "f3_at_point": 0
+   }
+  ]
+ },
+ "n5": {
+  "n": 5,
+  "D": 4,
+  "n_monomials": 126,
+  "f0": 125,
+  "f1": 24,
+  "S1_equations": 175,
+  "f2": 0,
+  "kappa_nonzero_in_S2": true,
+  "A_equals_triangulation_sum": true
+ }
+}

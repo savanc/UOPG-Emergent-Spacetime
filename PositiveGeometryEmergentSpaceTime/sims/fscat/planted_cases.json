@@ -1,0 +1,11 @@
+{"planted": [
+  {"name": "(a) linear Weinberg A=(s-m^2)/F^2", "model": "lin", "sA": "1", "T0": 7, "T2": -2},
+  {"name": "(b) full LS, Adler zero at s=t=m^2, alpha'->0 (reduces to Weinberg; Lean FScatLen.ls_soft_normalisation)", "model": "ls", "zero": "m2", "alpha0_plus_ap_m2": "0.5", "T0": 7, "T2": -2},
+  {"name": "(c) full LS, Adler zero at s=t=0, alpha'->0 (Lean FScatLen.lin_adlerZero_T0/T2: 12, 0)", "model": "ls", "zero": "0", "T0": 12, "T2": 0}],
+ "classifier": [
+  {"name": "model == LO", "model": ["0.16", "-0.045"], "lo": ["0.16", "-0.045"], "data": [["a00", "0.22", "0.005"], ["a02", "-0.044", "0.005"]], "expect": "MATCHES-LO"},
+  {"name": "model == data, LO 12 sigma off", "model": ["0.22", "-0.044"], "lo": ["0.16", "-0.045"], "data": [["a00", "0.22", "0.005"], ["a02", "-0.044", "0.005"]], "expect": "BEATS-LO"},
+  {"name": "model better than LO but 6 sigma off", "model": ["0.19", "-0.044"], "lo": ["0.16", "-0.045"], "data": [["a00", "0.22", "0.005"], ["a02", "-0.044", "0.005"]], "expect": "IMPROVES-BUT-EXCLUDED"},
+  {"name": "model far worse", "model": ["0.30", "0.0"], "lo": ["0.16", "-0.045"], "data": [["a00", "0.22", "0.005"], ["a02", "-0.044", "0.005"]], "expect": "WORSE-THAN-LO"}],
+ "broken": {"name": "P_b (Adler zero at s=t=0) reproduces Weinberg a_0^2 (32pi a02 = -2); Lean FScatLen.lin_adlerZero_T2 proves 0", "claimed_T2": -2}
+}

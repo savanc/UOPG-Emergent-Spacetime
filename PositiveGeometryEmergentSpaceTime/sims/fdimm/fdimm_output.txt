@@ -1,0 +1,22 @@
+# F-DIM-MASS live — 2026-10-20
+GUARD OK: prereg 063378f8b on origin/main; checker hash matches (re-verified on every scoring call)
+masses.json sha256 f94cd13ba6b78ca7fa884811a193e5bb0a9f83d9f772b731134947282ec0616a
+[S1] P_a baseline (Adler at s=t=m_pi^2): alpha0 = 0.48325, m2 = 0.01675, level-1 D_c = 3.8675; D=4 positive to N<=40: False; pass set (N<=12): FORCED-EQUALITY D=3
+[S1] P_b Adler at s=t=0: alpha0 = 0.50000, m2 = 0.01621, level-1 D_c = 4.0247; D=4 positive to N<=40: True; pass set (N<=12): BOUND-ONLY D<=4
+[S1] P_c Adler at s=t=4m^2/3: alpha0 = 0.47742, m2 = 0.01694, level-1 D_c = 3.8221; D=4 positive to N<=40: False; pass set (N<=12): FORCED-EQUALITY D=3
+[S1] F5 rho-f2 trajectory: alpha0 = 0.41398, m2 = 0.01899, level-1 D_c = 3.5366; D=4 positive to N<=40: False; pass set (N<=12): FORCED-EQUALITY D=3
+[S1] F6 daughter shift Gamma(lambda - al): AUTO-FAIL: needs a fitted shift lambda
+[S1] F7 Coon q-deformation: AUTO-FAIL: needs a fitted q
+[S2] P_a baseline (Adler at s=t=m_pi^2): alpha0 = 0.48272, m2 = 0.01728, level-1 D_c = 3.8634; D=4 positive to N<=40: False; pass set (N<=12): FORCED-EQUALITY D=3
+[S2] P_b Adler at s=t=0: alpha0 = 0.50000, m2 = 0.01670, level-1 D_c = 4.0263; D=4 positive to N<=40: True; pass set (N<=12): BOUND-ONLY D<=4
+[S2] P_c Adler at s=t=4m^2/3: alpha0 = 0.47670, m2 = 0.01748, level-1 D_c = 3.8165; D=4 positive to N<=40: False; pass set (N<=12): FORCED-EQUALITY D=3
+[S2] F5 rho-f2 trajectory: alpha0 = 0.43005, m2 = 0.01904, level-1 D_c = 3.5773; D=4 positive to N<=40: False; pass set (N<=12): FORCED-EQUALITY D=3
+[S2] F6 daughter shift Gamma(lambda - al): AUTO-FAIL: needs a fitted shift lambda
+[S2] F7 Coon q-deformation: AUTO-FAIL: needs a fitted q
+baseline gate: GATE-FAIL (trunk model)
+fixes passing positivity at D=4 (both input sets): ['P_b Adler at s=t=0']
+verdict: GATE-FAIL-REPAIRED-AT-COST (P_b Adler at s=t=0)
+
+real	0m3.781s
+user	0m3.104s
+sys	0m0.457s

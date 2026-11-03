@@ -1,0 +1,8 @@
+GUARD OK: prereg af1bb37c3 on origin/main; checker hash matches (re-verified on every scoring call)
+{
+ "D1_locked_replica": 0,
+ "D2_locus_masses_mapped": 10,
+ "D3_generic_off_relations": 2,
+ "D4_symbolic_masses_on_S3": 10,
+ "total_tests": 10
+}

@@ -1,0 +1,20 @@
+GUARD OK: prereg 87280fb98 on origin/main; checker/classification/exporter/planted hashes match (re-verified on every scoring call)
+  PASS  planted_genuine              expected DERIVED/UNCONDITIONAL/PG           got DERIVED/UNCONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature', 'PositiveGeometryEmergentSpaceTime.R4DMPlanted.yQgeo']; hypotheses: []
+  PASS  planted_conditional          expected DERIVED/CONDITIONAL/PG             got DERIVED/CONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature']; hypotheses: ['y * 6 = PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature 0']
+  PASS  planted_smuggled_literal     expected SMUGGLED                           got SMUGGLED
+        (c) hypothesis h contains SM literal ['1/6']; (d) hypothesis h restates the conclusion
+  PASS  planted_smuggled_acc         expected SMUGGLED                           got SMUGGLED
+        (a) hypothesis h uses SM-INPUT ['PositiveGeometryEmergentSpaceTime.STRUCT1.ACC']; (d) hypothesis h restates the conclusion; (d) hypothesis hg restates the conclusion
+  PASS  planted_smuggled_nc          expected SMUGGLED                           got SMUGGLED
+        (b) hypothesis h constrains SM data with no geometry: N_c = 3
+  PASS  planted_fed                  expected SM-INPUT-FED                       got SM-INPUT-FED
+        proof uses SM-INPUT ['PositiveGeometryEmergentSpaceTime.STRUCT1.sm_is_anomaly_free']
+  PASS  planted_nonconstraining      expected NON-CONSTRAINING                   got NON-CONSTRAINING
+        SM data universally quantified and unconstrained (identity/blindness)
+  PASS  planted_nogeo                expected NO-GEOMETRY                        got NO-GEOMETRY
+        transitive closure has no GEOMETRY-role definition
+  PASS  yQgeo_eq                     expected NOT-SM-STRUCTURE                   got NOT-SM-STRUCTURE
+  meter without planted 6/87; with planted 8/95; n_derived increase 2 (must be 2)
+PLANTED: PASS

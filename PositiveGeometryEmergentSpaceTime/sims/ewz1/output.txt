@@ -1,0 +1,4 @@
+ordered A(1234) at t=0: -2*a**2*m**2*s**2/(v**2*(-m**2 + s)*(m**2 + s))
+solutions for a (m!=0): [0]
+m=0: 0
+A(s) s->inf leading: 1 - a**2

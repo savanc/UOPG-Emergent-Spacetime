@@ -1,0 +1,14 @@
+T1 kernel I = (-X**2*a00*b00 + Y**2*a00*b00 + Y**2*a00*b11 + Y**2*a00*b22 - 4*Y**2*a01*b01 - 4*Y**2*a02*b02 + Y**2*a11*b00 + Y**2*a22*b00)/(2*Y**4)
+T1 explicit X-dependence remains: True -> off-shell lift of X^2 a00 b00 not fixed by the residue
+T1 residue check at E=0 (negative-energy null legs, 200 pts): max rel dev 2.9e-10 (median 1.0e-15)
+T2 lift XL2: frac psi>0 0.9999, <0 0.0001
+T2 lift XR2: frac psi>0 0.9995, <0 0.0005
+T2 lift mXLXR: frac psi>0 1.0000, <0 0.0000
+T2 lift fam c=-1.0: frac psi>0 1.0000, <0 0.0000
+T2 lift fam c=1.0: frac psi>0 1.0000, <0 0.0000
+T2 sign disagreement vs -X_L X_R lift: ('XL2', 0): 0.0001
+T2 sign disagreement vs -X_L X_R lift: ('XR2', 0): 0.0005
+T2 sign disagreement vs -X_L X_R lift: ('mXLXR', 0): 0.0000
+T2 sign disagreement vs -X_L X_R lift: ('fam', -1.0): 0.0000
+T2 sign disagreement vs -X_L X_R lift: ('fam', 1.0): 0.0000
+T2b symmetric lift -X_L X_R: min psi/E_tot = 4.619e-05, 0.01% quantile 6.141e-04

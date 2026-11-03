@@ -1,0 +1,12 @@
+GUARD OK: prereg 40e3ed853 on origin/main; checker hash matches (re-verified on every scoring call)
+planted low-energy eq7.11 d=0.1: I4/(L2 (X+Y)) = 0.999999999990129  OK
+planted low-energy eq7.11 d=0.5: I4/(L2 (X+Y)) = 0.999999999997841  OK
+planted low-energy eq7.11 d=0.9: I4/(L2 (X+Y)) = 0.999999999990909  OK
+planted residue (Lean deltaAmp4_tachyon_residue) d=0.25: 1.0  OK
+planted residue (Lean deltaAmp4_tachyon_residue) d=0.75: 1.0  OK
+planted gate case constant: free=False expected=False  OK
+planted gate case varying: free=True expected=True  OK
+PLANTED ALL OK
+GUARD OK: prereg 40e3ed853 on origin/main; checker hash matches (re-verified on every scoring call)
+broken claim 'alpha'delta = 1/2 member has no pole at X13 = delta (residue 0)': residue = 1.0
+BROKEN REJECTED (as required; Lean deltaAmp4_tachyon_residue)

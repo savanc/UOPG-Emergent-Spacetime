@@ -1,0 +1,1 @@
+Table 3 found; numeric tokens (text): 8 ; in TeX annotations: 0

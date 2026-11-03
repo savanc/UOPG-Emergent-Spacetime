@@ -1,0 +1,8 @@
+# CASCADE-1b guard refusal (DEVIATION: recorded AFTER the prereg push 27a47fd, in a scratch clone at 27a47fd whose origin/main is pinned to 39582f6 = main before the prereg; the in-sequence pre-push refusal step was skipped by mistake)
+## CLI: python sims/cascade1b/cascade1b_checker.py planted
+GUARD REFUSED: prereg commit 27a47fd6b is not an ancestor of origin/main (not pushed)
+exit 1
+## import test
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg commit 27a47fd6b is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 27a47fd6b is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 27a47fd6b is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 27a47fd6b is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 27a47fd6b is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 27a47fd6b is not an ancestor of origin/main (not pushed)']
+pass-flag attributes present: []
+exit 2

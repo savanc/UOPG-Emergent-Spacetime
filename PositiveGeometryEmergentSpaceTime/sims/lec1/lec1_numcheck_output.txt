@@ -1,0 +1,10 @@
+page bytes 605577
+0 Table 1 False numeric tokens: 64
+1 Table 2 False numeric tokens: 20
+2 Table 3 True numeric tokens: 22
+3 Table 4 True numeric tokens: 29
+4 Table 5 False numeric tokens: 10
+5 Table 6 False numeric tokens: 33
+6 Table 7 False numeric tokens: 16
+7 Table 8 False numeric tokens: 20
+8 Table 9 False numeric tokens: 8

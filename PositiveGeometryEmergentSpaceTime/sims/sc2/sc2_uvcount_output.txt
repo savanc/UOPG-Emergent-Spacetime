@@ -1,0 +1,4 @@
+mode=live Dc=6 b=-3/4
+curve triangle: count=1 sym=1 pole_weight=1/2
+curve bubble: count=1 sym=1/2 pole_weight=-1/6
+distinct |sym*weight| values: ['1/12', '1/2'] universal_weight=False

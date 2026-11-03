@@ -1,0 +1,11 @@
+parity+reflection preserve Gr+ on 7 cases x 20 seeds: True
+vector-like ACC sums: [0, 0]
+N_c=1: vectorlike=True witten_ok=True
+N_c=2: vectorlike=False witten_ok=False
+N_c=3: vectorlike=False witten_ok=True
+N_c=4: vectorlike=False witten_ok=False
+N_c=5: vectorlike=False witten_ok=True
+N_c=6: vectorlike=False witten_ok=False
+N_c=7: vectorlike=False witten_ok=True
+N_c=8: vectorlike=False witten_ok=False
+N_c=9: vectorlike=False witten_ok=True

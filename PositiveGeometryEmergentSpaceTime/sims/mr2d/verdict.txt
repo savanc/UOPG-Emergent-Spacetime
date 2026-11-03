@@ -1,0 +1,5 @@
+Gamma_Z 0.6111111111111114
+Delta_mu (1e-3) 1.670957502048706
+BE14 NNLO: Z=-5.68e-3 sigma=2.50 band=6.01 r=Z/S=-0.127 PASS=True null f=0.091  per-term: kin=-4.80 L46=-0.32 L58=-0.56
+BE14 p4 NLO: Z=-2.40e-3 sigma=14.16 band=28.51 r=Z/S=-0.051 PASS=True null f=0.420  per-term: kin=-0.80 L46=0.00 L58=-1.60
+GL85: Z=-5.20e-3 sigma=17.57 band=35.30 r=Z/S=-0.080 PASS=True null f=0.511  per-term: kin=-6.80 L46=-1.60 L58=3.20

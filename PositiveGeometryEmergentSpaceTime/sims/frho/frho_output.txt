@@ -1,0 +1,26 @@
+# F-RHOWIDTH live — 2026-10-20
+GUARD OK: prereg 63138a6a3 on origin/main; checker hash matches (re-verified on every scoring call)
+inputs.json sha256 22a2497da13fc188b0122f0935710c144681fd99359c740627362e5c704feb5c
+[D1] P_a: r = 0.112587 +- 0.0004 (Gamma = 85.983 MeV); data r = 0.191698 +- 0.0028; z = -28.18
+[D1] P_b: r = 0.116477 +- 0.00041 (Gamma = 88.954 MeV); data r = 0.191698 +- 0.0028; z = -26.77
+[D1] KSRF: r = 0.182962 +- 0.00065 (Gamma = 139.73 MeV); data r = 0.191698 +- 0.0028; z = -3.061
+[D1] g2_LS(P_a)/g2_KSRF = 0.61535694; (2/pi)(1 - x^2) = 0.61535694
+[D1] class vs KSRF: {'P_a': 'WORSE-THAN-KSRF', 'P_b': 'WORSE-THAN-KSRF'}
+[D2] P_a: r = 0.112139 +- 0.0004 (Gamma = 85.506 MeV); data r = 0.192 +- 0.0029; z = -27.13
+[D2] P_b: r = 0.116027 +- 0.00041 (Gamma = 88.47 MeV); data r = 0.192 +- 0.0029; z = -25.79
+[D2] KSRF: r = 0.182255 +- 0.00065 (Gamma = 138.97 MeV); data r = 0.192 +- 0.0029; z = -3.262
+[D2] g2_LS(P_a)/g2_KSRF = 0.61528996; (2/pi)(1 - x^2) = 0.61528996
+[D2] class vs KSRF: {'P_a': 'WORSE-THAN-KSRF', 'P_b': 'WORSE-THAN-KSRF'}
+[BW] P_a: r = 0.116936 +- 0.00042 (Gamma = 90.656 MeV); data r = 0.19013 +- 0.001; z = -65.71
+[BW] P_b: r = 0.120853 +- 0.00043 (Gamma = 93.692 MeV); data r = 0.19013 +- 0.001; z = -61.9
+[BW] KSRF: r = 0.189835 +- 0.00068 (Gamma = 147.17 MeV); data r = 0.19013 +- 0.001; z = -0.2387
+[BW] g2_LS(P_a)/g2_KSRF = 0.61598632; (2/pi)(1 - x^2) = 0.61598632
+[BW] report-only (report-only (Breit-Wigner definition)): class would be {'P_a': 'WORSE-THAN-KSRF', 'P_b': 'WORSE-THAN-KSRF'}
+[C01] P_a: r = 0.112102 +- 0.0004 (Gamma = 85.467 MeV); data r = 0.190451 +- 0.0037; z = -21.05
+[C01] P_b: r = 0.115989 +- 0.00041 (Gamma = 88.43 MeV); data r = 0.190451 +- 0.0037; z = -20.0
+[C01] KSRF: r = 0.182196 +- 0.00065 (Gamma = 138.91 MeV); data r = 0.190451 +- 0.0037; z = -2.198
+[C01] g2_LS(P_a)/g2_KSRF = 0.61528437; (2/pi)(1 - x^2) = 0.61528437
+[C01] report-only (report-only (third pole, Roy CGL 2001)): class would be {'P_a': 'WORSE-THAN-KSRF', 'P_b': 'WORSE-THAN-KSRF'}
+overall P_a: FAIL-WORSE-THAN-KSRF
+overall P_b: FAIL-WORSE-THAN-KSRF
+VERDICT (P_a, LS trunk): FAIL-WORSE-THAN-KSRF
