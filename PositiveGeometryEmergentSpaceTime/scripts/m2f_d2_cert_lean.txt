@@ -1,0 +1,50 @@
+/-- (d2) UNIQUENESS from hidden zeros. With (P) (v_oe = 0), if A6N(X̃ + v) vanishes on the massive
+skinny-rectangle loci c = 0 with indices [1, 3] (the M2d loci, in X̃), then v lies on the a* line: uniform mass up to
+δ-reparametrisation. Proof: evaluation at explicit points on the loci; the rational combinations were
+found by `scripts/m2f_d2_cert.py` and are re-checked here by `linear_combination`. -/
+theorem hidden_zeros_force6 (v13 v15 v24 v26 v35 v46 : ℝ)
+    (z1 : ∀ Z14 Z25 Z26 Z35 Z36 Z46 : ℝ, Z14 ≠ 0 → Z25 ≠ 0 → Z36 ≠ 0 →
+      A6N (-Z26 + v13) (Z14) (Z25 - Z26 + v15) (Z14 + Z26 + v24) (Z25) (Z26 + v26) (Z35 + v35) (Z36) (Z46 + v46) = 0)
+    (z3 : ∀ Z14 Z15 Z25 Z26 Z36 Z46 : ℝ, Z14 ≠ 0 → Z25 ≠ 0 → Z36 ≠ 0 →
+      A6N (Z14 + Z36 - Z46 + v13) (Z14) (Z15 + v15) (-Z36 + Z46 + v24) (Z25) (Z26 + v26) (Z36 - Z46 + v35) (Z36) (Z46 + v46) = 0)
+    : v13 = -v46 ∧ v15 = -v46 ∧ v35 = -v46 ∧ v24 = v46 ∧ v26 = v46 := by
+  have e0 := z1 (-1) (-2) (0) (2) (-3) (-3) (by norm_num) (by norm_num) (by norm_num)
+  have e1 := z1 (3) (1) (-3) (-1) (1) (-3) (by norm_num) (by norm_num) (by norm_num)
+  have e2 := z1 (1) (-2) (-3) (-3) (1) (0) (by norm_num) (by norm_num) (by norm_num)
+  have e3 := z1 (-2) (-3) (1) (0) (-3) (3) (by norm_num) (by norm_num) (by norm_num)
+  have e4 := z1 (1) (-3) (-2) (2) (2) (1) (by norm_num) (by norm_num) (by norm_num)
+  have e5 := z1 (-3) (1) (1) (0) (-3) (-2) (by norm_num) (by norm_num) (by norm_num)
+  have e12 := z3 (1) (0) (-1) (-1) (-2) (3) (by norm_num) (by norm_num) (by norm_num)
+  have e13 := z3 (-2) (2) (3) (-2) (-3) (1) (by norm_num) (by norm_num) (by norm_num)
+  simp only [A6N] at e0 e1 e2 e3 e4 e5 e12 e13
+  have h1 : v13 + v46 = 0 := by linear_combination (16940/34941 : ℝ) * e0 + (-76345/69882 : ℝ) * e1 + (116807/104823 : ℝ) * e2 + (5742/11647 : ℝ) * e3 + (58961/34941 : ℝ) * e4 + (18855/11647 : ℝ) * e5 + (-2/3 : ℝ) * e12 + (1 : ℝ) * e13
+  have h2 : v15 + v46 = 0 := by linear_combination (13259/34941 : ℝ) * e0 + (-44837/34941 : ℝ) * e1 + (162023/104823 : ℝ) * e2 + (5901/11647 : ℝ) * e3 + (45326/34941 : ℝ) * e4 + (21513/11647 : ℝ) * e5 + (-2/3 : ℝ) * e12 + (1 : ℝ) * e13
+  have h3 : v35 + v46 = 0 := by linear_combination (-1952/58235 : ℝ) * e0 + (63127/116470 : ℝ) * e1 + (-76403/174705 : ℝ) * e2 + (-29847/58235 : ℝ) * e3 + (-40349/58235 : ℝ) * e4 + (-45378/58235 : ℝ) * e5 + (2/5 : ℝ) * e12
+  have h4 : v24 - v46 = 0 := by linear_combination (-11453/34941 : ℝ) * e0 + (68107/69882 : ℝ) * e1 + (-96812/104823 : ℝ) * e2 + (-7830/11647 : ℝ) * e3 + (-59225/34941 : ℝ) * e4 + (-16182/11647 : ℝ) * e5 + (2/3 : ℝ) * e12 + (-1 : ℝ) * e13
+  have h5 : v26 - v46 = 0 := by linear_combination (-14888/34941 : ℝ) * e0 + (36890/34941 : ℝ) * e1 + (-121766/104823 : ℝ) * e2 + (-9675/11647 : ℝ) * e3 + (-61868/34941 : ℝ) * e4 + (-19995/11647 : ℝ) * e5 + (2/3 : ℝ) * e12 + (-1 : ℝ) * e13
+  refine ⟨by linarith, by linarith, by linarith, by linarith, by linarith⟩
+/-- (d2) UNIQUENESS from hidden zeros. With (P) (v_oe = 0), if A6N(X̃ + v) vanishes on the massive
+skinny-rectangle loci c = 0 with indices [1, 4] (the M2d loci, in X̃), then v lies on the a* line: uniform mass up to
+δ-reparametrisation. Proof: evaluation at explicit points on the loci; the rational combinations were
+found by `scripts/m2f_d2_cert.py` and are re-checked here by `linear_combination`. -/
+theorem hidden_zeros_force6_opp (v13 v15 v24 v26 v35 v46 : ℝ)
+    (z1 : ∀ Z14 Z25 Z26 Z35 Z36 Z46 : ℝ, Z14 ≠ 0 → Z25 ≠ 0 → Z36 ≠ 0 →
+      A6N (-Z26 + v13) (Z14) (Z25 - Z26 + v15) (Z14 + Z26 + v24) (Z25) (Z26 + v26) (Z35 + v35) (Z36) (Z46 + v46) = 0)
+    (z4 : ∀ Z13 Z14 Z25 Z26 Z36 Z46 : ℝ, Z14 ≠ 0 → Z25 ≠ 0 → Z36 ≠ 0 →
+      A6N (Z13 + v13) (Z14) (Z14 - Z46 + v15) (Z25 + Z46 + v24) (Z25) (Z26 + v26) (-Z46 + v35) (Z36) (Z46 + v46) = 0)
+    : v13 = -v46 ∧ v15 = -v46 ∧ v35 = -v46 ∧ v24 = v46 ∧ v26 = v46 := by
+  have e0 := z1 (-1) (-2) (0) (2) (-3) (-3) (by norm_num) (by norm_num) (by norm_num)
+  have e1 := z1 (3) (1) (-3) (-1) (1) (-3) (by norm_num) (by norm_num) (by norm_num)
+  have e2 := z1 (1) (-2) (-3) (-3) (1) (0) (by norm_num) (by norm_num) (by norm_num)
+  have e3 := z1 (-2) (-3) (1) (0) (-3) (3) (by norm_num) (by norm_num) (by norm_num)
+  have e4 := z1 (1) (-3) (-2) (2) (2) (1) (by norm_num) (by norm_num) (by norm_num)
+  have e5 := z1 (-3) (1) (1) (0) (-3) (-2) (by norm_num) (by norm_num) (by norm_num)
+  have e12 := z4 (1) (1) (-1) (-1) (-2) (3) (by norm_num) (by norm_num) (by norm_num)
+  have e13 := z4 (2) (3) (-2) (-3) (1) (-1) (by norm_num) (by norm_num) (by norm_num)
+  simp only [A6N] at e0 e1 e2 e3 e4 e5 e12 e13
+  have h1 : v13 + v46 = 0 := by linear_combination (-9133/23294 : ℝ) * e0 + (717055/93176 : ℝ) * e1 + (-1599821/139764 : ℝ) * e2 + (-323151/46588 : ℝ) * e3 + (-329561/46588 : ℝ) * e4 + (-181347/23294 : ℝ) * e5 + (15/2 : ℝ) * e12 + (6 : ℝ) * e13
+  have h2 : v15 + v46 = 0 := by linear_combination (-11587/23294 : ℝ) * e0 + (699283/93176 : ℝ) * e1 + (-1539533/139764 : ℝ) * e2 + (-322515/46588 : ℝ) * e3 + (-347741/46588 : ℝ) * e4 + (-176031/23294 : ℝ) * e5 + (15/2 : ℝ) * e12 + (6 : ℝ) * e13
+  have h3 : v35 + v46 = 0 := by linear_combination (2705/23294 : ℝ) * e0 + (89785/93176 : ℝ) * e1 + (-166835/139764 : ℝ) * e2 + (-30801/46588 : ℝ) * e3 + (-13079/46588 : ℝ) * e4 + (-30663/23294 : ℝ) * e5 + (1/2 : ℝ) * e12
+  have h4 : v24 - v46 = 0 := by linear_combination (12791/23294 : ℝ) * e0 + (-728039/93176 : ℝ) * e1 + (1626481/139764 : ℝ) * e2 + (314799/46588 : ℝ) * e3 + (329209/46588 : ℝ) * e4 + (186693/23294 : ℝ) * e5 + (-15/2 : ℝ) * e12 + (-6 : ℝ) * e13
+  have h5 : v26 - v46 = 0 := by linear_combination (10501/23294 : ℝ) * e0 + (-720475/93176 : ℝ) * e1 + (1593209/139764 : ℝ) * e2 + (307419/46588 : ℝ) * e3 + (325685/46588 : ℝ) * e4 + (179067/23294 : ℝ) * e5 + (-15/2 : ℝ) * e12 + (-6 : ℝ) * e13
+  refine ⟨by linarith, by linarith, by linarith, by linarith, by linarith⟩

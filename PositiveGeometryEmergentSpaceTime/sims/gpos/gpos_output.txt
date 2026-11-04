@@ -1,0 +1,38 @@
+=== planted ()
+GUARD OK: prereg 0d7808039 on origin/main; checker hash matches (re-verified on every scoring call)
+planted kappa(Delta(1,5)) slice 1/105 == Dirichlet 1/105: OK
+planted kappa(Delta(1,15)) slice 1/2040 == Dirichlet 1/2040: OK
+planted kappa(Delta(2,15)) = 129017/33392760 == BRIDGE 129017/33392760: OK
+planted kappa(Delta(2,4)) octahedron = 0: OK
+planted m3 = kappa p3 on p1 = 0 (Delta(2,6), brute force): -615/364 == -615/364: OK
+planted m5 = c5 p5 + c23 p2 p3 on p1 = 0 (Delta(2,7)): c5 = -269/131670, c23 = 359/39501, check OK
+planted SM table: m1 = 0 vector, tensor components = ACC combinations (bad []): OK
+planted rival table (BRIDGE (-7,0,8,-1) at yQ=1): component identities hold (bad []): OK
+planted N_ACC (full four ACC, yQ = 1) = 2 (expect 2): OK
+planted Y-only graded count (= BRIDGE N_M2) = 35 (expect 35): OK
+planted G3 detector: SM + (E,Ebar) proper anomaly-free unions [('e', 'Evb'), ('Ev', 'Evb'), ('Q', 'u', 'd', 'L', 'e'), ('Q', 'u', 'd', 'L', 'Ev')]: OK
+PLANTED: ALL OK
+exit=0
+=== broken ()
+GUARD OK: prereg 0d7808039 on origin/main; checker hash matches (re-verified on every scoring call)
+broken: Y-only graded Delta(2,15) count 35 vs N_ACC 2
+BROKEN: REJECTED
+exit=0
+=== live ()
+GUARD OK: prereg 0d7808039 on origin/main; checker hash matches (re-verified on every scoring call)
+G1 kappa(Delta(1,15)) = 1/2040 (4.901961e-04)
+G1 kappa(Delta(2,15)) = 129017/33392760 (3.863622e-03)
+G1 kappa(Delta(3,15)) = 868271/85704820 (1.013095e-02)
+G1 kappa(cube) = 0
+G1 N[Delta(1,15)] (graded m1 = 0 and kappa*cubic tensor = 0, yQ = 1) = 2
+G1 N[Delta(2,15)] (graded m1 = 0 and kappa*cubic tensor = 0, yQ = 1) = 2
+G1 N[Delta(3,15)] (graded m1 = 0 and kappa*cubic tensor = 0, yQ = 1) = 2
+G1 N[cube] (graded m1 = 0 and kappa*cubic tensor = 0, yQ = 1) = 131594
+G1 N_ACC (four ACC) = 2
+G1 Delta(2,15) solutions (yu, yd, yL, ye): [('-4', '2', '-3', '6'), ('2', '-4', '-3', '6')]
+G3 proper non-empty multiplet unions with vanishing graded m1 and cubic tensor (SM): []
+G4 SM along Y: p2 = 10/3, p4 = 95/54, p5 = 5/9
+G4 Delta(2,15) graded m4(Y) = 20438911/2163850848 (9.445619e-03); m5(Y) = 466133/1713048588 (2.721073e-04)
+REPRODUCES = True; EARNED = False; NEW-CONDITION = False
+VERDICT: NO-LINK (TAUTOLOGICAL-REPRODUCTION)
+exit=0

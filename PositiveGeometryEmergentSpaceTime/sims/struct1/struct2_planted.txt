@@ -1,0 +1,4 @@
+N=3: [{yL: -3, yQ: 1, yd: -4, ye: 6, yu: 2}, {yL: -3, yQ: 1, yd: 2, ye: 6, yu: -4}]
+recovered: True
+REJECT: N=0 degenerate ([{yL: 0, yQ: 1, ye: 0, yu: -yd - 2}])
+exit=1

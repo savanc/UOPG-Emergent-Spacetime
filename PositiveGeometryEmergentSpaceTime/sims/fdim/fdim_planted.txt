@@ -1,0 +1,11 @@
+# F-DIM planted pair — 2026-10-20
+## planted
+GUARD OK: prereg e97e8ec9e on origin/main; checker hash matches
+bosonic open-string Veneziano, tachyons m2=-1 (D_c = 26, CITED AEHM 2201.11575 / 2608.25183): BOUND-ONLY D<=26 (expect BOUND-ONLY D<=26) OK
+LS family alpha0 = 1 (NS model, D_c = 10, CITED Bianchi-Consoli-Di Vecchia 2021 eq. (2.9)-(2.11)): BOUND-ONLY D<=10 (expect BOUND-ONLY D<=10) OK
+recovered: True
+exit=0
+## broken
+GUARD OK: prereg e97e8ec9e on origin/main; checker hash matches
+broken case bosonic Veneziano with wrong external mass m2 = 0: BOUND-ONLY D<=26 -- NOT rejected (FAIL)
+exit=0

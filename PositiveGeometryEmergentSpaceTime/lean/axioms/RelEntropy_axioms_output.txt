@@ -1,0 +1,6 @@
+'PositiveGeometryEmergentSpaceTime.RelEntropy.relEnt_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.RelEntropy.relEnt_eq_sum_klFun' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.RelEntropy.relEnt_nonneg'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.RelEntropy.relEnt_firstOrder_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.RelEntropy.relEnt_gibbs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.RelEntropy.first_law' depends on axioms: [propext, Classical.choice, Quot.sound]

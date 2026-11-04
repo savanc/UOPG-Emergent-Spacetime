@@ -1,0 +1,4 @@
+rule V [trees]: spread 5.23e-25; per-tile means {'T1': '32.0', 'T2': '32.0', 'T3': '32.0', 'T4': '32.0', 'T5': '32.0'}
+rule V [R1b diag]: spread 0.603; per-tile means {'R1b(non-tree,diag)': '62.05939633764884472851'}
+rule P [trees]: spread 0.129; per-tile means {'T1': '32.94199991637205651033', 'T2': '32.24315427210512836631', 'T3': '32.71583701559576835305', 'T4': '32.90080916387952819422', 'T5': '32.68334753418383916028'}
+rule P [R1b diag]: spread 0.603; per-tile means {'R1b(non-tree,diag)': '62.05939633764884472851'}

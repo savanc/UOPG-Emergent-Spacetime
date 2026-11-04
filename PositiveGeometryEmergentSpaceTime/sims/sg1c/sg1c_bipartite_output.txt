@@ -1,0 +1,12 @@
+PF masses by node: [1.618034, 3.21834, 4.783386, 3.891157, 2.956295, 1.989044, 1.0, 2.404867]
+colour classes: [0, 1, 0, 1, 0, 1, 0, 1]; lightest node 6 (class 0)
+boson class masses [1.0, 1.618, 2.9563, 4.7834]; fermion class masses [1.989, 2.4049, 3.2183, 3.8912]
+R1: p=0: min t*=[]; p=1: min t*=[]; p=-1: min t*=[]; p=-2: min t*=[]
+R2: p=0: min t*=[]; p=1: min t*=[]; p=-1: min t*=[]; p=-2: min t*=[]
+R3: p=0: min t*=[]; p=1: min t*=[]; p=-1: min t*=[]; p=-2: min t*=[]
+R4: p=0: min t*=[]; p=1: min t*=[]; p=-1: min t*=[]; p=-2: min t*=[]
+CONTROL SG-1b S2' m2: t*=[np.float64(0.7577)] (expected [0.7577])
+R1: sign of V*L^5 at L=0.05,1,10: [-1.0, -1.0, -1.0], monotone: True
+R2: sign of V*L^5 at L=0.05,1,10: [1.0, 1.0, 1.0], monotone: True
+R3: sign of V*L^5 at L=0.05,1,10: [-1.0, -1.0, -1.0], monotone: True
+R4: sign of V*L^5 at L=0.05,1,10: [-1.0, -1.0, -1.0], monotone: True

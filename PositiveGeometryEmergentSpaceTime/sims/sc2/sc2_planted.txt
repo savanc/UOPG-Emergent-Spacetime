@@ -1,0 +1,5 @@
+mode=planted Dc=4 b=3
+curve bubble_stu: count=3 sym=1/2 pole_weight=1
+distinct |sym*weight| values: ['1/2'] universal_weight=True
+REJECT: no UV 1/eps pole (odd dimension) - beta coefficient undefined at one loop
+exit=1

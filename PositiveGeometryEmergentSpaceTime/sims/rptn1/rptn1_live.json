@@ -1,0 +1,18 @@
+{
+ "planted_ok": true,
+ "N": 2000,
+ "nP": 1000,
+ "nR": 1000,
+ "n_tn_true": 1001,
+ "n_tn_false": 999,
+ "P_TN": 1.0,
+ "E": 0,
+ "W": 0,
+ "agree": 2000,
+ "R_det": 999,
+ "R_rp2fail": 999,
+ "P_Tz_fail": 1000,
+ "H0PSD_all": true,
+ "null_agree_independent": 0.5000005,
+ "verdict": "TN-TAUT"
+}

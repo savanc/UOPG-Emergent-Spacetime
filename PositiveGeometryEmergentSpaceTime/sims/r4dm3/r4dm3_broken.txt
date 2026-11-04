@@ -1,0 +1,5 @@
+GUARD OK: prereg d9b60aaaa on origin/main; checker/classification/exporters/planted hashes match (re-verified on every scoring call)
+  PASS  empty classification: UNCLASSIFIED PositiveGeometryEmergentSpaceTime.SubthresholdGate -> refused
+  PASS  module STRUCT1 removed: UNCLASSIFIED PositiveGeometryEmergentSpaceTime.STRUCT1 -> refused
+  PASS  module EWZ1b removed: UNCLASSIFIED PositiveGeometryEmergentSpaceTime.EWZ1b -> refused
+BROKEN: PASS

@@ -1,0 +1,15 @@
+{
+ "B1_qcd_sign_flipped": {
+  "verdict": "ILL-DEFINED",
+  "rejected": true
+ },
+ "B2_negative_alpha": {
+  "verdict": "ILL-DEFINED",
+  "rejected": true
+ },
+ "B3_reversed_interval": {
+  "verdict": "ILL-DEFINED",
+  "rejected": true
+ },
+ "ALL_REJECTED": true
+}

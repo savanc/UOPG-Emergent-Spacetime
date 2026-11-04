@@ -1,0 +1,54 @@
+4pt massless udsu L0 ZERO B nonzero ratio B/L0 [None, None]
+4pt massless uuss L0 ZERO B nonzero ratio B/L0 [None, None]
+4pt massless udud L0 ZERO B nonzero ratio B/L0 [None, None]
+4pt equal udsu L0 ZERO B nonzero ratio B/L0 [None, None]
+4pt equal uuss L0 ZERO B nonzero ratio B/L0 [None, None]
+4pt equal udud L0 ZERO B nonzero ratio B/L0 [None, None]
+4pt unequal udsu L0 ZERO B nonzero ratio B/L0 [None, None]
+4pt unequal uuss L0 ZERO B nonzero ratio B/L0 [None, None]
+4pt unequal udud L0 ZERO B nonzero ratio B/L0 [None, None]
+6pt massless udsuds skinny L0 ZERO B nonzero
+6pt massless udsuds rect2x2 L0 ZERO B nonzero
+6pt massless udsuds null_pair L0 nonzero B nonzero
+6pt massless uuddss skinny L0 ZERO B nonzero
+6pt massless uuddss rect2x2 L0 ZERO B nonzero
+6pt massless uuddss null_pair L0 nonzero B nonzero
+6pt massless ududud skinny L0 ZERO B nonzero
+6pt massless ududud rect2x2 L0 ZERO B nonzero
+6pt massless ududud null_pair L0 nonzero B nonzero
+6pt massless ususus skinny L0 ZERO B nonzero
+6pt massless ususus rect2x2 L0 ZERO B nonzero
+6pt massless ususus null_pair L0 nonzero B nonzero
+6pt massless uuuuus skinny L0 ZERO B nonzero
+6pt massless uuuuus rect2x2 L0 ZERO B nonzero
+6pt massless uuuuus null_pair L0 nonzero B nonzero
+6pt equal udsuds skinny L0 ZERO B nonzero
+6pt equal udsuds rect2x2 L0 ZERO B nonzero
+6pt equal udsuds null_pair L0 nonzero B nonzero
+6pt equal uuddss skinny L0 ZERO B nonzero
+6pt equal uuddss rect2x2 L0 ZERO B nonzero
+6pt equal uuddss null_pair L0 nonzero B nonzero
+6pt equal ududud skinny L0 ZERO B nonzero
+6pt equal ududud rect2x2 L0 ZERO B nonzero
+6pt equal ududud null_pair L0 nonzero B nonzero
+6pt equal ususus skinny L0 ZERO B nonzero
+6pt equal ususus rect2x2 L0 ZERO B nonzero
+6pt equal ususus null_pair L0 nonzero B nonzero
+6pt equal uuuuus skinny L0 ZERO B nonzero
+6pt equal uuuuus rect2x2 L0 ZERO B nonzero
+6pt equal uuuuus null_pair L0 nonzero B nonzero
+6pt unequal udsuds skinny L0 ZERO B nonzero
+6pt unequal udsuds rect2x2 L0 ZERO B nonzero
+6pt unequal udsuds null_pair L0 nonzero B nonzero
+6pt unequal uuddss skinny L0 ZERO B nonzero
+6pt unequal uuddss rect2x2 L0 ZERO B nonzero
+6pt unequal uuddss null_pair L0 nonzero B nonzero
+6pt unequal ududud skinny L0 ZERO B nonzero
+6pt unequal ududud rect2x2 L0 ZERO B nonzero
+6pt unequal ududud null_pair L0 nonzero B nonzero
+6pt unequal ususus skinny L0 ZERO B nonzero
+6pt unequal ususus rect2x2 L0 ZERO B nonzero
+6pt unequal ususus null_pair L0 nonzero B nonzero
+6pt unequal uuuuus skinny L0 ZERO B nonzero
+6pt unequal uuuuus rect2x2 L0 ZERO B nonzero
+6pt unequal uuuuus null_pair L0 nonzero B nonzero

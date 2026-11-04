@@ -1,0 +1,6 @@
+rho: m^2/m_rho^2=1 J=1 g^2/g_rho^2=1 = 1.00000  kappa/kappa_rho=1
+f2: m^2/m_rho^2=3 J=2 g^2/g_rho^2=1/2 = 0.50000  kappa/kappa_rho=9/10
+rho3: m^2/m_rho^2=5 J=3 g^2/g_rho^2=5/16 = 0.31250  kappa/kappa_rho=3/7
+f4: m^2/m_rho^2=7 J=4 g^2/g_rho^2=49/240 = 0.20417  kappa/kappa_rho=1/2
+rho5: m^2/m_rho^2=9 J=5 g^2/g_rho^2=243/1792 = 0.13560  kappa/kappa_rho=3/11
+f6: m^2/m_rho^2=11 J=6 g^2/g_rho^2=13*Integral(-315*x**4*gamma(13/4 - 11*x/4)/gamma(-11*x/4 - 11/4), (x, -1, 1))/10560 + 13*Integral(-5*gamma(13/4 - 11*x/4)/gamma(-11*x/4 - 11/4), (x, -1, 1))/10560 + 13*Integral(105*x**2*gamma(13/4 - 11*x/4)/gamma(-11*x/4 - 11/4), (x, -1, 1))/10560 + 13*Integral(231*x**6*gamma(13/4 - 11*x/4)/gamma(-11*x/4 - 11/4), (x, -1, 1))/10560 = 0.09078  kappa/kappa_rho=9/26

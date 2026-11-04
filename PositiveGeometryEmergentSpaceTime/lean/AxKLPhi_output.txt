@@ -1,0 +1,3 @@
+'PositiveGeometryEmergentSpaceTime.KLPhi.phi_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.KLPhi.equal_spacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.KLPhi.phi_from_kstar' depends on axioms: [propext, Classical.choice, Quot.sound]

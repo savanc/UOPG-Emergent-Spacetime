@@ -1,0 +1,94 @@
+/-
+ALIGNMENT BLIND-3 (2026-11-03) axioms audit: 3 blind modules + 3 Compare/sanity modules (83 declarations).
+NOT part of `import PositiveGeometryEmergentSpaceTime` (PositiveGeometryEmergentSpaceTime.lean unedited); not imported by AxiomsAll.
+Run: `lake env lean AlignmentBlind3Axioms.lean`. Expected: only propext, Classical.choice, Quot.sound.
+-/
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Mr4Blind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Mr2Blind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.KlLatBlind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr4Blind.line_s_sub_u
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr4Blind.line_nu
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr4Blind.lo_closed
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr4Blind.lo_zero_on_line
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr4Blind.lo_ne_zero_off_line
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr4Blind.line_iff_dot_zero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr4Blind.Fplus
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr4Blind.Fminus
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr4Blind.line_restriction
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr4Blind.kappa_line
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr2Blind.dress
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr2Blind.dress_zero_P
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr2Blind.dress_zero_P_nosym
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr2Blind.fpoly
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr2Blind.fpoly_on_line
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr2Blind.poly_zero_iff
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr2Blind.dress_poly_P
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr2Blind.weinberg
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr2Blind.lo_zero_P
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr2Blind.lo_dress
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.aRho
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.aK
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.zero_line
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.zero_line_conv
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.split_not_forced
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.stated_sum
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.slope
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.mass_formula
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.kstar_relation
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.k2star
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.spacing
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.phi_relation
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.equal_spacing
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.KlLatBlind.phi_from_kstar
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.orig_line_su_of_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.blind_line_of_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.Fp_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.Fm_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.orig_line_poly_of_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.blind_line_restriction_of_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.orig_lo_of_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.blind_dot_of_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.orig_orth_of_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.kappa_value
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.line_point_exists
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.planted_off_line
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.planted_lo_off_line
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR4.bdm_g1_value
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.dress_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.dress_tie_symm
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.orig_dress_zero_nosym
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.orig_dress_zero_of_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.fpoly_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.orig_poly_zero_iff_of_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.blind_poly_zero_iff_of_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.dress_poly_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.lo_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.lo_tie_at_P
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.G1
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.F1
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.g1_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.nonvacuous
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.planted_wrong
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR2.planted_no_zero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.orig_zero_line_of_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.orig_zero_line_conv_of_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.blind_zero_line_of_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.rho_intercept_from_pipi
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.k_intercept_from_rho
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.orig_intercepts_forced
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.blind_mass_of_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.orig_kstar_of_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.orig_spacing_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.orig_phi_of_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.equal_spacing_tie
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.kstar_values
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.kstar_mass_values
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.intercept_values
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.planted_split
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.planted_off_line
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.nonvacuous_pipi
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.poch3_value
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.KLLAT.poch3_planted

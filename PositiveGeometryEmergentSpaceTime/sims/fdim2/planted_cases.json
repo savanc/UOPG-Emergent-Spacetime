@@ -1,0 +1,6 @@
+{"planted": [
+  {"name": "bosonic open-string Veneziano, tachyons m2=-1 (D_c = 26, CITED AEHM 2201.11575 / 2608.25183)", "kind": "bos", "par": "-1", "nmax": 12, "expect": "BOUND-ONLY D<=26"},
+  {"name": "LS family alpha0 = 1 (NS model, D_c = 10, CITED Bianchi-Consoli-Di Vecchia 2021 eq. (2.9)-(2.11))", "kind": "ls", "par": "1", "nmax": 12, "expect": "BOUND-ONLY D<=10"}
+ ],
+ "broken": {"name": "trunk LS alpha0 = 1/2 asked for D <= 26 (excluded by Lean PositiveGeometryEmergentSpaceTime.FDim.trunk_bound_not_forced: level 1 fails at D = 8..26)", "kind": "ls", "par": "1/2", "nmax": 12, "must_not": "BOUND-ONLY D<=26"}
+}

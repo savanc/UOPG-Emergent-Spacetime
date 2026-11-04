@@ -1,0 +1,1310 @@
+{
+ "v1_corpus_commit": "87331353b0e400b2b27df98a12323c7d293d4b58",
+ "n_records": 71,
+ "counts": {
+  "c": 0,
+  "e": 0,
+  "a": 71
+ },
+ "basins": {
+  "B1": [
+   "a",
+   6
+  ],
+  "B2": [
+   "a",
+   2
+  ],
+  "B3": [
+   "a",
+   2
+  ],
+  "B4": [
+   "a",
+   2
+  ],
+  "B5": [
+   "a",
+   5
+  ],
+  "B7": [
+   "a",
+   1
+  ],
+  "B8": [
+   "a",
+   1
+  ],
+  "RG-IR": [
+   "a",
+   1
+  ],
+  "pre-basin": [
+   "a",
+   51
+  ],
+  "B6": [
+   "NO-RECORD",
+   0
+  ],
+  "B9": [
+   "NO-RECORD",
+   0
+  ],
+  "B10": [
+   "NO-RECORD",
+   0
+  ],
+  "B11": [
+   "NO-RECORD",
+   0
+  ]
+ },
+ "null": {
+  "n_control": 45,
+  "c_rate": 0.0,
+  "c_records": [],
+  "NULL_OK": true
+ },
+ "rival": {
+  "v1_checker_c_records": [
+   "MR-2b",
+   "MR-3",
+   "MR-3b",
+   "FZ-1",
+   "FT-1",
+   "MR-7'",
+   "STRUCT-1",
+   "STRUCT-1b",
+   "BRIDGE-PL-ASSOC (charge)"
+  ],
+  "v1_verdict": "BITES",
+  "prior_all_a": "VACUOUS"
+ },
+ "records": [
+  {
+   "rung": "MR-1c",
+   "basin": "pre-basin",
+   "record": "reviews/MR-1c-result-2026-10-12.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-1d",
+   "basin": "pre-basin",
+   "record": "reviews/MR-1d-result-2026-10-12.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-2b",
+   "basin": "pre-basin",
+   "record": "reviews/MR-2b-result-2026-10-12.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": [
+    [
+     19,
+     "(Lüscher) spectra → amplitudes at s ≥ 4M2 (above threshold) or threshold parameters"
+    ],
+    [
+     32,
+     "- M_π dial (heavier-pion ensembles): P is subthreshold (s=M2, t=M2, u=2M2 < 4M2), unreachable by Lüscher at any"
+    ]
+   ]
+  },
+  {
+   "rung": "NL9",
+   "basin": "pre-basin",
+   "record": "reviews/NL9-result-2026-10-12.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-3",
+   "basin": "pre-basin",
+   "record": "reviews/MR-3-result-2026-10-12.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-3b",
+   "basin": "pre-basin",
+   "record": "reviews/MR-3-result-2026-10-12.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "OP-2 scale",
+   "basin": "pre-basin",
+   "record": "reviews/OP-2-result-2026-10-12.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "M3",
+   "basin": "pre-basin",
+   "record": "reviews/M3-result-2026-10-10.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 2,
+   "kinds": {
+    "mention": 2,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-2c",
+   "basin": "pre-basin",
+   "record": "reviews/MR-2c-result-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-1e",
+   "basin": "pre-basin",
+   "record": "reviews/MR-1e-result-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-1f",
+   "basin": "pre-basin",
+   "record": "reviews/KL-1-MR-1f-KS-1-result-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-6",
+   "basin": "pre-basin",
+   "record": "reviews/MR-1f-MR-6-gates-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-5",
+   "basin": "pre-basin",
+   "record": "reviews/MR-5-gate-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-2e",
+   "basin": "pre-basin",
+   "record": "reviews/MR-2e-result-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-7",
+   "basin": "pre-basin",
+   "record": "reviews/MR-7-MR-8-gates-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-8",
+   "basin": "pre-basin",
+   "record": "reviews/MR-7-MR-8-gates-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "FZ-0",
+   "basin": "pre-basin",
+   "record": "reviews/FZ-0-result-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "FZ-1",
+   "basin": "pre-basin",
+   "record": "reviews/FZ-1-result-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "LAT-2",
+   "basin": "pre-basin",
+   "record": "reviews/LAT-2-gate-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": [
+    [
+     17,
+     "2601.01205 (staggered, physical point) | s-wave ERE a, r, P | Physical point only"
+    ]
+   ]
+  },
+  {
+   "rung": "LAT-3",
+   "basin": "pre-basin",
+   "record": "reviews/LAT-3-gate-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "LAT-3'",
+   "basin": "pre-basin",
+   "record": "reviews/LAT-3p-DZ-1-gates-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "DZ-1",
+   "basin": "pre-basin",
+   "record": "reviews/LAT-3p-DZ-1-gates-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "LAT-2'",
+   "basin": "pre-basin",
+   "record": "reviews/LAT-2p-gate-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "TH-1",
+   "basin": "pre-basin",
+   "record": "reviews/TH-1-result-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "KS-1",
+   "basin": "pre-basin",
+   "record": "reviews/KL-1-MR-1f-KS-1-result-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "SUB-1",
+   "basin": "pre-basin",
+   "record": "reviews/SUB-1-KS-1-gates-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "UL-1",
+   "basin": "pre-basin",
+   "record": "reviews/UL-1-gate-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-1f-eta",
+   "basin": "pre-basin",
+   "record": "reviews/FRONTIER-1-rank-and-MR-1f-eta-gate-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 1,
+   "kinds": {
+    "mention": 1,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "FT-1",
+   "basin": "pre-basin",
+   "record": "reviews/FT-1-MR-7p-gates-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 2,
+   "kinds": {
+    "mention": 1,
+    "negated": 1,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "MR-7'",
+   "basin": "pre-basin",
+   "record": "reviews/FT-1-MR-7p-gates-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 2,
+   "kinds": {
+    "mention": 1,
+    "negated": 1,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "H-T5 (d)",
+   "basin": "pre-basin",
+   "record": "reviews/H-T5-result-2026-10-12.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "FT-2",
+   "basin": "pre-basin",
+   "record": "reviews/FT-2-gate-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "FT-3",
+   "basin": "pre-basin",
+   "record": "notes/FT-3-gate-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "FT-4",
+   "basin": "pre-basin",
+   "record": "notes/FT-4-gate-2026-10-13.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "EW-Z1b",
+   "basin": "pre-basin",
+   "record": "reviews/EW-Z1b-full-WZh-2026-10-13.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "PG-1",
+   "basin": "pre-basin",
+   "record": "reviews/PG-1-result-2026-10-14.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "BR-5",
+   "basin": "pre-basin",
+   "record": "reviews/BR-5p-2026-10-14.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "GB-2",
+   "basin": "pre-basin",
+   "record": "reviews/GB-2s-2026-10-14.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "SC-2",
+   "basin": "pre-basin",
+   "record": "reviews/SC-2-result-2026-10-14.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "SC-3",
+   "basin": "pre-basin",
+   "record": "reviews/SC-3-step0-result-2026-10-14.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "SC-2b",
+   "basin": "pre-basin",
+   "record": "reviews/SC-2b-result-2026-10-15.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "SC-1",
+   "basin": "pre-basin",
+   "record": "reviews/SC-1-result-2026-10-15.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 2,
+   "kinds": {
+    "mention": 2,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "STRUCT-1",
+   "basin": "pre-basin",
+   "record": "reviews/STRUCT-1-result-2026-10-15.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 4,
+   "kinds": {
+    "mention": 3,
+    "negated": 0,
+    "modal": 1,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "STRUCT-1b",
+   "basin": "pre-basin",
+   "record": "reviews/STRUCT-1b-result-2026-10-15.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "STRUCT-2",
+   "basin": "pre-basin",
+   "record": "reviews/STRUCT-2-result-2026-10-15.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "X6 / XD-6 / R2",
+   "basin": "pre-basin",
+   "record": "reviews/X6-result-2026-10-15.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 8,
+   "kinds": {
+    "mention": 7,
+    "negated": 1,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "STRUCT-3 / R3",
+   "basin": "pre-basin",
+   "record": "reviews/STRUCT-3-result-2026-10-15.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "R4 → R5",
+   "basin": "pre-basin",
+   "record": "reviews/R4-result-2026-10-15.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "R4-indep",
+   "basin": "pre-basin",
+   "record": "notes/R4-INDEPENDENT-2026-10-16.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "FR-WZW",
+   "basin": "pre-basin",
+   "record": "notes/FR-WZW-2026-10-16.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "FR-MU",
+   "basin": "pre-basin",
+   "record": "reviews/FR-MU-result-2026-10-16.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "F-COULOMB",
+   "basin": "B5",
+   "record": "reviews/F-COULOMB-result-2026-10-20.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "F-DIM",
+   "basin": "B1",
+   "record": "reviews/F-DIM-result-2026-10-20.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "F-DIM′ (F-DIM2)",
+   "basin": "B1",
+   "record": "reviews/F-DIM2-result-2026-10-20.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "F-DIM-MASS",
+   "basin": "B1",
+   "record": "reviews/F-DIM-MASS-result-2026-10-20.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "F-SCATLEN",
+   "basin": "B1",
+   "record": "reviews/F-SCATLEN-result-2026-10-20.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "F-RHOWIDTH",
+   "basin": "B1",
+   "record": "reviews/F-RHOWIDTH-result-2026-10-20.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "F-POSGEOM-DAUGHTER",
+   "basin": "B1",
+   "record": "reviews/F-POSGEOM-DAUGHTER-result-2026-10-20.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "BRIDGE-PL-ASSOC (charge)",
+   "basin": "B2",
+   "record": "reviews/BRIDGE-PL-ASSOC-result-2026-10-20.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 2,
+   "kinds": {
+    "mention": 2,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "STRUCT-NGEN",
+   "basin": "B3",
+   "record": "reviews/STRUCT-NGEN-result-2026-10-20.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "GRADED-POSITROID",
+   "basin": "B2",
+   "record": "reviews/GRADED-POSITROID-result-2026-10-22.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 1,
+   "kinds": {
+    "mention": 1,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "INT-1",
+   "basin": "B5",
+   "record": "reviews/INT-1-result-2026-10-22.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "FL-1Z",
+   "basin": "B5",
+   "record": "reviews/FL-1Z-result-2026-10-22.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "LEAN-CERT-1",
+   "basin": "B4",
+   "record": "reviews/LEAN-CERT-1-result-2026-10-23.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "CASCADE-1",
+   "basin": "B5",
+   "record": "reviews/CASCADE-1-result-2026-10-23.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "CASCADE-1b",
+   "basin": "B5",
+   "record": "reviews/CASCADE-1b-result-2026-10-23.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "TRIALITY-WHY",
+   "basin": "B3",
+   "record": "reviews/TRIALITY-WHY-result-2026-10-23.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "LEAN-CERT-2",
+   "basin": "B4",
+   "record": "reviews/LEAN-CERT-2-result-2026-10-28.md",
+   "label": "a",
+   "control": true,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "JORD-1",
+   "basin": "B7",
+   "record": "reviews/JORD-1-result-2026-10-28.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "SURF-1′",
+   "basin": "B8",
+   "record": "reviews/SURF-1-result-2026-10-28.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  },
+  {
+   "rung": "RG-IR-1",
+   "basin": "RG-IR",
+   "record": "reviews/RG-IR-1-result-2026-10-30.md",
+   "label": "a",
+   "control": false,
+   "n_chiral_clauses": 0,
+   "kinds": {
+    "mention": 0,
+    "negated": 0,
+    "modal": 0,
+    "input": 0,
+    "claim": 0
+   },
+   "claims": [],
+   "esc": []
+  }
+ ],
+ "VERDICT": "VACUOUS",
+ "matches_prior_all_a": true,
+ "matches_v1_checker": false
+}

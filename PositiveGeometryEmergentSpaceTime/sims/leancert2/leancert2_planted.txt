@@ -1,0 +1,6 @@
+{"case": "PL1 ABHY n=5", "dim": 5, "expect": 5, "mirror": true, "pass_": true}
+{"case": "PL1 ABHY n=6", "dim": 9, "expect": 9, "mirror": true, "pass_": true}
+{"case": "PL1 ABHY n=7", "dim": 14, "expect": 14, "mirror": true, "pass_": true}
+{"case": "PL2 synthetic 120x56 rank 46", "dim": 10, "expect": 10, "mirror": true, "pass_": true, "maxdigits": 1231, "secs": 600.51}
+{"case": "PL3 synthetic 120x56 rank 54", "dim": 2, "expect": 2, "mirror": true, "pass_": true, "maxdigits": 1446, "secs": 1349.81}
+PLANTED ALL OK: True

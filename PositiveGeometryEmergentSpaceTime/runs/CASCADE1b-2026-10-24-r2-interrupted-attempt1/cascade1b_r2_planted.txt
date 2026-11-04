@@ -1,0 +1,12 @@
+OK  PL1 triangulation sum = eq.(3.1) (n=5); n=6: 14 terms, eq.(3.6) representatives, cyclic
+OK  PL2 diamonds: n=5 = v1 Z_i; n=6 9 diamonds (6x3, 3x4); sum c = X_B + X_T
+OK  PL3 massless A6 vanishes on all 9 diamond loci; planted A6 + 1/(X13X14X15) detected
+OK  PL4 eq.(3.7) massless 12/12 (2 lines x 6 rotations); planted non-separable rejected
+OK  PL5 massless factor counts: eq3.7 line1 = 2, line2 = 3, eq3.3 (n=5) = 2
+OK  PL6 Rel5 family: mass-consistent splits 10/10; v1-defect replica fails (0/10 as locked v1)
+OK  PL7 V_D: massless n=4 zero-only; planted shifted zero flagged (V = {-1})
+OK  PL8 cone dims (0,1,2)
+OK  PL9 sec.7.1: E0 c-preserving shifts = delta-line at n=6, none at n=5
+OK  PL10 v3 V_D == v2 V_D on all 7 n=4,5 diamonds
+OK  PL11 v3 V_D on random-coefficient n=6 sum: 9 diamonds, max 0.30s < 60s
+PLANTED: ALL OK

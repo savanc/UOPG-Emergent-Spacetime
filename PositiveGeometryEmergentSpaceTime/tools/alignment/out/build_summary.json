@@ -1,0 +1,20 @@
+{
+ "rows": 186,
+ "counts": {
+  "META|": 55,
+  "CLAIM|OVERSTATES": 9,
+  "LISTING|MATCH": 11,
+  "CLAIM|MATCH": 59,
+  "SCOPE|MATCH": 17,
+  "CLAIM|NAME-ONLY": 1,
+  "PAPER|": 6,
+  "DEF|MATCH": 21,
+  "DEF|NAME-ONLY": 7
+ },
+ "glossary": {
+  "MISSING-IN-PAPER": 12,
+  "MISMATCH": 4,
+  "DEFINED": 18
+ },
+ "cited": 409
+}

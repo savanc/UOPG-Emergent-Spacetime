@@ -1,0 +1,6 @@
+N_c=1: Q_u=1.000000 Q_d=0.000000 mu_n/mu_p=0.000000000000 closed=0.000000000000 agree=True
+N_c=3: Q_u=0.666667 Q_d=-0.333333 mu_n/mu_p=-0.666666666667 closed=-0.666666666667 agree=True
+N_c=5: Q_u=0.600000 Q_d=-0.400000 mu_n/mu_p=-0.842105263158 closed=-0.842105263158 agree=True
+N_c=7: Q_u=0.571429 Q_d=-0.428571 mu_n/mu_p=-0.909090909091 closed=-0.909090909091 agree=True
+prediction (N_c=3): -2/3 = -0.6666666666666666
+pred=-0.6666666667 meas=-0.68497935 rel_dev=0.02673 band=0.11111 in_band=True p_single=0.07611 p_corrected(trials=13)=0.64267 verdict=NUMEROLOGY

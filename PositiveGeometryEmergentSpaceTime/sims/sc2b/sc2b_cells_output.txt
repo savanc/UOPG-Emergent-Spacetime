@@ -1,0 +1,3 @@
+triangle: I1 jac=1 I2 slice=1/2  SC-2 factor=1/2  matches: I1=False I2=True
+bubble:   I1 jac=1 I2 slice=1 I3 moment=1/6  SC-2 factor=1/6  matches: I1=False I2=False I3=True
+VERDICT: PARTIAL

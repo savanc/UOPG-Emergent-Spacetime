@@ -1,0 +1,7 @@
+grid points: 100 all-levels-positive (n<=8): 1
+first failures: [(0.0025, 2), (0.005, 2), (0.0075, 2), (0.01, 2), (0.0125, 2), (0.015, 2), (0.0175, 2), (0.02, 2), (0.0225, 2), (0.025, 2)]
+max positive r: 0.0 -> m_pi/m_rho up to 0.0
+level-1 coefficients at r=0.0324: [625/2419, 544/2419]
+chiral limit: J=1 coefficient 1/4  g~rho^2 = 1/(2*pi) = 0.15915494309189535  (KSRF: 1/2)
+g~2(LS) = 0.693147180559945  AR eq.75: ln2 = 0.6931471805599453
+g10 check (pi*ap): 1.57079632679490 1.5707963267948966

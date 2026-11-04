@@ -1,0 +1,9 @@
+k_LO(3) for ud: (0+0i) expect 0
+4 O5 LO==ft2: True exp==cay: True T!=0: True
+4 O8 LO==ft2: True exp==cay: True T!=0: True
+4 Okin LO==ft2: True exp==cay: True T!=0: True
+4 Omass LO==ft2: True exp==cay: True T!=0: True
+6 O5 LO==ft2: True exp==cay: True T!=0: True
+6 O8 LO==ft2: True exp==cay: True T!=0: True
+6 Okin LO==ft2: True exp==cay: True T!=0: True
+6 Omass LO==ft2: True exp==cay: True T!=0: True

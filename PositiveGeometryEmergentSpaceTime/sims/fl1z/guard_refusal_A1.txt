@@ -1,0 +1,3 @@
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg commit 7f9ccddd5 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 7f9ccddd5 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 7f9ccddd5 is not an ancestor of origin/main (not pushed)']
+pass-flag attributes present: []
+exit 2

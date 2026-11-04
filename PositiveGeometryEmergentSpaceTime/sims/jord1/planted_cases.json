@@ -1,0 +1,23 @@
+{
+ "run_id": "JORD1-2026-10-28-r1",
+ "planted": {
+  "P1": {"claim": "Fano-line octonion table (lines (1,2,4),(2,3,5),(3,4,6),(4,5,7),(5,6,1),(6,7,2),(7,1,3)) is a composition algebra and alternative", "expect": true, "source": "math/0105155 (Baez) sec. 2 Fano-plane multiplication"},
+  "P2": {"claim": "dim Der(h3(O)) = 52 (f4)", "expect": 52, "source": "math/0105155 eq. f4 = Der(h3(O)) (Chevalley-Schafer)"},
+  "P3": {"claim": "dim stab(E1) = 36 (spin(9))", "expect": 36, "source": "math/0105155: Spin(9) is precisely the subgroup of F4 fixing diag(1,0,0)"},
+  "P4": {"claim": "dim stab(E1,E2,E3) = 28 (spin(8))", "expect": 28, "source": "math/0105155 sec. "OP2 and the exceptional Jordan algebra": subgroup of Spin(9) fixing a nonzero vector of V9 is Spin(8)"},
+  "P5": {"claim": "dim setstab(h3(C)) = 16 (su(3)+su(3))", "expect": 16, "source": "1911.13124 (Todorov) abstract: SU(3)xSU(3)/Z3 subgroup of F4 preserving h3(C)"},
+  "P6": {"claim": "g_sm = stab(E1) ∩ setstab(h3(C)) has (dim, rank, centre, derived) = (12, 4, 1, 11)", "expect": [12, 4, 1, 11], "source": "1911.13124 abstract S(U(3)xU(2)); 2606.15235 (Baez-Schwahn); 1912.11282 (Krasnov)"},
+  "P7": {"claim": "setstab(h2(C) on idx 2,3) ∩ setstab(h3(C)) equals g_sm as a subspace", "expect": true, "source": "2606.15235 (Baez-Schwahn)"},
+  "P8": {"claim": "dim Der h3(R), h3(C), h3(H) = 3, 8, 21 (lower = upper)", "expect": {"R": [3, 3], "C": [8, 8], "H": [21, 21]}, "source": "math/0105155 eq. Der(h3(K)) = Der(K) + sa3(K)"}
+ },
+ "valid_alternatives_must_accept": {
+  "V1": "u = e2 (C' = span(1,e2)): same (dim, rank, centre, derived) and same closure dim as u = e1",
+  "V2": "stab(E2+E3) == stab(E1) as subspaces (D(I) = 0)",
+  "V3": "rank of g_sm with seed+1 equals rank with seed"
+ },
+ "broken_must_reject": {
+  "B1": "table with e1e2 = e2e1 = e4: (e1+e2)(e1-e2) = e1e1 - e1e2 + e2e1 - e2e2 = -1 - e4 + e4 + 1 = 0 although N(e1+e2)N(e1-e2) = 4 -> composition fails (paper check)",
+  "B2": "claim dim stab(E1) = 52 (contradicts P3, CITED 36)",
+  "B3": "D = E_00 (E1 -> E1, else 0): D(E1∘E1) = E1 but D(E1)∘E1 + E1∘D(E1) = 2 E1 -> not a derivation (paper check)"
+ }
+}

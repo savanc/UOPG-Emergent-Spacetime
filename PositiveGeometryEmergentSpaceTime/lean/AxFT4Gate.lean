@@ -1,0 +1,3 @@
+import PositiveGeometryEmergentSpaceTime.FT4Gate
+#print axioms PositiveGeometryEmergentSpaceTime.FT4Gate.only_Z
+#print axioms PositiveGeometryEmergentSpaceTime.FT4Gate.Z_running

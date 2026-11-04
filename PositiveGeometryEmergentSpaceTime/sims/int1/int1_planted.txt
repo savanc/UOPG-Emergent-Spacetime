@@ -1,0 +1,12 @@
+GUARD OK: prereg 32cec6335 on origin/main; checker hash matches; run INT1-2026-10-22-r1 seed 20261022
+{
+ "P1a_pentagon_c111": "((5, 5), True)",
+ "P1b_pentagon_massive": "((5, 5), '{(1, 3): Fraction(11, 6), (1, 4): Fraction(8, 3), (2, 4): Fraction(24, 5)}', True)",
+ "P2a_merging_wall_m35sq=1": "((4, 4), '{(1, 3): Fraction(1, 1), (1, 4): Fraction(1, 1), (2, 4): Fraction(0, 1)}', [[(2, 4), (2, 5), (3, 5)]], True)",
+ "P2b_beyond_wall_m35sq=3/2": "((4, 4), [(2, 5)], True)",
+ "P4_n6_c1": "((14, 21, 9), True)",
+ "P5_forms_n5": "([('0', '0', '1'), ('0', '1', '0'), ('0', '1', '1'), ('1', '0', '0'), ('1', '1', '0'), ('1', '1', '1')], True)",
+ "P7_lattice_c111": "(8, True)",
+ "P3_broken_detector": "(1, 0, True)"
+}
+PLANTED PASS

@@ -1,0 +1,25 @@
+# JORD-1 run record (run JORD1-2026-10-28-r1) — interruption recovery
+Prereg 719e85d pushed alone 2026-10-28; guard refusal record ec7120f pushed after it.
+First worker (killed by a host restart, last file write) ran planted, broken, live
+(all after the prereg push), wrote emit_lean.py () and the Lean modules, and left them uncommitted.
+
+Recovery (2026-10-28, resumed worker):
+- jord1_checker.py sha256 3179e35329140a6a0a5e60586b4fd621d400f0a5dbd0a2223fe8498fe11602a8 = prereg §6 lock; `git diff HEAD` clean
+  for jord1_checker.py and planted_cases.json (byte-identical to 719e85d).
+- The pre-interruption *_out.json carry no run provenance of their own, so all three modes were RE-RUN cleanly through the
+  guard (banner "GUARD OK: prereg 719e85d63 on origin/main; checker hash matches") at 21:53–, one mode at a time,
+  under an RSS/MemAvailable watchdog (kill: RSS > 2000 MB, MemAvailable < 1500 MB, wall > 3600 s; prereg §0):
+    planted rc=0  peak RSS 90 MB  wall 7.0 s   PLANTED_ALL_OK true
+    broken  rc=0  peak RSS 22 MB  wall 2.0 s   BROKEN_ALL_REJECTED true
+    live    rc=0  peak RSS 45 MB  wall 110.1 s VERDICT ILL-DEFINED
+- Re-run outputs are identical to the pre-interruption files (JSON compared with sort_keys, 'seconds' field excluded).
+  The committed *_out.json are the re-run files.
+- emit_lean.py re-run on the re-run live_out.json: Table.lean and Data.lean byte-identical to the uncommitted copies
+  (rank of stacked G rows 25; d = 2; max|C| = 2; W witness entry (5,1) = -1).
+- Lean re-elaborated module by module (`lake env lean`, LEAN_NUM_THREADS=1, anon-RSS watchdog 3500 MB):
+    Table 3.0 s / Alg 42 s (2682 MB anon peak) / Gens 76 s (1264 MB) / NoGo 7 s (765 MB); 0 errors.
+  (A first attempt with a VmRSS watchdog was killed at 3.7–4.2 GB because VmRSS counts the mmapped Mathlib oleans;
+  the prereg kill is on anon RSS, so the watchdog was switched to RssAnon. Nothing was claimed from the killed attempts.)
+- `lake build PositiveGeometryEmergentSpaceTime.Jord1 PositiveGeometryEmergentSpaceTime` green (9096 jobs). Fresh AxiomsAll through a mktemp copy (378 s, anon peak 571 MB):
+  TOTAL theorems=1062 defs=584 nonstandard=0, sorry_dependent=0.
+- PositiveGeometryEmergentSpaceTime's CASCADE-1b r2 (pid 32017) was not touched.

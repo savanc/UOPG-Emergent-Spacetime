@@ -1,0 +1,4 @@
+G1-391 HadSpec sel 0.185 pred m_K* 0.16560 (m_K*/m_rho 1.0970) m_K2* 0.25190 delta_pred 0.5245
+G1-239 HadSpec sel 0.335 pred m_K* 0.15092 (m_K*/m_rho 1.1455) m_K2* 0.23325 delta_pred 0.4341
+G2-317 Alexandrou/Rendon et al. sel 0.264 pred m_K* 0.52137 (m_K*/m_rho 1.1312) m_K2* 0.79357 delta_pred 0.4965
+G4-230 Bulava/Morningstar et al. sel 0.335 pred m_K* 0.15110 (m_K*/m_rho 1.1454) m_K2* 0.23353 delta_pred 0.4343

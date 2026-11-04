@@ -1,0 +1,4 @@
+'PositiveGeometryEmergentSpaceTime.SG1.two_cos_pi_div_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.SG1.eigen_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.SG1.ratio_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.SG1.kk_ratio_free' depends on axioms: [propext, Classical.choice, Quot.sound]

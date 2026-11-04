@@ -1,0 +1,33 @@
+{
+ "run_id": "CONV-JORD1-2026-10-30-r1",
+ "prereg_commit": "32e8a9c6d8d8daa7e1f3f5e5d8113502496248b8",
+ "tierA": "NOT-POSITIVITY-CLOSED",
+ "tierB_smtype": 1,
+ "tierB_label": "CHOICE-UNIQUE",
+ "CA": {
+  "all_idempotent": true,
+  "stab_hist": {
+   "21": 1200,
+   "28": 75,
+   "36": 51
+  },
+  "smtype_hits": [],
+  "consistent": true
+ },
+ "CB": {
+  "all_idempotent": true,
+  "stab_hist": {
+   "21": 1200,
+   "28": 75,
+   "36": 51
+  },
+  "smtype_hits": [],
+  "consistent": true
+ },
+ "rival_projective_all_idempotent_on_mixed": true,
+ "null_nonuniform_pass_fixed_scale": "0/200",
+ "null_nonuniform_single_stab_unchanged": "0/200",
+ "OUTCOME": "FLIPPED",
+ "NEW_VERDICT": "NOT-POSITIVITY-CLOSED / CHOICE-UNIQUE / NO-GO",
+ "seconds": 597.7
+}

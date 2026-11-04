@@ -1,0 +1,5 @@
+Res_s t^I=1_J=1 at s=1 m_rho^2: 1/(48*pi) = 0.0066314559621623056570
+Res_s t^I=0_J=2 at s=3 m_rho^2: 9/(320*pi) = 0.0089524655489191126370
+Res_s t^I=0_J=0 at s=3 m_rho^2: 0 = 0
+AHRV-normalised g^2: rho -1/2 f2 -1/4 ratio g_f2^2/g_rho^2 = 1/2 = 0.500000000000000
+C0 (LS-native: massless pions, predicted masses m_f2^2=3 m_rho^2): 0.779422863405994833366355823906

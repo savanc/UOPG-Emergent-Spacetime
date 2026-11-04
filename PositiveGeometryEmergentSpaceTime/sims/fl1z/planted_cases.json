@@ -1,0 +1,10 @@
+{
+ "rung": "FL-1Z",
+ "note": "Planted cases are hard-coded in fl1z_checker.py run_planted(); this file is the declared list (locked by sha256 in the prereg).",
+ "cases": {
+  "L1_fixed_point_forms": {"tau": "omega = exp(2 pi i/3)", "expect": "Y3^(0)(omega) = b0 v1, Y3^(-2)(omega) = b_-2 v_omega with b0 = -0.2623, b_-2 = 0.4166 (2502.12662 eqs. D.1-D.2), |db| < 5e-4, relative residual < 1e-3"},
+  "L2_published_exclusion": {"tau": "omega", "bk": 0, "samples": "20 random real (ae, be, ce), seed 20261023", "expect": "m_nu rank 1 (m2/m3 < 1e-8) and proportional to the eq. (D.3) matrix [[4,-2w^2,4w],[-2w^2,w,-2],[4w,-2,4w^2]] or its conjugate (|cos| > 1 - 1e-8): two massless neutrinos, tau = omega excluded"},
+  "L3_zee_babu_m1_zero": {"samples": "50 random tau near omega, bk, (ae, be, ce)", "expect": "m1/m3 < 1e-10 (antisymmetric f, rank 2)"},
+  "L4_broken_detector": {"samples": "same 50 with f -> f + 0.1*I", "expect": "min m1/m3 > 1e-3 (the m1 = 0 detector is not vacuous)"}
+ }
+}

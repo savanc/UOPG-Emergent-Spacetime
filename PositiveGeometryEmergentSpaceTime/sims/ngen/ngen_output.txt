@@ -1,0 +1,16 @@
+GUARD OK: prereg b3f020293 on origin/main; checker hash matches (re-verified on every scoring call)
+SM      core       window = [1, 2, 3, 4, 5]  -> NOT-3
+SM      +BZ        window = [1, 2, 3, 4]  -> NOT-3
+SM      +triality  window = [3]  -> CONDITIONAL-3
+SM      +Z16       window = []  -> NOT-3
+SM+nuc  core       window = [1, 2, 3, 4, 5]  -> NOT-3
+SM+nuc  +BZ        window = [1, 2, 3, 4]  -> NOT-3
+SM+nuc  +triality  window = [3]  -> CONDITIONAL-3
+SM+nuc  +Z16       window = [1, 2, 3, 4, 5]  -> NOT-3
+R331    core       window = [3]  -> FORCES-3
+R331    +BZ        window = []  -> NOT-3
+R331    +triality  window = None  -> N/A
+R331    +Z16       window = None  -> N/A
+report-only E: SM + KM CP (empirical) window = [3, 4, 5]
+windows equal to {3}: ['SM+triality', 'SM+nuc+triality', 'R331core'] (3 of 10 evaluated trials)
+VERDICT: NOT-FORCED (SM, consistency only) | RIVAL-SINGLES-OUT-3

@@ -1,0 +1,811 @@
+{
+ "run_id": "CASCADE1-2026-10-23-r1",
+ "seed": 20261023,
+ "cells": {
+  "E0-n4": {
+   "n": 4,
+   "setting": "E0",
+   "D": 1,
+   "theta": [
+    "mu13",
+    "mu24"
+   ],
+   "N_off": 2,
+   "S3": {
+    "per_locus": [
+     {
+      "i": 1,
+      "pairs": [
+       [
+        1,
+        3
+       ]
+      ],
+      "n_coeff_conditions": 1
+     },
+     {
+      "i": 2,
+      "pairs": [
+       [
+        2,
+        4
+       ]
+      ],
+      "n_coeff_conditions": 1
+     }
+    ],
+    "relations": [
+     "mu13 + mu24"
+    ],
+    "linear": true
+   },
+   "S4": {
+    "dim": 0,
+    "forced_zero": [
+     0,
+     1
+    ],
+    "witness_t": {},
+    "farkas_lambda": {
+     "0": [
+      "1",
+      "1"
+     ],
+     "1": [
+      "1",
+      "1"
+     ]
+    },
+    "forced_zero_names": [
+     "mu13",
+     "mu24"
+    ]
+   },
+   "rows": [
+    {
+     "stage": "S0 ansatz",
+     "dimTheta": 2,
+     "f": 2,
+     "K": 4
+    },
+    {
+     "stage": "S1 poles/adjacency",
+     "dimTheta": 2,
+     "f": 1,
+     "K": 3
+    },
+    {
+     "stage": "S2 factorisation",
+     "dimTheta": 2,
+     "f": 0,
+     "K": 2
+    },
+    {
+     "stage": "S3 hidden zeros",
+     "dimTheta": 1,
+     "f": 0,
+     "K": 1
+    },
+    {
+     "stage": "S4 positivity",
+     "dimTheta": 0,
+     "f": 0,
+     "K": 0
+    }
+   ],
+   "final_family": {
+    "mu13": "0",
+    "mu24": "0"
+   },
+   "heldout_splits": "VACUOUS at n=4 (no proper split: each zero locus has one c)",
+   "K_final": 0,
+   "outcome": "BELOW",
+   "ratio": "NO-MASSES-SURVIVE"
+  },
+  "EM-n4": {
+   "n": 4,
+   "setting": "EM",
+   "D": 1,
+   "theta": [
+    "mu13",
+    "mu24",
+    "m1",
+    "m2",
+    "m3",
+    "m4"
+   ],
+   "N_off": 2,
+   "S3": {
+    "per_locus": [
+     {
+      "i": 1,
+      "pairs": [
+       [
+        1,
+        3
+       ]
+      ],
+      "n_coeff_conditions": 1
+     },
+     {
+      "i": 2,
+      "pairs": [
+       [
+        2,
+        4
+       ]
+      ],
+      "n_coeff_conditions": 1
+     }
+    ],
+    "relations": [
+     "-m2 - m4 + mu13 + mu24",
+     "m1 - m2 + m3 - m4"
+    ],
+    "linear": true
+   },
+   "S4": {
+    "dim": 4,
+    "forced_zero": [],
+    "witness_t": {
+     "0": [
+      "0",
+      "0",
+      "0",
+      "1"
+     ],
+     "1": [
+      "1",
+      "0",
+      "0",
+      "1"
+     ],
+     "2": [
+      "0",
+      "0",
+      "0",
+      "1"
+     ],
+     "3": [
+      "0",
+      "1",
+      "0",
+      "0"
+     ],
+     "4": [
+      "0",
+      "0",
+      "1",
+      "1"
+     ],
+     "5": [
+      "0",
+      "0",
+      "0",
+      "1"
+     ]
+    },
+    "farkas_lambda": {},
+    "forced_zero_names": []
+   },
+   "rows": [
+    {
+     "stage": "S0 ansatz",
+     "dimTheta": 6,
+     "f": 2,
+     "K": 8
+    },
+    {
+     "stage": "S1 poles/adjacency",
+     "dimTheta": 6,
+     "f": 1,
+     "K": 7
+    },
+    {
+     "stage": "S2 factorisation",
+     "dimTheta": 6,
+     "f": 0,
+     "K": 6
+    },
+    {
+     "stage": "S3 hidden zeros",
+     "dimTheta": 4,
+     "f": 0,
+     "K": 4
+    },
+    {
+     "stage": "S4 positivity",
+     "dimTheta": 4,
+     "f": 0,
+     "K": 4
+    }
+   ],
+   "final_family": {
+    "mu13": "-t0 + t1 + t3",
+    "mu24": "t0",
+    "m1": "t1 - t2 + t3",
+    "m2": "t1",
+    "m3": "t2",
+    "m4": "t3"
+   },
+   "heldout_splits": "VACUOUS at n=4 (no proper split: each zero locus has one c)",
+   "K_final": 4,
+   "outcome": "ABOVE",
+   "ratio": "RATIOS-FREE"
+  },
+  "E0-n5": {
+   "n": 5,
+   "setting": "E0",
+   "D": 3,
+   "theta": [
+    "mu13",
+    "mu14",
+    "mu24",
+    "mu25",
+    "mu35"
+   ],
+   "N_off": 5,
+   "S3": {
+    "per_locus": [
+     {
+      "i": 1,
+      "pairs": [
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "n_coeff_conditions": 8
+     },
+     {
+      "i": 2,
+      "pairs": [
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ]
+      ],
+      "n_coeff_conditions": 8
+     },
+     {
+      "i": 3,
+      "pairs": [
+       [
+        1,
+        3
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "n_coeff_conditions": 7
+     },
+     {
+      "i": 4,
+      "pairs": [
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        4
+       ]
+      ],
+      "n_coeff_conditions": 8
+     },
+     {
+      "i": 5,
+      "pairs": [
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "n_coeff_conditions": 8
+     }
+    ],
+    "relations": [
+     "mu13",
+     "mu14",
+     "mu24",
+     "mu25",
+     "mu35"
+    ],
+    "linear": true
+   },
+   "S4": {
+    "dim": 0,
+    "forced_zero": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "certs": "trivial",
+    "forced_zero_names": [
+     "mu13",
+     "mu14",
+     "mu24",
+     "mu25",
+     "mu35"
+    ]
+   },
+   "rows": [
+    {
+     "stage": "S0 ansatz",
+     "dimTheta": 5,
+     "f": 55,
+     "K": 60
+    },
+    {
+     "stage": "S1 poles/adjacency",
+     "dimTheta": 5,
+     "f": 4,
+     "K": 9
+    },
+    {
+     "stage": "S2 factorisation",
+     "dimTheta": 5,
+     "f": 0,
+     "K": 5
+    },
+    {
+     "stage": "S3 hidden zeros",
+     "dimTheta": 0,
+     "f": 0,
+     "K": 0
+    },
+    {
+     "stage": "S4 positivity",
+     "dimTheta": 0,
+     "f": 0,
+     "K": 0
+    }
+   ],
+   "final_family": {
+    "mu13": "0",
+    "mu14": "0",
+    "mu24": "0",
+    "mu25": "0",
+    "mu35": "0"
+   },
+   "heldout_splits": [
+    {
+     "rotation": 0,
+     "c_zero": [
+      1,
+      4
+     ],
+     "ok": true
+    },
+    {
+     "rotation": 0,
+     "c_zero": [
+      1,
+      3
+     ],
+     "ok": true
+    },
+    {
+     "rotation": 1,
+     "c_zero": [
+      2,
+      5
+     ],
+     "ok": true
+    },
+    {
+     "rotation": 1,
+     "c_zero": [
+      2,
+      4
+     ],
+     "ok": true
+    },
+    {
+     "rotation": 2,
+     "c_zero": [
+      1,
+      3
+     ],
+     "ok": true
+    },
+    {
+     "rotation": 2,
+     "c_zero": [
+      3,
+      5
+     ],
+     "ok": true
+    },
+    {
+     "rotation": 3,
+     "c_zero": [
+      2,
+      4
+     ],
+     "ok": true
+    },
+    {
+     "rotation": 3,
+     "c_zero": [
+      1,
+      4
+     ],
+     "ok": true
+    },
+    {
+     "rotation": 4,
+     "c_zero": [
+      3,
+      5
+     ],
+     "ok": true
+    },
+    {
+     "rotation": 4,
+     "c_zero": [
+      2,
+      5
+     ],
+     "ok": true
+    }
+   ],
+   "K_final": 0,
+   "outcome": "BELOW",
+   "ratio": "NO-MASSES-SURVIVE"
+  },
+  "EM-n5": {
+   "n": 5,
+   "setting": "EM",
+   "D": 3,
+   "theta": [
+    "mu13",
+    "mu14",
+    "mu24",
+    "mu25",
+    "mu35",
+    "m1",
+    "m2",
+    "m3",
+    "m4",
+    "m5"
+   ],
+   "N_off": 5,
+   "S3": {
+    "per_locus": [
+     {
+      "i": 1,
+      "pairs": [
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "n_coeff_conditions": 8
+     },
+     {
+      "i": 2,
+      "pairs": [
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ]
+      ],
+      "n_coeff_conditions": 8
+     },
+     {
+      "i": 3,
+      "pairs": [
+       [
+        1,
+        3
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "n_coeff_conditions": 7
+     },
+     {
+      "i": 4,
+      "pairs": [
+       [
+        1,
+        4
+       ],
+       [
+        2,
+        4
+       ]
+      ],
+      "n_coeff_conditions": 8
+     },
+     {
+      "i": 5,
+      "pairs": [
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "n_coeff_conditions": 8
+     }
+    ],
+    "relations": [
+     "-m3 + m4 - m5 + mu13",
+     "-m1 + m2 - m3 + mu14",
+     "-m1 - m4 + m5 + mu24",
+     "-m2 + m3 - m4 + mu25",
+     "m1 - m2 - m5 + mu35"
+    ],
+    "linear": true
+   },
+   "S4": {
+    "dim": 5,
+    "forced_zero": [],
+    "witness_t": {
+     "0": [
+      "0",
+      "0",
+      "1",
+      "1",
+      "1"
+     ],
+     "1": [
+      "1",
+      "1",
+      "1",
+      "0",
+      "0"
+     ],
+     "2": [
+      "1",
+      "0",
+      "0",
+      "1",
+      "1"
+     ],
+     "3": [
+      "0",
+      "1",
+      "1",
+      "1",
+      "0"
+     ],
+     "4": [
+      "1",
+      "1",
+      "0",
+      "0",
+      "1"
+     ],
+     "5": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "1"
+     ],
+     "6": [
+      "0",
+      "1",
+      "1",
+      "0",
+      "0"
+     ],
+     "7": [
+      "0",
+      "0",
+      "1",
+      "1",
+      "0"
+     ],
+     "8": [
+      "0",
+      "0",
+      "0",
+      "1",
+      "1"
+     ],
+     "9": [
+      "0",
+      "0",
+      "0",
+      "1",
+      "1"
+     ]
+    },
+    "farkas_lambda": {},
+    "forced_zero_names": []
+   },
+   "rows": [
+    {
+     "stage": "S0 ansatz",
+     "dimTheta": 10,
+     "f": 55,
+     "K": 65
+    },
+    {
+     "stage": "S1 poles/adjacency",
+     "dimTheta": 10,
+     "f": 4,
+     "K": 14
+    },
+    {
+     "stage": "S2 factorisation",
+     "dimTheta": 10,
+     "f": 0,
+     "K": 10
+    },
+    {
+     "stage": "S3 hidden zeros",
+     "dimTheta": 5,
+     "f": 0,
+     "K": 5
+    },
+    {
+     "stage": "S4 positivity",
+     "dimTheta": 5,
+     "f": 0,
+     "K": 5
+    }
+   ],
+   "final_family": {
+    "mu13": "t2 - t3 + t4",
+    "mu14": "t0 - t1 + t2",
+    "mu24": "t0 + t3 - t4",
+    "mu25": "t1 - t2 + t3",
+    "mu35": "-t0 + t1 + t4",
+    "m1": "t0",
+    "m2": "t1",
+    "m3": "t2",
+    "m4": "t3",
+    "m5": "t4"
+   },
+   "heldout_splits": [
+    {
+     "rotation": 0,
+     "c_zero": [
+      1,
+      4
+     ],
+     "ok": false
+    },
+    {
+     "rotation": 0,
+     "c_zero": [
+      1,
+      3
+     ],
+     "ok": false
+    },
+    {
+     "rotation": 1,
+     "c_zero": [
+      2,
+      5
+     ],
+     "ok": false
+    },
+    {
+     "rotation": 1,
+     "c_zero": [
+      2,
+      4
+     ],
+     "ok": false
+    },
+    {
+     "rotation": 2,
+     "c_zero": [
+      1,
+      3
+     ],
+     "ok": false
+    },
+    {
+     "rotation": 2,
+     "c_zero": [
+      3,
+      5
+     ],
+     "ok": false
+    },
+    {
+     "rotation": 3,
+     "c_zero": [
+      2,
+      4
+     ],
+     "ok": false
+    },
+    {
+     "rotation": 3,
+     "c_zero": [
+      1,
+      4
+     ],
+     "ok": false
+    },
+    {
+     "rotation": 4,
+     "c_zero": [
+      3,
+      5
+     ],
+     "ok": false
+    },
+    {
+     "rotation": 4,
+     "c_zero": [
+      2,
+      5
+     ],
+     "ok": false
+    }
+   ],
+   "K_final": 5,
+   "outcome": "MATCH",
+   "ratio": "RATIOS-FREE"
+  }
+ },
+ "stages012_n4": {
+  "n": 4,
+  "D": 1,
+  "n_monomials": 3,
+  "f0": 2,
+  "f1": 1,
+  "S1_equations": 1,
+  "f2": 0,
+  "kappa_nonzero_in_S2": true,
+  "A_equals_triangulation_sum": true
+ },
+ "stages012_n5": {
+  "n": 5,
+  "D": 3,
+  "n_monomials": 56,
+  "f0": 55,
+  "f1": 4,
+  "S1_equations": 100,
+  "f2": 0,
+  "kappa_nonzero_in_S2": true,
+  "A_equals_triangulation_sum": true
+ },
+ "verdict": "FAIL (held-out split violated)",
+ "ratio": {
+  "E0-n4": "NO-MASSES-SURVIVE",
+  "EM-n4": "RATIOS-FREE",
+  "E0-n5": "NO-MASSES-SURVIVE",
+  "EM-n5": "RATIOS-FREE"
+ },
+ "elapsed_s": 99.5
+}

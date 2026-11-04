@@ -1,0 +1,10 @@
+== D1 2205.12293
+- In particular, using the Distance/Duality conjecture and the smallness of dark energy, we predict the existence of a light tower of states and a unique extra mesoscopic dimension of length $l\sim \Lambda^{-\frac{1}{4}}\sim 10^{-6}\, m$, with extra massless fermions propagating on it.
+- This automatically leads to a candidate for a tower of sterile neutrinos, and an associated active neutrino mass scale $m_{\nu}\sim \langle H\rangle^2\, \Lambda^{-\frac{1}{12}}M_{pl}^{-\frac{2}{3}}$.
+- Moreover, assuming the mechanism for stabilization of this dark dimension leads to similar masses for active and sterile neutrinos we are led to the prediction of a Higgs vev $\langle H\rangle \sim \Lambda^{\frac{1}{6}}M_{pl}^{\frac{1}{3}}$.
+- Another prediction of the scenario is a species scale ${\hat M} \sim \Lambda^ {\frac{1}{12}}M_{pl}^{\frac{2}{3}}\sim 10^{9}-10^{10} GeV$, corresponding to the higher-dimensional Planck scale.
+- This energy scale may be related to the resolution of the instability of the Higgs effective potential present at a scale of $\sim 10^{11}\, GeV$.
+== D2 2002.11761
+- We tested the gravitational $1/r^2$ law using a stationary torsion-balance detector and a rotating attractor containing test bodies with both 18-fold and 120-fold azimuthal symmetries that simultaneously tests the $1/r^2$ law at two different length scales.
+- We took data at detector-attractor separations between $52~\mu$m and 3.0 mm.
+- Newtonian gravity gave an excellent fit to our data, limiting with 95\% confidence any gravitational-strength Yukawa interactions to ranges $< 38.6~\mu$m.

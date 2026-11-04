@@ -1,0 +1,5 @@
+planted rc 1 ['GUARD REFUSED: prereg/CONV-JORD-1-trace-scale-2026-10-30.md has no commit']
+live rc 1 ['GUARD REFUSED: prereg/CONV-JORD-1-trace-scale-2026-10-30.md has no commit']
+2026-10-30
+planted rc 1 ['GUARD REFUSED: prereg commit 32e8a9c6d not an ancestor of origin/main (not pushed)']
+live rc 1 ['GUARD REFUSED: prereg commit 32e8a9c6d not an ancestor of origin/main (not pushed)']

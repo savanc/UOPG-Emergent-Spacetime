@@ -1,0 +1,35 @@
+{
+ "note": "Expected v2 verdicts for sims/r4dm2/planted/R4DM2Planted.lean, locked before any run. fix_cases: the planted labels that must change (and the only ones that may) when that single fix is switched off. v1-off expectations (not required, informative): d1_identity -> DERIVED/UNCONDITIONAL/PG; mk.inj -> DERIVED/CONDITIONAL/PG; mk.injEq, mk.sizeOf_spec -> NON-CONSTRAINING; planted_d3 -> SM-INPUT-FED.",
+ "expected": {
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_genuine": "DERIVED/UNCONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_conditional": "DERIVED/CONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_smuggled_literal": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_smuggled_acc": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_smuggled_nc": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_fed": "SM-INPUT-FED",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_nonconstraining": "NON-CONSTRAINING",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_nogeo": "NO-GEOMETRY",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.yQgeo_eq": "NOT-SM-STRUCTURE",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_d1_identity": "NON-CONSTRAINING",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_d1_conditional": "DERIVED/CONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.PInv.mk.inj": "AUTO-GENERATED",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.PInv.mk.injEq": "AUTO-GENERATED",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.PInv.mk.sizeOf_spec": "AUTO-GENERATED",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_d3": "DERIVED/UNCONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DM2Planted.Mixed.geoMap_one": "NOT-SM-STRUCTURE"
+ },
+ "n_derived_increase": 4,
+ "fix_cases": {
+  "D1": [
+   "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_d1_identity"
+  ],
+  "D2": [
+   "PositiveGeometryEmergentSpaceTime.R4DM2Planted.PInv.mk.inj",
+   "PositiveGeometryEmergentSpaceTime.R4DM2Planted.PInv.mk.injEq",
+   "PositiveGeometryEmergentSpaceTime.R4DM2Planted.PInv.mk.sizeOf_spec"
+  ],
+  "D3": [
+   "PositiveGeometryEmergentSpaceTime.R4DM2Planted.planted_d3"
+  ]
+ }
+}

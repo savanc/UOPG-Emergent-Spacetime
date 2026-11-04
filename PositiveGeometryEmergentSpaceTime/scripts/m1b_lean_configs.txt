@@ -1,0 +1,70 @@
+/-- cfg4: real (1,3) null momenta (mostly minus, all incoming), exact. -/
+
+def cfg4 : Fin 4 → Fin 4 → ℚ := ![![(5 : ℚ), (0 : ℚ), (0 : ℚ), (5 : ℚ)], ![(-5 : ℚ), (-3 : ℚ), (0 : ℚ), (-4 : ℚ)], ![(5 : ℚ), (0 : ℚ), (0 : ℚ), (-5 : ℚ)], ![(-5 : ℚ), (3 : ℚ), (0 : ℚ), (4 : ℚ)]]
+
+theorem cfg4_null : ∀ i, mdotQ (cfg4 i) (cfg4 i) = 0 := by
+  intro i; fin_cases i <;> norm_num [cfg4, mdotQ]
+
+theorem cfg4_cons : ∀ μ, ∑ i, cfg4 i μ = 0 := by
+  intro μ; fin_cases μ <;> norm_num [cfg4, Fin.sum_univ_succ]
+
+theorem cfg4_euclidean :
+    mdotQ (cfg4 0 + cfg4 1) (cfg4 0 + cfg4 1) < 0 ∧
+    mdotQ (cfg4 1 + cfg4 2) (cfg4 1 + cfg4 2) < 0 := by
+  norm_num [cfg4, mdotQ]
+
+/-- cfg6: real (1,3) null momenta (mostly minus, all incoming), exact. -/
+
+def cfg6 : Fin 6 → Fin 4 → ℚ := ![![(5 : ℚ), (5 : ℚ), (0 : ℚ), (0 : ℚ)], ![(-5 : ℚ), (50 / 51 : ℚ), (50 / 51 : ℚ), (-245 / 51 : ℚ)], ![(3 : ℚ), (0 : ℚ), (0 : ℚ), (-3 : ℚ)], ![(-4 : ℚ), (-4 / 3 : ℚ), (-8 / 3 : ℚ), (-8 / 3 : ℚ)], ![(2036 / 295 : ℚ), (-4072 / 885 : ℚ), (2036 / 885 : ℚ), (4072 / 885 : ℚ)], ![(-1741 / 295 : ℚ), (-691 / 15045 : ℚ), (-9242 / 15045 : ℚ), (88306 / 15045 : ℚ)]]
+
+theorem cfg6_null : ∀ i, mdotQ (cfg6 i) (cfg6 i) = 0 := by
+  intro i; fin_cases i <;> norm_num [cfg6, mdotQ]
+
+theorem cfg6_cons : ∀ μ, ∑ i, cfg6 i μ = 0 := by
+  intro μ; fin_cases μ <;> norm_num [cfg6, Fin.sum_univ_succ]
+
+theorem cfg6_euclidean :
+    mdotQ (cfg6 0 + cfg6 1) (cfg6 0 + cfg6 1) < 0 ∧
+    mdotQ (cfg6 1 + cfg6 2) (cfg6 1 + cfg6 2) < 0 ∧
+    mdotQ (cfg6 2 + cfg6 3) (cfg6 2 + cfg6 3) < 0 ∧
+    mdotQ (cfg6 3 + cfg6 4) (cfg6 3 + cfg6 4) < 0 ∧
+    mdotQ (cfg6 4 + cfg6 5) (cfg6 4 + cfg6 5) < 0 ∧
+    mdotQ (cfg6 5 + cfg6 0) (cfg6 5 + cfg6 0) < 0 ∧
+    mdotQ (cfg6 0 + cfg6 1 + cfg6 2) (cfg6 0 + cfg6 1 + cfg6 2) < 0 ∧
+    mdotQ (cfg6 1 + cfg6 2 + cfg6 3) (cfg6 1 + cfg6 2 + cfg6 3) < 0 ∧
+    mdotQ (cfg6 2 + cfg6 3 + cfg6 4) (cfg6 2 + cfg6 3 + cfg6 4) < 0 := by
+  norm_num [cfg6, mdotQ]
+
+/-- splitPos: real (2,2) spinors, n = 5, `p_i = λ_i λ̃_iᵀ`, exact. -/
+
+def splitPosL : Fin 5 → Fin 2 → ℚ := ![![(1 : ℚ), (-3 : ℚ)], ![(-1 : ℚ), (-3 : ℚ)], ![(-4 : ℚ), (4 : ℚ)], ![(-1 : ℚ), (-1 : ℚ)], ![(4 : ℚ), (3 : ℚ)]]
+
+def splitPosT : Fin 5 → Fin 2 → ℚ := ![![(-19 / 3 : ℚ), (7 / 2 : ℚ)], ![(14 / 3 : ℚ), (-5 / 2 : ℚ)], ![(-2 : ℚ), (1 : ℚ)], ![(-3 : ℚ), (-2 : ℚ)], ![(0 : ℚ), (-1 : ℚ)]]
+
+theorem splitPos_cons : ∀ a b : Fin 2, ∑ i, splitPosL i a * splitPosT i b = 0 := by
+  intro a b; fin_cases a <;> fin_cases b <;> norm_num [splitPosL, splitPosT, Fin.sum_univ_succ]
+
+theorem splitPos_planar :
+    0 < br2 (splitPosL 0) (splitPosL 1) * br2 (splitPosT 0) (splitPosT 1) ∧
+    0 < br2 (splitPosL 1) (splitPosL 2) * br2 (splitPosT 1) (splitPosT 2) ∧
+    0 < br2 (splitPosL 2) (splitPosL 3) * br2 (splitPosT 2) (splitPosT 3) ∧
+    0 < br2 (splitPosL 3) (splitPosL 4) * br2 (splitPosT 3) (splitPosT 4) ∧
+    0 < br2 (splitPosL 4) (splitPosL 0) * br2 (splitPosT 4) (splitPosT 0) := by
+  norm_num [splitPosL, splitPosT, br2]
+
+/-- splitNeg: real (2,2) spinors, n = 5, `p_i = λ_i λ̃_iᵀ`, exact. -/
+
+def splitNegL : Fin 5 → Fin 2 → ℚ := ![![(-2 : ℚ), (1 : ℚ)], ![(0 : ℚ), (-3 : ℚ)], ![(-2 : ℚ), (1 : ℚ)], ![(1 : ℚ), (-4 : ℚ)], ![(-3 : ℚ), (4 : ℚ)]]
+
+def splitNegT : Fin 5 → Fin 2 → ℚ := ![![(4 : ℚ), (-11 / 2 : ℚ)], ![(-7 / 3 : ℚ), (5 / 2 : ℚ)], ![(-3 : ℚ), (1 : ℚ)], ![(2 : ℚ), (0 : ℚ)], ![(0 : ℚ), (3 : ℚ)]]
+
+theorem splitNeg_cons : ∀ a b : Fin 2, ∑ i, splitNegL i a * splitNegT i b = 0 := by
+  intro a b; fin_cases a <;> fin_cases b <;> norm_num [splitNegL, splitNegT, Fin.sum_univ_succ]
+
+theorem splitNeg_planar :
+    0 > br2 (splitNegL 0) (splitNegL 1) * br2 (splitNegT 0) (splitNegT 1) ∧
+    0 > br2 (splitNegL 1) (splitNegL 2) * br2 (splitNegT 1) (splitNegT 2) ∧
+    0 > br2 (splitNegL 2) (splitNegL 3) * br2 (splitNegT 2) (splitNegT 3) ∧
+    0 > br2 (splitNegL 3) (splitNegL 4) * br2 (splitNegT 3) (splitNegT 4) ∧
+    0 > br2 (splitNegL 4) (splitNegL 0) * br2 (splitNegT 4) (splitNegT 0) := by
+  norm_num [splitNegL, splitNegT, br2]

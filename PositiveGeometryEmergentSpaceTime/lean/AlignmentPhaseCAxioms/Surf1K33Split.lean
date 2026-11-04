@@ -1,0 +1,6 @@
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Surf1K33Split
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.gfold_add
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.length_gfold
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.length_bsum
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.gfold_eq_bsum
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Surf1Sanity.chunk_eq_blocks

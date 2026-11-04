@@ -1,0 +1,4 @@
+prediction 1/(2pi)=0.1592, band [0.102,0.216]; KSRF=0.5
+PDG neutral, f=130.2/sqrt2 (FLAG/PDG): g=5.942  g~rho^2=0.4980  ratio data/pred=3.13  in band=False
+PDG charged, f=130.2/sqrt2: g=5.977  g~rho^2=0.5040  ratio data/pred=3.17  in band=False
+PDG neutral, chiral-limit F=f/1.062 (FLAG): g=5.942  g~rho^2=0.4415  ratio data/pred=2.77  in band=False

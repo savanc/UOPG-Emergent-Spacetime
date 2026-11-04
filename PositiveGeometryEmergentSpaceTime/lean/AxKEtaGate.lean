@@ -1,0 +1,4 @@
+import PositiveGeometryEmergentSpaceTime.KEtaGate
+#print axioms PositiveGeometryEmergentSpaceTime.KEtaGate.su_zero_line
+#print axioms PositiveGeometryEmergentSpaceTime.KEtaGate.dual_ne_chiral
+#print axioms PositiveGeometryEmergentSpaceTime.KEtaGate.chiral_on_dual

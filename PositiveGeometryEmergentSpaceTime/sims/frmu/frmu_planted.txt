@@ -1,0 +1,7 @@
+# FR-MU planted pair — 2026-10-16
+## planted (N_c=3, SM charges 2/3,-1/3: textbook mu_p=1, mu_n=-2/3 in quark magnetons)
+planted N_c=3 SM charges: mu_p=1.000000000000 mu_n=-0.666666666667 recovered: True
+exit=0
+## broken (S=3/2 Delta-like state must not reproduce -2/3)
+REJECT: S=3/2 state gives ratio 0.000000 != -2/3
+exit=1

@@ -1,0 +1,10 @@
+Model A intercept (D-2)/24 = 0.08333333333333333
+A: level N=1 (leading J=2++) m/sqrt(sigma) = 4.799828
+A: level N=2 (leading J=4++) m/sqrt(sigma) = 6.940539
+A: level N=3 (leading J=6++) m/sqrt(sigma) = 8.561766
+A: m(4++)/m(2++) = sqrt(23/11) = 1.445998; m(6++)/m(2++) = 1.783765
+B: J=2++ m/sqrt(sigma) = 3.544908
+B: J=4++ m/sqrt(sigma) = 6.139960
+B: J=6++ m/sqrt(sigma) = 7.926655
+B: m(4++)/m(2++) = 1.732051 (= sqrt 3); m(6++)/m(2++) = 2.236068 (= sqrt 5)
+Both models: N-independent at this order (leading large-N string); no 1/N^2 term predicted.

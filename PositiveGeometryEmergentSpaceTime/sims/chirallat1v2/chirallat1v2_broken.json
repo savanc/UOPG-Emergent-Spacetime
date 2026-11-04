@@ -1,0 +1,51 @@
+{
+ "B_no_neg": {
+  "rejected": true,
+  "failing": [
+   "S6_neg_cannot",
+   "S7_neg_rulesout",
+   "S8_neg_neq",
+   "FP_FT-1",
+   "FP_MR-7'"
+  ]
+ },
+ "B_no_nonf": {
+  "rejected": true,
+  "failing": [
+   "S9_chpt",
+   "S10_chpt2",
+   "FP_FT-1",
+   "FP_MR-7'"
+  ]
+ },
+ "B_no_input": {
+  "rejected": true,
+  "failing": [
+   "S11_input"
+  ]
+ },
+ "B_no_modal": {
+  "rejected": true,
+  "failing": [
+   "S12_modal",
+   "FP_STRUCT-1"
+  ]
+ },
+ "B_no_esc": {
+  "rejected": true,
+  "failing": [
+   "S3_tp_esc_dw",
+   "S4_tp_esc_ov"
+  ]
+ },
+ "B_no_norm": {
+  "rejected": true,
+  "failing": [
+   "S15_nfkc_tp"
+  ]
+ },
+ "B_empty_corpus": {
+  "rejected": true
+ },
+ "ALL_REJECTED": true
+}

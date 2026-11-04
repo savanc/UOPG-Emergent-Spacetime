@@ -1,0 +1,36 @@
+GUARD OK: prereg 9b1dca2aa on origin/main; checker hash matches (re-verified on every scoring call)
+run CASCADE1b-2026-10-24-r2 seed 202610231 mode live (2026-10-28)
+stages 0-2 reproduce v1: True (1s)
+V_D n=4: zero_only [True, True] (1s)
+V_D n=5: zero_only [True, True, True, True, True] (1s)
+V_D n=6: zero_only [True, True, True, True, True, True, True, True, True] (2s)
+--- E0-n4: {"S3_dim": 1, "S4_dim": 0, "K_final": 0, "N_off": 2, "outcome": "BELOW", "ratio": "NO-MASSES-SURVIVE"}
+    relations: ['mu13 + mu24']
+    family: {'mu13': '0', 'mu24': '0'}
+--- EM-n4: {"S3_dim": 4, "S4_dim": 4, "K_final": 4, "N_off": 2, "outcome": "ABOVE", "ratio": "RATIOS-FREE"}
+    relations: ['-m2 - m4 + mu13 + mu24', 'm1 - m2 + m3 - m4']
+    family: {'mu13': '-t0 + t1 + t3', 'mu24': 't0', 'm1': 't1 - t2 + t3', 'm2': 't1', 'm3': 't2', 'm4': 't3'}
+--- E0-n5: {"S3_dim": 0, "S4_dim": 0, "K_final": 0, "N_off": 5, "outcome": "BELOW", "ratio": "NO-MASSES-SURVIVE"}
+    relations: ['mu13', 'mu14', 'mu24', 'mu25', 'mu35']
+    family: {'mu13': '0', 'mu14': '0', 'mu24': '0', 'mu25': '0', 'mu35': '0'}
+--- EM-n5: {"S3_dim": 5, "S4_dim": 5, "K_final": 5, "N_off": 5, "outcome": "MATCH", "ratio": "RATIOS-FREE"}
+    relations: ['-m3 + m4 - m5 + mu13', '-m1 + m2 - m3 + mu14', '-m1 - m4 + m5 + mu24', '-m2 + m3 - m4 + mu25', 'm1 - m2 - m5 + mu35']
+    family: {'mu13': 't2 - t3 + t4', 'mu14': 't0 - t1 + t2', 'mu24': 't0 + t3 - t4', 'mu25': 't1 - t2 + t3', 'mu35': '-t0 + t1 + t4', 'm1': 't0', 'm2': 't1', 'm3': 't2', 'm4': 't3', 'm5': 't4'}
+--- E0-n6: {"S3_dim": 1, "S4_dim": 0, "K_final": 0, "N_off": 9, "outcome": "BELOW", "ratio": "NO-MASSES-SURVIVE"}
+    relations: ['mu13 + mu46', 'mu14', 'mu15 + mu46', 'mu24 - mu46', 'mu25', 'mu26 - mu46', 'mu35 + mu46', 'mu36']
+    family: {'mu13': '0', 'mu14': '0', 'mu15': '0', 'mu24': '0', 'mu25': '0', 'mu26': '0', 'mu35': '0', 'mu36': '0', 'mu46': '0'}
+--- EM-n6: {"S3_dim": 6, "S4_dim": 6, "K_final": 6, "N_off": 9, "outcome": "BELOW", "ratio": "RATIOS-FREE"}
+    relations: ['-m3 - m6 + mu13 + mu46', '-m4 + m5 - m6 + mu14', '-m4 - m6 + mu15 + mu46', '-m2 + m3 - m4 + m5 + mu24 - mu46', '-m2 + m3 - m4 + mu25', '-m2 + m3 + mu26 - mu46', '-m3 - m5 + mu35 + mu46', '-m3 + m4 - m5 + mu36', 'm1 - m2 + m3 - m4 + m5 - m6']
+    family: {'mu13': '-t0 + t2 + t5', 'mu14': 't3 - t4 + t5', 'mu15': '-t0 + t3 + t5', 'mu24': 't0 + t1 - t2 + t3 - t4', 'mu25': 't1 - t2 + t3', 'mu26': 't0 + t1 - t2', 'mu35': '-t0 + t2 + t4', 'mu36': 't2 - t3 + t4', 'mu46': 't0', 'm1': 't1 - t2 + t3 - t4 + t5', 'm2': 't1', 'm3': 't2', 'm4': 't3', 'm5': 't4', 'm6': 't5'}
+reproduces v1 relations and K at n=4,5: {'E0-n4': True, 'EM-n4': True, 'E0-n5': True, 'EM-n5': True}
+n=5 EM fixed v1 templates (symbolic): 10/10 (45s)
+massless reference k0: [(2, 18), (3, 12)] (74s)
+held-out point 0: factor-count 30/30 eq3.7 12/12 (44230s)
+held-out point 1: factor-count 30/30 eq3.7 12/12 (107568s)
+held-out point 2: factor-count 30/30 eq3.7 12/12 (150395s)
+eq3.7 symbolic: NOT-EVALUATED (time kill 900s) (151296s)
+control (off Theta_3): 0/30 pass (power requires < 30) (151630s)
+VERDICT (python): PASS (held-out n=6 near-zero factorisation holds on the EM-n6 final family; control fails off Theta_3)
+H re-test: REFUTED-AS-STATED (E0-n4=BELOW, EM-n4=ABOVE, E0-n5=BELOW, EM-n5=MATCH, E0-n6=BELOW, EM-n6=BELOW)
+RATIO: {'E0-n4': 'NO-MASSES-SURVIVE', 'EM-n4': 'RATIOS-FREE', 'E0-n5': 'NO-MASSES-SURVIVE', 'EM-n5': 'RATIOS-FREE', 'E0-n6': 'NO-MASSES-SURVIVE', 'EM-n6': 'RATIOS-FREE'}
+LIVE_EXIT 0

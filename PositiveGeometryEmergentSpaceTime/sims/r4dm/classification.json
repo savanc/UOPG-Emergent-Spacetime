@@ -1,0 +1,485 @@
+{
+ "version": "R4-DM 2026-10-20",
+ "note": "Module classes set by hand from module contents (headers, defs, imports) on 2026-10-20, BEFORE any R4-DM checker run. GEOMETRY sub: PG = positive geometry proper (Grassmannian/positroid/associahedron/networks/OG/total positivity/canonical-form or curve counts); AMP = amplitudes, spinor helicity, kinematics, hadron/pion amplitudes. MIXED/TEST modules carry a default def-role and per-declaration (or prefix) overrides; roles are GEOMETRY-PG, GEOMETRY-AMP, SM-INPUT, NEUTRAL.",
+ "modules": {
+  "Associahedron": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "BR3": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "BridgePLAssoc": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "Hankel": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "MarkovTrace": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "IsingLoop": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "IsingOG": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "IsingTiling": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "IsingTiling10": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "IsingTiling8": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "Network": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "PositroidCells": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "TP1a": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "TP1b": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "TP1bMatrix": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "Klein": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "FCoulomb": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "SC2": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "SC2b": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  },
+  "Spinor": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "Null": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "LightCone": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "Lorentz": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "SliceBridge": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FlagRelation": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "MassiveSpinor": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "BR6": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "BR2": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "COS1": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "COS1b": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "COS1d": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "Coon": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "DecayZeroNoGo": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FT2Mesh": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FT5aL": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "LECRatio": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "MassShift": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "NLSM": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "ShiftForced": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "ShiftForcedConverse": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "SplitZeroGate": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "BR1": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "Dispersion": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "KLPhi": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "LSResidue": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "Legendre": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "MassiveLS": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "PionBound": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "ThresholdLS": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "UnequalLS": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "UnitarisedLS": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "CoulombZero": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "EtaGate": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FT3Gate": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FT4Gate": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FermionBridge": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "GB1a": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "HadronKinematics": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "KEtaGate": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "LatticeGate": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "MassiveZero": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "MassiveZeroOneLoop": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "MassiveZeroSU3": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "MassiveZeroSU3Phys": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "PauliZero": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "PiKZero": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "PiNGate": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "PiNSubGate": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "SubthresholdGate": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FDeltaNLSM": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FDim": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FDimMass": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FRhoWidth": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FScatLen": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "SC1": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "KerrMinimal": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "FRWZW": {
+   "class": "GEOMETRY",
+   "sub": "AMP"
+  },
+  "STRUCT1": {
+   "class": "SM-INPUT"
+  },
+  "STRUCT1b": {
+   "class": "SM-INPUT"
+  },
+  "STRUCT2": {
+   "class": "SM-INPUT"
+  },
+  "STRUCT3": {
+   "class": "SM-INPUT"
+  },
+  "STRUCTNGen": {
+   "class": "SM-INPUT"
+  },
+  "Separation": {
+   "class": "MIXED/TEST",
+   "default_role": "SM-INPUT"
+  },
+  "R4Indep": {
+   "class": "MIXED/TEST",
+   "default_role": "SM-INPUT"
+  },
+  "FRMU": {
+   "class": "MIXED/TEST",
+   "default_role": "NEUTRAL"
+  },
+  "X6": {
+   "class": "MIXED/TEST",
+   "default_role": "SM-INPUT",
+   "roles": {
+    "PositiveGeometryEmergentSpaceTime.X6.Plucker24": "GEOMETRY-PG",
+    "PositiveGeometryEmergentSpaceTime.X6.parityDual": "GEOMETRY-PG",
+    "PositiveGeometryEmergentSpaceTime.X6.reflect": "GEOMETRY-PG"
+   }
+  },
+  "OrderParameter": {
+   "class": "MIXED/TEST",
+   "default_role": "NEUTRAL",
+   "roles": {
+    "PositiveGeometryEmergentSpaceTime.OrderParam.SU2": "SM-INPUT",
+    "PositiveGeometryEmergentSpaceTime.OrderParam.Gauge": "SM-INPUT",
+    "PositiveGeometryEmergentSpaceTime.OrderParam.gact": "SM-INPUT",
+    "PositiveGeometryEmergentSpaceTime.OrderParam.gaugeAction": "SM-INPUT",
+    "PositiveGeometryEmergentSpaceTime.OrderParam.higgsVev": "SM-INPUT",
+    "PositiveGeometryEmergentSpaceTime.OrderParam.diagMat": "SM-INPUT",
+    "PositiveGeometryEmergentSpaceTime.OrderParam.emEmbed": "SM-INPUT",
+    "PositiveGeometryEmergentSpaceTime.OrderParam.gaugeOP": "SM-INPUT"
+   }
+  },
+  "BridgePLCharge": {
+   "class": "MIXED/TEST",
+   "default_role": "GEOMETRY-PG"
+  },
+  "EWZ1b": {
+   "class": "MIXED/TEST",
+   "default_role": "GEOMETRY-AMP"
+  },
+  "BR5p": {
+   "class": "MIXED/TEST",
+   "default_role": "GEOMETRY-AMP"
+  },
+  "AuditWitnesses": {
+   "class": "MIXED/TEST",
+   "default_role": "NEUTRAL"
+  },
+  "ScaleNoGo": {
+   "class": "MIXED/TEST",
+   "default_role": "NEUTRAL"
+  },
+  "BR4": {
+   "class": "MIXED/TEST",
+   "default_role": "NEUTRAL"
+  },
+  "PG1": {
+   "class": "MIXED/TEST",
+   "default_role": "NEUTRAL"
+  },
+  "SG1": {
+   "class": "MIXED/TEST",
+   "default_role": "NEUTRAL"
+  },
+  "SG1b": {
+   "class": "MIXED/TEST",
+   "default_role": "NEUTRAL"
+  },
+  "RelEntropy": {
+   "class": "MIXED/TEST",
+   "default_role": "NEUTRAL"
+  }
+ },
+ "planted_modules": {
+  "R4DMPlanted": {
+   "class": "GEOMETRY",
+   "sub": "PG"
+  }
+ },
+ "sm_vocab_global": {
+  "yQ": "Q",
+  "yu": "Q",
+  "yd": "Q",
+  "yL": "Q",
+  "ye": "Q",
+  "yn": "Q",
+  "yH": "Q",
+  "N_c": "Q",
+  "Nc": "Q",
+  "N_gen": "Q",
+  "Ngen": "Q",
+  "Qu": "Q",
+  "Qd": "Q"
+ },
+ "sm_vocab_module": {
+  "EWZ1b": {
+   "a": "C",
+   "lam3": "C",
+   "lam4": "C"
+  },
+  "BR5p": {
+   "a": "C",
+   "lam3": "C",
+   "lam4": "C",
+   "gs": "C",
+   "b": "C"
+  },
+  "BridgePLCharge": {
+   "lam": "Q",
+   "lam'": "Q"
+  },
+  "STRUCTNGen": {
+   "N": "Q"
+  },
+  "R4Indep": {
+   "qi": "Q",
+   "qj": "Q"
+  }
+ },
+ "sm_var_consts": {
+  "PositiveGeometryEmergentSpaceTime.BR5p.Inv.a": "C",
+  "PositiveGeometryEmergentSpaceTime.BR5p.Inv.lam3": "C",
+  "PositiveGeometryEmergentSpaceTime.BR5p.Inv.lam4": "C",
+  "PositiveGeometryEmergentSpaceTime.BR5p.Inv.gs": "C",
+  "PositiveGeometryEmergentSpaceTime.BR5p.Inv.b": "C"
+ },
+ "manual_sm_structure": {
+  "PositiveGeometryEmergentSpaceTime.FRMU.planted_sm": "Q",
+  "PositiveGeometryEmergentSpaceTime.FRMU.ratio_three": "Q",
+  "PositiveGeometryEmergentSpaceTime.BridgePLCharge.trace_conditions_not_acc": "Q",
+  "PositiveGeometryEmergentSpaceTime.BridgePLCharge.bridge_charge_nolink": "Q",
+  "PositiveGeometryEmergentSpaceTime.STRUCT3.cells_gr1_eq_three_iff": "Q",
+  "PositiveGeometryEmergentSpaceTime.STRUCT3.catalan_ne_three": "Q",
+  "PositiveGeometryEmergentSpaceTime.FRWZW.nc_not_selected": "Q",
+  "PositiveGeometryEmergentSpaceTime.FRWZW.normalisation_free": "Q",
+  "PositiveGeometryEmergentSpaceTime.X6.positivity_orientation_blind": "Q",
+  "PositiveGeometryEmergentSpaceTime.AuditWitnesses.ewz1b_forced_hyps_sat": "C",
+  "PositiveGeometryEmergentSpaceTime.AuditWitnesses.ewz1b_forced_discriminates": "C",
+  "PositiveGeometryEmergentSpaceTime.BR5p.br5p_gauge_witness_nontrivial": "C"
+ },
+ "sm_literals_hyp": [
+  "1/6",
+  "-1/6",
+  "1/3",
+  "-1/3",
+  "2/3",
+  "-2/3",
+  "1/2",
+  "-1/2"
+ ],
+ "new_module_rule": "A module not listed here is UNCLASSIFIED and the checker refuses a verdict. The rung that adds a module must add it here in its own prereg: SM-INPUT if it only states hand-entered SM data (charges, representations, ACC, beta coefficients, generation counts, CKM/KM, gauge-group data, breaking patterns) or imports only SM-INPUT modules for that purpose; GEOMETRY (PG or AMP) if it defines geometric or amplitude objects and states no SM data; MIXED/TEST otherwise (bundles, tests, constructions that use both), with an explicit default def-role and overrides for every def whose role differs.",
+ "witness_exclusions": {
+  "PositiveGeometryEmergentSpaceTime.BR5p.br5p_gauge_witness_nontrivial": "satisfiability witness: the SM-like coupling values (a = lam3 = lam4 = 1) are typed into the statement by hand; it exhibits a point, it derives nothing"
+ }
+}

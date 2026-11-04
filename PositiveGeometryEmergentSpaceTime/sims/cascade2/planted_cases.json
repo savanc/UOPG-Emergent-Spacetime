@@ -1,0 +1,17 @@
+{
+ "run_id": "CASCADE2-2026-10-28-r1",
+ "seed": 202610232,
+ "cases": {
+  "PL1": "2312.16282 eq. (7.17): X13 - delta, X24 + delta (kappa13 = +1, kappa24 = -1): eps^1 coefficient 0, eps^2 coefficient -(X13 + X24)",
+  "PL2": "2312.16282 eq. (7.20): n=6, kappa = +1 on (o,o), -1 on (e,e), 0 on (o,e): eps^0..eps^3 vanish and eps^4 coefficient = -(bracket of eq. 7.20)",
+  "PL3": "2312.16282 sec. 7.1: E0 c-preserving shifts one-dimensional at n=4 and n=6, none at n=5",
+  "PL4": "planted 1/y13 + 2/y24 (n=4) fixes kappa13/kappa24 = -1/2 (detector sees a non-unit ratio)",
+  "PL5": "p_value = (1 + #{null heights <= h_obs})/(N+1) on fixed toy lists; None h_obs gives None",
+  "PL6": "ratio_analysis toys: no conditions -> FREE; q1+q2 -> {-1}; (q1-2q2)(q1+3q2) -> {2,-3}; q1 with q1 != 0 -> EMPTY",
+  "PL7": "n=4 random-coefficient null in closed form: kappa13/kappa24 = -a13/a24 on 5 seeded draws",
+  "PL8": "n=5 with kappa = 0: S5 condition list contains a nonzero number (A = O(1))",
+  "PL9": "V_D by the numerator method (copied from CASCADE-1b checker v3) is zero-only on all 7 n=4,5 diamonds of the massless amplitude (reproduces CASCADE-1b)",
+  "PL10": "timing coverage: n=6 S5-alone on the ee/oo support with seeded (611) random coefficients completes in < 60 s",
+  "PL11": "timing/code-path coverage: n=6 V_D (9 diamonds, < 600 s each) and cell2 E0/EM (< 900 s each) end to end on a seeded (612) random-coefficient triangulation sum, NOT the physical amplitude; no exception"
+ }
+}

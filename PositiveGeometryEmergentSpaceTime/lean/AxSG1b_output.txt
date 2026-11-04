@@ -1,0 +1,4 @@
+'PositiveGeometryEmergentSpaceTime.SG1b.hasDerivAt_f' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.SG1b.f_antitoneOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.SG1b.sum_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.SG1b.sum_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]

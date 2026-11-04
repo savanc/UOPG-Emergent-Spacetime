@@ -1,0 +1,129 @@
+{
+ "S1_tp_claim": {
+  "label": "c",
+  "want": "c",
+  "ok": true
+ },
+ "S2_tp_emerge": {
+  "label": "c",
+  "want": "c",
+  "ok": true
+ },
+ "S3_tp_esc_dw": {
+  "label": "e",
+  "want": "e",
+  "ok": true
+ },
+ "S4_tp_esc_ov": {
+  "label": "e",
+  "want": "e",
+  "ok": true
+ },
+ "S5_tp_esc_negated": {
+  "label": "c",
+  "want": "c",
+  "ok": true
+ },
+ "S6_neg_cannot": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "S7_neg_rulesout": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "S8_neg_neq": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "S9_chpt": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "S10_chpt2": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "S11_input": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "S12_modal": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "S13_mention": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "S14_markdown_tp": {
+  "label": "c",
+  "want": "c",
+  "ok": true
+ },
+ "S15_nfkc_tp": {
+  "label": "c",
+  "want": "c",
+  "ok": true
+ },
+ "FP_MR-2b": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "FP_MR-3": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "FP_MR-3b": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "FP_FZ-1": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "FP_FT-1": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "FP_MR-7'": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "FP_STRUCT-1": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "FP_STRUCT-1b": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "FP_BRIDGE-PL-ASSOC (charge)": {
+  "label": "a",
+  "want": "a",
+  "ok": true
+ },
+ "V_verdicts": {
+  "ok": true
+ },
+ "G_selftests": {
+  "ok": true
+ },
+ "ALL_OK": true
+}

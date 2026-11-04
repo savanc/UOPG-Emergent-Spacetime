@@ -1,0 +1,55 @@
+========================================================================
+M3 exact checks
+
+[L1] P(s,-s) = 2*s**2*(g20 - g21)  -> zero for all s iff g21 = g20
+
+[C1] O(p^2): pi*(-X - Y)/(a*sin(pi*a))   => c0 = -pi/(a*sin(pi*a))
+[C1] normalised O(p^4): X^2: polygamma(0, -a) + EulerGamma  XY: polygamma(0, -a) + polygamma(0, a) + 2*EulerGamma  Y^2: polygamma(0, a) + EulerGamma
+[C1] C-even: g20 - g21 = 0 (must be 0 for all a)
+[C1] C-odd coefficient of (X^2 - Y^2): polygamma(0, -a)/2 - polygamma(0, a)/2
+   a=1/4: C-odd = 3.5707963267949   (1/a + pi cot pi a)/2 = 3.5707963267949
+   a=1/2: C-odd = 1.0   (1/a + pi cot pi a)/2 = 1.0
+   a=3/4: C-odd = -0.90412966012823   (1/a + pi cot pi a)/2 = -0.90412966012823
+[C1] C-odd O(p^4) vanishes only at a* = 0.64577367654340553857 in (0,1) (root of tan(pi a) = -pi a)
+[C1] hidden zero X13+X24=0 holds at O(p^2), O(p^4), O(p^6) for symbolic a
+
+[C2] LS O(p^2): pi*(X + Y)
+[C2] LS g10 = pi  g20 = 2*pi*log(2)  g21 = 2*pi*log(2)
+[C2] g~2 = log(2) = 0.693147180560   g~2' = log(4)   (AR 4.33: 0.693147, 1.38629)
+[C2] LS g30 = pi*(12*log(2)**2 + pi**2)/6  g31 = 6*pi*log(2)**2
+[C2] forward Hankel g10 g30 - g20^2 = pi**2*(-12*log(2)**2 + pi**2)/6 = 6.75108614429962 (must be >= 0)
+[C2] g~2 = ln 2 <= 1 (cutoff M = m_rho): True
+[C2] L4' = L2 = F0**2*log(2)/(8*m_rho**2)  (PV 4.6: F0^2 ln2/(8 m_rho^2))
+     numerically with F0 = 92.4 MeV, m_rho = 770 MeV (PV's scale): 0.00124766 (PV: 1.25e-3)  [needs F0/m_rho: not zero-parameter]
+
+[C3] field theory: O(p^2): X + Y  O(p^4): (X - Y)*(X + Y)/delta  O(p^6): (X + Y)*(X**2 - X*Y + Y**2)/delta**2
+[C3] C-even O(p^4) = 0 ; C-odd O(p^4) = (X - Y)*(X + Y)/delta
+
+[L3] g21 = g20  =>  L3' = [0]
+[L3] SU(3): L1 = L4'/2, L2 = L4', L3 = -2 L4'  =>  L3/L2 = -2 , 2L1 - L2 = 0
+[L3] SU(2): g20 = g21 <=> [-l2/2] (l1 = -l2/2)
+
+========================================================================
+Data (pre-registered rule)
+[T1] BE14 NNLO preferred (Table 3) [PRIMARY]: L3/L2 = -3.79 +- 0.31  (MC median -3.790, 68% [-4.109,-3.490])  pull of -2: -5.78 sigma ; band-edge gap -3.84 sigma -> FAIL
+[T1] BE14 NNLO free fit (Table 3): L3/L2 = -4.746 +- 0.47  (MC median -4.745, 68% [-5.236,-4.300])  pull of -2: -5.87 sigma ; band-edge gap -4.59 sigma -> FAIL
+[T1] BE14 p4 fit (Table 1 col. 6): L3/L2 = -2.375 +- 0.35  (MC median -2.375, 68% [-2.767,-2.059])  pull of -2: -1.07 sigma ; band-edge gap 0 sigma -> PASS
+[T1] GL 1985 (BE14 Table 1 last col.): L3/L2 = -3.385 +- 2.6  (MC median -3.185, 68% [-7.182,-1.118])  pull of -2: -0.523 sigma ; band-edge gap -0.296 sigma -> PASS
+[T1] Pich 1995 / BEG 1994 (Table 1): L3/L2 = -2.5 +- 0.95  (MC median -2.499, 68% [-3.598,-1.641])  pull of -2: -0.526 sigma ; band-edge gap 0 sigma -> PASS
+[T1] exact BE14 central ratio = -307/81 = -3.7901235
+
+[S5] scale scan, BE14 primary: L2(mu) = L2(0.77) + Gamma2/(16 pi^2) ln(0.77/mu), L3 fixed
+     mu = 0.5 GeV: L2 = 1.323e-3, L3/L2 = -2.321
+     mu = 0.6 GeV: L2 = 1.106e-3, L3/L2 = -2.775
+     mu = 0.77 GeV: L2 = 0.81e-3, L3/L2 = -3.79
+     mu = 0.9 GeV: L2 = 0.6248e-3, L3/L2 = -4.914
+     mu = 1.0 GeV: L2 = 0.4997e-3, L3/L2 = -6.144
+
+[S1] SU(2), CGL 2001: lbar1 = -0.4 +- 0.6, lbar2 = 4.3 +- 0.1; Mpi = 139.57 MeV
+     mu = 0.77: l1r = -4.027e-3, l2r = 1.867e-3, l1/l2 = -2.157 +- 0.42 -> FAIL;  g~2'/g~2 = -3.043 (prediction 2, VMD/Skyrme 4)
+     mu = 0.77526: l1r = -4.042e-3, l2r = 1.838e-3, l1/l2 = -2.199 +- 0.43 -> FAIL;  g~2'/g~2 = -2.862 (prediction 2, VMD/Skyrme 4)
+     scan mu = 0.5: l1/l2 = -0.8445
+     scan mu = 0.6: l1/l2 = -1.199
+     scan mu = 0.9: l1/l2 = -3.606
+     scan mu = 1.0: l1/l2 = -5.998
+     mu* (l1/l2 = -1/2 exactly) = 370.02 MeV

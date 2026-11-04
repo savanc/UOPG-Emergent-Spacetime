@@ -1,0 +1,6 @@
+GUARD REFUSED: prereg commit 5935f37a1 not an ancestor of origin/main (not pushed)
+rc=1
+REFUSED: GUARD REFUSED: prereg commit 5935f37a1 not an ancestor of origin/main (not pushed)
+REFUSED: GUARD REFUSED: prereg commit 5935f37a1 not an ancestor of origin/main (not pushed)
+pass-flag attributes present: []
+rc=2

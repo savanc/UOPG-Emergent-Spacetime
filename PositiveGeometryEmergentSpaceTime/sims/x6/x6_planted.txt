@@ -1,0 +1,12 @@
+# X6 planted pair — 2026-10-15
+## planted (must recover)
+parity {(1, 3): True, (1, 4): True, (2, 4): True, (2, 5): True, (3, 6): True, (2, 6): True, (3, 7): True} 
+reflect {(1, 3): True, (1, 4): True, (2, 4): True, (2, 5): True, (3, 6): True, (2, 6): True, (3, 7): True} 
+VL sums [0, 0] 
+N_c=1 vectorlike True 
+recovered: True
+exit=0
+## broken (untwisted complement, must reject)
+untwisted {(1, 3): False, (1, 4): False, (2, 4): False, (2, 5): False, (3, 6): False, (2, 6): False, (3, 7): False}
+REJECT: untwisted complement not positive
+exit=1

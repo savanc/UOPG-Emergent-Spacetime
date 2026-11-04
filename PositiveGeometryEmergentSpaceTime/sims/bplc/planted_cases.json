@@ -1,0 +1,6 @@
+{"dirichlet_n": [5, 8, 15],
+ "classify": [
+  {"name": "earned-toy", "m1_blind": true, "k_hyp": "1/100", "k_rivals": ["0", "0"], "n_m2": 2, "n_acc": 2, "expect": "LINK"},
+  {"name": "rival-reproduces", "m1_blind": true, "k_hyp": "1/100", "k_rivals": ["1/50", "0"], "n_m2": 2, "n_acc": 2, "expect": "NO-LINK"},
+  {"name": "non-discriminating", "m1_blind": true, "k_hyp": "1/100", "k_rivals": ["0", "0"], "n_m2": 9, "n_acc": 2, "expect": "NO-LINK"},
+  {"name": "m1-sensitive", "m1_blind": false, "k_hyp": "0", "k_rivals": ["0", "0"], "n_m2": 9, "n_acc": 2, "expect": "LINK"}]}

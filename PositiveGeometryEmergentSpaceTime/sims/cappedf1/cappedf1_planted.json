@@ -1,0 +1,174 @@
+{
+ "summary": {
+  "mode": "planted",
+  "variant": {},
+  "verdict": "ILL-DEFINED (empty run)",
+  "planted_pass": 30,
+  "planted_total": 30,
+  "polytopes": 0,
+  "skipped": [],
+  "edges": 0,
+  "edges_eq": 0,
+  "edges_strict": 0,
+  "edges_below": 0,
+  "edges_scfree": 0,
+  "edges_scfree_strict": 0,
+  "max_gap": null,
+  "min_gap": null,
+  "by_dim": {},
+  "by_family": {},
+  "verdict_planted_only": "PASS"
+ },
+ "planted": [
+  {
+   "label": "polygon C3 lazy kappa=B=1",
+   "pass": true,
+   "info": "1 1"
+  },
+  {
+   "label": "polygon C4 lazy kappa=B=2/3",
+   "pass": true,
+   "info": "2/3 2/3"
+  },
+  {
+   "label": "polygon C5 lazy kappa=B=1/3",
+   "pass": true,
+   "info": "1/3 1/3"
+  },
+  {
+   "label": "polygon C6 lazy kappa=B=0",
+   "pass": true,
+   "info": "0 0"
+  },
+  {
+   "label": "polygon C8 lazy kappa=B=0",
+   "pass": true,
+   "info": "0 0"
+  },
+  {
+   "label": "C6 idleness-0 kappa0=0, b0=-1",
+   "pass": true,
+   "info": "0 -1"
+  },
+  {
+   "label": "simplex S3=K4 lazy 1, half 2/3, zero 2/3=b0",
+   "pass": true,
+   "info": "1 2/3 2/3"
+  },
+  {
+   "label": "simplex S4 lazy 1",
+   "pass": true,
+   "info": "1"
+  },
+  {
+   "label": "simplex S5 lazy 1",
+   "pass": true,
+   "info": "1"
+  },
+  {
+   "label": "Q3 lazy 1/2 = B",
+   "pass": true,
+   "info": "1/2"
+  },
+  {
+   "label": "Q4 lazy 2/5 = B",
+   "pass": true,
+   "info": "2/5"
+  },
+  {
+   "label": "Q5 lazy 1/3 = B",
+   "pass": true,
+   "info": "1/3"
+  },
+  {
+   "label": "prism k=4 horizontal kappa=1/2=B",
+   "pass": true,
+   "info": "1/2 1/2"
+  },
+  {
+   "label": "prism k=5 horizontal kappa=1/4=B",
+   "pass": true,
+   "info": "1/4 1/4"
+  },
+  {
+   "label": "prism k=6 horizontal kappa=0=B",
+   "pass": true,
+   "info": "0 0"
+  },
+  {
+   "label": "prism k=7 horizontal kappa=0=B",
+   "pass": true,
+   "info": "0 0"
+  },
+  {
+   "label": "prism k=8 horizontal kappa=0=B",
+   "pass": true,
+   "info": "0 0"
+  },
+  {
+   "label": "prism k=9 horizontal kappa=0=B",
+   "pass": true,
+   "info": "0 0"
+  },
+  {
+   "label": "prism k=5 rung kappa=1/2=B",
+   "pass": true,
+   "info": "1/2"
+  },
+  {
+   "label": "prism k=7 rung kappa=1/2=B",
+   "pass": true,
+   "info": "1/2"
+  },
+  {
+   "label": "prism k=8 rung kappa=1/2=B",
+   "pass": true,
+   "info": "1/2"
+  },
+  {
+   "label": "prism k=8 horizontal: uncapped link kF/4=-1/2 fails (kappa 0)",
+   "pass": true,
+   "info": "kF=-2 B=0"
+  },
+  {
+   "label": "truncated cube (B3 110): oct-oct -1/2, tri-oct 1/4",
+   "pass": true,
+   "info": "{(8, 8): [(Fraction(-1, 2), Fraction(-1, 2))], (3, 8): [(Fraction(1, 4), Fraction(1, 4))]}"
+  },
+  {
+   "label": "3-regular tree root edge lazy -1/2 (graph only)",
+   "pass": true,
+   "info": "-1/2"
+  },
+  {
+   "label": "K5 lazy 1 (graph only)",
+   "pass": true,
+   "info": "1"
+  },
+  {
+   "label": "EQ gate fires: Q3 with face sizes mislabelled 6 -> B=-1/2 < kappa=1/2",
+   "pass": true,
+   "info": "1/2 -1/2"
+  },
+  {
+   "label": "INEQ gate fires: Q3 with face sizes mislabelled 3 -> B=1 > kappa=1/2",
+   "pass": true,
+   "info": "1/2 1"
+  },
+  {
+   "label": "construction agreement: Pi4 orderings == K4-graph-associahedron == A3 Wythoff 111 (edge signatures)",
+   "pass": true,
+   "info": "[((4, 6), Fraction(0, 1)), ((6, 6), Fraction(-1, 2))]"
+  },
+  {
+   "label": "construction agreement: Q3 product == B3 Wythoff 100 cube; H3 100 == dodecahedron (20 v, all pentagons)",
+   "pass": true,
+   "info": "12 20"
+  },
+  {
+   "label": "non-facial short cycles: K4 edges {4}, triangular prism edges {5}, Q3 and truncated cube none",
+   "pass": true,
+   "info": "[[(4,)], [(5,)], [()], [()]]"
+  }
+ ]
+}

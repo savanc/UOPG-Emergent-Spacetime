@@ -1,0 +1,17 @@
+validation a0^0,a0^2 = None
+validation one-loop a0^0,a0^2 (GL lbar): [0.2004, -0.0446]
+loop J(1),J(2) at P: (0.0011791293006715511+1.3260612642594922e-15j) (0.002717964012048763+1.8070234980407157e-15j)
+[BE14 p4 col6] r=0.0029 sig_in=0.1950 Z=0.00048 S=0.1642 triangle f=0.318 mu-spread=2.4e-17
+[BE14 L4=0] r=-0.0495 sig_in=0.0446 Z=-0.00791 S=0.1598 triangle f=0.318 mu-spread=0.0e+00
+[BE14 L4=+0.3] r=-0.0014 sig_in=0.0399 Z=-0.00025 S=0.1727 triangle f=0.325 mu-spread=0.0e+00
+[BE14 L4=-0.3] r=-0.1097 sig_in=0.0533 Z=-0.01613 S=0.1470 triangle f=0.309 mu-spread=1.4e-16
+[GL85] r=-0.0389 sig_in=0.2364 Z=-0.00590 S=0.1518 triangle f=0.293 mu-spread=1.6e-16
+[BE14 NNLO (diag)] r=-0.0454 sig_in=0.0362 Z=-0.00700 S=0.1543 triangle f=0.332 mu-spread=1.1e-16
+VERDICT [BE14 p4 col6] r=0.0029 sigma_r=0.2047 (in 0.1950, scan 0.0542, trunc 0.0302) band=0.4093 PASS=True
+VERDICT [GL85] r=-0.0389 sigma_r=0.2387 (in 0.2364, scan 0.0000, trunc 0.0331) band=0.4774 PASS=True
+VERDICT [BE14 NNLO (diag)] r=-0.0454 sigma_r=0.0494 (in 0.0362, scan 0.0000, trunc 0.0336) band=0.0989 PASS=True
+NDA null f [BE14 p4 col6 band 0.4093] = 0.252
+NDA null f [GL85 band 0.4774] = 0.312
+SENS [BE14 L4=0] r=-0.0495 band=0.1121 pass=True NDA f=0.065
+SENS [BE14 L4=+0.3] r=-0.0014 band=0.1001 pass=True NDA f=0.056
+SENS [BE14 L4=-0.3] r=-0.1097 band=0.1319 pass=True NDA f=0.079

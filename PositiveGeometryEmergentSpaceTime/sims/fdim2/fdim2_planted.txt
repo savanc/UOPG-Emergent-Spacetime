@@ -1,0 +1,15 @@
+# F-DIM' planted pair + import test — 2026-10-20
+## import-and-call (after push)
+GUARD OK: prereg e23bbddee on origin/main; checker hash matches
+IMPORT-AND-CALL: guard passed, call returned
+exit=0
+## planted
+GUARD OK: prereg e23bbddee on origin/main; checker hash matches
+bosonic open-string Veneziano, tachyons m2=-1 (D_c = 26, CITED AEHM 2201.11575 / 2608.25183): BOUND-ONLY D<=26 (expect BOUND-ONLY D<=26) OK
+LS family alpha0 = 1 (NS model, D_c = 10, CITED Bianchi-Consoli-Di Vecchia 2021 eq. (2.9)-(2.11)): BOUND-ONLY D<=10 (expect BOUND-ONLY D<=10) OK
+recovered: True
+exit=0
+## broken
+GUARD OK: prereg e23bbddee on origin/main; checker hash matches
+broken case trunk LS alpha0 = 1/2 asked for D <= 26 (excluded by Lean PositiveGeometryEmergentSpaceTime.FDim.trunk_bound_not_forced: level 1 fails at D = 8..26): BOUND-ONLY D<=4 != BOUND-ONLY D<=26 -> REJECT (as required)
+exit=1

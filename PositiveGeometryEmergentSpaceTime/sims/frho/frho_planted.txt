@@ -1,0 +1,16 @@
+# after push
+IMPORT-AND-CALL: ['PASSED GUARD', 'PASSED GUARD']
+pass-flag attributes present: []
+exit=0
+GUARD OK: prereg 63138a6a3 on origin/main; checker hash matches (re-verified on every scoring call)
+planted residue (a) P_a toy m_rho=1, m_pi=0.2, F=1 (Lean FRhoWidth.gLS2_Pa: (m_rho^2-m_pi^2)/(pi F^2)): g2 = 0.305577490736439 expect 0.305577490736439 -> OK
+planted residue (b) P_b toy m_rho=1, m_pi=0.2, F=0.5 (Lean: m_rho^2/(pi F^2)): g2 = 1.27323954473516 expect 1.27323954473516 -> OK
+planted KSRF width: r = 0.00331572798108115 expect 0.00331572798108115 -> OK
+classifier equal pulls: MATCHES-KSRF expect MATCHES-KSRF -> OK
+classifier model on data, KSRF 4 sigma: BEATS-KSRF expect BEATS-KSRF -> OK
+classifier model 4 sigma, KSRF 6 sigma: IMPROVES-BUT-EXCLUDED expect IMPROVES-BUT-EXCLUDED -> OK
+classifier model 10 sigma, KSRF 0.5: WORSE-THAN-KSRF expect WORSE-THAN-KSRF -> OK
+PLANTED: RECOVERED
+GUARD OK: prereg 63138a6a3 on origin/main; checker hash matches (re-verified on every scoring call)
+broken LS residue (P_a, N1) reproduces KSRF g2 = m_rho^2/(2F^2); Lean FRhoWidth.ls_ne_ksrf proves it false: g2_LS = 0.305577490736 vs claimed KSRF 0.5 -> REJECT
+exit=0

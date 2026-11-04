@@ -1,0 +1,6 @@
+GUARD OK: prereg 19a54a45a on origin/main; checker hash matches
+rho*rhot in (0,1) (eta*etat = 1/2): CONTINUOUS [63, 255]
+mass-ratio proxy rho/rhot = e^(8t-4), t in (0,1): CONTINUOUS [63, 255]
+u range sampled: [1.000004, 64.501], all > 1: True
+edge rho*rhot = 0.999 / 1.001 allowed: [True, False]
+verdict: CONTINUOUS

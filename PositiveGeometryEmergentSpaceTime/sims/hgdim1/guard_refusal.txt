@@ -1,0 +1,8 @@
+== CLI (prereg committed locally, NOT pushed; HEAD bbfe77b)
+GUARD REFUSED: prereg commit bbfe77b60 not an ancestor of origin/main (not pushed)
+exit 1
+== import test
+REFUSED: GUARD REFUSED: prereg commit bbfe77b60 not an ancestor of origin/main (not pushed)
+REFUSED: GUARD REFUSED: prereg commit bbfe77b60 not an ancestor of origin/main (not pushed)
+pass-flag attributes present: []
+exit 2

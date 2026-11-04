@@ -1,0 +1,14 @@
+== S1 PDG 2026
+KS-1 J=2: m_data=1.4324, m_LS=1.4108, dm2/m2=+0.031, z=+0.62 -> PASS; null f=0.17
+KS-1 J=3: m_data=1.7790, m_LS=1.7758, dm2/m2=+0.004, z=+0.07 -> PASS; null f=0.28
+KS-1 J=4: m_data=2.0480, m_LS=2.0776, dm2/m2=-0.028, z=-0.56 -> PASS; null f=0.38
+MR-1f R2: data=1.1563±0.0611; LS V1=1.0287 V2=0.8949; data/LS=1.12; sth=0.3253; z=+0.38 -> PASS; null f=0.33
+MR-1f R3: data=0.6441±0.0763; LS V1=0.6264 V2=0.5776; data/LS=1.03; sth=0.2259; z=+0.07 -> PASS; null f=0.42
+MR-1f R4: data=0.4156±0.0765; LS V1=0.3477 V2=0.3649; data/LS=1.20; sth=0.1475; z=+0.41 -> PASS; null f=0.58
+== S2 LASS (ASTON 88; K4* m,G ASTON 86)
+KS-1 J=2: m_data=1.4312, m_LS=1.4108, dm2/m2=+0.029, z=+0.58 -> PASS; null f=0.17
+KS-1 J=3: m_data=1.7810, m_LS=1.7758, dm2/m2=+0.006, z=+0.12 -> PASS; null f=0.28
+KS-1 J=4: m_data=2.0620, m_LS=2.0776, dm2/m2=-0.015, z=-0.28 -> PASS; null f=0.40
+MR-1f R2: data=1.1129±0.0660; LS V1=1.0230 V2=0.8949; data/LS=1.09; sth=0.3235; z=+0.27 -> PASS; null f=0.33
+MR-1f R3: data=0.7403±0.1262; LS V1=0.6298 V2=0.5776; data/LS=1.18; sth=0.2271; z=+0.42 -> PASS; null f=0.43
+MR-1f R4: data=0.4244±0.1183; LS V1=0.3671 V2=0.3649; data/LS=1.16; sth=0.1557; z=+0.29 -> PASS; null f=0.64

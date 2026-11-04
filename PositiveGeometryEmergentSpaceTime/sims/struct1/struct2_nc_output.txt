@@ -1,0 +1,8 @@
+symbolic N: [{yL: -N, yQ: 1, yd: -N - 1, ye: 2*N, yu: N - 1}, {yL: -N, yQ: 1, yd: N - 1, ye: 2*N, yu: -N - 1}]
+N=1: branches=2 witten_ok=True sample={yL: -1, yQ: 1, yd: -2, ye: 2, yu: 0}
+N=2: branches=2 witten_ok=False sample={yL: -2, yQ: 1, yd: -3, ye: 4, yu: 1}
+N=3: branches=2 witten_ok=True sample={yL: -3, yQ: 1, yd: -4, ye: 6, yu: 2}
+N=4: branches=2 witten_ok=False sample={yL: -4, yQ: 1, yd: -5, ye: 8, yu: 3}
+N=5: branches=2 witten_ok=True sample={yL: -5, yQ: 1, yd: -6, ye: 10, yu: 4}
+N=6: branches=2 witten_ok=False sample={yL: -6, yQ: 1, yd: -7, ye: 12, yu: 5}
+N=7: branches=2 witten_ok=True sample={yL: -7, yQ: 1, yd: -8, ye: 14, yu: 6}

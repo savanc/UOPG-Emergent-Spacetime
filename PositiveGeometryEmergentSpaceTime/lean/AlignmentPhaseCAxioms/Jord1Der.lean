@@ -1,0 +1,7 @@
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.derOK_all
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.Dv_cq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.phi_injective
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.phi_G
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.phi_surjective
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.Jord1Der.finrank_der

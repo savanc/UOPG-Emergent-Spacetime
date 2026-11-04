@@ -1,0 +1,10 @@
+# JORD-1 guard refusal record (2026-10-28), prereg commit 719e85d local only, not yet on origin
+## CLI: python3 sims/jord1/jord1_checker.py planted
+GUARD REFUSED: prereg commit 719e85d63 is not an ancestor of origin/main (not pushed)
+rc=1
+## import test: python3 sims/jord1/import_guard_test.py
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg commit 719e85d63 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 719e85d63 is not an ancestor of origin/main (not pushed)']
+pass-flag attributes present: []
+rc=2
+(Earlier identical refusal at 2026-10-28 for the same tree as local commit 8b3e885, re-parented onto origin/main 710fcd3 before the push; never pushed.)
+Prereg commit 719e85d pushed ALONE 2026-10-28 (710fcd3..719e85d).

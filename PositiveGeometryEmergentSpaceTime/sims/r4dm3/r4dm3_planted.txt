@@ -1,0 +1,59 @@
+GUARD OK: prereg d9b60aaaa on origin/main; checker/classification/exporters/planted hashes match (re-verified on every scoring call)
+  PASS  planted_genuine              expected DERIVED/UNCONDITIONAL/PG       got DERIVED/UNCONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature', 'PositiveGeometryEmergentSpaceTime.R4DM3Planted.yQgeo']; hypotheses: []
+  PASS  planted_conditional          expected DERIVED/CONDITIONAL/PG         got DERIVED/CONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature']; hypotheses: ['y * 6 = PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature 0']
+  PASS  planted_smuggled_literal     expected SMUGGLED                       got SMUGGLED
+        (c) hypothesis h contains SM literal ['1/6']; (d) hypothesis h restates the conclusion
+  PASS  planted_smuggled_acc         expected SMUGGLED                       got SMUGGLED
+        (a) hypothesis h uses SM-INPUT ['PositiveGeometryEmergentSpaceTime.STRUCT1.ACC']; (d) hypothesis h restates the conclusion; (d) hypothesis hg restates the conclusion
+  PASS  planted_smuggled_nc          expected SMUGGLED                       got SMUGGLED
+        (b) hypothesis h constrains SM data with no geometry: N_c = 3; (c-E1) hypothesis h puts integer-normalised charge literal ['3'] on a tier-Q SM variable
+  PASS  planted_fed                  expected SM-INPUT-FED                   got SM-INPUT-FED
+        proof uses SM-INPUT ['PositiveGeometryEmergentSpaceTime.STRUCT1.sm_is_anomaly_free']
+  PASS  planted_nonconstraining      expected NON-CONSTRAINING               got NON-CONSTRAINING
+        SM data universally quantified and unconstrained (identity/blindness)
+  PASS  planted_nogeo                expected NO-GEOMETRY                    got NO-GEOMETRY
+        transitive closure has no GEOMETRY-role definition
+  PASS  yQgeo_eq                     expected NOT-SM-STRUCTURE               got NOT-SM-STRUCTURE
+  PASS  planted_d1_identity          expected NON-CONSTRAINING               got NON-CONSTRAINING
+        SM data universally quantified and unconstrained (identity/blindness)
+  PASS  planted_d1_conditional       expected DERIVED/CONDITIONAL/PG         got DERIVED/CONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature', 'PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv']; hypotheses: ['x.a * 6 = PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature 0']
+  PASS  PInv.mk.inj                  expected AUTO-GENERATED                 got AUTO-GENERATED
+        Lean-generated lemma inj of PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv.mk
+  PASS  PInv.mk.injEq                expected AUTO-GENERATED                 got AUTO-GENERATED
+        Lean-generated lemma injEq of PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv.mk
+  PASS  PInv.mk.sizeOf_spec          expected AUTO-GENERATED                 got AUTO-GENERATED
+        Lean-generated lemma sizeOf_spec of PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv.mk
+  PASS  planted_d3                   expected DERIVED/UNCONDITIONAL/PG       got DERIVED/UNCONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature', 'PositiveGeometryEmergentSpaceTime.R4DM3Planted.Mixed.geoMap', 'PositiveGeometryEmergentSpaceTime.R4DM3Planted.yQgeo3']; hypotheses: []
+  PASS  Mixed.geoMap_one             expected NOT-SM-STRUCTURE               got NOT-SM-STRUCTURE
+  PASS  planted_smuggled_int         expected SMUGGLED                       got SMUGGLED
+        (c-E1) hypothesis h puts integer-normalised charge literal ['4'] on a tier-Q SM variable
+  PASS  planted_smuggled_half        expected SMUGGLED                       got SMUGGLED
+        (c) hypothesis h contains SM literal ['4/3']
+  PASS  planted_smuggled_ncsym       expected SMUGGLED                       got SMUGGLED
+        (c-E2) hypothesis h carries the N_c-symbolic charge normalisation ['term 2*N_c*yQ']
+  PASS  planted_genuine_int          expected DERIVED/UNCONDITIONAL/PG       got DERIVED/UNCONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature', 'PositiveGeometryEmergentSpaceTime.R4DM3Planted.yQint']; hypotheses: []
+  PASS  planted_conditional_int      expected DERIVED/CONDITIONAL/PG         got DERIVED/CONDITIONAL/PG
+        geometry defs e.g. ['PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature']; hypotheses: ['yQ = PositiveGeometryEmergentSpaceTime.IsingTiling8.ogSignature 0']
+  PASS  planted_d1_kin               expected NOT-SM-STRUCTURE               got NOT-SM-STRUCTURE
+  PASS  planted_d1_zero              expected NOT-SM-STRUCTURE               got NOT-SM-STRUCTURE
+  PASS  planted_d1_field             expected NON-CONSTRAINING               got NON-CONSTRAINING
+        SM data universally quantified and unconstrained (identity/blindness)
+  PASS  PInv3.mk.inj                 expected AUTO-GENERATED                 got AUTO-GENERATED
+        Lean-generated lemma inj of PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv3.mk
+  PASS  PInv3.mk.injEq               expected AUTO-GENERATED                 got AUTO-GENERATED
+        Lean-generated lemma injEq of PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv3.mk
+  PASS  PInv3.mk.sizeOf_spec         expected AUTO-GENERATED                 got AUTO-GENERATED
+        Lean-generated lemma sizeOf_spec of PositiveGeometryEmergentSpaceTime.R4DM3Planted.PInv3.mk
+  meter without planted 1/87; with planted 7/110; n_derived increase 6 (must be 6)
+  PASS  ablation D1 off: changed ['planted_d1_field -> DERIVED/UNCONDITIONAL/PG', 'planted_d1_identity -> DERIVED/UNCONDITIONAL/PG'] (expected exactly ['planted_d1_identity', 'planted_d1_field'])
+  PASS  ablation D2 off: changed ['PInv.mk.inj -> DERIVED/CONDITIONAL/PG', 'PInv.mk.injEq -> NON-CONSTRAINING', 'PInv.mk.sizeOf_spec -> NON-CONSTRAINING', 'PInv3.mk.inj -> DERIVED/CONDITIONAL/PG', 'PInv3.mk.injEq -> NON-CONSTRAINING', 'PInv3.mk.sizeOf_spec -> NON-CONSTRAINING'] (expected exactly ['PInv.mk.inj', 'PInv.mk.injEq', 'PInv.mk.sizeOf_spec', 'PInv3.mk.inj', 'PInv3.mk.injEq', 'PInv3.mk.sizeOf_spec'])
+  PASS  ablation D3 off: changed ['planted_d3 -> SM-INPUT-FED'] (expected exactly ['planted_d3'])
+  PASS  ablation E1 off: changed ['planted_smuggled_half -> DERIVED/CONDITIONAL/PG', 'planted_smuggled_int -> DERIVED/CONDITIONAL/PG'] (expected exactly ['planted_smuggled_int', 'planted_smuggled_half'])
+  PASS  ablation E2 off: changed ['planted_smuggled_ncsym -> DERIVED/CONDITIONAL/PG'] (expected exactly ['planted_smuggled_ncsym'])
+  PASS  ablation E3 off: changed ['planted_d1_kin -> NON-CONSTRAINING', 'planted_d1_zero -> SMUGGLED'] (expected exactly ['planted_d1_kin', 'planted_d1_zero'])
+PLANTED: PASS

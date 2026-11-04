@@ -1,0 +1,74 @@
+{
+ "5": {
+  "f0": 5,
+  "f1": 5,
+  "squares": 0,
+  "pentagons": 1,
+  "K_Forman": "1",
+  "pred_10mn_over_2nm5": "1",
+  "match": true,
+  "K_over_Dplus1": "1/3",
+  "ollivier_mean": "1/3",
+  "match_oll": true
+ },
+ "6": {
+  "f0": 14,
+  "f1": 21,
+  "squares": 3,
+  "pentagons": 6,
+  "K_Forman": "4/7",
+  "pred_10mn_over_2nm5": "4/7",
+  "match": true,
+  "K_over_Dplus1": "1/7",
+  "ollivier_mean": "1/7",
+  "match_oll": true
+ },
+ "7": {
+  "f0": 42,
+  "f1": 84,
+  "squares": 28,
+  "pentagons": 28,
+  "K_Forman": "1/3",
+  "pred_10mn_over_2nm5": "1/3",
+  "match": true,
+  "K_over_Dplus1": "1/15",
+  "ollivier_mean": "1/15",
+  "match_oll": true
+ },
+ "8": {
+  "f0": 132,
+  "f1": 330,
+  "squares": 180,
+  "pentagons": 120,
+  "K_Forman": "2/11",
+  "pred_10mn_over_2nm5": "2/11",
+  "match": true,
+  "K_over_Dplus1": "1/33",
+  "ollivier_mean": "1/33",
+  "match_oll": true
+ },
+ "9": {
+  "f0": 429,
+  "f1": 1287,
+  "squares": 990,
+  "pentagons": 495,
+  "K_Forman": "1/13",
+  "pred_10mn_over_2nm5": "1/13",
+  "match": true,
+  "K_over_Dplus1": "1/91",
+  "ollivier_mean": "1/91",
+  "match_oll": true
+ },
+ "10": {
+  "f0": 1430,
+  "f1": 5005,
+  "squares": 5005,
+  "pentagons": 2002,
+  "K_Forman": "0",
+  "pred_10mn_over_2nm5": "0",
+  "match": true,
+  "K_over_Dplus1": "0",
+  "ollivier_mean": "0",
+  "match_oll": true
+ }
+}

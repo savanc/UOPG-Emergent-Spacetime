@@ -1,0 +1,14 @@
+{
+ "note": "Expected verdicts for sims/r4dm/planted/R4DMPlanted.lean (locked before any run). DERIVED entries are verdict/cond/source.",
+ "expected": {
+  "PositiveGeometryEmergentSpaceTime.R4DMPlanted.planted_genuine": "DERIVED/UNCONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DMPlanted.planted_conditional": "DERIVED/CONDITIONAL/PG",
+  "PositiveGeometryEmergentSpaceTime.R4DMPlanted.planted_smuggled_literal": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DMPlanted.planted_smuggled_acc": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DMPlanted.planted_smuggled_nc": "SMUGGLED",
+  "PositiveGeometryEmergentSpaceTime.R4DMPlanted.planted_fed": "SM-INPUT-FED",
+  "PositiveGeometryEmergentSpaceTime.R4DMPlanted.planted_nonconstraining": "NON-CONSTRAINING",
+  "PositiveGeometryEmergentSpaceTime.R4DMPlanted.planted_nogeo": "NO-GEOMETRY",
+  "PositiveGeometryEmergentSpaceTime.R4DMPlanted.yQgeo_eq": "NOT-SM-STRUCTURE"
+ }
+}

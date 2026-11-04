@@ -1,0 +1,9 @@
+frwzw_k0p: accepted 20 (K 0, P 20, Q 0); P-corruptions in a zero row of M: 20; zero rows of M: 120/120
+frwzw_k0m: accepted 36 (K 0, P 36, Q 0); P-corruptions in a zero row of M: 36; zero rows of M: 80/120
+frwzw_k1p: accepted 5 (K 0, P 5, Q 0); P-corruptions in a zero row of M: 5; zero rows of M: 40/120
+frwzw_k1m: accepted 27 (K 0, P 27, Q 0); P-corruptions in a zero row of M: 27; zero rows of M: 40/120
+frwzw_k2p: accepted 5 (K 0, P 5, Q 0); P-corruptions in a zero row of M: 5; zero rows of M: 40/120
+frwzw_k2m: accepted 20 (K 0, P 20, Q 0); P-corruptions in a zero row of M: 20; zero rows of M: 40/120
+frwzw_k3p: accepted 10 (K 0, P 10, Q 0); P-corruptions in a zero row of M: 10; zero rows of M: 40/120
+frwzw_k3m: accepted 8 (K 0, P 8, Q 0); P-corruptions in a zero row of M: 8; zero rows of M: 40/120
+TOTAL accepted 131 = K 0 + P 131 + Q 0

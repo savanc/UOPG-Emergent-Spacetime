@@ -1,0 +1,7 @@
+T1 2-site: psi = 1/((X1 + X2)*(X1 + Y)*(X2 + Y)) ; equals (X1+X2+2Y)/((X1+X2)(X1+Y)(X2+Y)): False
+T1 direct time integral (Feynman part (X1+X2+2Y)/... minus Dirichlet boundary term, /2Y) = recursion: True; prereg formula omitted the boundary term
+T1 3-site chain: numerator has only positive coefficients: True; denominator = (X1 + Y1)*(X3 + Y2)*(X1 + X2 + X3)*(X1 + X2 + Y2)*(X2 + X3 + Y1)*(X2 + Y1 + Y2)
+T2 4pt s+t, 1000000 physical points: min psi*E_tot^2 = 1.4097e-01, any <=0: False
+T2 5pt ordered (5 channels), 200000 physical points: any <=0: False, min*E^3 = 6.3003e-02
+T3 dS4-twisted 4pt s+t, 40 physical points: min = 3.2219e-01 (finite? True), any <=0: False
+T4 zero of psi_s+psi_t at X's=1, Ys=1/2: Yt = [-1 - 3*I/2, -1 + 3*I/2] (all outside Y>0 or making some X+Y<0)

@@ -1,0 +1,55 @@
+{
+ "P1_table_ok": true,
+ "P2_der_lower": 52,
+ "P2_der_upper_modp": [
+  52,
+  52
+ ],
+ "P2_all_basis_are_derivations": true,
+ "P2": true,
+ "P3_dim_stabE1": 36,
+ "P4_dim_stabE123": 28,
+ "P5_dim_setstab_h3C": 16,
+ "P6_gsm_inv": {
+  "dim": 12,
+  "rank": 4,
+  "centre": 1,
+  "derived": 11,
+  "subalg": true
+ },
+ "P6_types": [
+  "A1+A2+u1^1"
+ ],
+ "P6": true,
+ "P7_same": true,
+ "P8": {
+  "R": [
+   3,
+   3
+  ],
+  "C": [
+   8,
+   8
+  ],
+  "H": [
+   21,
+   21
+  ]
+ },
+ "V1_inv_u=e2": {
+  "dim": 12,
+  "rank": 4,
+  "centre": 1,
+  "derived": 11,
+  "subalg": true
+ },
+ "V1_closure_dims": [
+  36,
+  36
+ ],
+ "V1_accepted": true,
+ "V2_accepted": true,
+ "V3_accepted": true,
+ "PLANTED_ALL_OK": true,
+ "seconds": 6.0
+}

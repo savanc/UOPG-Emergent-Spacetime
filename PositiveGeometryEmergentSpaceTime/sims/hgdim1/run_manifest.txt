@@ -1,0 +1,11 @@
+run_id HGDIM1-LIVE-20261031T090819
+start 2026-10-31+00:00
+head 198b0d4
+python 3.13.5 numpy 2.5.4 scipy 1.18.1 networkx 3.7
+a9e273fae572b1113c89b4c172005351b685d90cdeddaa84b4870c350193201e  hgdim1_checker.py
+8cc2ff03a88ad55518a15cb914c3e9efbab501910c261b6ef59c5d10148a8020  guard.py
+seeds null 20261031,20261032,20261033 lp 20261031+n
+cmd python3 hgdim1_checker.py live
+end 2026-10-31+00:00
+end 2026-10-31+00:00
+note first launch via /usr/bin/time failed rc 127 (binary absent; checker never started); relaunched via python resource wrapper; rc 0 elapsed_s 10.5 maxrss_kB 136684

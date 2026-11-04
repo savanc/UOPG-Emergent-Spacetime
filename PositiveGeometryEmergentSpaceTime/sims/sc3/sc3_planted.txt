@@ -1,0 +1,6 @@
+cell A (lam4 docstring): Couplings `lam3` (VVV), `lam4` (HHHH: Higgs quartic), `a` (VVS).
+cell B (N args): a lam3 lam4 s
+lam4_is_higgs_quartic=True lam4_is_gauge_contact=False other_higgs_quartic_args=[]
+VERDICT: WELL-POSED
+REJECT: no `def N (...)` found - cells absent
+exit=1

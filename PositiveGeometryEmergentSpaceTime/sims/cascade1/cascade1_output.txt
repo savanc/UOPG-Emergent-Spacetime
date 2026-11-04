@@ -1,0 +1,21 @@
+GUARD OK: prereg af1bb37c3 on origin/main; checker hash matches (re-verified on every scoring call)
+run CASCADE1-2026-10-23-r1 seed 20261023 mode live (2026-10-23)
+stages 0-2: {'n': 4, 'D': 1, 'n_monomials': 3, 'f0': 2, 'f1': 1, 'S1_equations': 1, 'f2': 0, 'kappa_nonzero_in_S2': True, 'A_equals_triangulation_sum': True} {'n': 5, 'D': 3, 'n_monomials': 56, 'f0': 55, 'f1': 4, 'S1_equations': 100, 'f2': 0, 'kappa_nonzero_in_S2': True, 'A_equals_triangulation_sum': True}
+--- E0 n=4: {"rows": [{"stage": "S0 ansatz", "dimTheta": 2, "f": 2, "K": 4}, {"stage": "S1 poles/adjacency", "dimTheta": 2, "f": 1, "K": 3}, {"stage": "S2 factorisation", "dimTheta": 2, "f": 0, "K": 2}, {"stage": "S3 hidden zeros", "dimTheta": 1, "f": 0, "K": 1}, {"stage": "S4 positivity", "dimTheta": 0, "f": 0, "K": 0}], "K_final": 0, "outcome": "BELOW", "ratio": "NO-MASSES-SURVIVE"}
+    S3 relations: ['mu13 + mu24']
+    final family: {'mu13': '0', 'mu24': '0'}
+    held-out splits: VACUOUS at n=4 (no proper split: each zero locus has one c)
+--- EM n=4: {"rows": [{"stage": "S0 ansatz", "dimTheta": 6, "f": 2, "K": 8}, {"stage": "S1 poles/adjacency", "dimTheta": 6, "f": 1, "K": 7}, {"stage": "S2 factorisation", "dimTheta": 6, "f": 0, "K": 6}, {"stage": "S3 hidden zeros", "dimTheta": 4, "f": 0, "K": 4}, {"stage": "S4 positivity", "dimTheta": 4, "f": 0, "K": 4}], "K_final": 4, "outcome": "ABOVE", "ratio": "RATIOS-FREE"}
+    S3 relations: ['-m2 - m4 + mu13 + mu24', 'm1 - m2 + m3 - m4']
+    final family: {'mu13': '-t0 + t1 + t3', 'mu24': 't0', 'm1': 't1 - t2 + t3', 'm2': 't1', 'm3': 't2', 'm4': 't3'}
+    held-out splits: VACUOUS at n=4 (no proper split: each zero locus has one c)
+--- E0 n=5: {"rows": [{"stage": "S0 ansatz", "dimTheta": 5, "f": 55, "K": 60}, {"stage": "S1 poles/adjacency", "dimTheta": 5, "f": 4, "K": 9}, {"stage": "S2 factorisation", "dimTheta": 5, "f": 0, "K": 5}, {"stage": "S3 hidden zeros", "dimTheta": 0, "f": 0, "K": 0}, {"stage": "S4 positivity", "dimTheta": 0, "f": 0, "K": 0}], "K_final": 0, "outcome": "BELOW", "ratio": "NO-MASSES-SURVIVE"}
+    S3 relations: ['mu13', 'mu14', 'mu24', 'mu25', 'mu35']
+    final family: {'mu13': '0', 'mu14': '0', 'mu24': '0', 'mu25': '0', 'mu35': '0'}
+    held-out splits: 10/10 OK
+--- EM n=5: {"rows": [{"stage": "S0 ansatz", "dimTheta": 10, "f": 55, "K": 65}, {"stage": "S1 poles/adjacency", "dimTheta": 10, "f": 4, "K": 14}, {"stage": "S2 factorisation", "dimTheta": 10, "f": 0, "K": 10}, {"stage": "S3 hidden zeros", "dimTheta": 5, "f": 0, "K": 5}, {"stage": "S4 positivity", "dimTheta": 5, "f": 0, "K": 5}], "K_final": 5, "outcome": "MATCH", "ratio": "RATIOS-FREE"}
+    S3 relations: ['-m3 + m4 - m5 + mu13', '-m1 + m2 - m3 + mu14', '-m1 - m4 + m5 + mu24', '-m2 + m3 - m4 + mu25', 'm1 - m2 - m5 + mu35']
+    final family: {'mu13': 't2 - t3 + t4', 'mu14': 't0 - t1 + t2', 'mu24': 't0 + t3 - t4', 'mu25': 't1 - t2 + t3', 'mu35': '-t0 + t1 + t4', 'm1': 't0', 'm2': 't1', 'm3': 't2', 'm4': 't3', 'm5': 't4'}
+    held-out splits: 0/10 OK
+VERDICT (python): FAIL (held-out split violated)
+RATIO: {'E0-n4': 'NO-MASSES-SURVIVE', 'EM-n4': 'RATIOS-FREE', 'E0-n5': 'NO-MASSES-SURVIVE', 'EM-n5': 'RATIOS-FREE'}

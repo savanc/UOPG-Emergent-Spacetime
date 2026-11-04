@@ -1,0 +1,4 @@
+spurion skinny0 ZERO
+spurion rect_02_13 ZERO
+naive skinny0 nonzero
+naive rect_02_13 nonzero

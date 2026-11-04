@@ -1,0 +1,7 @@
+'PositiveGeometryEmergentSpaceTime.SplitZeroGate.four_point_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.SplitZeroGate.shifted_zero_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.SplitZeroGate.chiral_match_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.SplitZeroGate.kstar_shift_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.SplitZeroGate.pieta_no_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.PiNSubGate.odd_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.PiNSubGate.cd_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]

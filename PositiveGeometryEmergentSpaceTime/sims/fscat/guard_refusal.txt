@@ -1,0 +1,12 @@
+# before commit:
+GUARD REFUSED: prereg/F-SCATLEN-2026-10-20.md has no commit
+exit=1
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg/F-SCATLEN-2026-10-20.md has no commit', 'REFUSED: GUARD REFUSED: prereg/F-SCATLEN-2026-10-20.md has no commit']
+pass-flag attributes present: []
+exit=2
+# after local commit, before push ():
+GUARD REFUSED: prereg commit 23a24b151 is not an ancestor of origin/main (not pushed)
+exit=1
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg commit 23a24b151 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 23a24b151 is not an ancestor of origin/main (not pushed)']
+pass-flag attributes present: []
+exit=2

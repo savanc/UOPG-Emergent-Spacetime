@@ -1,0 +1,7 @@
+a' = 0.8597738397207721 GeV^-2
+LS masses: {1: 0.9095, 2: 1.4108, 3: 1.7758, 4: 2.0776}
+J=1: G_J=-0.15422 (sign must be >0); residue poly deg 1
+J=2: G_J=-0.27194 (sign must be >0); residue poly deg 2
+J=3: G_J=-0.29212 (sign must be >0); residue poly deg 3
+J=4: G_J=-0.27072 (sign must be >0); residue poly deg 4
+width ratios at LS masses: {2: 0.89489, 3: 0.57764, 4: 0.36488}

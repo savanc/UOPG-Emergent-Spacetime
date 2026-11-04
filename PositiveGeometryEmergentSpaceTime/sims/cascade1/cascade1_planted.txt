@@ -1,0 +1,9 @@
+OK  PL1 triangulation sum = eq.(3.1)
+OK  PL2 massless splits hold (10/10); planted non-separable rejected
+OK  PL3 zeros: 5 loci, A5 vanishes on all; planted extra term detected
+OK  PL4 planted ratio-fixing stage lowers dimTheta 2 -> 1
+OK  PL5 S1 excludes crossing double pole (f1 = 1 at n=4)
+OK  PL6 cone dims (0,1,2)
+OK  PL7 delta-shift keeps n=4 zero (c13 = X13 + X24 = 0)
+OK  PL8 nonlinear Theta detected
+PLANTED: ALL OK

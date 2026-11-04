@@ -1,0 +1,3 @@
+no nu^c, yQ=1: [{yL: -3, yQ: 1, yd: -4, ye: 6, yu: 2}, {yL: -3, yQ: 1, yd: 2, ye: 6, yu: -4}]
+yQ=0 branch: [{yL: 0, yd: -yu, ye: 0}]
+with nu^c, yQ=1: [{yL: -3, yQ: 1, yd: -yu - 2, ye: 2 - yu, ynu: yu + 4}, {yL: -3, yQ: 1, yd: -yu - 2, ye: yu + 4, ynu: 2 - yu}]

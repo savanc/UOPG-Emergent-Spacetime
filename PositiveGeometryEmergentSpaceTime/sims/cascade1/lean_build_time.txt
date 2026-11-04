@@ -1,0 +1,8 @@
+warning: Physlib: repository '<local path>' has local changes
+warning: mathlib: repository '<local path>' has local changes
+
+CMD: lake env lean PositiveGeometryEmergentSpaceTime/Cascade1.lean
+EXIT: 0
+WALL_SECONDS: 5.7
+PEAK_RSS_GB: 6.521
+KILL_THRESHOLDS: wall<3600s OK; rss<15GB OK

@@ -1,0 +1,17 @@
+PositiveGeometryEmergentSpaceTime/LeanCert.lean:298:89: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+PositiveGeometryEmergentSpaceTime/LeanCert.lean:301:98: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+PositiveGeometryEmergentSpaceTime/LeanCert.lean:324:97: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Physlib: repository '<local path>' has local changes
+warning: mathlib: repository '<local path>' has local changes
+
+CMD: bash -c cd lean && lake env lean PositiveGeometryEmergentSpaceTime/LeanCert.lean
+EXIT: 0
+WALL_SECONDS: 10.2
+PEAK_RSS_GB: 6.816
+KILL_THRESHOLDS: wall<3600s OK; rss<15GB OK

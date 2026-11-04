@@ -1,0 +1,28 @@
+{
+ "tn_principal_only": [
+  "P3",
+  "P4"
+ ],
+ "hankel_as_toeplitz": [
+  "P10",
+  "P2",
+  "P9"
+ ],
+ "rival_H0_only": [
+  "P3",
+  "P4"
+ ],
+ "strict": [
+  "P1",
+  "P10",
+  "P2",
+  "P7",
+  "P9"
+ ],
+ "wrong_window": [
+  "P3",
+  "P4"
+ ],
+ "empty": "ILL-DEFINED",
+ "ALL_REJECTED": true
+}

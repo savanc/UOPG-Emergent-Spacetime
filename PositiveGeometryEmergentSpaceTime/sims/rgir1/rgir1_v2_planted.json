@@ -1,0 +1,40 @@
+{
+ "P1_qcd_closed_form": {
+  "S": 0.12464509448152063,
+  "S_closed": 0.12464509448152063,
+  "ok": true,
+  "rk4_err": 1.0058620603103918e-13
+ },
+ "P2_strong_attraction": {
+  "W": 6.24774605663875e-09,
+  "verdict": "PASS (REMOVES-INPUT)",
+  "ok": true
+ },
+ "P3_no_gauge": {
+  "W": 0.16624991420989296,
+  "W_analytic": 0.16624991420989282,
+  "S": 1.0,
+  "verdict": "PARTIAL (QFP-NARROWING)",
+  "ok": true
+ },
+ "P4_valid_alt_conventions": {
+  "W_sm": 0.05595548868106571,
+  "W_gutnorm": 0.05595548868106571,
+  "W_lnmu2": 0.05595548868106571,
+  "ok": true
+ },
+ "G_selftests": {
+  "consistency_true": true,
+  "consistency_false_detected": true,
+  "perturbative_true": true,
+  "perturbative_false_detected": true,
+  "verdict_map": [
+   "PASS (REMOVES-INPUT)",
+   "PARTIAL (QFP-NARROWING)",
+   "FAIL (UV-MEMORY)",
+   "ILL-DEFINED"
+  ],
+  "ok": true
+ },
+ "ALL_OK": true
+}

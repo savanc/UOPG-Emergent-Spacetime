@@ -1,0 +1,155 @@
+/-
+ALIGNMENT BLIND-2 (2026-11-03) axioms audit: 10 blind modules + 10 Compare modules (130 declarations).
+NOT part of `import PositiveGeometryEmergentSpaceTime` (PositiveGeometryEmergentSpaceTime.lean unedited); not imported by AxiomsAll.
+Run: `lake env lean AlignmentBlind2Axioms.lean`. Expected: only propext, Classical.choice, Quot.sound.
+-/
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Mr1bBlind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Mr3Blind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Br4Blind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.TrialityWhyBlind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.GradedPositroidBlind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.RpTn1Blind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.CappedForman1Blind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.HgDim2Blind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.LeanCert1Blind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.M3Blind
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.TrialityWhy
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR3
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR1b
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.RPTN1
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.GPOS
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.BR4
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.M3
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.HgDim2
+import PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.LeanCert1
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.level
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.gamma_ratio
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.rho_residue
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.f2_residue
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.rho3_residue
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.f4_residue
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.legendre_indep
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.g_rho
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.rho3_ratio
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.f4_ratio
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr1bBlind.literal_sign_ratios
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr3Blind.adler_zero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr3Blind.rho_on_trajectory
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr3Blind.f2_level
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr3Blind.legendre_decomp
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr3Blind.c0_neg
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr3Blind.positivity_forces_zero
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr3Blind.all_coeffs_nonneg_iff
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr3Blind.c1_neg_above_half
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Mr3Blind.residue_vanishes_at_half
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Br4Blind.no_scale
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Br4Blind.no_scale'
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Br4Blind.witness
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Br4Blind.degree_zero_control
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.TrialityWhyBlind.claimWindow
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.TrialityWhyBlind.claimNotForced
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.TrialityWhyBlind.triality_instance
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.GradedPositroidBlind.moments_iff_acc
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.GradedPositroidBlind.sm_acc
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.GradedPositroidBlind.broken_acc
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.RpTn1Blind.hankel_identity
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.RpTn1Blind.toeplitz_identity
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.RpTn1Blind.hankel_minor_nonneg
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.RpTn1Blind.toeplitz_minor_neg
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.RpTn1Blind.toeplitz_zero_equal_nodes
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.RpTn1Blind.toeplitz_zero_a0
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.RpTn1Blind.hankel_negative_node_control
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.capped_eq_forman_plus_excess
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.excess_nonneg
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.excess_pos_iff
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.capped_ge_forman
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.capped_strict_iff
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.capped_eq_iff
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.face_cost
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.prism7_degree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.prism8_degree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.tc_degree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.tc_symm
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.prism7_costs
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.prism8_costs
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.tc_costs
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.CappedForman1Blind.certs_eq_capped
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.HgDim2Blind.p4_costs
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.HgDim2Blind.p5_costs
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.HgDim2Blind.p6_costs
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.HgDim2Blind.kappa_formula_6
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.HgDim2Blind.hexagon_cost3
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.HgDim2Blind.kappa_formula_45
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.HgDim2Blind.forman_count
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.HgDim2Blind.link
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.HgDim2Blind.mean_kappa
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.HgDim2Blind.mean_never_positive
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.C_surjective
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.finrank_ker_C
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.card_pairs5
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.card_pairs6
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.card_pairs7
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.abhy_count_5
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.abhy_count_6
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.abhy_count_7
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.solSet_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.nacc_eq_two_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.yq_zero_line
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.yq_zero_classification
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.M3Blind.prediction_in_band
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.M3Blind.data_outside_band
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.M3Blind.nearest_edge_is_lower
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.M3Blind.nsigma_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.M3Blind.nsigma_rounds
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.M3Blind.band_symmetric
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.TrialityWhy.orig_to_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.TrialityWhy.blind_to_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.TrialityWhy.equiv
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR3.c0_cast
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR3.c1_cast
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR3.c2_cast
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR3.orig_to_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR3.blind_to_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR3.orig_c1_neg_above_half
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR1b.rho_agree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR1b.rho3_neg
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR1b.f4_neg
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.MR1b.ratios_agree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.RPTN1.C_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.RPTN1.hankel_blind_to_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.RPTN1.hankel_orig_to_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.RPTN1.toeplitz_neg_blind_to_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.RPTN1.toeplitz_neg_orig_to_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.GPOS.acc_iff
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.GPOS.moments_equiv
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.BR4.determines_iff_factors
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.BR4.orig_to_blind
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.BR4.blind_to_orig
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.BR4.blind_negative_degree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.M3.orig_central_rounds
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.M3.orig_sigma_rounds
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.M3.orig_nsigma_rounds
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.M3.blind_gives_orig_shape
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.M3.both_headlines
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.sum_cap_cast
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.sum_forman_cast
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.capB_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.formanB_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.eq_iff_agree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.small_face_gap
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.prism7_same_graph
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.prism8_same_graph
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.tcIso_iso
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.tc_tables_same
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.CappedForman.values_agree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.HgDim2.swapAt_agree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.HgDim2.costs_eq_hex
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.HgDim2.kappa_eq_orig_form
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.HgDim2.mean_agree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.LeanCert1.acc_scale
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.LeanCert1.solutions_correspond
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.LeanCert1.nacc_agree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Blind.Compare.LeanCert1.abhy_agree
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.LeanCert1Blind.sv_symm_fun
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.RpTn1Blind.same_sign

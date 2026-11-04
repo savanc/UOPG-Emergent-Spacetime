@@ -1,0 +1,31 @@
+# LEAN-CERT-2 Lean build log (lake build, LEAN_NUM_THREADS=1, one target at a time, 3600 s timeout, RSS watchdog kills at 8 GB; box 8 CPU / 16 GB; times GMT 2026-10-28)
+# rc=134 at 01:38 = lake abort under ulimit -v 8000000 ('failed to create thread'); rc=143 at 02:02 = single-threaded Mathlib rebuild stopped in favour of 'lake exe cache get'.
+# k2p_defs / k2p_nc / k2p_prof = variants elaborating the k2p data defs only (no kernel check; k2p_prof with the profiler on); k2p_parts = per-conjunct decide +kernel theorems. Scratch files lived in <local path> and are not committed.
+PositiveGeometryEmergentSpaceTime.LeanCert rc=134 elapsed 4s peakRSS_KB 0 end 01:38:32
+PositiveGeometryEmergentSpaceTime.LeanCert rc=143 elapsed 1411s peakRSS_KB 1983936 end 02:02:12 
+PositiveGeometryEmergentSpaceTime.LeanCert rc=0 elapsed 53s peakRSS_KB 6617064 end 02:03:26 
+PositiveGeometryEmergentSpaceTime.LeanCert2.Core rc=0 elapsed 23s peakRSS_KB 6527044 end 02:03:53 
+PositiveGeometryEmergentSpaceTime.LeanCert2.FrwzwK0p rc=0 elapsed 22s peakRSS_KB 6105888 end 02:04:15 
+PositiveGeometryEmergentSpaceTime.LeanCert2.FrwzwK0m rc=0 elapsed 19s peakRSS_KB 6114180 end 02:04:34 
+PositiveGeometryEmergentSpaceTime.LeanCert2.FrwzwK1p rc=0 elapsed 30s peakRSS_KB 6712468 end 02:05:04 
+PositiveGeometryEmergentSpaceTime.LeanCert2.FrwzwK1m rc=0 elapsed 33s peakRSS_KB 6690320 end 02:05:37 
+PositiveGeometryEmergentSpaceTime.LeanCert2.FrwzwK2p rc=143 elapsed 169s peakRSS_KB 8113100 end 02:08:29 KILLED RSS>8GB
+PositiveGeometryEmergentSpaceTime.LeanCert2.FrwzwK2m rc=143 elapsed 209s peakRSS_KB 8043216 end 02:11:58 KILLED RSS>8GB
+k2p_defs.lean rc=0 elapsed 151s peakRSS_KB 6187080 end 02:14:43 
+k2p_nc.lean rc=0 elapsed 149s peakRSS_KB 6138848 end 02:17:40 
+k2p_prof.lean rc=0 elapsed 148s peakRSS_KB 6188148 end 02:20:12 
+k2p_parts.lean rc=143 elapsed 157s peakRSS_KB 8021184 end 02:23:08 KILLED RSS>8GB
+PositiveGeometryEmergentSpaceTime.LeanCert2 rc=0 elapsed 14s peakRSS_KB 5986360 end 02:23:45 
+# re-verification 2026-10-28 (Grok, lake env lean -j1, LEAN_NUM_THREADS=1, RSS/MemAvailable watchdog; RSS includes ~6 GB mmapped Mathlib oleans)
+Core rc=1 elapsed 1s peakRSS_KB 4156 end 02:28:49
+Core rc=143 elapsed 9s peakRSS_KB 7026536 end 02:29:12
+Core rc=0 elapsed 9s peakRSS_KB 7024452 end 02:29:33
+FrwzwK0p rc=0 elapsed 7s peakRSS_KB 6788364 end 02:29:47
+FrwzwK0m rc=0 elapsed 6s peakRSS_KB 6788496 end 02:29:53
+FrwzwK1p rc=0 elapsed 18s peakRSS_KB 7362912 end 02:30:11
+FrwzwK1m rc=0 elapsed 21s peakRSS_KB 7363152 end 02:30:32
+LeanCert2 rc=0 elapsed 5s peakRSS_KB 6672812 end 02:30:37
+PositiveGeometryEmergentSpaceTime.LeanCert2 rc=0 elapsed 6s peakRSS_KB 813588 end 02:43:46
+AxiomsAll rc=0 elapsed 382s peakRSS_KB 6888608 end 02:50:41
+GraphExport rc=0 elapsed 602s peakRSS_KB 6940864 end 03:01:00
+# notes: Core rc=1 at 02:28:49 = ulimit -v attempt (Lean cannot mmap .ir under ulimit; abandoned); Core rc=143 at 02:29:12 = false kill by first watchdog (RSS cap 7 GB counted mmapped oleans; cap raised to 8.5 GB + MemAvailable<1.5 GB floor); PositiveGeometryEmergentSpaceTime.LeanCert2 at 02:43:46 = serial lake build of every PositiveGeometryEmergentSpaceTime.lean import (cached, rc 0).

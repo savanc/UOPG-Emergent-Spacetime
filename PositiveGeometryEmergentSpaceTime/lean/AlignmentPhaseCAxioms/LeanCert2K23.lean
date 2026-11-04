@@ -1,0 +1,26 @@
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.Xv_cyc
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.Xv_rev
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.Xv_par
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.N_rows_of_inv
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k2p_rows_gen
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k2p_cert
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k2p_finrank
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k2p_inv
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k2p_N_rows
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k2m_rows_gen
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k2m_cert
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k2m_finrank
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k3p_rows_gen
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k3p_cert
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k3p_finrank
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k3p_inv
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k3p_N_rows
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k3m_rows_gen
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k3m_cert
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k3m_finrank
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k3m_inv
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.k3m_N_rows
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.ms2_ok
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.ms3_ok
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.LeanCert2K23.planted_X0_not_cyclic

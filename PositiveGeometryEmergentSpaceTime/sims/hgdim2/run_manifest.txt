@@ -1,0 +1,12 @@
+run_id HGDIM2-20261031T104614
+start 2026-10-31+00:00
+head c26bd897b0314908b9c7260182391b009df22d81
+python 3.13.5
+numpy 2.5.4
+scipy 1.18.1
+0c1535339d9f735a1fbdc3fa2eabfc8efa2f86ab9b9a3dda09fc766f4f70f02d  hgdim2_checker.py
+c41860513c33477555ee45f7863f093737cdb4b30924d743fb4dd6cb2726f62e  guard.py
+32d22ddf345862e78f998a1d5b0f103d3f4f590676b997b7978e6015571c6202  ../../prereg/HG-DIM-2-permutohedron-ollivier-curvature-2026-10-31.md
+seeds LP_SEED=20261031(+n) sym sample=same rng
+cmd python3 hgdim2_checker.py planted|broken|live
+end 2026-10-31+00:00

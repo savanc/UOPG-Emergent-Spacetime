@@ -1,0 +1,8 @@
+A1: ||Ax-lam x||=1.2e-16, lam_PF-lam=-1.2e-16, ratio dev=0.0e+00
+A2: ||Ax-lam x||=3.5e-16, lam_PF-lam=-2.2e-16, ratio dev=2.2e-16
+A3: ||Ax-lam x||=3.1e-16, lam_PF-lam=-2.2e-16, ratio dev=6.7e-16
+A4: ||Ax-lam x||=1.6e-16, lam_PF-lam=-6.7e-16, ratio dev=1.3e-15
+A5: ||Ax-lam x||=3.3e-16, lam_PF-lam=-2.2e-16, ratio dev=1.6e-15
+A6: ||Ax-lam x||=2.5e-16, lam_PF-lam=-2.2e-16, ratio dev=6.7e-16
+A7: ||Ax-lam x||=2.7e-16, lam_PF-lam=2.2e-16, ratio dev=6.9e-15
+A8: ||Ax-lam x||=3.5e-16, lam_PF-lam=2.2e-16, ratio dev=7.1e-15

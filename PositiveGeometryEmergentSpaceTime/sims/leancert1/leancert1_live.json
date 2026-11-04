@@ -1,0 +1,212 @@
+{
+ "run_id": "LEANCERT1-2026-10-23-r1",
+ "seed": 20261023,
+ "primes": [
+  1000003,
+  998244353,
+  2147483647
+ ],
+ "T0": {
+  "5": {
+   "C*A=0 (held-out eq.5 vs eq.10)": true,
+   "dim ker C (exact rref)": 5,
+   "rank C sketch": [
+    5,
+    5,
+    5
+   ],
+   "rank A sketch": [
+    5,
+    5,
+    5
+   ],
+   "expected n(n-3)/2": 5,
+   "verify": {
+    "MK=0": true,
+    "PM+KQ=dI": true,
+    "QK=dI": true,
+    "d!=0": true
+   },
+   "d": 2,
+   "sizes": {
+    "C": [
+     5,
+     10
+    ],
+    "A": [
+     10,
+     5
+    ]
+   },
+   "seconds": 0.028
+  },
+  "6": {
+   "C*A=0 (held-out eq.5 vs eq.10)": true,
+   "dim ker C (exact rref)": 9,
+   "rank C sketch": [
+    6,
+    6,
+    6
+   ],
+   "rank A sketch": [
+    9,
+    9,
+    9
+   ],
+   "expected n(n-3)/2": 9,
+   "verify": {
+    "MK=0": true,
+    "PM+KQ=dI": true,
+    "QK=dI": true,
+    "d!=0": true
+   },
+   "d": 2,
+   "sizes": {
+    "C": [
+     6,
+     15
+    ],
+    "A": [
+     15,
+     9
+    ]
+   },
+   "seconds": 0.035
+  },
+  "7": {
+   "C*A=0 (held-out eq.5 vs eq.10)": true,
+   "dim ker C (exact rref)": 14,
+   "rank C sketch": [
+    7,
+    7,
+    7
+   ],
+   "rank A sketch": [
+    14,
+    14,
+    14
+   ],
+   "expected n(n-3)/2": 14,
+   "verify": {
+    "MK=0": true,
+    "PM+KQ=dI": true,
+    "QK=dI": true,
+    "d!=0": true
+   },
+   "d": 2,
+   "sizes": {
+    "C": [
+     7,
+     21
+    ],
+    "A": [
+     21,
+     14
+    ]
+   },
+   "seconds": 0.058
+  }
+ },
+ "T1": {
+  "x0": [
+   -2,
+   0,
+   -3,
+   6
+  ],
+  "kernel": [
+   [
+    -1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "M*x0": [
+   -6,
+   -3,
+   -2
+  ],
+  "b": [
+   -6,
+   -3,
+   -2
+  ],
+  "verify": {
+   "MK=0": true,
+   "PM+KQ=dI": true,
+   "QK=dI": true,
+   "d!=0": true
+  },
+  "d": 1,
+  "P": [
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    1
+   ],
+   [
+    0,
+    1,
+    0
+   ],
+   [
+    1,
+    -2,
+    -3
+   ]
+  ],
+  "Q": [
+   [
+    -1,
+    0,
+    0,
+    0
+   ]
+  ],
+  "cubic_on_line_coeffs(t^0..t^3)": [
+   "144",
+   "-36",
+   "-18",
+   "0"
+  ],
+  "rational_roots": [
+   "-4",
+   "2"
+  ],
+  "sketch_rank_M": [
+   3,
+   3,
+   3
+  ],
+  "|R|": 127,
+  "recount_N_ACC": 2,
+  "solutions": [
+   [
+    "-4",
+    "2",
+    "-3",
+    "6"
+   ],
+   [
+    "2",
+    "-4",
+    "-3",
+    "6"
+   ]
+  ]
+ },
+ "summary": {
+  "T0 certs verified": true,
+  "T0 dims = n(n-3)/2": true,
+  "held-out C*A=0": true,
+  "sketch = exact": true,
+  "T1 N_ACC recount = 2 and line roots {-4,2}": true
+ },
+ "verdict_python": "CERTS-VERIFIED (exact; Lean status in result)"
+}

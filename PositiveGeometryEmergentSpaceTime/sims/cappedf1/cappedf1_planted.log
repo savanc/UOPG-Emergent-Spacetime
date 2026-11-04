@@ -1,0 +1,31 @@
+{"planted_pass": 30, "of": 30}
+PASS polygon C3 lazy kappa=B=1 :: 1 1
+PASS polygon C4 lazy kappa=B=2/3 :: 2/3 2/3
+PASS polygon C5 lazy kappa=B=1/3 :: 1/3 1/3
+PASS polygon C6 lazy kappa=B=0 :: 0 0
+PASS polygon C8 lazy kappa=B=0 :: 0 0
+PASS C6 idleness-0 kappa0=0, b0=-1 :: 0 -1
+PASS simplex S3=K4 lazy 1, half 2/3, zero 2/3=b0 :: 1 2/3 2/3
+PASS simplex S4 lazy 1 :: 1
+PASS simplex S5 lazy 1 :: 1
+PASS Q3 lazy 1/2 = B :: 1/2
+PASS Q4 lazy 2/5 = B :: 2/5
+PASS Q5 lazy 1/3 = B :: 1/3
+PASS prism k=4 horizontal kappa=1/2=B :: 1/2 1/2
+PASS prism k=5 horizontal kappa=1/4=B :: 1/4 1/4
+PASS prism k=6 horizontal kappa=0=B :: 0 0
+PASS prism k=7 horizontal kappa=0=B :: 0 0
+PASS prism k=8 horizontal kappa=0=B :: 0 0
+PASS prism k=9 horizontal kappa=0=B :: 0 0
+PASS prism k=5 rung kappa=1/2=B :: 1/2
+PASS prism k=7 rung kappa=1/2=B :: 1/2
+PASS prism k=8 rung kappa=1/2=B :: 1/2
+PASS prism k=8 horizontal: uncapped link kF/4=-1/2 fails (kappa 0) :: kF=-2 B=0
+PASS truncated cube (B3 110): oct-oct -1/2, tri-oct 1/4 :: {(8, 8): [(Fraction(-1, 2), Fraction(-1, 2))], (3, 8): [(Fraction(1, 4), Fraction(1, 4))]}
+PASS 3-regular tree root edge lazy -1/2 (graph only) :: -1/2
+PASS K5 lazy 1 (graph only) :: 1
+PASS EQ gate fires: Q3 with face sizes mislabelled 6 -> B=-1/2 < kappa=1/2 :: 1/2 -1/2
+PASS INEQ gate fires: Q3 with face sizes mislabelled 3 -> B=1 > kappa=1/2 :: 1/2 1
+PASS construction agreement: Pi4 orderings == K4-graph-associahedron == A3 Wythoff 111 (edge signatures) :: [((4, 6), Fraction(0, 1)), ((6, 6), Fraction(-1, 2))]
+PASS construction agreement: Q3 product == B3 Wythoff 100 cube; H3 100 == dodecahedron (20 v, all pentagons) :: 12 20
+PASS non-facial short cycles: K4 edges {4}, triangular prism edges {5}, Q3 and truncated cube none :: [[(4,)], [(5,)], [()], [()]]

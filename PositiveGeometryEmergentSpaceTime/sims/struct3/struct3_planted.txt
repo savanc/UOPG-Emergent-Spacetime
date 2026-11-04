@@ -1,0 +1,9 @@
+# STRUCT-3 planted pair — 2026-10-15
+(first planted run caught a wrong Higgs-term coefficient 1/12 → b_su2(3)=13/4 ≠ 19/6; fixed to 1/6 BEFORE prereg/lock)
+## planted
+SU3 max N_gen 8 b_su2(3) 19/6 km(3) 1 recovered: True
+exit=0
+## broken (sign-flipped gauge term)
+broken window []
+REJECT: sign-flipped b0 gives no AF window
+exit=1

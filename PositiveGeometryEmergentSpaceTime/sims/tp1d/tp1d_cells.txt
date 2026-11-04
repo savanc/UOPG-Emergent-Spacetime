@@ -1,0 +1,11 @@
+== 1103.3694: 6 cells
+- Just below the critical field, the spin dynamics shows a fine structure with two sharp modes at low energies, in a ratio that approaches the golden mean as predicted for the first two meson particles of the E8 spectrum
+- Nearly two decades ago Zamolodchikov (2) proposed precisely eight “meson” bound states (the kinks playing the role of quarks), with energies in specific ratios given by a representation of the E8 exceptional Lie group (2)
+- 3G) and therefore requires an energy cost V(x) that grows linearly with the kink separation x, V(x)= λ|x| where the “string tension” λ is proportional to the ordered moment magnitude S z and the interchain couplings strength [λ=2hz S z / c~ , where hz=Σδ Jδ S z is the longitudinal mean field of the interchain couplings and c~ = c/2 is the lattice spacing along the chain]
+- hz<<J, h=hC, the spectrum is predicted to have 8 particles with energies in specific ratios (given by a representation of the E8 Lie group) with the first mass at m1/J=C(hz/J)8/15, C≈1.59 (2)
+- 4D shows how the ratio of the energies of those peaks varies with increasing field and approaches closely (near 5 T just below the 3D critical field of 5.5 T) the golden ratio m2/m1= (1+ 5 )/2=1.618 predicted for the E8 masses
+- We identify the field where the closest agreement with the E8 mass ratio is observed as the field BC1D where the 1D chains would have been critical in the absence of interchain couplings (25)
+== 2005.13302: 3 cells
+- In accord with the experiment, m1 is set as 1.2 meV and the analytical data are broadened in a Lorentzian fashion with full-width at half-maximum fixed at 0.08m1
+- Note that the two lightest particles matching the golden mass ratio 1.618 as expected [8, 35, 36]
+- Not surprisingly, the best agreement with the E8 predictions is found at the field of 4.7 T, at the putative m8 mF mE mD mC m7 mB m14 m22 mA m6 m5 m12 m4 m11 m3 m2 mA: m13 , m111 mB: m23 , m112 mC: m15 , m24 , m33 , m113 , m1111 m1 mD: m16 , m122 mE: m34 , m114 mF: m25 , m123 , m1112 FIG

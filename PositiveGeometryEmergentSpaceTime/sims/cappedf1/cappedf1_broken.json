@@ -1,0 +1,140 @@
+[
+ {
+  "variant": {
+   "open_nbhd": 1
+  },
+  "verdict": "ILL-DEFINED (planted control failed)",
+  "rejected": true,
+  "planted_failed": [
+   "polygon C3 lazy kappa=B=1",
+   "polygon C4 lazy kappa=B=2/3",
+   "polygon C5 lazy kappa=B=1/3",
+   "simplex S3=K4 lazy 1, half 2/3, zero 2/3=b0",
+   "simplex S4 lazy 1",
+   "simplex S5 lazy 1",
+   "Q3 lazy 1/2 = B",
+   "Q4 lazy 2/5 = B",
+   "Q5 lazy 1/3 = B",
+   "prism k=4 horizontal kappa=1/2=B",
+   "prism k=5 horizontal kappa=1/4=B",
+   "prism k=5 rung kappa=1/2=B",
+   "prism k=7 rung kappa=1/2=B",
+   "prism k=8 rung kappa=1/2=B",
+   "truncated cube (B3 110): oct-oct -1/2, tri-oct 1/4",
+   "3-regular tree root edge lazy -1/2 (graph only)",
+   "K5 lazy 1 (graph only)"
+  ]
+ },
+ {
+  "variant": {
+   "dist_cap2": 1
+  },
+  "verdict": "ILL-DEFINED (planted control failed)",
+  "rejected": true,
+  "planted_failed": [
+   "polygon C6 lazy kappa=B=0",
+   "polygon C8 lazy kappa=B=0",
+   "prism k=6 horizontal kappa=0=B",
+   "prism k=7 horizontal kappa=0=B",
+   "prism k=8 horizontal kappa=0=B",
+   "prism k=9 horizontal kappa=0=B",
+   "prism k=8 horizontal: uncapped link kF/4=-1/2 fails (kappa 0)",
+   "truncated cube (B3 110): oct-oct -1/2, tri-oct 1/4",
+   "3-regular tree root edge lazy -1/2 (graph only)"
+  ]
+ },
+ {
+  "variant": {
+   "no_shared": 1
+  },
+  "verdict": "ILL-DEFINED (planted control failed)",
+  "rejected": true,
+  "planted_failed": [
+   "polygon C3 lazy kappa=B=1",
+   "polygon C4 lazy kappa=B=2/3",
+   "polygon C5 lazy kappa=B=1/3",
+   "simplex S3=K4 lazy 1, half 2/3, zero 2/3=b0",
+   "simplex S4 lazy 1",
+   "simplex S5 lazy 1",
+   "Q3 lazy 1/2 = B",
+   "Q4 lazy 2/5 = B",
+   "Q5 lazy 1/3 = B",
+   "prism k=4 horizontal kappa=1/2=B",
+   "prism k=5 horizontal kappa=1/4=B",
+   "prism k=5 rung kappa=1/2=B",
+   "prism k=7 rung kappa=1/2=B",
+   "prism k=8 rung kappa=1/2=B",
+   "truncated cube (B3 110): oct-oct -1/2, tri-oct 1/4",
+   "K5 lazy 1 (graph only)"
+  ]
+ },
+ {
+  "variant": {
+   "uncapped": 1
+  },
+  "verdict": "ILL-DEFINED (planted control failed)",
+  "rejected": true,
+  "planted_failed": [
+   "polygon C8 lazy kappa=B=0",
+   "prism k=7 horizontal kappa=0=B",
+   "prism k=8 horizontal kappa=0=B",
+   "prism k=9 horizontal kappa=0=B",
+   "prism k=8 horizontal: uncapped link kF/4=-1/2 fails (kappa 0)",
+   "truncated cube (B3 110): oct-oct -1/2, tri-oct 1/4"
+  ]
+ },
+ {
+  "variant": {
+   "diag": 1
+  },
+  "verdict": "ILL-DEFINED (planted control failed)",
+  "rejected": true,
+  "planted_failed": [
+   "polygon C5 lazy kappa=B=1/3",
+   "polygon C6 lazy kappa=B=0",
+   "polygon C8 lazy kappa=B=0",
+   "C6 idleness-0 kappa0=0, b0=-1",
+   "prism k=5 horizontal kappa=1/4=B",
+   "prism k=6 horizontal kappa=0=B",
+   "prism k=7 horizontal kappa=0=B",
+   "prism k=8 horizontal kappa=0=B",
+   "prism k=9 horizontal kappa=0=B",
+   "prism k=8 horizontal: uncapped link kF/4=-1/2 fails (kappa 0)",
+   "truncated cube (B3 110): oct-oct -1/2, tri-oct 1/4",
+   "construction agreement: Pi4 orderings == K4-graph-associahedron == A3 Wythoff 111 (edge signatures)"
+  ]
+ },
+ {
+  "variant": {
+   "empty": 1
+  },
+  "verdict": "ILL-DEFINED (empty run)",
+  "rejected": true,
+  "planted_failed": []
+ },
+ {
+  "variant": {
+   "flow_offset": 1
+  },
+  "verdict": "ILL-DEFINED (planted control failed)",
+  "rejected": true,
+  "planted_failed": [
+   "polygon C3 lazy kappa=B=1",
+   "polygon C4 lazy kappa=B=2/3",
+   "polygon C5 lazy kappa=B=1/3",
+   "polygon C6 lazy kappa=B=0",
+   "polygon C8 lazy kappa=B=0",
+   "3-regular tree root edge lazy -1/2 (graph only)"
+  ]
+ },
+ {
+  "variant": {
+   "half_as_lazy": 1
+  },
+  "verdict": "ILL-DEFINED (planted control failed)",
+  "rejected": true,
+  "planted_failed": [
+   "simplex S3=K4 lazy 1, half 2/3, zero 2/3=b0"
+  ]
+ }
+]

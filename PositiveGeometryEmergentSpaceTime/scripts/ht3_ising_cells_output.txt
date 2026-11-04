@@ -1,0 +1,4 @@
+n=2: {'subgraphs': 8, 'og_ok': 8, 'nonneg_ok': 8, 'involution_ok': 8, 'rank_ok': 8, 'lam_match': 6, 'lam_defined': 6}; distinct cells 2; fails 0
+n=3: {'subgraphs': 64, 'og_ok': 64, 'nonneg_ok': 64, 'involution_ok': 64, 'rank_ok': 64, 'lam_match': 56, 'lam_defined': 56}; distinct cells 8; fails 0
+n=4: {'subgraphs': 256, 'og_ok': 256, 'nonneg_ok': 256, 'involution_ok': 256, 'rank_ok': 256, 'lam_match': 240, 'lam_defined': 240}; distinct cells 52; fails 0
+n=2 one edge, sigma=1/3: M~ = [['1', '1', '1/3', '-1/3'], ['-1/3', '1/3', '1', '1']] minors {(1, 2): '2/3', (1, 3): '10/9', (1, 4): '8/9', (2, 3): '8/9', (2, 4): '10/9', (3, 4): '2/3'}

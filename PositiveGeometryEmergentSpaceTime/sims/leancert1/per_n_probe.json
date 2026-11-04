@@ -1,0 +1,71 @@
+{
+ "gpos": [
+  {
+   "exit": 0,
+   "wall_s": 4.46,
+   "type_checking_s": 0.015
+  },
+  {
+   "exit": 0,
+   "wall_s": 4.18,
+   "type_checking_s": 0.016
+  },
+  {
+   "exit": 0,
+   "wall_s": 4.38,
+   "type_checking_s": 0.015
+  }
+ ],
+ "abhy5": [
+  {
+   "exit": 0,
+   "wall_s": 4.42,
+   "type_checking_s": 0.198
+  },
+  {
+   "exit": 0,
+   "wall_s": 4.16,
+   "type_checking_s": 0.197
+  },
+  {
+   "exit": 0,
+   "wall_s": 4.23,
+   "type_checking_s": 0.207
+  }
+ ],
+ "abhy6": [
+  {
+   "exit": 0,
+   "wall_s": 4.81,
+   "type_checking_s": 0.694
+  },
+  {
+   "exit": 0,
+   "wall_s": 4.62,
+   "type_checking_s": 0.648
+  },
+  {
+   "exit": 0,
+   "wall_s": 4.51,
+   "type_checking_s": 0.687
+  }
+ ],
+ "abhy7": [
+  {
+   "exit": 0,
+   "wall_s": 6.04,
+   "type_checking_s": 2.16
+  },
+  {
+   "exit": 0,
+   "wall_s": 6.15,
+   "type_checking_s": 2.06
+  },
+  {
+   "exit": 0,
+   "wall_s": 6.18,
+   "type_checking_s": 2.17
+  }
+ ],
+ "peak_rss_children_gb": 6.707
+}

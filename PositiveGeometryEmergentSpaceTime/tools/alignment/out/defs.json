@@ -1,0 +1,91 @@
+{
+ "PositiveGeometryEmergentSpaceTime.BR4.ScaleBlind": [
+  "PositiveGeometryEmergentSpaceTime.BR4.LS_blind",
+  "PositiveGeometryEmergentSpaceTime.BR4.eigen_blind",
+  "PositiveGeometryEmergentSpaceTime.BR4.fixes_scale_not_blind",
+  "PositiveGeometryEmergentSpaceTime.BR4.no_scale",
+  "PositiveGeometryEmergentSpaceTime.BR4.stabilizer_blind"
+ ],
+ "PositiveGeometryEmergentSpaceTime.ScaleNoGo.LS": [
+  "PositiveGeometryEmergentSpaceTime.BR4.LS_blind",
+  "PositiveGeometryEmergentSpaceTime.BR4.no_scale_witness"
+ ],
+ "PositiveGeometryEmergentSpaceTime.CappedForman.cap": [
+  "PositiveGeometryEmergentSpaceTime.CappedForman.face_term_le"
+ ],
+ "PositiveGeometryEmergentSpaceTime.CappedForman.g": [
+  "PositiveGeometryEmergentSpaceTime.CappedForman.face_term_le"
+ ],
+ "PositiveGeometryEmergentSpaceTime.Cascade1.Rel5": [
+  "PositiveGeometryEmergentSpaceTime.Cascade1.em_n5_zero_iff"
+ ],
+ "PositiveGeometryEmergentSpaceTime.Cascade1.Zeros5": [
+  "PositiveGeometryEmergentSpaceTime.Cascade1.em_n5_zero_iff"
+ ],
+ "PositiveGeometryEmergentSpaceTime.HgDim1.T": [
+  "PositiveGeometryEmergentSpaceTime.HgDim1.tris_valid"
+ ],
+ "PositiveGeometryEmergentSpaceTime.HgDim1.V": [
+  "PositiveGeometryEmergentSpaceTime.HgDim1.tris_valid"
+ ],
+ "PositiveGeometryEmergentSpaceTime.HgDim1.bits": [
+  "PositiveGeometryEmergentSpaceTime.HgDim1.tris_valid"
+ ],
+ "PositiveGeometryEmergentSpaceTime.HgDim1.crosses": [
+  "PositiveGeometryEmergentSpaceTime.HgDim1.tris_valid"
+ ],
+ "PositiveGeometryEmergentSpaceTime.HgDim2.cayAdj": [
+  "PositiveGeometryEmergentSpaceTime.HgDim2.left_mul_aut"
+ ],
+ "PositiveGeometryEmergentSpaceTime.EWZ1b.N": [
+  "PositiveGeometryEmergentSpaceTime.EWZ1b.forced"
+ ],
+ "PositiveGeometryEmergentSpaceTime.GradedPositroid.ACC": [
+  "PositiveGeometryEmergentSpaceTime.GradedPositroid.graded_cubic_iff_acc"
+ ],
+ "PositiveGeometryEmergentSpaceTime.GradedPositroid.cub": [
+  "PositiveGeometryEmergentSpaceTime.GradedPositroid.graded_cubic_iff_acc"
+ ],
+ "PositiveGeometryEmergentSpaceTime.GradedPositroid.genW": [
+  "PositiveGeometryEmergentSpaceTime.GradedPositroid.graded_cubic_iff_acc"
+ ],
+ "PositiveGeometryEmergentSpaceTime.GradedPositroid.m1": [
+  "PositiveGeometryEmergentSpaceTime.GradedPositroid.graded_cubic_iff_acc"
+ ],
+ "PositiveGeometryEmergentSpaceTime.IntChamber.chamberSign": [
+  "PositiveGeometryEmergentSpaceTime.IntChamber.invariant_chamber_constant"
+ ],
+ "PositiveGeometryEmergentSpaceTime.IntChamber.vertexType": [
+  "PositiveGeometryEmergentSpaceTime.IntChamber.invariant_chamber_constant"
+ ],
+ "PositiveGeometryEmergentSpaceTime.Jord1.gsm": [
+  "PositiveGeometryEmergentSpaceTime.Jord1.gsm_not_pointwise_stabiliser"
+ ],
+ "PositiveGeometryEmergentSpaceTime.Jord1.stab": [
+  "PositiveGeometryEmergentSpaceTime.Jord1.gsm_not_pointwise_stabiliser"
+ ],
+ "PositiveGeometryEmergentSpaceTime.Surf1.K": [
+  "PositiveGeometryEmergentSpaceTime.Surf1.no_sign_coherent_N"
+ ],
+ "PositiveGeometryEmergentSpaceTime.Surf1.W1": [
+  "PositiveGeometryEmergentSpaceTime.Surf1.no_sign_coherent_N"
+ ],
+ "PositiveGeometryEmergentSpaceTime.Surf1.boxU": [
+  "PositiveGeometryEmergentSpaceTime.Surf1.no_sign_coherent_N"
+ ],
+ "PositiveGeometryEmergentSpaceTime.Surf1.tetra": [
+  "PositiveGeometryEmergentSpaceTime.Surf1.no_sign_coherent_N"
+ ],
+ "PositiveGeometryEmergentSpaceTime.Surf1.theta": [
+  "PositiveGeometryEmergentSpaceTime.Surf1.no_sign_coherent_N"
+ ],
+ "PositiveGeometryEmergentSpaceTime.Surf1.ttU": [
+  "PositiveGeometryEmergentSpaceTime.Surf1.no_sign_coherent_N"
+ ],
+ "PositiveGeometryEmergentSpaceTime.TrialityWhy.sphaleronCharge": [
+  "PositiveGeometryEmergentSpaceTime.TrialityWhy.sphaleron_eq_wwx"
+ ],
+ "PositiveGeometryEmergentSpaceTime.TrialityWhy.wwxSum": [
+  "PositiveGeometryEmergentSpaceTime.TrialityWhy.sphaleron_eq_wwx"
+ ]
+}

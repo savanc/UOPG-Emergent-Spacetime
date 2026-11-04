@@ -1,0 +1,3 @@
+'PositiveGeometryEmergentSpaceTime.KEtaGate.su_zero_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.KEtaGate.dual_ne_chiral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveGeometryEmergentSpaceTime.KEtaGate.chiral_on_dual' depends on axioms: [propext, Classical.choice, Quot.sound]

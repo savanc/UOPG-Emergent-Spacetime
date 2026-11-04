@@ -1,0 +1,9 @@
+# Guard refusal after local prereg commit, before push (2026-10-30)
+$ python3 chirallat1v2_checker.py live
+GUARD REFUSED: prereg commit a921fffda not an ancestor of origin/main (not pushed)
+rc=1
+$ python3 import_guard_test.py
+REFUSED: GUARD REFUSED: prereg commit a921fffda not an ancestor of origin/main (not pushed)
+REFUSED: GUARD REFUSED: prereg commit a921fffda not an ancestor of origin/main (not pushed)
+pass-flag attributes present: []
+rc=2

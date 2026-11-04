@@ -1,0 +1,9 @@
+# before commit:
+GUARD REFUSED: prereg/F-RHOWIDTH-2026-10-20.md has no commit
+exit=1
+# after local commit, before push ():
+GUARD REFUSED: prereg commit 63138a6a3 is not an ancestor of origin/main (not pushed)
+exit=1
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg commit 63138a6a3 is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 63138a6a3 is not an ancestor of origin/main (not pushed)']
+pass-flag attributes present: []
+exit=2

@@ -1,0 +1,8 @@
+# CASCADE-1b r2 guard refusal (2026-10-24), local prereg commit 9b1dca2 not yet pushed; origin/main 3a57a17
+$ python sims/cascade1b/cascade1b_checker_v3.py planted
+GUARD REFUSED: prereg commit 9b1dca2aa is not an ancestor of origin/main (not pushed)
+exit 1
+$ python sims/cascade1b/import_guard_test_v3.py
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg commit 9b1dca2aa is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 9b1dca2aa is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 9b1dca2aa is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 9b1dca2aa is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 9b1dca2aa is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 9b1dca2aa is not an ancestor of origin/main (not pushed)', 'REFUSED: GUARD REFUSED: prereg commit 9b1dca2aa is not an ancestor of origin/main (not pushed)']
+pass-flag attributes present: []
+exit 2

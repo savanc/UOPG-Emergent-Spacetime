@@ -1,0 +1,12 @@
+GUARD OK: prereg 40e3ed853 on origin/main; checker hash matches (re-verified on every scoring call)
+d=0.1  L2=-101.6640738  RV=91.49766646  residue@X=d (mass^2=-delta)=1.0
+d=0.2  L2=-26.7239833  RV=21.37918664  residue@X=d (mass^2=-delta)=1.0
+d=0.3  L2=-12.94407359  RV=9.060851514  residue@X=d (mass^2=-delta)=1.0
+d=0.4  L2=-8.258164998  RV=4.954898999  residue@X=d (mass^2=-delta)=1.0
+d=0.5  L2=-6.283185307  RV=3.141592654  residue@X=d (mass^2=-delta)=1.0
+d=0.6  L2=-5.505443332  RV=2.202177333  residue@X=d (mass^2=-delta)=1.0
+d=0.7  L2=-5.547460111  RV=1.664238033  residue@X=d (mass^2=-delta)=1.0
+d=0.8  L2=-6.680995826  RV=1.336199165  residue@X=d (mass^2=-delta)=1.0
+d=0.9  L2=-11.29600821  RV=1.129600821  residue@X=d (mass^2=-delta)=1.0
+RV spread max/min-1 = 80.0 (criterion > 0.01); tachyon pole with unit residue in every member: True
+GATE W: ILL-DEFINED (free continuous alpha'delta changes dimensionless predictions; no fixing condition declared)

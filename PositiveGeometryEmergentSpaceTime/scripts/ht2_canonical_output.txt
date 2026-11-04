@@ -1,0 +1,12 @@
+log-Jacobian matrix: [[(b + c)/(a + b + c), (a + c)/(a + b + c), -c/(a + b + c)], [(b + c)/(a + b + c), -b/(a + b + c), (a + b)/(a + b + c)], [-a/(a + b + c), (a + c)/(a + b + c), (a + b)/(a + b + c)]]
+R = det = -1
+Omega_3 in Y coords = R/(abc) da db dc -> -1/(a*b*c)
+  as a->0 (spoke cut, codim-2 stratum): R -> -1 ; so no pole at a=0 (Jacobian degenerates instead)
+  as a->oo (spoke contracted, facet): R -> -1
+quadric L123*Lsep - e2 = 0
+chart L12|3=1, coords (L123,t,y2): density = -1/(y2*(-L123*t + y2))  (poles only y2=0, y3=0: facets)
+E_2: number of strata by dimension c: {0: 2, 1: 1}  total 3
+E_3: number of strata by dimension c: {0: 5, 1: 6, 2: 3, 3: 1}  total 15
+E_4: number of strata by dimension c: {0: 14, 1: 28, 2: 28, 3: 20, 4: 10, 5: 4, 6: 1}  total 105
+Associahedron K5 (3-dim, Tr(phi^3) 6-pt): f-vector (V,E,F) = (14, 21, 9). E_3: (5, 6, 3); a convex 3-polytope needs >= 4 facets.
+Associahedron of dim 6 (9-pt): facets = 9*6/2 = 27 ; compare E_4 facets (c=5) above.

@@ -1,0 +1,12 @@
+# R4-DM v3 guard refusal, recorded 2026-10-20 BEFORE the prereg commit
+$ python3 sims/r4dm3/r4dm3_checker.py live
+GUARD REFUSED: prereg/R4-DM3-2026-10-20.md has no commit
+exit 1
+$ python3 sims/r4dm3/import_guard_test.py
+IMPORT-AND-CALL: ['REFUSED: GUARD REFUSED: prereg/R4-DM3-2026-10-20.md has no commit', 'REFUSED: GUARD REFUSED: prereg/R4-DM3-2026-10-20.md has no commit', 'REFUSED: GUARD REFUSED: prereg/R4-DM3-2026-10-20.md has no commit']
+pass-flag attributes present: []
+exit 2
+
+# after local commit, before push: 2026-10-20
+GUARD REFUSED: prereg commit d9b60aaaa is not an ancestor of origin/main (not pushed)
+exit 1

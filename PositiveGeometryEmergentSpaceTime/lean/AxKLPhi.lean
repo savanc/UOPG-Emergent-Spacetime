@@ -1,0 +1,4 @@
+import PositiveGeometryEmergentSpaceTime.KLPhi
+#print axioms PositiveGeometryEmergentSpaceTime.KLPhi.phi_relation
+#print axioms PositiveGeometryEmergentSpaceTime.KLPhi.equal_spacing
+#print axioms PositiveGeometryEmergentSpaceTime.KLPhi.phi_from_kstar

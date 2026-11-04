@@ -1,0 +1,9 @@
+{"fetched": "2026-10-20 (after prereg push 063378f)",
+ "units": "MeV",
+ "sets": {
+  "S1": {"m_pi": "139.57039", "m_rho": "775.26", "m_f2": "1275.4",
+         "sources": {"m_pi": "PDG 2026 pdgLive S008M, pi+- mass OUR FIT", "m_rho": "PDG 2026 pdgLive M009, rho(770) mass neutral only (e+e-)", "m_f2": "PDG 2026 pdgLive M005M, f2(1270) mass OUR AVERAGE"}},
+  "S2": {"m_pi": "139.57077", "m_rho": "763.7", "m_f2": "1267.5",
+         "sources": {"m_pi": "TRASSINELLI 2016 (X-ray transitions in pionic N2), as listed in pdgLive S008M; DEVIATION: prereg named Daum 2019 as an example, but Daum 2019 is pi->mu nu decay kinematics, not pionic-atom X-ray, so the actual pionic-atom X-ray measurement Trassinelli 2016 is used", "m_rho": "GARCIA-MARTIN 2011 (PRL 107 072001 programme, GKPY dispersive) rho(770) pole Re sqrt(s) = 763.7 MeV, as listed in PDG 2025 rho(770) listing", "m_f2": "Pelaez-Rodas-Ruiz de Elvira dispersive (FDR C_N) f2(1270) pole Re sqrt(s) = 1267.5 MeV, as quoted in arXiv:2512.09033 ref [14]"}}
+ }
+}

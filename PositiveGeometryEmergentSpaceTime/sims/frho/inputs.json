@@ -1,0 +1,13 @@
+{"fetched": "2026-10-20 after prereg push 63138a6 (); PDG 2025 rho(770) listing (ccwww.kek.jp/pdg/2025/listings/rpp2025-list-rho-770.pdf) and pdgLive M009",
+ "units": "MeV; Gamma = -2 Im sqrt(s_pole); asymmetric errors symmetrised (mean)",
+ "sets": {
+  "D1": {"role": "verdict", "m": "763.7", "dm": "1.6", "Gamma": "146.4", "dGamma": "2.1",
+         "source": "GARCIA-MARTIN 11 (PRL 107 072001, GKPY) pole (763.7 +1.7 -1.5) - i (73.2 +1.0 -1.1), as listed in PDG 2025"},
+  "D2": {"role": "verdict", "m": "762.5", "dm": "1.7", "Gamma": "146.4", "dGamma": "2.2",
+         "source": "HOFERICHTER 24 (PL B853 138698) pole (762.5 +- 1.7) - i (73.2 +- 1.1), as listed in PDG 2025; NOTE PDG footnote: 'update of GARCIA-MARTIN 11 with input for pi pi T-matrix from HOFERICHTER 16' -> NOT fully independent of D1 (disclosed)"},
+  "BW": {"role": "report-only (Breit-Wigner definition)", "m": "775.26", "dm": "0.23", "Gamma": "147.4", "dGamma": "0.8",
+         "source": "PDG 2026 pdgLive M009 rho(770) neutral only (e+e-) mass 775.26 +- 0.23, width 147.4 +- 0.8 (S=2.0)"},
+  "C01": {"role": "report-only (third pole, Roy CGL 2001)", "m": "762.4", "dm": "1.8", "Gamma": "145.2", "dGamma": "2.8",
+         "source": "COLANGELO 01 (NP B603 125) pole (762.4 +- 1.8) - i (72.6 +- 1.4), as listed in PDG 2025"}},
+ "KSRF_sources": ["Kawarabayashi, Suzuki, PRL 16 (1966) 255", "Riazuddin, Fayyazuddin, Phys. Rev. 147 (1966) 1071"]
+}

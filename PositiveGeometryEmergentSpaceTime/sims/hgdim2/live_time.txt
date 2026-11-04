@@ -1,0 +1,3 @@
+rc 0
+elapsed_s 31.4
+maxrss_kB 319764

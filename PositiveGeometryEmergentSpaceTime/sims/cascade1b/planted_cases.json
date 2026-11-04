@@ -1,0 +1,13 @@
+{"run_id": "CASCADE1b-2026-10-23-r1", "seed": 202610231,
+ "supersedes": "sims/cascade1/planted_cases.json (v1, locked, not edited) for CASCADE-1b only",
+ "cases": {
+  "PL1": "triangulation sum = 2312.16282 eq. (3.1) at n=5; at n=6: 14 terms, contains the eq. (3.6) representatives, cyclically invariant",
+  "PL2": "causal-diamond rule: n=5 diamonds = the v1 Z_i loci; n=6 gives 9 diamonds (6 skinny of size 3, 3 squares of size 4); sum of c over each diamond = X_B + X_T",
+  "PL3": "massless A6 vanishes on all 9 diamond loci (sec. 3.2); planted A6 + 1/(X13 X14 X15) does not vanish on D(1,3)",
+  "PL4": "massless eq. (3.7) both lines x 6 rotations hold as rank-1 identities (12/12); planted non-separable A6 + 1/(X13 X24 X46) rejected",
+  "PL5": "massless factor counts: eq. 3.7 line 1 = 2, line 2 = 3, eq. 3.3 (n=5) = 2",
+  "PL6": "on the published CASCADE-1 Rel5 family: mass-consistent v1 split templates 10/10; the v1-defect replica (locus with symbolic m, amplitude with m -> t) fails 0/10 as the locked v1 did",
+  "PL7": "V_D detector: massless n=4 V = {0}; planted 1/y13 + 1/(y24 + 1) gives V = {-1} and is flagged",
+  "PL8": "cone_dim exact certificates on toy cones of dimension 0, 1, 2",
+  "PL9": "2312.16282 sec. 7.1: E0 c-preserving shifts are the delta-line at n=6 and trivial at n=5"
+ }}

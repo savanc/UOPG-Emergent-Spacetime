@@ -1,0 +1,9 @@
+# Guard proof — 2026-10-20, local prereg commit e23bbdd, NOT yet pushed
+## (a) CLI
+$ python3 sims/fdim2/fdim2_checker.py planted
+GUARD REFUSED: prereg commit e23bbddee is not an ancestor of origin/main (not pushed)
+exit=1
+## (b) import-and-call
+$ python3 sims/fdim2/import_guard_test.py
+IMPORT-AND-CALL: GUARD REFUSED: prereg commit e23bbddee is not an ancestor of origin/main (not pushed)
+exit=2

@@ -1,0 +1,82 @@
+"""DEF rows (definitions headline theorems depend on) and the glossary, judged 2026-11-03.
+
+DEF verdicts: MATCH = the Lean definition is the object the prose names, or the prose discloses how it
+is built; NAME-ONLY = the identification with the named physical/mathematical object lives only in a
+name or docstring (no theorem ties it), so a headline theorem inherits that identification unchecked.
+Glossary status: DEFINED (defined in words where the papers use it), MISSING-IN-PAPER (used but not
+defined in at least one paper that relies on it), MISMATCH (the paper's object differs from the Lean one).
+"""
+M, NO = "MATCH", "NAME-ONLY"
+# (lean short name, rung, verdict, note)
+DEFS = [
+ ("BR4.ScaleBlind", "BR-4", M, "f (c•x) = f x for c ≠ 0; matches the caption at II:371."),
+ ("IntChamber.chamberSign", "INT-1", M, "sign vector of the six wall forms in (c13,c14,c24)."),
+ ("IntChamber.vertexType", "INT-1", M, "tight-facet sets of feasible facet-pair points of Assoc.region a b e: the labelled vertex set of the polygon."),
+ ("IsingTiling.C", "H-T5", NO, "one certified rational point of OG(3,6); 'star network' (II:326) is not in Lean or defined in the paper."),
+ ("IsingTiling.isingBracket", "H-T5", M, "⟨Y j l⟩ = det[Y0,Y1,Y2,Λj,Λl], Y = C·Λ (Y_eq)."),
+ ("LeanCert.eq5", "LEAN-CERT-1", M, "ABHY eq. (5): row i is Σ_{j≠i} s_ij (cited formula)."),
+ ("LeanCert.ACC", "LEAN-CERT-1", M, "four ACC at y_Q = 1; acc_iff gives the full rational solution set, so accSet.card = 2 is not a search-window artefact."),
+ ("Jord1.gsm", "JORD-1", M, "{D | IsDer D ∧ D·E1 = 0 ∧ PresB D}: an algebra of derivations; the prose 'group' is the JORD-1 OVERSTATES row, not a definition fault."),
+ ("Jord1.stab", "JORD-1", M, "pointwise stabiliser of S inside Der J3(O)."),
+ ("GradedPositroid.genW", "GRADED-POSITROID", M, "Cartan weights (H3, H8', T3, Y) of the 15 Weyl states, hand-entered; matches II:466."),
+ ("GradedPositroid.ACC", "GRADED-POSITROID", M, "four perturbative ACC with SM multiplicities."),
+ ("FL1Z.D3", "FL-1Z", NO, "literal 3×3 matrix 'Eq. (D.3) of 2502.12662 at τ=ω'; that this is the Zee--Babu neutrino mass matrix is a transcription, no theorem."),
+ ("EWZ1b.N", "EW-Z1b", NO, "script-generated (sims/ewz1b/mklean.py) residual of A[1234] already restricted to the CGW zero locus; faithfulness to the Feynman rules is not in Lean. Rung status DERIVED (conditional) is the right tag."),
+ ("Cascade1.Zeros5", "CASCADE-1", M, "A5(X − μ) vanishes on the five zero loci Z_i."),
+ ("Cascade1.Rel5", "CASCADE-1", M, "the five live stage-3 relations (cascade1_live.json)."),
+ ("LeanCert2.frwzw_k0p_Mr", "LEAN-CERT-2", NO, "FR-WZW matrices are script data; no theorem ties them to the FR-WZW constraints (the rung is a method rung that moves no ledger value)."),
+ ("Surf1.boxU", "SURF-1′", NO, "half-edge lists; '≅ K3,3' is a docstring identification. Pilot cross-check is SIMULATED; the prism gives the opposite sign, so it matters (disclosed at II:421)."),
+ ("Surf1.ttU", "SURF-1′", NO, "'≅ double square' by docstring; pilot kernel check (blind_dsq) confirms the Laurent data, i.e. PROVED equal colour data."),
+ ("Surf1.W1", "SURF-1′", M, "colour enumerator W at c=1; reproduced by the pilot's blind enumerator."),
+ ("HgDim1.NA_neg", "HG-DIM-1", NO, "hand-listed 'closed neighbourhoods'; no theorem that they are {v | v = 2 ∨ adj 2 v}. Same for NB_neg, NA_pos, NB_pos."),
+ ("HgDim1.pSides", "HG-DIM-1", M, "p = number of sides of the flip quadrilateral that are diagonals; matches II:732."),
+ ("HgDim1.adj", "HG-DIM-1", M, "flip adjacency on the enumerated triangulations."),
+ ("HgDim2.cayAdj", "HG-DIM-2", M, "right Cayley adjacency; permutohedron graph = Cayley graph of adjacent transpositions (cited)."),
+ ("CappedForman.g", "CAPPED-FORMAN-1", M, "g k m = m − 2|1−m| − (k−3)m; not defined in the papers (glossary MISSING-IN-PAPER)."),
+ ("CappedForman.capB", "CAPPED-FORMAN-1", M, "1 − Σ min(3,k−3)/(D+1); agrees with the capped bound of the curvature paper."),
+ ("CappedForman.formanB", "CAPPED-FORMAN-1", M, "1 − Σ (k−3)/(D+1) = κ_F/(D+1); agrees with eq:forman (C:109)."),
+ ("RpTn1.corr2", "RP-TN-1", M, "two-state correlator w1 x1^t + w2 x2^t."),
+ ("TrialityWhy.sphaleronCharge", "TRIALITY-WHY", M, "charge of the SU(2) instanton vertex for N generations."),
+]
+# (term, locate-key in glossary_terms.TERMS, plain-language definition, lean defs, status, note / proposed edit)
+G = [
+ ("hidden zero", "hidden zero", "A point in kinematic space (a choice of the Mandelstam invariants) where a colour-ordered tree amplitude vanishes identically, without fine tuning of couplings.", ["Cascade1.Zeros5", "EWZ1b.N", "LECRatio.hidden_zero_iff"], "MISSING-IN-PAPER",
+  "Defined in Paper II at II:481 (EW-Z1b card), after the first use at II:132. Paper I uses it at I:552 in quotes, undefined. Edit I:552 and II:132: add '(a kinematic point where a colour-ordered tree amplitude vanishes)'."),
+ ("Lovelace--Shapiro amplitude", "Lovelace--Shapiro amplitude", "The dual-resonance pion amplitude A(s,t) = Γ(1−α(s))Γ(1−α(t))/Γ(1−α(s)−α(t)) with a linear Regge trajectory α; its residues give resonance couplings.", ["LSResidue.Ff2", "MassiveLS.a0"], "MISSING-IN-PAPER",
+  "Named and cited, but neither paper writes the formula. Edit II:284: add the formula and α(s)=α₀+α′s."),
+ ("Legendre coefficient / partial-wave coupling", "Legendre coefficient / partial-wave coupling", "The coefficient c_J of P_J(cos θ) in a residue; positivity means c_J ≥ 0. The coupling g_J is read off as c_J = −g_J² m_J² (the normalisation of AHRV eq. 2.12, transcribed by hand; not mechanised in Lean).", ["LSResidue.rho3_residue"], "MISMATCH",
+  "Lean stops at Legendre coefficients; prose calls the resulting ratios 'coupling ratios' (MR-1b OVERSTATES). Edit: define the coefficient→coupling convention at II:302 and tag it as a convention."),
+ ("mass offsets / chamber / wall", "chamber / wall (offset arrangement)", "The ABHY constants c_ij (shifted by masses) parametrise the polytope; the hyperplanes where the combinatorial type can change are walls, and the open regions between them are chambers.", ["IntChamber.chamberSign", "IntChamber.vertexType"], "DEFINED", "II:330 defines chambers in words."),
+ ("kinematic associahedron (ABHY)", "kinematic associahedron (ABHY)", "The polytope cut out of the positive region of planar variables X_ij by the ABHY linear relations s_ij = −c_ij; its canonical form is the bi-adjoint φ³ tree amplitude.", ["LeanCert.eq5", "Assoc.X"], "MISSING-IN-PAPER", "Used from II:132 with citation only. Edit: one sentence at first use in II."),
+ ("scale-blind map", "scale-blind map", "A map f with f(c·x) = f(x) for every non-zero scalar c.", ["BR4.ScaleBlind"], "DEFINED", "II:371 caption."),
+ ("homogeneous of degree k", "homogeneous of degree k", "A quantity q with q(c·x) = c^k q(x).", ["BR4.no_scale"], "DEFINED", "II:371 caption."),
+ ("Ising cell / star network", "Ising cell / star network", "Ising cells: cells of the positive orthogonal Grassmannian OG⁺(k,2k), which also parametrise the critical Ising model on planar networks. A star network is a particular planar Ising network.", ["IsingTiling.C", "IsingTiling.isingBracket"], "MISSING-IN-PAPER",
+  "'Ising cells' defined at II:319; 'star network' (II:326) is not defined and not in Lean. Edit: drop '(star network)' or define it and say the Lean point is one rational point of OG(3,6)."),
+ ("sign-coherent", "colour factor / sign-coherent", "A choice of N for which all one-loop colour weights of the listed graphs have the same sign.", ["Surf1.K", "Surf1.W1"], "DEFINED", "II:405."),
+ ("crossed box (= K3,3)", "crossed box (= K_{3,3})", "The non-planar six-vertex cubic one-loop graph, identified with the complete bipartite graph K3,3.", ["Surf1.boxU"], "DEFINED", "II:412 figure and II:421 disclose the identification as an assumption; Lean identification is docstring-only (DEF row NAME-ONLY)."),
+ ("pointwise stabiliser", "pointwise stabiliser", "For a set S, the derivations (or group elements) that fix every point of S individually.", ["Jord1.stab"], "MISMATCH",
+  "II:431 defines it for groups ('the group fixing a set of positive points one by one'); Lean defines it in the derivation algebra Der J3(O). Edit: 'the algebra of derivations annihilating every point of S'."),
+ ("exceptional Jordan algebra J3(O)", "exceptional Jordan algebra J_3(O)", "The 27-dimensional algebra of 3×3 Hermitian octonionic matrices with product X∘Y = (XY+YX)/2.", ["Jord1.IsDer"], "MISSING-IN-PAPER", "Named and cited at II:431 (27-dimensional); product not stated. Minor."),
+ ("SM gauge algebra g_SM", "pointwise stabiliser", "g_SM = stab(E1) ∩ setstab(h3(ℂ)) inside Der J3(O): su(3)⊕su(2)⊕u(1) in the Dubois-Violette--Todorov embedding.", ["Jord1.gsm"], "MISMATCH", "Paper says 'SM gauge group'; Lean object is the algebra (JORD-1 OVERSTATES)."),
+ ("baryon triality / exactness window", "exactness window / anomaly window", "Baryon triality: the Z3 subgroup of baryon number (mod 3) combined with hypercharge. The exactness window is the set of N with k | N·c, where c = 3q_Q + q_L is the Z_k charge one generation contributes to the SU(2) instanton vertex (so the instanton preserves Z_k); the linear anomaly window is the set of N satisfying the Ibáñez–Ross SU(2)²–Z_k condition. Lean: k | Nc ⟺ k/gcd(k,c) | N.", ["TrialityWhy.sphaleronCharge"], "MISSING-IN-PAPER", "'exactness window' and 'linear anomaly window' (II:454) are not defined. Edit: define both in one clause."),
+ ("graded positroid / Cartan grading", "graded positroid / Cartan grading", "Columns of Gr⁺(k,15) labelled by the 15 Weyl states and weighted by their Cartan charges (H3, H8, T3, Y); graded moments are weighted sums of powers of those charges.", ["GradedPositroid.genW", "GradedPositroid.m1", "GradedPositroid.cub"], "MISSING-IN-PAPER", "'graded first and cubic moments' (II:466) not defined. Edit: '(the sums Σ_i w_i and Σ_i w_i³ of the grading weights)'."),
+ ("anomaly-cancellation conditions (ACC); N_ACC", "anomaly-cancellation conditions (ACC)", "The gravitational, SU(3)²U(1), SU(2)²U(1) and U(1)³ anomaly conditions on hypercharges; N_ACC is the number of rational solutions at y_Q=1.", ["LeanCert.ACC", "GradedPositroid.ACC"], "DEFINED", "II:353 defines N_ACC in words."),
+ ("modular fixed point τ=ω / Zee--Babu", "modular fixed point tau=omega", "τ=ω=e^{2πi/3} is fixed by ST in SL(2,ℤ); the Zee--Babu model generates neutrino masses at two loops.", ["FL1Z.D3", "FL1Z.w"], "DEFINED", "II:471 defines the fixed point; model cited. D3 transcription is DEF NAME-ONLY."),
+ ("colour-ordered amplitude", "colour-ordered amplitude", "The coefficient of a single trace structure in the colour decomposition of a gauge amplitude.", ["EWZ1b.N"], "MISSING-IN-PAPER", "Used at II:481 without definition. Minor."),
+ ("stage-3 relations", "stage-3 relations", "The linear relations among mass offsets μ_ij found in stage 3 of the CASCADE line, on which the hidden zeros of the massive amplitude hold.", ["Cascade1.Rel5"], "MISSING-IN-PAPER", "II:542/582 use 'stage-3 relations' without stating them. Edit: point to tab:cascade1diag or the relation file and state them for n=5."),
+ ("certificate", "certificate (integer / mod-p)", "A small piece of data (e.g. a kernel basis and a pivot witness) that a short proved checker verifies; validity of the checker is proved once.", ["LeanCert.checkZero_spec"], "DEFINED", "I:667."),
+ ("FR-WZW matrix (was: fusion-rule (WZW) matrix)", "fusion-rule (WZW) matrix", "FR-WZW constraint matrices: integer matrices of linear constraints on local parity-odd (WZW-type) numerators of the five-point pion amplitude of the form ε(p1,p2,p3,p4)·P(X) with deg P ≤ k and reflection sign ±; their kernel dimension counts the allowed numerators. (Not WZW fusion rules: the earlier expansion 'fusion-rule' was wrong.)", ["LeanCert2.frwzw_k0p_Mr"], "MISSING-IN-PAPER", "Not defined; the rung moves no ledger value. Minor."),
+ ("Ollivier--Ricci curvature κ", "Ollivier--Ricci curvature", "For an edge xy, κ = 1 − W1(μ_x, μ_y), with μ_x the uniform measure on the closed neighbourhood (idleness 1/(D+1)) and W1 the transport distance in the graph metric.", ["HgDim1.kappa_neg", "HgDim2.kappa_of_cost"], "DEFINED", "C:90 section; II:715 in words. Lean has no κ object: kappa_* are arithmetic on a certified matching cost (DEF NA_* NAME-ONLY)."),
+ ("Wasserstein-1 / transport cost", "Wasserstein-1 / transport cost W_1", "W1(μ,ν) = min over couplings of the expected distance; for uniform measures of equal size the optimum is a perfect matching (Birkhoff).", ["HgDim1.cost_lower", "HgDim1.walkOk"], "DEFINED", "C:95; Birkhoff reduction cited (C:572)."),
+ ("Forman curvature κ_F", "Forman curvature kappa_F", "For an edge of a simple D-polytope graph, κ_F = D + 1 − Σ_faces (k_F − 3), summed over the 2-faces through the edge.", ["CappedForman.formanB"], "DEFINED", "eq:forman (C:109); II:715 in words only."),
+ ("p(e)", "p(e): diagonal sides of the flip quadrilateral", "For a flip edge of K_n, the number of sides of the flip quadrilateral that are diagonals (not polygon sides), 0 ≤ p ≤ 4.", ["HgDim1.pSides"], "DEFINED", "II:732, C:70; Paper I:754 uses p(e) undefined (minor)."),
+ ("D", "p(e): diagonal sides of the flip quadrilateral", "Dimension of the polytope, D = n − 3 for K_n; the graph is D-regular.", ["HgDim1.regular4"], "DEFINED", "II:732; I:754 undefined (minor)."),
+ ("capped-Forman bound B(e)", "capped-Forman bound B(e)", "B(e) = 1 − Σ_faces min(3, k_F − 3)/(D+1); the proposition is κ ≥ B, equality conjectured iff all k_F ≤ 6.", ["CappedForman.capB", "CappedForman.cap"], "DEFINED", "prop:capped (C:343)."),
+ ("per-face weight g_k(m)", "per-face weight g_k(m)", "g_k(m) = m − 2|1−m| − (k−3)m, the contribution of a k-face with transport weight m; its maximum over m ≥ 0 is 1 − min(3,k−3).", ["CappedForman.g"], "MISSING-IN-PAPER", "Used at II:802, C:474, C:567 only; never defined. Edit C:474: add 'where $g_k(m)=m-2|1-m|-(k-3)m$ is the per-face term of the weighted Forman curvature'."),
+ ("permutohedron P_n / h(e)", "permutohedron P_n / h(e) hexagons", "P_n: convex hull of the permutations of (1..n); its graph is the Cayley graph of S_n by adjacent transpositions. h(e) = number of hexagonal 2-faces through e.", ["HgDim2.cayAdj"], "DEFINED", "I:762, C:541."),
+ ("Toeplitz / Hankel minor; reflection positivity", "Hankel / Toeplitz 2x2 minor", "For a correlator C(t), the reflected (Hankel) matrix is H_ij = C(t_i + t_j); the unreflected (Toeplitz-type) 2×2 minor is C(a)C(b) − C(0)C(a+b). Reflection positivity makes Hankel matrices PSD; for a two-term C(t) = w1 x1^t + w2 x2^t Lean proves the Hankel minor ≥ 0 and the unreflected minor < 0 (a,b ≥ 1, distinct nodes).", ["RpTn1.corr2"], "MISSING-IN-PAPER", "II:710 uses 'reflected/unreflected minor' without the matrices. Edit: write the two 2×2 minors."),
+ ("flip graph / triangulation / ear", "flip graph / triangulation / Catalan number", "Vertices: triangulations of a convex (n)-gon (Catalan many); edges: single diagonal flips. An ear is a triangle with two polygon sides.", ["HgDim1.tris", "HgDim1.adj"], "DEFINED", "I:742, C:66, lem:ears C:262."),
+ ("blueprint row / sanity theorem / second formalisation", "blueprint row", "Blueprint row: prose claim, Lean name, literal statement, gaps side by side. Sanity theorem: known value, planted wrong case rejected, non-vacuity. Second (blind) formalisation: statement written from prose before reading the Lean, then proved equivalent.", ["mod:Alignment"], "DEFINED", "II:263, I:434."),
+ ("status tags (PROVED, PAPERPROVED, SIM, CITED)", "PROVED tag", "PROVED = Lean kernel, standard axioms, no sorry; PAPERPROVED = complete paper proof; SIM = committed code with run id; CITED = literature.", [], "MISMATCH", "Defined at I:47, II:74, but the abstracts (I:42, II:65) list a tag set without paper-proved (GENERAL OVERSTATES rows)."),
+ ("standard axioms / sorry", "sorry / standard axioms", "propext, Classical.choice, Quot.sound; sorry marks a missing proof.", [], "DEFINED", "I:49, II:74, C:552."),
+]

@@ -1,0 +1,28 @@
+### planted
+GUARD OK: prereg 7f9878669 on origin/main; checker hash matches (re-verified on every scoring call)
+P1 Z9(3B) exact window in 1..20 = multiples of 3 (STRUCTNGen.triality_iff): OK
+P2 B3 (hep-ph/0512163 eq 2.17) == -(B - 2Y) mod 3 on Q,U,D,L,E: OK
+P3 sphaleron N=3: Delta(3B) = 9 (Delta B = 3, Delta L_i = 1; B/3 - L_i conserved): OK
+P4 SU(3)^2 sum == 0 for Yukawa-compatible charges: OK
+P5 B-L (x3) exact for all N: OK
+P6 QQQL gauge-invariant, Delta B = 1, B3-odd (B3 forbids dim-6 proton decay): OK
+P7 detector: QUL (no H) is NOT gauge-invariant: OK
+PLANTED: ALL OK
+rc=0
+### broken
+GUARD OK: prereg 7f9878669 on origin/main; checker hash matches (re-verified on every scoring call)
+broken: Z9(3B) window within 1..8 = [3, 6]
+BROKEN: REJECTED
+rc=0
+### live
+GUARD OK: prereg 7f9878669 on origin/main; checker hash matches (re-verified on every scoring call)
+T1 {'n': 29240, 'mismatch': 0, 'ccx_nonzero': 0, 'grav_nuc_nonzero': 0, 'TAUT': True}
+T2 {'dai_freed': [3, 6, 9, 12, 15, 18], 'exact': [3, 6, 9, 12, 15, 18], 'equal': True}
+T3 {'ops': [{'op': 'QQQL', 'gauge_inv': True, 'dB': '1', 'B3': 2}, {'op': 'UUDE', 'gauge_inv': True, 'dB': '-1', 'B3': 1}, {'op': 'QQUE', 'gauge_inv': False, 'dB': '1/3', 'B3': 1}, {'op': 'QLUD', 'gauge_inv': False, 'dB': '-1/3', 'B3': 2}], 'BREAK': True, 'W_QG': [1, 2, 3, 4, 5]}
+T4 {'real_roots_x3_1': 1, 'torus_blind': True, 'cyclic_frac_3_div_n': '5/17', 'cyclic_family_constant': False}
+T5 [E] proton stability: phenomenological, excluded from forcing (reported only)
+NULL n = 170, n3 = 12, nsingleton = 32, P3 = 6/85 (0.0706)
+RIVAL ORDER reproduces every exactness window: True
+W_K = [1, 2, 3, 4, 5]; P3 Bonferroni x5 = 6/17 (0.3529)
+VERDICT: NOT-FORCED / TAUTOLOGICAL-CONDITION (NO-GO)
+rc=0

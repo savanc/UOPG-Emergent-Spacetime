@@ -1,0 +1,2 @@
+k4_legs123 [{'support': ['13', '15', '24', '26', '35', '46'], 'component': ['b46+1', 'b35-1', 'b26+1', 'b24+1', 'b15-1'], 'b': {'b13': '1', 'b15': '1', 'b24': '-1', 'b26': '-1', 'b35': '1', 'b46': '-1'}, 'free': [], 'Lk_nonzero_generic': True}]
+k4_legs123: scanned 511 non-empty supports (empty support: unshifted A6, fails C1 for k>=1); 1 solution components with L != 0; 54s

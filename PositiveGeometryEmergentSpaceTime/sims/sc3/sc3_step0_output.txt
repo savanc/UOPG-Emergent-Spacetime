@@ -1,0 +1,9 @@
+cell A (lam4 docstring): # EW-Z1b — hidden zeros of massive W amplitudes force the gauge/Higgs couplings (CGW 2601.16860 setup)
+
+`N` = numerator × both propagators of the colour-ordered 4-vector amplitude A[1234] in the U(N)→U(1)^N
+adjoint-Higgs (Coulomb-branch) theory of Carrillo González–Ward (arXiv 2601.16860, §VI.2), with *adjustable*
+couplings `lam3` (VVV), `a` (VVS: Higgs/Goldstone–W–W per unit mass), `lam4` (VVVV), already restricted to the
+hidden-zero locus c̃₁₃ = 0, ε₁·ε₃ = ε₁·p₃ = ε₃·p₁ = 0, with `t` eliminated.
+cell B (N args): a e1p2 e2p1 e2p3 e3p2 e4p1 e4p2 ee12 ee14 ee23 ee24 ee34 k1 k2 k3 lam3 lam4 s
+lam4_is_higgs_quartic=False lam4_is_gauge_contact=True other_higgs_quartic_args=[]
+VERDICT: NOT-WELL-POSED

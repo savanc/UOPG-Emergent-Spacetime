@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "PositiveGeometryEmergentSpaceTime: a Lean-checked positive-geometry research programme"
+authors:
+  - family-names: Chhaniyara
+    given-names: Savan
+    email: savanc@gmail.com
+license: MIT
+repository-code: "https://github.com/savanc/UOPG-Emergent-Spacetime"
+date-released: "2026-11-03"
+keywords:
+  - positive geometry
+  - Lean 4
+  - Mathlib
+  - formal verification
+  - Standard Model
+  - preregistration
+references:
+  - type: article
+    title: "UOPG: Emergent Spacetime and Particles from the Positive Grassmannian"
+    authors:
+      - family-names: Chhaniyara
+        given-names: Savan
+    doi: "10.5281/zenodo.19291218"

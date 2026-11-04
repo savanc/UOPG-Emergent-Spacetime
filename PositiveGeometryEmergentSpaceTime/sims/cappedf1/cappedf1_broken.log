@@ -1,0 +1,9 @@
+REJECTED {"open_nbhd": 1} -> ILL-DEFINED (planted control failed)
+REJECTED {"dist_cap2": 1} -> ILL-DEFINED (planted control failed)
+REJECTED {"no_shared": 1} -> ILL-DEFINED (planted control failed)
+REJECTED {"uncapped": 1} -> ILL-DEFINED (planted control failed)
+REJECTED {"diag": 1} -> ILL-DEFINED (planted control failed)
+REJECTED {"empty": 1} -> ILL-DEFINED (empty run)
+REJECTED {"flow_offset": 1} -> ILL-DEFINED (planted control failed)
+REJECTED {"half_as_lazy": 1} -> ILL-DEFINED (planted control failed)
+all broken rejected: True

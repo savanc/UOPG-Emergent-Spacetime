@@ -1,0 +1,7 @@
+import PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingGPSign
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingGPSign.triples_length
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingGPSign.pos_unique
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingGPSign.orth_count
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingGPSign.orth_38
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingGPSign.gp_eq
+#print axioms PositiveGeometryEmergentSpaceTime.Alignment.Sanity.IsingGPSign.planted_flip

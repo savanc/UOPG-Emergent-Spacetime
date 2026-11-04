@@ -1,0 +1,3 @@
+Y:  R_Y / (1 + prod sech 2L) = -1
+Delta: R_D / (1 + prod tanh 2K) = 1
+star-triangle: det(dlog sinh2K/dlog sinh2L) + J_Y/J_Delta = 0

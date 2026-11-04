@@ -1,0 +1,34 @@
+GUARD OK: prereg 87280fb98 on origin/main; checker/classification/exporter/planted hashes match (re-verified on every scoring call)
+b80aa25 2026-10-13   decls   831  unclassified -  geo-reaching SM-structure 5
+5ca8fcd 2026-10-14   decls   850  unclassified -  geo-reaching SM-structure 5  +[]  -[]  removed-decls 0
+75f6b46 2026-10-14   decls   855  unclassified -  geo-reaching SM-structure 5  +[]  -[]  removed-decls 0
+4b1b8c9 2026-10-14   decls   861  unclassified -  geo-reaching SM-structure 5  +[]  -[]  removed-decls 0
+6bb2537 2026-10-14   decls   934  unclassified -  geo-reaching SM-structure 14  +['PositiveGeometryEmergentSpaceTime.BR5p.Inv.mk.inj', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.mk.injEq', 'PositiveGeometryEmergentSpaceTime.BR5p.Inv.mk.sizeOf_spec', 'PositiveGeometryEmergentSpaceTime.BR5p.br5p_witness', 'PositiveGeometryEmergentSpaceTime.BR5p.built_eq_N', 'PositiveGeometryEmergentSpaceTime.BR5p.built_zero_of_gauge', 'PositiveGeometryEmergentSpaceTime.BR5p.ct_eq', 'PositiveGeometryEmergentSpaceTime.BR5p.ns_eq', 'PositiveGeometryEmergentSpaceTime.BR5p.nt_eq']  -[]  removed-decls 0
+696ec93 2026-10-14   decls   935  unclassified -  geo-reaching SM-structure 15  +['PositiveGeometryEmergentSpaceTime.BR5p.br5p_gauge_witness_nontrivial']  -[]  removed-decls 0
+fdb75eb 2026-10-14   decls   957  unclassified -  geo-reaching SM-structure 15  +[]  -[]  removed-decls 0
+a5f5094 2026-10-15   decls   968  unclassified -  geo-reaching SM-structure 15  +[]  -[]  removed-decls 0
+959acff 2026-10-15   decls   974  unclassified -  geo-reaching SM-structure 15  +[]  -[]  removed-decls 0
+959d48e 2026-10-15   decls   984  unclassified -  geo-reaching SM-structure 15  +[]  -[]  removed-decls 0
+1c52a40 2026-10-15   decls   990  unclassified -  geo-reaching SM-structure 15  +[]  -[]  removed-decls 0
+2e17e77 2026-10-15   decls   999  unclassified -  geo-reaching SM-structure 15  +[]  -[]  removed-decls 0
+4e8351c 2026-10-15   decls   999  unclassified -  geo-reaching SM-structure 15  +[]  -[]  removed-decls 40
+896a1e1 2026-10-15   decls  1005  unclassified -  geo-reaching SM-structure 15  +[]  -[]  removed-decls 6
+ff92cdd 2026-10-15   decls  1042  unclassified -  geo-reaching SM-structure 15  +[]  -[]  removed-decls 0
+d882ab8 2026-10-15   decls  1075  unclassified -  geo-reaching SM-structure 16  +['PositiveGeometryEmergentSpaceTime.X6.positivity_orientation_blind']  -[]  removed-decls 0
+11ab55a 2026-10-15   decls  1088  unclassified -  geo-reaching SM-structure 16  +[]  -[]  removed-decls 0
+8125add 2026-10-15   decls  1094  unclassified -  geo-reaching SM-structure 17  +['PositiveGeometryEmergentSpaceTime.Separation.geometry_struct_separation']  -[]  removed-decls 0
+c9b7daf 2026-10-16   decls  1105  unclassified -  geo-reaching SM-structure 17  +[]  -[]  removed-decls 0
+f801c49 2026-10-16   decls  1130  unclassified -  geo-reaching SM-structure 17  +[]  -[]  removed-decls 0
+a3a1d84 2026-10-16   decls  1143  unclassified -  geo-reaching SM-structure 18  +['PositiveGeometryEmergentSpaceTime.FRWZW.normalisation_free']  -[]  removed-decls 0
+4ec488b 2026-10-20   decls  1154  unclassified -  geo-reaching SM-structure 18  +[]  -[]  removed-decls 0
+0bd027c 2026-10-20   decls  1168  unclassified -  geo-reaching SM-structure 18  +[]  -[]  removed-decls 0
+fad71eb 2026-10-20   decls  1170  unclassified -  geo-reaching SM-structure 18  +[]  -[]  removed-decls 0
+64f578a 2026-10-20   decls  1182  unclassified -  geo-reaching SM-structure 18  +[]  -[]  removed-decls 0
+1d69676 2026-10-20   decls  1204  unclassified -  geo-reaching SM-structure 18  +[]  -[]  removed-decls 0
+50867be 2026-10-20   decls  1218  unclassified -  geo-reaching SM-structure 18  +[]  -[]  removed-decls 0
+9d7c0d0 2026-10-20   decls  1226  unclassified -  geo-reaching SM-structure 18  +[]  -[]  removed-decls 0
+d148459 2026-10-20   decls  1240  unclassified -  geo-reaching SM-structure 21  +['PositiveGeometryEmergentSpaceTime.BridgePLCharge.bridge_charge_nolink', 'PositiveGeometryEmergentSpaceTime.BridgePLCharge.uCR_charge_blind', 'PositiveGeometryEmergentSpaceTime.BridgePLCharge.uCR_rival_indistinguishable']  -[]  removed-decls 0
+e8d6bea 2026-10-20   decls  1255  unclassified -  geo-reaching SM-structure 21  +[]  -[]  removed-decls 0
+-- import edges GEOMETRY-module -> SM-INPUT-module, every commit touching lean/
+  3af6f74: none
+  (117 lean commits scanned)

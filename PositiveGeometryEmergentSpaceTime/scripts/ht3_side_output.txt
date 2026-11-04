@@ -1,0 +1,16 @@
+generic E4 point: <Y i i+1> signs [1, 1, 1, 1, 1, 1, 1], <Y 1 8> sign -1, flips of <Y 1 j>: 3; zero adjacent brackets: []
+Jacobian rank of Y (gauge-fixed) wrt 6 conductances: 5
+  facet: edge (1, 2) -> 0 (c=5): <Y i i+1> signs [1, 1, 1, 1, 1, 1, 1], <Y 1 8> sign -1, flips of <Y 1 j>: 3; zero adjacent brackets: []
+  edge (1, 2) -> oo: limit stratum c=3 (not a facet)
+  facet: edge (2, 3) -> 0 (c=5): <Y i i+1> signs [1, 1, 1, 1, 1, 1, 1], <Y 1 8> sign -1, flips of <Y 1 j>: 3; zero adjacent brackets: []
+  edge (2, 3) -> oo: limit stratum c=3 (not a facet)
+  edge (1, 'c') -> 0: limit stratum c=4 (not a facet)
+  edge (1, 'c') -> oo: limit stratum c=4 (not a facet)
+  facet: edge (2, 'c') -> 0 (c=5): <Y i i+1> signs [1, 1, 1, 1, 1, 1, 1], <Y 1 8> sign -1, flips of <Y 1 j>: 3; zero adjacent brackets: []
+  edge (2, 'c') -> oo: limit stratum c=3 (not a facet)
+  edge (3, 'c') -> 0: limit stratum c=4 (not a facet)
+  edge (3, 'c') -> oo: limit stratum c=4 (not a facet)
+  edge (4, 'c') -> 0: limit stratum c=3 (not a facet)
+  facet: edge (4, 'c') -> oo (c=5): <Y i i+1> signs [1, 1, 1, 1, 1, 1, 1], <Y 1 8> sign -1, flips of <Y 1 j>: 3; zero adjacent brackets: []
+common row space dim: 6 ; null vectors span alt-type vectors: [[0.2197, 0.4492, -0.2197, -0.4492, 0.2197, 0.4492, -0.2197, -0.4492], [0.4492, -0.2197, -0.4492, 0.2197, 0.4492, -0.2197, -0.4492, 0.2197]]
+isotropic skew forms on W (null dim of 15-unknown system): 1 ; smallest sv ratios: [5.04380632e-04 2.77433628e-17]

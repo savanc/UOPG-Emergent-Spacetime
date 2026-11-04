@@ -1,0 +1,5 @@
+import PositiveGeometryEmergentSpaceTime.SG1b
+#print axioms PositiveGeometryEmergentSpaceTime.SG1b.hasDerivAt_f
+#print axioms PositiveGeometryEmergentSpaceTime.SG1b.f_antitoneOn
+#print axioms PositiveGeometryEmergentSpaceTime.SG1b.sum_antitone
+#print axioms PositiveGeometryEmergentSpaceTime.SG1b.sum_monotone

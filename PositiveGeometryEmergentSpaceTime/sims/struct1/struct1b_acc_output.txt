@@ -1,0 +1,3 @@
+ACC + Majorana: [{yL: -3, yQ: 1, yd: -4, ye: 6, ynu: 0, yu: 2}, {yL: -3, yQ: 1, yd: 2, ye: 6, ynu: 0, yu: -4}]
+ACC + Dirac Yukawas: [{yH: -yu - 1, yL: -3, yQ: 1, yd: -yu - 2, ye: 2 - yu, ynu: yu + 4}]
+ACC + Yukawas + Majorana: [{yH: 3, yL: -3, yQ: 1, yd: 2, ye: 6, ynu: 0, yu: -4}]
