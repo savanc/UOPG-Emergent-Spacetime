@@ -67,6 +67,27 @@ The derivation and quantum-number meters measure the open target. They are low b
 - *Capped-Forman (CAPPED-FORMAN-1).* For every simple polytope, `κ(e) ≥ 1 − Σ_F min(3, k_F − 3)/(D + 1)` over the 2-faces `F` through `e`. This inequality is a special case of Jost and Münch, Cor. 6.2 ([arXiv:2110.04554](https://arxiv.org/abs/2110.04554)) `CITED`. Equality holds on all 140,107 edges of 513 simple polytopes in dimensions 2 to 8, including 18,388 edges with faces of 7 to 12 sides and 21,775 edges on non-facial short cycles; maximum gap 0 `SIMULATED (CAPPEDF1-20261031T120726Z)`. Equality in general is open `CONJECTURE`. Lean proves the per-face optimisation and "capped ≥ Forman, with equality iff every face has at most 6 sides" `PROVED`.
 - *Permutohedron (HG-DIM-2).* `κ = (2 − 2h)/n` with Forman curvature `2 − 2h`, where `h` is the number of hexagons through the edge, on all 158,322 edges for `n = 3,…,8` `SIMULATED (HGDIM2-20261031T104614)`. The formula is known: Cushing et al. ([arXiv:2310.15953](https://arxiv.org/abs/2310.15953)) `CITED`. Lean checks `n = 4, 5, 6` `PROVED`.
 
+## Statement alignment (2026-11-03)
+
+A Lean theorem only supports a paper claim if it states what the prose says. This layer checks that link. It lives in `lean/PositiveGeometryEmergentSpaceTime/Alignment/` (75 modules), is not imported by `PositiveGeometryEmergentSpaceTime`, and leaves the main totals at 1378/798/0/0. Its axiom audits (`lean/Alignment*Axioms*`, with their `_output.txt` files) show only `propext`, `Classical.choice` and `Quot.sound`, with no `sorry`. No credit changed.
+
+- **Blueprint.** Each sentence in the papers that cites Lean is paired with the declaration it cites. All 409 cited declarations exist and are axiom-clean. Of the 125 rows judged, 108 are MATCH, 8 NAME-ONLY and 9 OVERSTATES. All 17 non-MATCH rows were corrected in the papers by narrowing or scoping the wording, never by upgrading it, and each corrected row now reads MATCH. Of the 34 glossary terms checked, the 4 that differed from the Lean object and the 12 that were missing from the papers are now defined in the papers. See [`ROLLOUT-BLUEPRINT`](notes/alignment/ROLLOUT-BLUEPRINT-2026-11-03.md) and [`RESOLVED`](notes/alignment/RESOLVED-2026-11-03.md).
+- **Sanity theorems.** For definitions that were right only by name, a check proves known values, rejects a planted wrong case and shows the hypotheses can be met. Where possible, it also ties the definition to the object the paper names. Phase B added 85 theorems in 9 modules and Phase C added 884 theorems in 23 modules, all `PROVED`:
+  - JORD-1: the full Jordan identity on ℚ²⁷ holds, and dim Der = 52 (`Jord1Der.finrank_der`). Der ≅ f₄ stays `CITED`.
+  - SURF-1′: the K₃,₃ coefficient table is checked by the kernel, so the Lean no-go is now unconditional.
+  - H-T5: the GP sign rule holds at n = 3 by exhaustion.
+  - EW-Z1b: the Feynman-rule tie is still open. An independent derivation agrees on 200 of 200 points `SIMULATED (EWZ1B-INDEP-2026-11-03-r1)`.
+
+  See [`SANITY`](notes/alignment/SANITY-2026-11-03.md) and [`SANITY-b`](notes/alignment/SANITY-2026-11-03b.md).
+- **Blind second formalisations.** A rung is restated in Lean from the prose alone. The prose-only version is pushed before the original is opened, and then the two are compared (EQUIV, ORIG-/BLIND-STRONGER, DIFFERENT).
+  - BLIND-2 (10 rungs): 3 EQUIV, 1 BLIND-STRONGER, 1 EQUIV on numbers but ORIG-STRONGER on rigour, and 5 DIFFERENT from a convention, input or generality choice, with the overlap `PROVED`.
+  - BLIND-3 (MR-4, MR-2, KL-LAT/KS-1): it found that the cited KL-LAT theorems assume the ½ intercepts. The derivation is now `PROVED` (`Compare.KLLAT`), and no number moved ([`TAG-CHANGE-2026-11-03b`](reviews/TAG-CHANGE-2026-11-03b.md)).
+  - BLIND-4: MR-1f, below.
+
+  No blind version contradicts its original. See [`BLIND`](notes/alignment/BLIND-2026-11-03.md).
+- **LEAN-CERT-2.** The Lean status changed from PARTIAL-LIMIT to `PROVED` for all 8 counts: k = 2, 3 now give 5 / 0 / 10 / 2 in `LeanCert2K23`. The sampled checks stay `SIMULATED`. See [`TAG-CHANGE-2026-11-03`](reviews/TAG-CHANGE-2026-11-03.md).
+- **MR-1f width formula.** Before BLIND-4, only `poch3` had Lean behind it. Now the Gamma ratio for all J, the residue (equal to the script's up to one uniform sign), the Legendre projections for J = 1–4 and the kinematics are `PROVED`. The ratios also have proved intervals: R2 ∈ (0.89485, 0.89495), R3 ∈ (0.57755, 0.57765) and R4 ∈ (0.36485, 0.36495), each `PROVED`. These bracket both the script and the blind run `SIMULATED (BLIND4-PY-2026-11-03-r1)`. The data comparison stays `SIMULATED`, and the pole factor and width convention stay `CITED`. See [`BLIND-4-RESULT`](notes/alignment/BLIND-4-RESULT-2026-11-03.md).
+
 ## Method
 
 Each test is a *rung*. A rung moves through the same gates every time:
