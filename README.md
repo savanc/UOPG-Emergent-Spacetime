@@ -16,7 +16,7 @@ Three papers are published on Zenodo. Each first link is the concept DOI, which 
 |---|---|---|
 | II | **Can positive geometry fix the Standard Model? Evidence from a Lean-verified agentic research programme.** The evidence: the Lean library, the mapped routes, the exclusion ledger, and what is still open. | [10.5281/zenodo.23932592](https://doi.org/10.5281/zenodo.23932592) (v8.3: [10.5281/zenodo.23932593](https://doi.org/10.5281/zenodo.23932593)) |
 | I | **Governed human-agent research loops for mathematical physics.** The method: preregistration, locked checkers and formal proof as the operating system of AI-assisted discovery. | [10.5281/zenodo.23932674](https://doi.org/10.5281/zenodo.23932674) (v9.3: [10.5281/zenodo.23932675](https://doi.org/10.5281/zenodo.23932675)) |
-| | **Exact Ollivier-Ricci curvature of the associahedron flip graph, and when it equals Forman curvature.** The exact curvature result, with the equality checked on 140,107 edges of 513 simple polytopes. | [10.5281/zenodo.23932724](https://doi.org/10.5281/zenodo.23932724) (v4.2: [10.5281/zenodo.23932725](https://doi.org/10.5281/zenodo.23932725)) |
+| — | **Exact Ollivier-Ricci curvature of the associahedron flip graph, and when it equals Forman curvature.** The exact curvature result, with the equality checked on 140,107 edges of 513 simple polytopes. | [10.5281/zenodo.23932724](https://doi.org/10.5281/zenodo.23932724) (v4.2: [10.5281/zenodo.23932725](https://doi.org/10.5281/zenodo.23932725)) |
 
 Start with Paper II for what the programme has and has not established, and Paper I for how each result was gated.
 
@@ -28,12 +28,12 @@ The work is in [`PositiveGeometryEmergentSpaceTime/`](PositiveGeometryEmergentSp
 |---|---|
 | Lean library | **1378 theorems, 798 definitions**, over 140 modules `PROVED` |
 | Axiom audit | **0 non-standard axioms, 0 `sorry`-dependent declarations**; only `propext`, `Classical.choice` and `Quot.sound` |
-| Statement alignment | **75 modules** check that Lean says what the prose says: 409 cited declarations all exist and are axiom-clean, and of 125 judged paper claims **108 match exactly**, with the other 17 fixed by narrowing the prose |
+| Statement alignment | **75 modules** check that Lean says what the prose says: 409 cited declarations all exist and are axiom-clean, and of 125 judged paper claims **108 match exactly**, while the other 17 were corrected by narrowing the prose until each read MATCH |
 | Sanity theorems | **969 further theorems** (32 modules) tying a definition to the object the paper names, or rejecting a planted wrong version |
 | Preregistrations | **112**, each pushed before its run |
 | Result reviews | **114**, kept whatever the outcome |
 | Blocked routes | **77 tagged, 35 of them proved no-gos**, each with a reopen trigger |
-| Exclusion ledger | **35 Lean-anchored no-go rows**, 30 more proposed |
+| Exclusion ledger | **35 no-go rows**, 34 of them anchored to a named Lean declaration, plus 30 proposed |
 | Derivation meter | **1 of 87** Standard-Model ledger items, and that one is conditional and amplitude-sourced, not from geometry |
 | Quantum-number meter | **0 of 73** |
 
@@ -115,11 +115,11 @@ MIT. `CITATION.cff` in the programme folder gives the citation form. Contact: [s
 
 Everything below this line describes where the project started. It is kept as a record, and it is not the current status. The 2026 paper was calibrated so that the W-boson mass comes out at 80.4 GeV; that calibration was a fit, not a prediction, and no later result in this repository depends on it.
 
-**Title as published:** UOPG: Emergent Spacetime and Particles from the Positive Grassmannian. A Geometric Model Calibrated to LHC W-Boson Mass.
+**Title, as the project first stated it:** UOPG: Emergent Spacetime and Particles from the Positive Grassmannian. A Geometric Model Calibrated to LHC W-Boson Mass.
 
-**Abstract as published.** We present a geometric model in which the positive Grassmannian Gr+(k,n) serves as the single underlying structure. Positivity-preserving mutations generate curvature that projects to 3+1D Lorentzian spacetime. Wave interference on the emergent metric produces particles, entanglement, annihilation, and chiral asymmetry. The model is calibrated so the W-boson mass is exactly 80.4 GeV.
+**Abstract, as the project first stated it.** We present a geometric model in which the positive Grassmannian Gr+(k,n) serves as the single underlying structure. Positivity-preserving mutations generate curvature that projects to 3+1D Lorentzian spacetime. Wave interference on the emergent metric produces particles, entanglement, annihilation, and chiral asymmetry. The model is calibrated so the W-boson mass is exactly 80.4 GeV.
 
-**Paper:** [10.5281/zenodo.19291218](https://doi.org/10.5281/zenodo.19291218), left as published.
+**Paper:** [10.5281/zenodo.19291218](https://doi.org/10.5281/zenodo.19291218), left as published. The record carries the paper's own title and abstract, which are the authoritative wording; this section reproduces how this repository first stated them, not the record's text.
 
 ## The ladder that was built on it
 
